@@ -1,2 +1,8 @@
+.cache
 sbt-launch.jar
 lib/*.jar
+project/target/*
+src/main/resources/classes
+src/main/resources/src
+target/*
+/bin

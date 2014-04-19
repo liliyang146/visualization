@@ -417,7 +417,7 @@ reizinājumi abās grupās ir vienādi? ]]></description>
 
 	<problem id="lv-openmo40-g06-p05">
 		<title>40. AMO, 6.klases 5. Uzdevums</title>
-		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5 5
+		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
 rūtiņas trīs <b>tukšās</b> vienas rindas vai kolonnas <b>blakus</b> rūtiņās
 ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
 spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
@@ -449,7 +449,8 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
 			</item>
 			<item tstamp="6:11">Pamatojums, ka Una vienmēr varēs izdarīt gājienu.
 			</item>
-			<item tstamp="7:53"></item>
+			<item tstamp="7:53">Pēc katra Unas gājiena  brīvo rūtiņu veidotā figūra 
+			    paliek centrāli simetriska (t.i. Una var turpināt savu stratēģiju)</item>
 		</part>
 		<part name="Atskats">
 			<item tstamp="9:14">Kopsavilkums - kādēļ Una var uzvarēt.</item>
@@ -616,7 +617,7 @@ figūru (tā var būt pagriezta vai apgāzta otrādi)?<br />
 
 	<problem id="lv-openmo40-g07-p05">
 		<title>40. AMO, 7.klases 5. Uzdevums</title>
-		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 6 6
+		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 6x6
 rūtiņas trīs <b>tukšās</b> vienas rindas vai kolonnas <b>blakus</b> rūtiņās
 ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
 spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
