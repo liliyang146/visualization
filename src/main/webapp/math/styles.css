@@ -1,0 +1,88 @@
+#primary {
+  font-size: 1.3em;
+  padding: 0em 0.8em 0.5em 0;
+  color: #e85100;
+}
+#primary a {
+  font-weight: bold;
+  color: #e85100;
+}
+#header, #content {
+  width: 95%;
+}
+#header {
+  background-color: #fff;
+  border-bottom: 3px solid #ddd
+}
+#menu {
+  padding: 0.5em 0.5em 0 0.5em;
+  text-align: right;
+  vertical-align: middle;
+}
+body {
+    font-family:    Trebuchet MS, Helvetica, Arial, sans serif;
+    font-size:      10pt;
+    margin:         0;
+    padding:        0;
+}
+table {
+    font-size: 100%;
+}
+
+#header {
+    padding:    20px;
+}
+#body {
+    margin: 1em;
+    clear:  both;
+}
+
+#hebrew {
+    direction: rtl;
+}
+
+#control-panel {
+}
+
+#browse-panel {
+    padding:        0.5em;
+}
+#view-panel {
+    padding:    2em;
+}
+
+.exhibit-thumbnailView-group h1 {
+    font-size:      120%;
+    margin:         1em 0;
+    color:          #7D2E1C;
+}
+.exhibit-thumbnailView-group h2 {
+    font-size:      100%;
+    font-weight:    bold;
+    margin:         0.5em 0;
+}
+.item h1 {
+    font-size:      120%;
+    margin:         1em 0;
+    color:          #7D2E1C;
+}
+.item h2 {
+    font-size:      100%;
+    font-weight:    bold;
+    margin:         0.5em 0;
+}
+
+
+table.itemThumbnail {
+    margin: 0.5em; 
+    width: 120px; 
+}
+td.itemThumbnail-thumbnailContainer {
+    overflow: hidden; 
+    height: 120px; 
+    text-align: center;
+}
+td.itemThumbnail-caption {
+    height: 4em; 
+    text-align: center;
+}

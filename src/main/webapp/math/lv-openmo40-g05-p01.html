@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Math Olympiads: Problem Solutions</title> 
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<style type="text/css">
+body {
+  font-size: 100%; 
+  margin: 2em 4em 2em 4em; 
+  font-family: Trebuchet MS, Helvetica, Arial, sans serif;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+div.line {
+  margin: 0em;
+  padding: 0em;
+}
+
+div.indentedLine {
+  margin: 0em 0em 0em 2em;
+  padding: 0em;
+}
+
+div.problem {
+  border: 1px solid black;
+  width: 560px;
+  background-color: #ffffcc;
+  padding: 5px;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>    
+<script type="text/javascript">
+    //this function gets called when the player is ready    
+    function onYouTubePlayerReady (playerId) {
+        ytplayer = document.getElementById("myytplayer");
+        console.log(ytplayer);
+    }
+    //generic seekTo function taking a player element and seconds as parameters    
+    function playerSeekTo(player, seconds) {
+        player.seekTo(seconds);
+    }
+</script>
+<script type="text/javascript">
+    var ytplayer;
+    
+    $(document).ready(function() {
+        swfobject.embedSWF("//www.youtube.com/e/UNyM7DyFDug?enablejsapi=1&playerapiid=ytplayer &version=3",
+        "ytapiplayer", // where the embedded player ends up
+        "560", // width    
+        "315", // height    
+        "8", // swf version    
+        null,
+        null, {
+            allowScriptAccess: "always"
+        }, {
+            id: "myytplayer"
+        });
+    
+    });
+</script>
+</head> 
+<body>
+<h1>40.AMO, 5.klases 1.uzdevums </h1>
+
+<div class="problem"> Cik reizes diennaktī sakrīt pulksteņa stundu un minūšu rādītāji?
+(Plkst. 00:00 un 24:00 ieskaitīt vienu reizi.) <i>Atbildi pamatot!</i></div>
+
+<br />
+
+<table>
+<tr><td>
+<div id="ytapiplayer">
+  You need Flash player 8+ and JavaScript enabled to view this video.
+</div>
+</td>
+<td>
+<div class="line"><b>Uzdevuma saprašana</b>
+<div class="indentedLine">(a) 0:17 <a href="#" onclick="playerSeekTo(ytplayer, 17); return false;">Noskaidrojam, ko uzdevumā prasīts noskaidrot.</a></div>
+<div class="indentedLine">(b) 0:45 <a href="#" onclick="playerSeekTo(ytplayer, 45); return false;">Ko nozīmē tas, ka „sakrīt” (pulksteņa rādītāji kustas nepārtraukti)</a></div>
+<div class="line"><b>Risināšanas plāns</b></div>
+<div class="indentedLine">(a) 1:15 <a href="#" onclick="playerSeekTo(ytplayer, 75); return false;">Aprakstām abu rādītāju kustību un kurās vietās viens var apsteigt otru.</a><br /> Metode: Gadījumu pārlase.</div>
+<div class="indentedLine">(b) 3:58 <a href="#" onclick="playerSeekTo(ytplayer, 238); return false;">Satikšanās punktu atzīmēšana uz ciparnīcas.</a><br />
+Metode: Gadījumu pārlase.</div>
+<div class="indentedLine">(c) 5:22 <a href="#" onclick="playerSeekTo(ytplayer, 322); return false;">Katrā apsteigšanas gadījumā notiek rādītāju stāvokļu sakrišana.</a><br />
+Metode: Nepārtrauktība.</div>
+<div class="indentedLine">(d) 6:58 <a href="#" onclick="playerSeekTo(ytplayer, 418); return false;">Ātrumu atņemšana.</a><br />
+Metode: Teksta uzdevums ar proporcijām</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

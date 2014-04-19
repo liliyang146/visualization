@@ -1,0 +1,16 @@
+    var ytplayer;
+    
+    $(document).ready(function() {
+        swfobject.embedSWF("//www.youtube.com/e/Py_IndUbcxc?enablejsapi=1&playerapiid=ytplayer &version=3",
+        "ytapiplayer", // where the embedded player ends up
+        "425", // width    
+        "356", // height    
+        "8", // swf version    
+        null,
+        null, {
+            allowScriptAccess: "always"
+        }, {
+            id: "myytplayer"
+        });
+    
+    });
