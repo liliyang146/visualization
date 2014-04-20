@@ -661,4 +661,38 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
 	</problem>
 
 
+		<problem id="lv-openmo40-g08-p01">
+		<title>40. AMO, 8.klases 1. Uzdevums</title>
+		<description><![CDATA[ Atrast visus naturālos skaitļus, kas nepārsniedz 1000000 un kuri,
+nosvītrojot to pirmo ciparu, samazinās 36 reizes. ]]></description>
+		<youtube>Jb2vhUIYHFU</youtube>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Kuru naturālo skaitļu apakškopu aplūkojam. 
+			    Pirmā cipara nosvītrošana - domāts skaitļa decimālpieraksts 
+			    (piemēram, skaitīšanas sistēmā ar bāzi "8" līdzīgam uzdevumam nebūtu atrisinājumu).
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:16">No cik cipariem var sastāvēt atrisinājums. 
+			    Metode: Gadījumu pārlase. 
+			</item>
+			<item tstamp="2:12">Kā no divciparu skaitļa pieraksta iegūst vienādojumu. 
+			    Metode: Algebriskas sakarības ieviešana. 
+			</item>
+			<item tstamp="3:00">Veselu skaitļu vienādojums ar diviem nezināmajiem. 
+			    Metode: Dalāmība veselu skaitļu vienādojumā. 
+			</item>
+			<item tstamp="3:54">Līdzīgs izvedums 6-ciparu skaitlim.			    
+			</item>
+			<item tstamp="5:44">Atbildes formulēšana. Metode: Secināšana pēc analoģijas. 			    
+			</item>
+		</part>
+		<notes>
+			<item>Vai, nosvītrojot decimālpieraksta pirmo ciparu, naturāls skaitlis var 
+			    samazināties 35 reizes? 37 reizes? Kāpēc? 
+			</item>
+		</notes>
+	</problem>
+	
+	
 </problems>

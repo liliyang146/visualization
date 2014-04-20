@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="lib/scalaz-concurrent_2.10-7.0.4.jar"/>
 	<classpathentry kind="lib" path="lib/scalaz-core_2.10-7.0.4.jar"/>
 	<classpathentry kind="lib" path="lib/specs2_2.10-2.3.11.jar"/>
+	<classpathentry kind="lib" path="extra-lib/commons-io-2.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

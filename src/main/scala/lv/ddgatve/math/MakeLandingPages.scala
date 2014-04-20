@@ -4,13 +4,24 @@ import org.fusesource.scalate.TemplateEngine
 import java.io.File
 import org.fusesource.scalate.support.FileTemplateSource
 import java.nio.file.{ Path, Paths, Files }
+import java.io.PrintWriter
+import org.apache.commons.io.FileUtils
 
 object MakeLandingPages {
+
+  def writeToFile(text: String, file: File): Unit = {
+    val writer = new PrintWriter(file)
+    writer.write(text)
+    writer.close()
+  }
 
   def main(args: Array[String]): Unit = {
     // create destination directory, if it does not exist
     val folderPath: Path = Paths.get("target/site/math/")
     var tmpDir: Path = Files.createTempDirectory(folderPath, null)
+    FileUtils.copyFile(new File("src/main/webapp/math/amo40-list.html"),
+        new File("target/site/math/amo40-list.html"))
+
 
     val style1 = """      body {
         font-size: 100%; 
@@ -76,8 +87,11 @@ object MakeLandingPages {
       val m = Map("script1" -> script1,
         "script2" -> script2.replaceFirst("XXXXXXXXXXX", pv.YouTubeId),
         "style1" -> style1, "pv" -> pv)
-      scala.tools.nsc.io.File("target/site/math/" + pv.id +
-        ".html").writeAll(engine.layout(fts, m))
+      //      scala.tools.nsc.io.File("target/site/math/" + pv.id +
+      //        ".html").writeAll(engine.layout(fts, m))
+
+      writeToFile(engine.layout(fts, m),
+        new File("target/site/math/" + pv.id + ".html"))
     }
   }
 }
