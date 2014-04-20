@@ -22,7 +22,7 @@ object MakeLandingPages {
     FileUtils.copyFile(new File("src/main/webapp/math/amo40-list.html"),
       new File("target/site/math/amo40-list.html"))
     FileUtils.copyFile(new File("src/main/webapp/math/ifd.js"),
-      new File("target/site/math/idf.js"))
+      new File("target/site/math/ifd.js"))
 
     val style1 = """      body {
         font-size: 100%; 
