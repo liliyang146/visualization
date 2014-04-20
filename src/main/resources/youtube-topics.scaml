@@ -1,6 +1,7 @@
 -@ val style1: String
 -@ val script1: String
 -@ val script2: String 
+-@ val googleAnalyticsScript: String
 -@ val pv: lv.ddgatve.math.ProblemVideo
 %html
   %head
@@ -14,6 +15,9 @@
     %script{:type=>"text/javascript"} = unescape(script2)
 
   %body
+    %p
+      %a{:href=>"http://www.demografija.lv/math/amo40-list.html"} Uz sākumu
+  
     %h1 = pv.title
 
     %div{:class=>"problem"} = unescape(pv.description)
@@ -38,4 +42,10 @@
     %ol
       - for (note <- pv.notes) 
         %li = note
+
+    %p
+      %b Norādes:
+      %a{:href=>"http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"} Latvijas olimpiāžu uzdevumu arhīvs
+
+    %script = unescape(googleAnalyticsScript)
 

@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils
 object MakeLandingPages {
 
   def writeToFile(text: String, file: File): Unit = {
-    val writer = new PrintWriter(file)
+    val writer = new PrintWriter(file, "UTF-8")
     writer.write(text)
     writer.close()
   }
@@ -20,8 +20,9 @@ object MakeLandingPages {
     val folderPath: Path = Paths.get("target/site/math/")
     var tmpDir: Path = Files.createTempDirectory(folderPath, null)
     FileUtils.copyFile(new File("src/main/webapp/math/amo40-list.html"),
-        new File("target/site/math/amo40-list.html"))
-
+      new File("target/site/math/amo40-list.html"))
+    FileUtils.copyFile(new File("src/main/webapp/math/ifd.js"),
+      new File("target/site/math/idf.js"))
 
     val style1 = """      body {
         font-size: 100%; 
@@ -29,6 +30,7 @@ object MakeLandingPages {
         font-family: Trebuchet MS, Helvetica, Arial, sans serif;
       }
       h1 {
+        margin-top: 2px;
         font-weight: normal;
       }
       h4 {
@@ -74,6 +76,15 @@ object MakeLandingPages {
             id: "myytplayer"
         });   
       });"""
+      
+      
+    val googleAnalyticsScript = """(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50196303-1', 'demografija.lv');
+  ga('send', 'pageview');"""
 
     val result = OutlineParser.parseXmlOutline("src/main/resources/video-outlines.xml")
 
@@ -86,9 +97,9 @@ object MakeLandingPages {
     for (pv <- result) {
       val m = Map("script1" -> script1,
         "script2" -> script2.replaceFirst("XXXXXXXXXXX", pv.YouTubeId),
-        "style1" -> style1, "pv" -> pv)
-      //      scala.tools.nsc.io.File("target/site/math/" + pv.id +
-      //        ".html").writeAll(engine.layout(fts, m))
+        "style1" -> style1,
+        "googleAnalyticsScript" -> googleAnalyticsScript,
+        "pv" -> pv)
 
       writeToFile(engine.layout(fts, m),
         new File("target/site/math/" + pv.id + ".html"))
