@@ -19,8 +19,6 @@ object MakeLandingPages {
     // create destination directory, if it does not exist
     val folderPath: Path = Paths.get("target/site/math/")
     var tmpDir: Path = Files.createTempDirectory(folderPath, null)
-    FileUtils.copyFile(new File("src/main/webapp/math/amo40-list.html"),
-      new File("target/site/math/amo40-list.html"))
     FileUtils.copyFile(new File("src/main/webapp/math/ifd.js"),
       new File("target/site/math/ifd.js"))
 
@@ -50,6 +48,19 @@ object MakeLandingPages {
         width: 560px;
         background-color: #ffffcc;
         padding: 5px;
+      }
+      table.index {
+      }
+      table.index td {
+        border-bottom: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+      }
+      table.index th {
+        font-size: 120%;
+        padding-top: 10px;
+        text-align: left;
+        border-bottom: 1px solid #cccccc;
       }"""
 
     val script1 = """//this function gets called when the player is ready    
@@ -90,6 +101,17 @@ object MakeLandingPages {
 
     val engine = new TemplateEngine
     engine.workingDirectory = new File("src/main/resources")
+    
+    val plist = ProblemIndex.getIndex("src/main/resources/video-outlines.xml")
+    var indexTemplate: FileTemplateSource = new FileTemplateSource(
+      new File("src/main/resources/problemlist.scaml"),
+      "http://85.254.250.28/downloads1/problemlist.scaml")
+    val indexMap = Map("style1" -> style1,
+        "googleAnalyticsScript" -> googleAnalyticsScript,
+        "plist" -> plist)    
+    writeToFile(engine.layout(indexTemplate, indexMap),
+        new File("target/site/math/amo40-list.html"))
+    
     var fts: FileTemplateSource = new FileTemplateSource(
       new File("src/main/resources/youtube-topics.scaml"),
       "http://85.254.250.28/downloads1/youtube-topics.scaml")

@@ -1,0 +1,26 @@
+-@ val style1: String
+-@ val googleAnalyticsScript: String
+-@ val plist: List[(String,String,Int,Int)]
+
+%html
+  %head
+    %title Math Olympiads: Problem Solutions
+    %meta{"http-equiv"=>"content-type", :content=>"text/html;charset=utf-8"}
+    %style{:type=>"text/css"} = unescape(style1)
+
+  %body
+    %h1 40. Atklātā matemātikas olimpiāde (2013-04-28)
+    
+    %table{:cellspacing=>"0", :class=>"index"}
+      - for (i <- 0 to (plist.size-1))
+        %tr
+          - if (plist(i)._1.length == 0)
+            %th = plist(i)._3 + ". klase"
+          - else
+            %td 
+              %a{:href=>{plist(i)._1 + ".html"}}<
+                = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"  
+              = unescape("&nbsp;&nbsp;" + plist(i)._2) 
+
+    %script = unescape(googleAnalyticsScript)
+

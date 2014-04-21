@@ -380,6 +380,32 @@
         
         {   
             type:      "Video",
+            label: "lv-openmo40-g08-p02",   
+            form: "Grade8-Age15",
+            choreographer:  "John Doe",
+            year:  "2013",
+            lesson: "Latvian",
+            withChoreographer: "yes",
+			camp: "LV Open Math Olympiad",
+            subjects: "triangle-inequality",
+            YTurl: "https://www.youtube.com/watch?v=cXmlpA3LJAc",
+			vurl: "lv-openmo40-g08-p02.html", 
+            quality: "high",
+	        thumbnail:"http://img.youtube.com/vi/cXmlpA3LJAc/default.jpg",
+            hasVenue: true,
+            loc: "Latvia",
+	        hebrewName: "40.atkl.olimp.; 8.kl. 2.uzd.",
+	        source: "submitted",
+	        submitter:"JD",
+	        submitterEmail: "datu.nesejs@gmail.com",
+	        note: 'case-analysis,continuity',
+	        submitDate: "2014-04-04",
+	        upDate: "2014-04-04"
+        },
+
+
+        {   
+            type:      "Video",
             label: "lv-openmo40-g08-p01",   
             form: "Grade8-Age15",
             choreographer:  "John Doe",
@@ -389,7 +415,7 @@
 			camp: "LV Open Math Olympiad",
             subjects: "integer-equation",
             YTurl: "https://www.youtube.com/watch?v=Jb2vhUIYHFU",
-			vurl: "lv-openmo40-g07-p05.html", 
+			vurl: "lv-openmo40-g08-p01.html", 
             quality: "high",
 	        thumbnail:"http://img.youtube.com/vi/Jb2vhUIYHFU/default.jpg",
             hasVenue: true,
@@ -403,7 +429,6 @@
 	        upDate: "2014-04-04"
         },
 
-        
         
 				
 /*	

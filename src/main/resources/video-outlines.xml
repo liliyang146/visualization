@@ -230,8 +230,8 @@ ir jākrāso vienā krāsā. <i>Atbildi pamatot!</i> ]]></description>
 
 	<problem id="lv-openmo40-g06-p01">
 		<title>40. AMO, 6.klases 1. Uzdevums</title>
-		<description><![CDATA[ Uz tāfeles uzrakstīti desmit skaitļi<br />
-1 2 3 4 5 6 7 8 9 10<br />
+		<description><![CDATA[ Uz tāfeles uzrakstīti desmit skaitļi:<br />
+1 2 3 4 5 6 7 8 9 10.<br />
 Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar a un b)
 un to vietā uzraksta skaitli, kas vienāds ar  a+b+2. Šo operāciju
 viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
@@ -449,8 +449,9 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
 			</item>
 			<item tstamp="6:11">Pamatojums, ka Una vienmēr varēs izdarīt gājienu.
 			</item>
-			<item tstamp="7:53">Pēc katra Unas gājiena  brīvo rūtiņu veidotā figūra 
-			    paliek centrāli simetriska (t.i. Una var turpināt savu stratēģiju)</item>
+			<item tstamp="7:53">Pēc katra Unas gājiena brīvo rūtiņu veidotā figūra
+				paliek centrāli simetriska (t.i. Una var turpināt savu stratēģiju)
+			</item>
 		</part>
 		<part name="Atskats">
 			<item tstamp="9:14">Kopsavilkums - kādēļ Una var uzvarēt.</item>
@@ -575,7 +576,7 @@ visi naturālie skaitļi no 1 līdz 176) nav naturāla skaitļa kvadrāts.
 
 	<problem id="lv-openmo40-g07-p04">
 		<title>40. AMO, 7.klases 4. Uzdevums</title>
-		<description><![CDATA[ Vai kvadrātā 5 × 5 rūtiņas var iekrāsot a) 6 rūtiņas; b) 5 rūtiņas tā,
+		<description><![CDATA[ Vai kvadrātā 5×5 rūtiņas var iekrāsot a) 6 rūtiņas; b) 5 rūtiņas tā,
 lai atlikušajā daļā nevarētu ievietot nevienu 4. zīmējumā redzamo
 figūru (tā var būt pagriezta vai apgāzta otrādi)?<br />
 <img src="lv-openmo40-fig04.png" alt="Figure 4"/>  ]]></description>
@@ -661,38 +662,80 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
 	</problem>
 
 
-		<problem id="lv-openmo40-g08-p01">
+	<problem id="lv-openmo40-g08-p01">
 		<title>40. AMO, 8.klases 1. Uzdevums</title>
 		<description><![CDATA[ Atrast visus naturālos skaitļus, kas nepārsniedz 1000000 un kuri,
 nosvītrojot to pirmo ciparu, samazinās 36 reizes. ]]></description>
 		<youtube>Jb2vhUIYHFU</youtube>
 		<part name="Uzdevuma saprašana">
-			<item tstamp="0:15">Kuru naturālo skaitļu apakškopu aplūkojam. 
-			    Pirmā cipara nosvītrošana - domāts skaitļa decimālpieraksts 
-			    (piemēram, skaitīšanas sistēmā ar bāzi "8" līdzīgam uzdevumam nebūtu atrisinājumu).
+			<item tstamp="0:15">Kuru naturālo skaitļu apakškopu aplūkojam.
+				Pirmā
+				cipara nosvītrošana - domāts skaitļa decimālpieraksts
+				(piemēram,
+				skaitīšanas sistēmā ar bāzi "8" līdzīgam uzdevumam nebūtu
+				atrisinājumu).
 			</item>
 		</part>
 		<part name="Risināšanas plāns">
-			<item tstamp="1:16">No cik cipariem var sastāvēt atrisinājums. 
-			    Metode: Gadījumu pārlase. 
+			<item tstamp="1:16">No cik cipariem var sastāvēt atrisinājums.
+				Metode:
+				Gadījumu pārlase.
 			</item>
-			<item tstamp="2:12">Kā no divciparu skaitļa pieraksta iegūst vienādojumu. 
-			    Metode: Algebriskas sakarības ieviešana. 
+			<item tstamp="2:12">Kā no divciparu skaitļa pieraksta iegūst
+				vienādojumu.
+				Metode: Algebriskas sakarības ieviešana.
 			</item>
-			<item tstamp="3:00">Veselu skaitļu vienādojums ar diviem nezināmajiem. 
-			    Metode: Dalāmība veselu skaitļu vienādojumā. 
+			<item tstamp="3:00">Veselu skaitļu vienādojums ar diviem nezināmajiem.
+				Metode: Dalāmība veselu skaitļu vienādojumā.
 			</item>
-			<item tstamp="3:54">Līdzīgs izvedums 6-ciparu skaitlim.			    
+			<item tstamp="3:54">Līdzīgs izvedums 6-ciparu skaitlim.
 			</item>
-			<item tstamp="5:44">Atbildes formulēšana. Metode: Secināšana pēc analoģijas. 			    
+			<item tstamp="5:44">Atbildes formulēšana. Metode: Secināšana pēc
+				analoģijas.
 			</item>
 		</part>
 		<notes>
-			<item>Vai, nosvītrojot decimālpieraksta pirmo ciparu, naturāls skaitlis var 
-			    samazināties 35 reizes? 37 reizes? Kāpēc? 
+			<item>Vai, nosvītrojot decimālpieraksta pirmo ciparu, naturāls
+				skaitlis var
+				samazināties 35 reizes? 37 reizes? Kāpēc?
 			</item>
 		</notes>
 	</problem>
-	
-	
+
+
+	<problem id="lv-openmo40-g08-p02">
+		<title>40. AMO, 8.klases 2. Uzdevums</title>
+		<description><![CDATA[ Dots trijstūris ABC un punkts P tā iekšpusē. Pierādi, ka attālumu
+summa no punkta P līdz dotā trijstūra virsotnēm ir lielāka nekā
+puse no trijstūra perimetra. ]]></description>
+		<youtube>cXmlpA3LJAc</youtube>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:19">Ko nozīmē "dots trijstūris", "dots punkts"?
+				"Dots" kā sinonīms vārdiem "patvaļīgs", "jebkurš".
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:45">Pusperimetru grūti iztēloties, reizinām ar 2.
+				Metode:
+				Atbrīvošanās no neērtām lietām.
+			</item>
+			<item tstamp="2:58">Zīmējums ar divkāršotiem nogriežņiem.
+				Metode:
+				Zīmējuma izveidošana.
+			</item>
+			<item tstamp="3:31">Trijstūru nevienādības 3 trijstūrīšos.
+				Metode:
+				Trijstūra nevienādības izmantošana.
+			</item>
+			<item tstamp="4:14">Nevienādību saskaitīšana un locekļu pārgrupēšana.
+				Metode: Saskaitāmo pārkombinēšana.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:08">Viena no dotajām lietām netika izmantota.
+			</item>
+		</part>
+	</problem>
+
+
 </problems>
