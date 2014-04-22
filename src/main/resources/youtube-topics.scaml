@@ -38,10 +38,11 @@
                 %a{:href=>"#", :onclick => {"playerSeekTo(ytplayer," + pv.chunkLists(i)(j).getSeconds + "); return false;"} } 
                   = pv.chunkLists(i)(j).text
 
-    %h4 Piezīmes
-    %ol
-      - for (note <- pv.notes) 
-        %li = note
+    - if (pv.notes.size > 0)
+      %h4 Piezīmes
+      %ol
+        - for (note <- pv.notes) 
+          %li = note
 
     %p
       %b Norādes:

@@ -429,6 +429,33 @@
 	        upDate: "2014-04-04"
         },
 
+
+        {   
+            type:      "Video",
+            label: "lv-openmo40-g08-p03",   
+            form: "Grade8-Age15",
+            choreographer:  "John Doe",
+            year:  "2013",
+            lesson: "Latvian",
+            withChoreographer: "yes",
+			camp: "LV Open Math Olympiad",
+            subjects: "quadratic-equation",
+            YTurl: "https://www.youtube.com/watch?v=mcbQM4F-SFg",
+			vurl: "lv-openmo40-g08-p03.html", 
+            quality: "high",
+	        thumbnail:"http://img.youtube.com/vi/mcbQM4F-SFg/default.jpg",
+            hasVenue: true,
+            loc: "Latvia",
+	        hebrewName: "40.atkl.olimp.; 8.kl. 3.uzd.",
+	        source: "submitted",
+	        submitter:"JD",
+	        submitterEmail: "datu.nesejs@gmail.com",
+	        note: 'case-analysis,continuity',
+	        submitDate: "2014-04-04",
+	        upDate: "2014-04-04"
+        },
+
+        
         
 				
 /*	
