@@ -11,7 +11,7 @@ class OutlineParserSpec extends Specification {
     "return first problem id,title,youtubeid" in {
       val result = OutlineParser.parseXmlOutline("src/main/resources/video-outlines.xml")
       result(0).id mustEqual "lv-openmo40-g05-p01"
-      result(0).title mustEqual "40. AMO, 5.klases 1. Uzdevums"
+      result(0).title mustEqual "40. AMO, 5.klases 1.uzdevums"
       result(0).YouTubeId mustEqual "UNyM7DyFDug"
     }
     "return normalized description" in {

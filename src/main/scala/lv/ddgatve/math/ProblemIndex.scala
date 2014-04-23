@@ -17,6 +17,14 @@ object ProblemIndex {
     reducedDescription
   }
 
+  def getGradeAndProblem(eltId: String): (Int, Int) = {
+    val gOpt = """^.*(-g([0-9]+)-).*$""".r.findFirstMatchIn(eltId).map(_ group 2)
+    val g = gOpt.get.toInt
+    val pOpt = """^.*(-p([0-9]+))$""".r.findFirstMatchIn(eltId).map(_ group 2)
+    val p = pOpt.get.toInt
+    return (g, p)
+  }
+
   /*
    * Return a list of links (id attribute) and problem descriptions. 
    * Each pair of link+description is a tuple. 
@@ -24,18 +32,14 @@ object ProblemIndex {
   def getIndex(path: String): List[(String, String, Int, Int)] = {
 
     val rootElem = scala.xml.XML.loadFile(path)
-    val items = (rootElem \\ "problems" \\ "problem") map (
-      elt => {
-        val eltId = elt.attribute("id").get(0).text
-        val gOpt = """^.*(-g([0-9]+)-).*$""".r.findFirstMatchIn(eltId).map(_ group 2)
-        val g = gOpt.get.toInt
-
-        val pOpt = """^.*(-p([0-9]+))$""".r.findFirstMatchIn(eltId).map(_ group 2)
-        val p = pOpt.get.toInt
-        val reducedDescription = shortenDescription((elt \\ "description").head.text)
-       
-        Tuple4(eltId, reducedDescription, g, p)
-      })
+    val items = for (
+      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").head.text.length > 0)
+    ) yield {
+      val eltId = elt.attribute("id").get(0).text
+      val gp = getGradeAndProblem(eltId)
+      val reducedDescription = shortenDescription((elt \\ "description").head.text)
+      Tuple4(eltId, reducedDescription, gp._1, gp._2)
+    }
 
     // indexlines sorted by grade (typically grade is from 5 to 12). 
     val aa = for (grade <- 1 to 20) yield {

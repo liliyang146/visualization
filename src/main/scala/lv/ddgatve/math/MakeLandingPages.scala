@@ -19,8 +19,8 @@ object MakeLandingPages {
     // create destination directory, if it does not exist
     val folderPath: Path = Paths.get("target/site/math/")
     var tmpDir: Path = Files.createTempDirectory(folderPath, null)
-    FileUtils.copyFile(new File("src/main/webapp/math/ifd.js"),
-      new File("target/site/math/ifd.js"))
+//    FileUtils.copyFile(new File("src/main/webapp/math/ifd.js"),
+//      new File("target/site/math/ifd.js"))
 
     val style1 = """      body {
         font-size: 100%; 
@@ -111,6 +111,11 @@ object MakeLandingPages {
         "plist" -> plist)    
     writeToFile(engine.layout(indexTemplate, indexMap),
         new File("target/site/math/amo40-list.html"))
+        
+    val jsonText =  (for (pv <- result) yield { pv.toString }).foldLeft("")(_+"\n\n"+_)    
+    val jsonFullText = "{\n    items: [" + jsonText + "]\n}"  
+    writeToFile(jsonFullText, new File("target/site/math/ifd.js"))
+    
     
     var fts: FileTemplateSource = new FileTemplateSource(
       new File("src/main/resources/youtube-topics.scaml"),

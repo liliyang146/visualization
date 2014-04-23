@@ -21,12 +21,20 @@ object OutlineParser {
 
   def parseXmlOutline(path: String): List[ProblemVideo] = {
     val rootElem = scala.xml.XML.loadFile(path)
+    val languageCode = (rootElem \\ "problems").head.attribute("lang").get(0).text
     var result = new MutableList[ProblemVideo]
-    for (elt <- rootElem \\ "problems" \\ "problem") {
+    for (
+      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").head.text.length > 0)
+    ) {
       val pVideo = new ProblemVideo
       pVideo.id = elt.attribute("id").get(0).text
+      pVideo.languageCode = languageCode
+//      val (g, p) = ProblemIndex.getGradeAndProblem(pVideo.id)
+//      pVideo.g = g
+//      pVideo.p = p
       pVideo.title = (elt \\ "title").head.text
       pVideo.YouTubeId = (elt \\ "youtube").head.text
+      pVideo.topic = (elt \\ "topic").head.text
       pVideo.description = (elt \\ "description").head.text.trim.replaceAll("""(?m)\s+""", " ")
       // read part titles only
       val partTitleSeq = (elt \\ "part") map (
@@ -37,7 +45,7 @@ object OutlineParser {
       val noteSeq = (elt \\ "notes" \\ "item") map (
         noteNode => noteNode.head.text.trim().replaceAll("""(?m)\s+""", " "))
       pVideo.notes = noteSeq.toList
-      
+
       // parse chunks in all parts
 
       val chunkListSeq = (elt \\ "part") map {
