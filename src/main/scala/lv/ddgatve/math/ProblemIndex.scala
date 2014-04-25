@@ -25,6 +25,11 @@ object ProblemIndex {
     return (g, p)
   }
 
+  def getOutFile(path: String): String = {
+    val rootElem = scala.xml.XML.loadFile(path)
+    rootElem.head.attribute("indexfile").get(0).text
+  }
+
   /*
    * Return a list of links (id attribute) and problem descriptions. 
    * Each pair of link+description is a tuple. 

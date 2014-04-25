@@ -3,6 +3,9 @@
 -@ val script2: String 
 -@ val googleAnalyticsScript: String
 -@ val pv: lv.ddgatve.math.ProblemVideo
+-@ val lang: String
+-@ val localizationStrings: lv.ddgatve.math.LocalizationStrings 
+-@ val indexFile: String
 %html
   %head
     %title Math Olympiads: Problem Solutions</title> 
@@ -16,7 +19,8 @@
 
   %body
     %p
-      %a{:href=>"http://www.demografija.lv/math/amo40-list.html"} Uz sākumu
+      %a{:href=>{"http://www.demografija.lv/math/" + indexFile}} 
+        = localizationStrings.listOfProblems(lang)
   
     %h1 = pv.title
 
@@ -39,14 +43,15 @@
                   = pv.chunkLists(i)(j).text
 
     - if (pv.notes.size > 0)
-      %h4 Piezīmes
+      %h4 = localizationStrings.notes(lang)
       %ol
         - for (note <- pv.notes) 
           %li = note
 
     %p
-      %b Norādes:
-      %a{:href=>"http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"} Latvijas olimpiāžu uzdevumu arhīvs
+      %b = localizationStrings.references(lang)
+      %a{:href=>"http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"} 
+        = localizationStrings.problemArchive(lang)
 
     %script = unescape(googleAnalyticsScript)
 

@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems lang="en" indexfile="amo40-list-en.html">
+	<problem id="lv-openmo40-g05-p01">
+		<title>40th OpenMO, Grade 5, Problem 1</title>
+		<description><![CDATA[
+		    A <i>day</i> is a single 24 hour period that starts and ends at midnight. 
+		    How many times per day the hour hand and the minute hand meet on the clock face? 
+		    The midnight is counted only once.
+		    <i>Please explain your answer!</i> ]]>
+		</description>
+		<youtube>FPAlCO560Ok</youtube>
+		<topic>case-analysis</topic>
+		<part name="Understanding the Problem">
+			<item tstamp="0:19">Clarifying terminology.</item>
+			<item tstamp="0:39">What is required by the problem?</item>
+			<item tstamp="0:57">What is meant by two clock hands "meeting" each
+				other? (Continuous motion, regardless of the smoothness or uniformity of the motion.)
+			</item>
+		</part>
+		<part name="Planning the Solution">
+			<item tstamp="1:16">Describe the motion of both hands, and where one
+				may overtake another. Approximately locate the points, where meetings
+				occur. Method: Visualize the process, Case analysis. 
+			</item>
+			<item tstamp="2:37">Another approach - subtracting velocities. Method:
+				Word problem with proportions.
+			</item>
+		</part>
+		<notes>
+			<item>Assume that now the hour hand and the minute hand meet. Where
+				is the "seconds hand" pointing? Are there any moments (besides 12
+				Midnight and 12 Noon), when all 3 hands coincide?
+			</item>
+			<item>How many times in a single day the minute hand meets the
+				seconds hand? What about the hour hand and the seconds hand?
+			</item>
+			<item>What would happen, if the hour hand and the minute hand would
+				move in the opposite directions?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g05-p02">
+		<title>40.AMO, 5.klases 2.uzdevums</title>
+		<description><![CDATA[  24-stāvu mājā ir lifts, kuram ir divas pogas. 
+Nospiežot vienu pogu,
+tas paceļas (ja iespējams) 17 stāvus uz augšu, nospiežot otru –
+nolaižas 8 stāvus uz leju (ja iespējams). Noskaidro, no kura stāva
+ar šo liftu var nokļūt uz jebkuru citu
+stāvu šajā mājā. (Lifts nevar uzbraukt
+augstāk par 24. stāvu un zemāk par 1.
+stāvu.) ]]></description>
+		<youtube></youtube>
+		<topic>directed-graph</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:30">Ko uzdevumā prasīts noskaidrot</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:50">Stāvu attēlošana ar aplīšiem. Metode: Pāreja uz
+				grafu
+			</item>
+			<item tstamp="2:05">Uzdevuma atrisinājumu skaits atkarībā no grafa
+				izskata. Metode: Gadījumu šķirošana.
+			</item>
+			<item tstamp="3:00">Meklējam maršruta sākumpunktu, pieņemot, ka
+				uzdevumam ir tieši 1 atrisinājums. Metode: Pieņēmuma izmantošana.
+			</item>
+			<item tstamp="5:45">Zīmējam lifta maršŗutu. Metode: Grafa konstruēšana
+				ar dotajiem ierobežojumiem.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="7:58">Secinājums un atbildes formulējums.</item>
+		</part>
+		<notes>
+			<item>Citi apgalvojumi: Ja mājai būtu 23 stāvi, tad būtu stāvi, kuros
+				vispār nevar iebraukt. Ja mājai būtu 25 stāvi, tad varētu no jebkura
+				stāva aizbraukt uz jebkuru citu
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g05-p03">
+		<title>40.AMO, 5.klases 3.uzdevums</title>
+		<description><![CDATA[ 1. zīmējumā katrā aplītī ierakstīt vienu
+ciparu, katrā aplītī – citu, tā, lai katros
+trīs aplīšos, kas atrodas uz vienas
+taisnes, ierakstīto skaitļu summa būtu
+viena un tā pati.<br />
+<img src="lv-openmo40-fig01.png" alt="1.zīm."/> ]]></description>
+		<youtube></youtube>
+		<topic>adding-with-regrouping</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Ko uzdevumā prasīts noskaidrot</item>
+			<item tstamp="0:44">Desmit cipari un deviņi aplīši</item>
+			<item tstamp="0:57">Summa, kam visur jābūt vienādai, nemaz nav zināma
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:04">Noskaidrojam summu, ja cipari ir no 1 līdz 9.
+				Metode: Saskaitīšana dažādos veidos.
+			</item>
+			<item tstamp="2:15">Uzzinām, ko rakstīt kvadrāta vidū. Metode: Burtu
+				apzīmējumi un algebriska identitāte.
+			</item>
+			<item tstamp="4:05">Gadījums, ja "1" raksta stūrī. Metode: Pieņēmuma
+				izmantošana.
+			</item>
+			<item tstamp="6:00">Gadījums, ja "1" raksta uz malas. Metode: Pieņēmuma
+				izmantošana.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="7:18">Citi iespējamie risinājumi.</item>
+			<item tstamp="8:08">Maģiskais kvadrāts.</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g05-p04">
+		<title>40.AMO, 5.klases 4.uzdevums</title>
+		<description><![CDATA[ No 2. zīmējumā redzamajām figūrām salikt
+taisnstūri ar laukumu 40 rūtiņas. Figūras nedrīkst
+pārklāties un katra veida figūra jāizmanto vismaz
+vienu reizi. (Figūras var būt pagrieztas vai
+apgrieztas otrādi.)<br />
+<img src="lv-openmo40-fig02.png" alt="2.zīm."/>  ]]></description>
+		<youtube></youtube>
+		<topic>trial-and-error</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:21">Tetromino, t.sk. spēle "tetris". Pentomino.
+				Pentomino "L" figūra un tās spoguļattēls.
+			</item>
+			<item tstamp="0:57">Teselācijas jeb flīzēšanas uzdevumi – salikt
+				laukumu ar noteikta veida figūriņām bez tukšumiem un pārklāšanās.
+				(Kopīga mala ir saskaršanās, nevis pārklāšanās.)
+			</item>
+			<item tstamp="1:25">Kas ir pagriešana un apgriešana otrādi.</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="2:24">Taisnstūris ar laukumu 40 rūtiņas izsakāms 4
+				veidos, no kuriem 2 veidi acīmredzot neder.
+				Metode: Dalīšana
+				reizinātājos. Izslēgšanas metode.
+			</item>
+			<item tstamp="3:56">Cik var būt "L" figūriņu? No 1 līdz 7. Metode:
+				Izmantojam nosacījumus.
+			</item>
+			<item tstamp="4:27">"L" figūriņu nevar būt 1,3,5,7. Nevar būt arī 2 vai
+				6. Metode: Pāru un nepāru skaitļi. Dalāmība ar 4.
+			</item>
+			<item tstamp="5:18">Atlikušās 20 rūtiņas jāaizpilda ar 5 "T" figūriņām.
+				Metode: Ģeometrijas jautājuma izteikšana aritmētiski.
+			</item>
+			<item tstamp="5:30">Aplūkojam kā 2 "L" figūriņas var saskarties un kā
+				aizpildīt atlikušo taisnstūri.
+			</item>
+			Metode: Heiristika (sākt aizpildīt ar lielākajām figūrām). mēģinājumu
+			un kļūdu metode.
+		</part>
+		<part name="Atskats">
+			<item tstamp="6:40">Konstrukcijas uzdevumiem pats piemērs kalpo par
+				pierādījumu.
+			</item>
+			<item tstamp="7:32">Nebija prasīts vai var salikt taisnstūri 4x10.
+				Nebija prasīts,
+				vai šāds salikums ir viens vienīgs.
+			</item>
+		</part>
+		<notes>
+			<item>Ja ir atrasts konkrētais taisnstūra 5x8 aizpildījums ar abu
+				veidu figūriņām, cik dažādus aizpildījumus no tā var izveidot ar
+				spoguļattēliem vai arī pagriežot figūriņas vai pašu taisnstūri par
+				90 vai 180 grādiem?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g05-p05">
+		<title>40.AMO, 5.klases 5.uzdevums</title>
+		<description><![CDATA[ Kuba katra skaldne sadalīta četros vienādos kvadrātos. Vai šos
+kvadrātus var nokrāsot a) divās; b) trīs krāsās tā, ka kvadrāti, kam
+ir kopīga mala, ir nokrāsoti dažādās krāsās? Katrs kvadrāts pilnībā
+ir jākrāso vienā krāsā. <i>Atbildi pamatot!</i> ]]></description>
+		<youtube></youtube>
+		<topic>pigeonhole-principle</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:24">Kas ir kubs? Kuba skaldnes, šķautnes, virsotnes.
+			</item>
+			<item tstamp="1:50">Kā katru skaldni sadalīt 4 kvadrātos. Cik pavisam
+				daļu?
+			</item>
+			<item tstamp="2:29">Kāda ir krāsošana 3 krāsās (nav vajadzīgas krāsas -
+				var apzīmēt ar burtiem); un kādi kvadrāti ir ar kopīgu malu?
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="3:45">Pamatojums, ka ar divām krāsām nepietiek. Metode:
+				Dirihlē princips.
+			</item>
+			<item tstamp="5:40">Ērtāka kuba krāsošanas diagramma. Metode:
+				Nepārtraukts pārveidojums (Telpiskas figūras attēlojums plaknē).
+			</item>
+			<item tstamp="8:15">Izveidojam krāsojumu. Piemērs: Piemēra
+				konstruēšana.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="10:44">Ko nozīmē "Atbildi pamatot!"? Konstrukcijas
+				uzdevumos ir vai nu jāpiedāvā konstrukcija vai jāpamato, ka to nav
+				iespējams veikt (t.i. neviens un nekad nespēs to izdarīt ar 2 krāsām
+				– nevis tikai "mēs mēģinājām un mums nesanāca").
+			</item>
+			<item tstamp="12:15">Ir pazīstama t.s. "četru krāsu problēma" – ka
+				ikvienas kartes izkrāsošanai pietiek ar 4 krāsām (vienalga kādu
+				izmēru gabaliņiem). Šoreiz karte ir īpatnēja – un tādēļ nav
+				pārsteidzoši, ka pietiek ar mazāku krāsu skaitu.
+			</item>
+			<item tstamp="13:40">Atrisinājumā jāmin (a) neiespējamība; (b)
+				konstruēts piemērs.
+			</item>
+		</part>
+		<notes>
+			<item>Laukumiņu izkrāsošanas uzdevumus var izteikt arī grafiem.
+			</item>
+			<item>Jebkuru izliektu daudzskaldni ar attiecīgu pastiepšanu var
+				padarīt par plaknes figūru.
+			</item>
+			<item>Karte uz kuba, karte uz lodes un karte plaknē – visos gadījumos
+				krāsošanas uzdevums ir viens un tas pats.
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g06-p01">
+		<title>40.AMO, 6.klases 1.uzdevums</title>
+		<description><![CDATA[ Uz tāfeles uzrakstīti desmit skaitļi:<br />
+1 2 3 4 5 6 7 8 9 10.<br />
+Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar a un b)
+un to vietā uzraksta skaitli, kas vienāds ar  a+b+2. Šo operāciju
+viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
+Pamato, ka neatkarīgi no secības, kādā Alfons izpilda darbības,
+beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir? ]]></description>
+		<youtube></youtube>
+		<topic>commutativity-associativity</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:33">"Jebkurus divus" skaitļus var izvēlēties ļoti
+				daudzos veidos. Būtu liktenīga kļūda aplūkot tikai vienu vai divus
+				piemērus.
+			</item>
+			<item tstamp="1:26">Nav pateikts, kur ieraksta jauno skaitli, bet
+				secība šeit nav svarīga.
+			</item>
+			<item tstamp="1:59">Neatkarīgi no darbību secības tieši pēc 9 gājieniem
+				viss būs beidzies.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="2:34">Kas notiktu, ja nodzēšto skaitļu vietā rakstītu
+				vienkārši "a+b". Metode: Pāreja uz vienkāršāku uzdevumu.
+			</item>
+			<item tstamp="3:48">Kā ātri saskaitīt 1+2+...+N. Metode: Saskaitīšana
+				ar pārgrupēšanu.
+			</item>
+			<item tstamp="5:15">Visu uzrakstīto skaitļu summa mainās, bet mainās
+				prognozējami - pieaug par 2 pēc katras dzēšanas. Metode: Invariantu
+				izmantošana.
+			</item>
+			<item tstamp="5:35">Pēc 9 soļiem būs visu skaitļu summa plus 18.
+				Atrodam visu skaitļu summu un pieskaitām 18. Metode: Saskaitīšanas
+				pārtapšana par reizināšanu.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="6:10">Var pārbaudīt 1-2 gadījumiem.</item>
+			<item tstamp="7:18">Sekas no operācijas (a,b)-> a+b+2 komutativitātes
+				un asociativitātes. (Komutativitāte nodrošina to, ka nav svarīga
+				secība, kā izvēlas a un b. Asociativitāte nodrošina to, ka nav
+				svarīgi, kā zīmē koku.)
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g06-p02">
+		<title>40.AMO, 6.klases 2.uzdevums</title>
+		<description><![CDATA[ Vai var atrast tādus divus viens otram sekojošus naturālus skaitļus,
+viens no kuriem dalās ar 3 un kuru<br />
+a) ciparu summas atšķiras par 3;<br />
+b) ciparu reizinājumi atšķiras par 3? ]]></description>
+		<youtube></youtube>
+		<topic>divisibility-rule</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:21">Naturālo skaitļu virkne – bezgalīga. Skaitļu secība
+				tanī jau noteikta – skaitlis seko otram, ja viens ir n, otrs ir n+1.
+			</item>
+			<item tstamp="1:28">Cipari – domāts decimālpieraksts.
+				Ciparu
+				summa/reizinājums nepieder pie pierastajām aritmētiskajām darbībām.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="2:06">Cipari – domāts decimālpieraksts. Ciparu
+				summa/reizinājums nepieder pie pierastajām aritmētiskajām darbībām.
+				Metode: Likumsakarību saskatīšana un vispārināšana.
+			</item>
+			<item tstamp="3:29">Ciparu summas izmaiņas (par +1, -8, -17, -26,
+				utt.). Nekad nav par +3 vai -3. Metode: Diferenču noteikšana.
+			</item>
+			<item tstamp="5:49">Teorēma: Dalāmības pazīme ar 3. Ko nozīmē "tad un
+				tikai tad".
+			</item>
+			<item tstamp="6:38">Dalāmības pazīme ar 3 un iespējamās ciparu summas
+				izmaiņas. Metode: Dalāmības pazīme ar 3.
+			</item>
+			<item tstamp="7:47">Ciparu reizinājuma izmaiņas. Metode: Diferenču
+				noteikšana.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="9:13">Secinājumi; kādā veidā pierakstīt atbildi.</item>
+		</part>
+		<notes>
+			<item>Kādēļ vajadzīga prasība, lai viens no blakusesošajiem skaitļiem
+				dalītos ar 3?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g06-p03">
+		<title>40.AMO, 6.klases 3.uzdevums</title>
+		<description><![CDATA[ Sagriezt 3. zīmējumā attēloto figūru 20
+vienādās mazākās figūrās (figūras var būt
+pagrieztas vai apgrieztas otrādi).<br />
+<img src="lv-openmo40-fig03.png" alt="3.zīm."/>  ]]></description>
+		<youtube></youtube>
+		<topic>trial-and-error</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Figūras robežas neiet pa rūtiņu līnijām.</item>
+			<item tstamp="0:46">Ko nozīmē pagriezt un apgriezt otrādi.</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:51">Laukuma aprēķins. Metode: Ģeometrijas jautājuma
+				pārvēršana par aritmētisku.
+			</item>
+			<item tstamp="2:43">Iespējamās figūriņu formas. Metode: Vienkāršākie
+				pieņēmumi, kuri varētu novest pie atrisinājuma (Make things as
+				simple as possible, but not simpler.)
+			</item>
+			<item tstamp="3:14">Kādās figūriņās griezīsim. Metode: Mēģinājumu un
+				kļūdu metode.
+			</item>
+			<item tstamp="3:38">Sagriešanas paraugs. Metode: Piemēra konstruēšana.
+			</item>
+			<item tstamp="4:16">Atlikušās figūras aizpildīšana ar pagriezieniem.
+				Metode: Simetrijas izmantošana.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g06-p04">
+		<title>40.AMO, 6.klases 4.uzdevums</title>
+		<description><![CDATA[ Vai skaitļus no 100 līdz 200 var sadalīt divās grupās tā, ka skaitļu
+reizinājumi abās grupās ir vienādi? ]]></description>
+		<youtube></youtube>
+		<topic>perfect-square</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:13">Naturāli skaitļi (nav negatīvi, 0 un nav
+				daļskaitļi).
+			</item>
+			<item tstamp="0:32">Precīza nozīme frāzei „no 100 līdz 200” – atruna
+				par galapunktu ieskaitīšanu.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:18">Ja divi reizinājumi ir vienādi, tiem jādalās ar
+				vieniem un tiem pašiem skaitļiem. Metode: Secinājumi no vienādības.
+			</item>
+			<item tstamp="1:54">Pirmskaitļu jēdziens un skaidrojums. Definīcija:
+				Pirmskaitļi.
+			</item>
+			<item tstamp="2:19">Vienādi skaitļi dalās ar pirmskaitļiem to pašu
+				skaitu reižu. Metode: Skaitļa viennozīmīgs dalījums
+				pirmreizinātājos.
+			</item>
+			<item tstamp="2:30">Piemēŗs ar pirmskaitli 101. Metode: Pretpiemēra
+				uzminēšana, lai apgāztu pieņēmumu (ka abi reizinājumi ir vienādi).
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="3:33">Ar uzdevumu nesaistīts piemērs
+				(1,2,3,4,5,6,8,9,10), kuru VAR sadalīt divās grupās.
+			</item>
+			<item tstamp="4:23">Analīze, dalot pirmreizinātājos.</item>
+			<item tstamp="4:48">Pielietota teorēma par viennozīmīgu sadalīšanu
+				pirmreizinātājos.
+			</item>
+			<item tstamp="5:40">Virknīti (1,2,3,4,5,6,8,9,10) izsakām kā
+				pirmskaitļu reizinājumu.
+			</item>
+			<item tstamp="7:28">
+				Kādēļ virknītei nevar pievienot skaitli 7.
+			</item>
+			<item tstamp="8:20">Kā noformēt uzdevumu olimpiādē.</item>
+		</part>
+		<notes>
+			<item>Skaitļi, kurus var sadalīt šādās divās grupās, reizinājumā
+				noteikti veido pilnu kvadrātu (naturāla skaitļa reizinājumu pašam ar
+				sevi).
+			</item>
+			<item>Līdzīgu analīzi var veikt ne tikai ar 101, bet arī ar
+				daudziem
+				citiem pirmskaitļiem. Piemēram, pirmskaitlis 19 ir
+				sastopams skaitļos
+				114, 133, 152, 171, 190 (t.i. pavisam piecas
+				reizes). Skaidrs, ka
+				nevarēs sadalīt divās grupās – t.sk. arī
+				dalīšanās ar 19 dēļ.
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g06-p05">
+		<title>40.AMO, 6.klases 5.uzdevums</title>
+		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
+rūtiņas trīs <b>tukšās</b> vienas rindas vai kolonnas <b>blakus</b> rūtiņās
+ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
+spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
+gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
+		<youtube></youtube>
+		<topic>combinatorial-game</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:32">Gājienu izdarīšana "pēc kārtas".</item>
+			<item tstamp="0:50">Spēles laukums. Rindiņas un kolonnas rūtiņu
+				kvadrātā.
+			</item>
+			<item tstamp="1:11">Tukšo rūtiņu aizpildīšana ar 3-rūtiņu virknītēm
+				(UNA un IVO).
+			</item>
+			<item tstamp="1:38">Spēle ir galīga (zaudē, kas nevar izdarīt gājienu
+				jeb uzvar, kas izdara pēdējo gājienu).
+			</item>
+			<item tstamp="1:55">Spēlē viens no spēlētājiem noteikti uzvar; eksistē
+				uzvaroša stratēģija
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="2:30">Kas ir stratēģija un uzvaroša stratēģija.
+				Definīcija: Stratēģija
+			</item>
+			<item tstamp="3:14">Spēles pozīcijas atgriešana "līdzsvara stāvoklī".
+			</item>
+			<item tstamp="4:24">Līdzsvars uz 5x5 spēles laukuma mūsu gadījumā var
+				būt centrālā simetrija. Unas stratēģija.
+			</item>
+			<item tstamp="6:11">Pamatojums, ka Una vienmēr varēs izdarīt gājienu.
+			</item>
+			<item tstamp="7:53">Pēc katra Unas gājiena brīvo rūtiņu veidotā figūra
+				paliek centrāli simetriska (t.i. Una var turpināt savu stratēģiju)
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="9:14">Kopsavilkums - kādēļ Una var uzvarēt.</item>
+		</part>
+		<notes>
+			<item>Ko šeit saprotam ar vārdu "simetrisks"? Uzdevumā ir runa ir par
+				centrālo simetriju jeb pagriešanu par 180 grādiem.
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g07-p01">
+		<title>40.AMO, 7.klases 1.uzdevums</title>
+		<description><![CDATA[ Naturālā divciparu skaitlī neviens no cipariem nav 0. Pierādīt, ka,
+dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz 9/11. ]]></description>
+		<youtube></youtube>
+		<topic>algebraic-inequality</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Precizējam, par kuriem divciparu skaitļiem ir runa.
+			</item>
+			<item tstamp="0:50">Katram skaitlim dalījums ir "vismaz 11/9"
+				(apzīmējam vārdu "vismaz" ar nevienādību).
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:03">Ieviešam apzīmējumu skaitlim ar cipariem a un b: ab
+				(ar svītriņu virsū). Pierakstām skaitļa un ciparu reizinājuma
+				dalījumu.
+			</item>
+			<item tstamp="1:41">Pierādāmās nevienādības pārveidojumi. Metode:
+				Ekvivalenti algebriski pārveidojumi.
+			</item>
+			<item tstamp="2:17">Nevienādības pierādījums. Metode: Nevienādības
+				pamatošana ar galējām vērtībām.
+			</item>
+			<item tstamp="3:30">Piemērs ar skaitli 99.</item>
+		</part>
+		<notes>
+			<item>Pamatojums
+				tam, ka a/b &gt;=
+				c/d (pozitīviem skaitļiem) ir
+				līdzvērtīgs ad &gt;=
+				bc.
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g07-p02">
+		<title>40.AMO, 7.klases 2.uzdevums</title>
+		<description><![CDATA[ Doti seši nogriežņi ar garumiem 1 cm, 3 cm, 5 cm, 7 cm, 9 cm,
+11 cm. Cik dažādos veidos no tiem var izvēlēties trīs nogriežņus
+tā, ka no tiem var izveidot trijstūri (katra trijstūra mala ir viens
+vesels nogrieznis)? ]]></description>
+		<youtube></youtube>
+		<topic>triangle-inequality</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:25">Izvēlamies 3 nogriežņus no 6 – trijstūri veidojot
+				jāizmanto veseli nogriežņi.
+			</item>
+			<item tstamp="0:49">Nogriežņu izvēles secība nav svarīga.</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:23">Trijstūra nevienādība. Robežgadījumi, kad leņķis
+				starp malām a un b ir ļoti plats vai ļoti šaurs. Teorēma: Trijstūra
+				nevienādība.
+			</item>
+			<item tstamp="3:41">Trijstūra nevienādības pielietošana. Mala ar garumu
+				1 neder. Trijstūri malām ar garumiem 3, 5, 7 u.c.
+			</item>
+			<item tstamp="5:15">Malu "alfabētiskais sakārtojums" – kā pasargāties
+				no iespējas kaut ko izlaist vai ieskaitīt divreiz.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="6:34">Cik dažādos veidos no 6 nogriežņiem var izvēlēties
+				3 – 20 dažādos veidos. No tiem der tikai 7 veidi.
+			</item>
+		</part>
+		<notes>
+			<item>Pamatojam, cik dažādos veidos var izvēlēties 3 nogriežņus no 6
+				nogriežņiem (ja nepastāv ierobežojumi).
+			</item>
+			<item>Kādēļ esam visus variantus uzskaitījuši? Kādēļ nesākām aplūkot
+				malu trijniekus, kas sākas ar 9cm vai 11cm?
+			</item>
+			<item>Vai ir atšķirība starp "cik dažādos veidos var izvēlēties
+				nogriežņus..." un "cik dažādus trijstūrus var izveidot?".
+			</item>
+			<item>Kā mainās atbilde, ja nogriežņu izvēles secība ir svarīga?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g07-p03">
+		<title>40.AMO, 7.klases 3.uzdevums</title>
+		<description><![CDATA[ Pierādīt, ka skaitlis 1234567891011...175176 (pēc kārtas uzrakstīti
+visi naturālie skaitļi no 1 līdz 176) nav naturāla skaitļa kvadrāts.
+(Skaitļa kvadrāts ir skaitļa reizinājums pašam ar sevi.) ]]></description>
+		<youtube></youtube>
+		<topic>perfect-square</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:28">Skaitlis, kur pēc kārtas izrakstīti daudzi cipari.
+			</item>
+			<item tstamp="1:02">Kuri skaitļi ir un kuri nav pilnie kvadrāti.</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:54">Apgalvojums par pilna kvadrāta dalāmību ar 2 un 4.
+			</item>
+			<item tstamp="2:52">Apgalvojums par pilna kvadrāta dalāmību ar 3 un 9.
+			</item>
+			<item tstamp="3:30">Apgalvojums par pilna kvadrāta dalāmību ar 8 un 16.
+			</item>
+			<item tstamp="4:46">Pārbaudām pirmo apgalvojumu (par 2 un 4).</item>
+			<item tstamp="5:43">Pārbaudām trešo apgalvojumu (par 8 un 16). Iegūstam
+				pretrunu no pieņēmuma, ka skaitlis būtu pilns kvadrāts.
+			</item>
+		</part>
+		<notes>
+			<item>Vai var izmantot arī dalāmību ar 3 un 9? (Ja ir gadījums, kur
+				dalāmība ar 2,4,8,16 nepalīdz – teiksim, ja izraksta skaitļus līdz
+				"456": 123...455456 )
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g07-p04">
+		<title>40.AMO, 7.klases 4.uzdevums</title>
+		<description><![CDATA[ Vai kvadrātā 5×5 rūtiņas var iekrāsot a) 6 rūtiņas; b) 5 rūtiņas tā,
+lai atlikušajā daļā nevarētu ievietot nevienu 4. zīmējumā redzamo
+figūru (tā var būt pagriezta vai apgāzta otrādi)?<br />
+<img src="lv-openmo40-fig04.png" alt="4.zīm."/>  ]]></description>
+		<youtube></youtube>
+		<topic>trial-and-error</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:22">Ko nozīmē pamatot "vai var izkrāsot" – divas
+				iespējamās situācijas.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:14">Aplūkojam taisnstūri 2x5, kas ir kvadrāta vienā
+				malā. Metode: Uzdevuma vienkāršošana.
+			</item>
+			<item tstamp="2:46">Taisnstūri pagriežam arī citādi un turpina
+				izkrāsot. Pārliecināmies, ka ar 6 pietiek. Metode: Simetrija.
+			</item>
+			<item tstamp="3:15">Citi iekrāsošanas paraugi 6 rūtiņām. Metode:
+				Atrisinājums nav unikāls.
+			</item>
+			<item tstamp="3:57">Piemērs, kā krāsot 5 rūtiņas. Metode: Mēģinājumu un
+				kļūdu metode
+			</item>
+			<item tstamp="4:38">Jāpārliecinās, ka nevar ievietot nevienu citu.
+				Metode: Pilnā pārlase (šoreiz vienkārši ar rūpīgu aplūkošanu).
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:12">Pārbaudi var veikt ar uzmanīgu aplūkošanu (lai gan
+				figūriņu ir daudz; nevajag domāt šim nelielajam piemēram kaut kādu
+				vispārīgu metodi, kura ļautu pārbaudīt, vai visas figūriņas tiešām
+				ir pārklātas).
+			</item>
+		</part>
+		<notes>
+			<item>Vai var pamatot, ka ar 4 iekrāsotām rūtiņām noteikti nepietiek?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g07-p05">
+		<title>40.AMO, 7.klases 5.uzdevums</title>
+		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 6x6
+rūtiņas trīs <b>tukšās</b> vienas rindas vai kolonnas <b>blakus</b> rūtiņās
+ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
+spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
+gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
+		<youtube></youtube>
+		<topic>combinatorial-game</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:27">Spēles noteikumi: Gājienu izdarīšanas secība;
+				spēles sākumpozīcija; kāds ir viens gājiens; ar kādu nosacījumu
+				spēle beidzas.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:38">Centrāli simetriskie gājieni – metode kā Ivo var
+				panākt uzvaru.
+			</item>
+			<item tstamp="3:17">Metodes pamatojums: (1) Sākuma pozīcija ir centrāli
+				simetriska. (2) Uz katru Unas gājienu var simetriski atbildēt un
+				brīvās rūtiņas pēc katra Ivo gājiena atkal ir centrāli simetriskas.
+			</item>
+			<item tstamp="4:36">Ivo vienmēr var izdarīt gājienu – tātad viņš uzvar.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="4:53">Minimax algoritms Desu spēles analīzē.</item>
+			<item tstamp="6:33">Spēles gājienu grafs uzdevumā dotajai spēlei – Ivo
+				iespēja vienmēr iebraukt centrāli simetriskā pozīcijā.
+			</item>
+			<item tstamp="8:50">No minimax algoritma izriet, ka kombinatoriskai
+				spēlei (ar galīgu gājienu izvēli un galīgu gājienu skaitu, pilnu
+				informāciju un pamīšus izdarītiem gājieniem) var uzzināt, kurš
+				spēlētājs pareizi spēlējot uzvar. (Attiecīgi spēlēm, kurās ir
+				paredzēts neizšķirts, var būt arī neizšķirts – piemēram, "desu"
+				spēlē.)
+			</item>
+		</part>
+		<notes>
+			<item>Minimax ilustrācija desu spēlei aizgūta no
+				http://www.neverstopbuilding.com/minimax .
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="lv-openmo40-g08-p01">
+		<title>40.AMO, 8.klases 1.uzdevums</title>
+		<description><![CDATA[ Atrast visus naturālos skaitļus, kas nepārsniedz 1000000 un kuri,
+nosvītrojot to pirmo ciparu, samazinās 36 reizes. ]]></description>
+		<youtube></youtube>
+		<topic>integer-equation</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Kuru naturālo skaitļu apakškopu aplūkojam.
+				Pirmā
+				cipara nosvītrošana - domāts skaitļa decimālpieraksts
+				(piemēram,
+				skaitīšanas sistēmā ar bāzi "8" līdzīgam uzdevumam nebūtu
+				atrisinājumu).
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:16">No cik cipariem var sastāvēt atrisinājums.
+				Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="2:12">Kā no divciparu skaitļa pieraksta iegūst
+				vienādojumu.
+				Metode: Algebriskas sakarības ieviešana.
+			</item>
+			<item tstamp="3:00">Veselu skaitļu vienādojums ar diviem nezināmajiem.
+				Metode: Dalāmība veselu skaitļu vienādojumā.
+			</item>
+			<item tstamp="3:54">Līdzīgs izvedums 6-ciparu skaitlim.
+			</item>
+			<item tstamp="5:44">Atbildes formulēšana. Metode: Secināšana pēc
+				analoģijas.
+			</item>
+		</part>
+		<notes>
+			<item>Vai, nosvītrojot decimālpieraksta pirmo ciparu, naturāls
+				skaitlis var
+				samazināties 35 reizes? 37 reizes? Kāpēc?
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="lv-openmo40-g08-p02">
+		<title>40.AMO, 8.klases 2.uzdevums</title>
+		<description><![CDATA[ Dots trijstūris ABC un punkts P tā iekšpusē. Pierādi, ka attālumu
+summa no punkta P līdz dotā trijstūra virsotnēm ir lielāka nekā
+puse no trijstūra perimetra. ]]></description>
+		<youtube></youtube>
+		<topic>triangle-inequality</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:19">Ko nozīmē "dots trijstūris", "dots punkts"?
+				"Dots"
+				kā sinonīms vārdiem "patvaļīgs", "jebkurš".
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:45">Pusperimetru grūti iztēloties, reizinām ar 2.
+				Metode:
+				Atbrīvošanās no neērtām lietām.
+			</item>
+			<item tstamp="2:58">Zīmējums ar divkāršotiem nogriežņiem.
+				Metode:
+				Zīmējuma izveidošana.
+			</item>
+			<item tstamp="3:31">Trijstūru nevienādības 3 trijstūrīšos.
+				Metode:
+				Trijstūra nevienādības izmantošana.
+			</item>
+			<item tstamp="4:14">Nevienādību saskaitīšana un locekļu pārgrupēšana.
+				Metode: Saskaitāmo pārkombinēšana.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:08">Viena no dotajām lietām netika izmantota.
+			</item>
+		</part>
+	</problem>
+
+
+	<problem id="lv-openmo40-g08-p03">
+		<title>40.AMO, 8.klases 3.uzdevums</title>
+		<description><![CDATA[ Doti tādi reāli skaitļi <i>t</i> un <i>a</i>, ka 
+<img src="http://chart.apis.google.com/chart?cht=tx&chl=t^2%20-%20t%5Ccdot%5Csqrt{t}%2Ba%3D0" 
+alt="t^2 - t*sqrt(t) + a = 0"/>. 
+Pierādīt, ka <img src="http://chart.apis.google.com/chart?cht=tx&chl=t%5Cgeq4a"
+alt="t &gt;= 4a"/>. ]]></description>
+		<youtube></youtube>
+		<topic>quadratic-equation</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Kādi var būt reālie skaitļi.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:59">Vienādojumi, kuri reducējami uz kvadrātvienādojumu.
+				Metode: Mainīgā substitūcija.
+			</item>
+			<item tstamp="2:48">Algebriski pārveidojumi, lai
+				atdalītu kvadrātu.
+				Metode: Pilnā kvadrāta atdalīšana.
+			</item>
+			<item tstamp="4:46">Pāreja no vienādības uz nevienādību.
+				Metode:
+				Saskaitāmā atmešana nevienādībā.
+			</item>
+			<item tstamp="6:25">Kvadrātvienādojums ar sakni t (kur sakne no t ir
+				arī koeficients)
+				Metode: Kvadrātvienādojuma diskriminants.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="7:52">Diskriminanta un pilnā kvadrāta atdalīšanas metožu
+				līdzvērtība.
+			</item>
+		</part>
+	</problem>
+
+
+
+	<problem id="lv-openmo40-g08-p04">
+		<title>40.AMO, 8.klases 4.uzdevums</title>
+		<description><![CDATA[ Vai regulāru sešstūri var sadalīt <b>a)</b> deviņos; <b>b)</b> astoņos vienādos
+daudzstūros? ]]></description>
+		<youtube></youtube>
+		<topic>using-symmetry</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:13">Vienādi daudzstūri ir kongruenti - kurus var vienu
+				par otru attēlot ar kongruences pārveidojumu (pārveidojumu, kurā
+				saglabājas attālumi). Nav runa par vienlielām figūrām, t.i. figūrām
+				ar vienādiem laukumiem.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:02">Paralelograms ir figūra, ko viegli griezt
+				mazākos
+				paralelogramos. Metode: Pāreja uz vienkāršāku uzdevumu.
+			</item>
+			<item tstamp="1:45">Var sagriezt 3 un arī 3n gabalos.
+				Metode: Viena
+				gadījuma reducēšana uz citu.
+			</item>
+			<item tstamp="2:40">Astoņu gabalu iegūšana varētu sākties ar
+				griešanu uz
+				pusēm. Iegūtajām abām trapecēm ir 3 vienādas malas.
+				Metode:
+				Simetrijas izmantošana.
+			</item>
+			<item tstamp="3:42">Astoņu gabaliņu konstruēšana un to
+				vienādības
+				pamatošana. Metode: Palīglīniju ieviešana.
+			</item>
+		</part>
+		<notes>
+			<item>Cik daudzās daļās vēl var sagriezt regulāru sešstūri (atskaitot
+				jau zināmos gadījumus - 8 daļas un 3*n daļas)?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g08-p05">
+		<title>40.AMO, 8.klases 5.uzdevums</title>
+		<description><![CDATA[ Rūķītis ir iedomājies skaitļus
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1,%5C;x_2,%5C;x_3,%5C;x_4"
+		    alt="x_1,x_2,x_3,x_4"/>, katrs no tiem ir vai
+nu 0, vai 1. Ja rūķītim pajautā: "Kāds ir i-tais skaitlis?" (<i>i</i> = 1, 2, 3 vai 4 
+pēc izvēles), tad viņš pasaka <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_i"
+		    alt="x_i"/> vērtību. Pierādīt, ka ar 3 jautājumiem pietiek, 
+		    lai uzzinātu, vai virkne <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1,%5C;x_2,%5C;x_3,%5C;x_4"
+		    alt="x_1,x_2,x_3,x_4"/> ir monotona. Skaitļu virkne
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1,%5C;x_2,%5C;x_3,%5C;x_4"
+		    alt="x_1,x_2,x_3,x_4"/> ir monotona, ja tā ir nedilstoša vai neaugoša (t. i.,
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1%5Cleq%20x_2%5Cleq%20x_3%5Cleq%20x_4"
+		    alt="x_1 &lt;= x_2 &lt;= x_3 &lt;= x_4"/> vai 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1%5Cgeq%20x_2%5Cgeq%20x_3%5Cgeq%20x_4"
+		    alt="x_1 &gt;= x_2 &gt;= x_3 &gt;= x_4"/>). 
+ ]]></description>
+		<youtube></youtube>
+		<topic>exhaustive-searchr</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:45">Ir tikai 4 iespējamie jautājumi. Ja uzdotu visus
+				četrus,
+				tad atbildēt būtu vienkārši. Uzdevums ir par to, ka vienu
+				jautājumu
+				allaž var ietaupīt.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:24">Cik ir kombināciju? Monotonu kombināciju?</item>
+			<item tstamp="2:47">Neadaptīva stratēģija - vienmēr uzdod tos pašus
+				jautājumus. Metode: Pretruna no pieņēmuma.
+			</item>
+			<item tstamp="3:45">Adaptīvas stratēģijas apraksts. Metode: Piemēra
+				konstruēšana.
+			</item>
+		</part>
+		<notes>
+			<item>Vai ir jēga veidot adaptīvu stratēģiju pēc 1.jautājuma
+				atbildes?
+			</item>
+			<item>Adaptīva stratēģija - kas notiek, ja vispirms pajautātu abus
+				malējos vai abus vidējos virknes locekļus?
+			</item>
+			<item>
+				Vai 3 locekļu virknes
+				<img
+					src="http://chart.apis.google.com/chart?cht=tx&amp;chl=x_1,%5C;x_2,%5C;x_3"
+					alt="x_1,x_2,x_3" />
+				monotonitāti var noskaidrot ar 2 jautājumiem?
+			</item>
+			<item>Ja virknē ir vairāk nekā četri locekļi, vai var ietaupīt vairāk
+				jautājumu?
+			</item>
+		</notes>
+	</problem>
+</problems>

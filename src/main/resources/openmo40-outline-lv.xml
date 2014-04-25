@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<problems lang="lv">
+<problems lang="lv" indexfile="amo40-list.html">
 	<problem id="lv-openmo40-g05-p01">
 		<title>40.AMO, 5.klases 1.uzdevums</title>
 		<description><![CDATA[
@@ -850,16 +850,16 @@ pēc izvēles), tad viņš pasaka <img src="http://chart.apis.google.com/chart?c
 		    lai uzzinātu, vai virkne <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1,%5C;x_2,%5C;x_3,%5C;x_4"
 		    alt="x_1,x_2,x_3,x_4"/> ir monotona. Skaitļu virkne
 		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1,%5C;x_2,%5C;x_3,%5C;x_4"
-		    alt="x_1,x_2,x_3,x_4"/> ir ir monotona, ja tā ir nedilstoša vai neaugoša (t. i.,
+		    alt="x_1,x_2,x_3,x_4"/> ir monotona, ja tā ir nedilstoša vai neaugoša (t. i.,
 		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1%5Cleq%20x_2%5Cleq%20x_3%5Cleq%20x_4"
 		    alt="x_1 &lt;= x_2 &lt;= x_3 &lt;= x_4"/> vai 
 		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1%5Cgeq%20x_2%5Cgeq%20x_3%5Cgeq%20x_4"
 		    alt="x_1 &gt;= x_2 &gt;= x_3 &gt;= x_4"/>). 
  ]]></description>
-		<youtube></youtube>
+		<youtube>j6PdM7lk7Sg</youtube>
 		<topic>exhaustive-searchr</topic>
 		<part name="Uzdevuma saprašana">
-			<item tstamp="0:17">Ir tikai 4 iespējamie jautājumi. Ja uzdotu visus
+			<item tstamp="0:45">Ir tikai 4 iespējamie jautājumi. Ja uzdotu visus
 				četrus,
 				tad atbildēt būtu vienkārši. Uzdevums ir par to, ka vienu
 				jautājumu
@@ -867,31 +867,19 @@ pēc izvēles), tad viņš pasaka <img src="http://chart.apis.google.com/chart?c
 			</item>
 		</part>
 		<part name="Risināšanas plāns">
-			<item tstamp="0:59">Neadaptīva stratēģija - vienmēr uzdod tos pašus
+			<item tstamp="1:24">Cik ir kombināciju? Monotonu kombināciju?</item>
+			<item tstamp="2:47">Neadaptīva stratēģija - vienmēr uzdod tos pašus
 				jautājumus. Metode: Pretruna no pieņēmuma.
 			</item>
-			<item tstamp="0:0">Adaptīva stratēģija varētu "adaptēties" jau pēc
-				viena jautājuma, bet pēc viena jautājuma mēs faktiski neko
-				būtisku
-				neesam uzzinājuši. Metode: Simetrijas izmantošana.
-			</item>
-			<item tstamp="2:48">Adaptīva stratēģija - kas notiek, ja pajautā
-				divus
-				malējos vai divus vidējos, vai malējo un vidējo? Metode:
-				Pilnā
-				pārlase.
-			</item>
-			<item tstamp="4:46">Pilns stratēģijas apraksts. Metode: Piemēra
+			<item tstamp="3:45">Adaptīvas stratēģijas apraksts. Metode: Piemēra
 				konstruēšana.
 			</item>
 		</part>
-		<part name="Atskats">
-			<item tstamp="7:52">Zinām par monotonitāti, bet varam neuzzināt,
-				kur
-				virkne maina vērtību.
-			</item>
-		</part>
 		<notes>
+			<item>Vai ir jēga veidot adaptīvu stratēģiju pēc 1.jautājuma
+				atbildes?</item>
+			<item>Adaptīva stratēģija - kas notiek, ja vispirms pajautātu abus
+				malējos vai abus vidējos virknes locekļus?</item>
 			<item>
 				Vai 3 locekļu virknes
 				<img

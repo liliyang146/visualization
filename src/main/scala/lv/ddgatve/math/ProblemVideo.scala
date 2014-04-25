@@ -2,7 +2,7 @@ package lv.ddgatve.math
 
 class ProblemVideo {
   var id = ""
-  var languageCode = ""
+  var languageCode = "lv"
   var title = ""
   var description = ""
   var YouTubeId = ""

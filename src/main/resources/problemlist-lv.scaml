@@ -9,6 +9,9 @@
     %style{:type=>"text/css"} = unescape(style1)
 
   %body
+    %p{:style=>"padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:0px;"}
+      %small 
+        %a{:href=>"amo40-list-en.html"} Angliski
     %h1 40. Atklātā matemātikas olimpiāde (2013-04-28)
     
     %table{:cellspacing=>"0", :class=>"index"}
@@ -18,7 +21,7 @@
             %th = plist(i)._3 + ". klase"
           - else
             %td 
-              %a{:href=>{plist(i)._1 + ".html"}}<
+              %a{:href=>{plist(i)._1 + "-lv.html"}}<
                 = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"  
               = unescape("&nbsp;&nbsp;" + plist(i)._2) 
               

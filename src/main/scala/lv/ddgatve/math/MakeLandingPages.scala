@@ -6,6 +6,7 @@ import org.fusesource.scalate.support.FileTemplateSource
 import java.nio.file.{ Path, Paths, Files }
 import java.io.PrintWriter
 import org.apache.commons.io.FileUtils
+import scala.collection.mutable.MutableList
 
 object MakeLandingPages {
 
@@ -15,121 +16,61 @@ object MakeLandingPages {
     writer.close()
   }
 
+  def getLanguageSuffix(arg: String): String = {
+    val langSuffix = arg.replaceFirst("""^.*-([a-z]+)\.[a-zA-Z]+$""", "$1")
+    return langSuffix
+  }
+
   def main(args: Array[String]): Unit = {
     // create destination directory, if it does not exist
     val folderPath: Path = Paths.get("target/site/math/")
     var tmpDir: Path = Files.createTempDirectory(folderPath, null)
-//    FileUtils.copyFile(new File("src/main/webapp/math/ifd.js"),
-//      new File("target/site/math/ifd.js"))
 
-    val style1 = """      body {
-        font-size: 100%; 
-        margin: 2em 4em 2em 4em; 
-        font-family: Trebuchet MS, Helvetica, Arial, sans serif;
-      }
-      h1 {
-        margin-top: 2px;
-        font-weight: normal;
-      }
-      h4 {
-        margin: 4px
-        padding: 4px
-      }
-      div.line {
-        margin: 0em;
-        padding: 0em;
-      } 
-      div.indentedLine {
-        margin: 0em 0em 0em 2em;
-        padding: 0em;
-      }
-      div.problem {
-        border: 1px solid black;
-        width: 560px;
-        background-color: #ffffcc;
-        padding: 5px;
-      }
-      table.index {
-      }
-      table.index td {
-        border-bottom: 1px solid #cccccc;
-        border-left: 1px solid #cccccc;
-        border-right: 1px solid #cccccc;
-      }
-      table.index th {
-        font-size: 120%;
-        padding-top: 10px;
-        text-align: left;
-        border-bottom: 1px solid #cccccc;
-      }"""
-
-    val script1 = """//this function gets called when the player is ready    
-      function onYouTubePlayerReady (playerId) {
-        ytplayer = document.getElementById("myytplayer");
-        console.log(ytplayer);
-      }
-      //generic seekTo function taking a player element and seconds as parameters    
-      function playerSeekTo(player, seconds) {
-        player.seekTo(seconds);
-      }"""
-
-    val script2 = """      var ytplayer;  
-      $(document).ready(function() {
-        swfobject.embedSWF("//www.youtube.com/e/XXXXXXXXXXX?enablejsapi=1&playerapiid=ytplayer &version=3",
-        "ytapiplayer", // where the embedded player ends up
-        "560", // width    
-        "315", // height    
-        "8", // swf version    
-        null,
-        null, {
-            allowScriptAccess: "always"
-        }, {
-            id: "myytplayer"
-        });   
-      });"""
-      
-      
-    val googleAnalyticsScript = """(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50196303-1', 'demografija.lv');
-  ga('send', 'pageview');"""
-
-    val result = OutlineParser.parseXmlOutline("src/main/resources/video-outlines.xml")
 
     val engine = new TemplateEngine
     engine.workingDirectory = new File("src/main/resources")
-    
-    val plist = ProblemIndex.getIndex("src/main/resources/video-outlines.xml")
-    var indexTemplate: FileTemplateSource = new FileTemplateSource(
-      new File("src/main/resources/problemlist.scaml"),
-      "http://85.254.250.28/downloads1/problemlist.scaml")
-    val indexMap = Map("style1" -> style1,
-        "googleAnalyticsScript" -> googleAnalyticsScript,
-        "plist" -> plist)    
-    writeToFile(engine.layout(indexTemplate, indexMap),
-        new File("target/site/math/amo40-list.html"))
-        
-    val jsonText =  (for (pv <- result) yield { pv.toString }).foldLeft("")(_+"\n\n"+_)    
-    val jsonFullText = "{\n    items: [" + jsonText + "]\n}"  
-    writeToFile(jsonFullText, new File("target/site/math/ifd.js"))
-    
-    
-    var fts: FileTemplateSource = new FileTemplateSource(
-      new File("src/main/resources/youtube-topics.scaml"),
-      "http://85.254.250.28/downloads1/youtube-topics.scaml")
 
-    for (pv <- result) {
-      val m = Map("script1" -> script1,
-        "script2" -> script2.replaceFirst("XXXXXXXXXXX", pv.YouTubeId),
-        "style1" -> style1,
-        "googleAnalyticsScript" -> googleAnalyticsScript,
-        "pv" -> pv)
+    val inFiles = List("openmo40-outline-lv.xml",
+      "openmo40-outline-en.xml")
 
-      writeToFile(engine.layout(fts, m),
-        new File("target/site/math/" + pv.id + ".html"))
+    var problems = new MutableList[ProblemVideo]()
+    for (inFile <- inFiles) {
+      val outFile = ProblemIndex.getOutFile("src/main/resources/" + inFile)
+      val plist = ProblemIndex.getIndex("src/main/resources/" + inFile)
+      val templateName = "problemlist-" + getLanguageSuffix(inFile) + ".scaml"
+
+      var indexTemplate: FileTemplateSource = new FileTemplateSource(
+        new File("src/main/resources/" + templateName),
+        "http://85.254.250.28/downloads1/" + templateName)
+      val indexMap = Map("style1" -> HtmlConstants.style1,
+        "googleAnalyticsScript" -> HtmlConstants.googleAnalyticsScript,
+        "plist" -> plist)
+      writeToFile(engine.layout(indexTemplate, indexMap),
+        new File("target/site/math/" + outFile))
+
+      var fts: FileTemplateSource = new FileTemplateSource(
+        new File("src/main/resources/youtube-topics.scaml"),
+        "http://85.254.250.28/downloads1/youtube-topics.scaml")
+
+      val problemSublist = OutlineParser.parseXmlOutline("src/main/resources/" + inFile)
+      problems = problems ++ problemSublist
+      for (pv <- problemSublist) {
+        val m = Map("script1" -> HtmlConstants.script1,
+          "script2" -> HtmlConstants.script2.replaceFirst("XXXXXXXXXXX", pv.YouTubeId),
+          "style1" -> HtmlConstants.style1,
+          "googleAnalyticsScript" -> HtmlConstants.googleAnalyticsScript,
+          "pv" -> pv,
+          "lang" ->  getLanguageSuffix(inFile),
+          "localizationStrings" -> new LocalizationStrings, 
+          "indexFile" -> outFile)
+
+        writeToFile(engine.layout(fts, m),
+          new File("target/site/math/" + pv.id + "-" + getLanguageSuffix(inFile) + ".html"))
+      }
     }
+
+    val jsonText = (for (pv <- problems) yield { pv.toString }).foldLeft("")(_ + "\n\n" + _)
+    val jsonFullText = "{\n    items: [" + jsonText + "]\n}"
+    writeToFile(jsonFullText, new File("target/site/math/ifd.js"))
   }
 }

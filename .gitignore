@@ -1,5 +1,7 @@
 .cache
 sbt-launch.jar
+AMO40-2013
+AMO40-2013-EN
 extra-lib/*.jar
 lib/*.jar
 project/target/*
