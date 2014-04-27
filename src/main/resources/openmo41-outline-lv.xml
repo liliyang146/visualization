@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems lang="lv" indexfile="amo41-list.html">
+	<title><![CDATA[41. Atklātā matemātikas olimpiāde (2014-04-27)]]></title>
+	<problem id="lv-openmo40-g05-p01">
+		<title>41.AMO, 5.klases 1.uzdevums</title>
+		<description><![CDATA[
+Pūkainīšu ciemata bērniem Lieldienu zaķis atnesa olas. 
+Katra no tām bija nokrāsota tieši vienā no krāsām – sarkanā, dzeltenā, zilā. 
+Zināms, ka 20% jeb 40 olas bija sarkanas, 3/4 no atlikušajām bija dzeltenas, 
+bet pārējās – zilas. Aprēķini:<br/>
+1) Cik olas bija zilā krāsā?<br/>
+2) Kāda daļa no visām olām bija zilas?<br/>
+3) Cik procenti no visām olām bija dzeltenas? ]]>
+		</description>
+		<youtube>UWuWNCKsSwk</youtube>
+		<topic>proportions</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:34">Mērvienības, daļas un procenti.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:26">Daļu vizualizēšana ar nogriežņiem.
+				Metode: Kopu
+				diagrammas.
+			</item>
+			<item tstamp="2:20">Atbilžu iegūšana prasītajā formā.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo40-g05-p02">
+		<title>41.AMO, 5.klases 2.uzdevums</title>
+		<description><![CDATA[
+Divu naturālu skaitļu pierakstā izmantoti tikai cipari 2, 3, 7 un 8. 
+Vai var gadīties, ka viens skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis? 
+ ]]>
+		</description>
+		<youtube>9POaCeXqWvo</youtube>
+		<topic>proportions</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Skaitļu, ko var pierakstīt ar minētajiem cipariem ir ļoti daudz.
+			</item>
+			<item tstamp="0:44">Kāds varētu izskatīties atrisinājums</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:10">Aritmētiskās darbības ar pēdējiem cipariem. 
+			    Metode: Atlikumu aritmētika.
+			</item>
+			<item tstamp="2:10">Kurš cipars mazākajā no skaitļiem var būt pēdējais?
+			    Metode: Gadījumu pārlase. 
+			</item>
+			<item tstamp="2:39">Pēdējais cipars nevar būt neviens no uzdevuma
+			    nosacījumā minētajiem. Metode: Pamatojums no pretējā.</item>
+		</part>
+		<part name="Atskats">
+		    <item tstamp="2:57">Atlikumu dalot ar 10 (jeb skaitļa pēdējo ciparu) 
+		        pārvērtību grafiks, ja reizina ar 3.</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+</problems>

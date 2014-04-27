@@ -1,4 +1,5 @@
 .cache
+**/*.png
 sbt-launch.jar
 AMO40-2013
 AMO40-2013-EN

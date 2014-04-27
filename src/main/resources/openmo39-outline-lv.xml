@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems lang="lv" indexfile="amo39-list.html">
+    <title><![CDATA[39. Atklātā matemātikas olimpiāde (2012-04-22)]]></title>
+	<problem id="lv-openmo39-g09-p05">
+		<title>39.AMO, 9.klases 5.uzdevums</title>
+		<description><![CDATA[
+		    Dota trapece, kuras pamatu malu garumi ir 3 un 13. Pierādīt, ka to
+nevar sadalīt piecos vienlielos trijstūros.
+(Figūras sauc par vienlielām, ja tām ir vienādi laukumi.) ]]>
+		</description>
+		<youtube>eE3-qUmyW74</youtube>
+		<topic>extreme-element</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Kas ir dots? Trapece un tās pamatu garumu
+				attiecība.</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:04">Izvēlamies trijstūri, kurš varētu būt vismazākais.
+				Metode: Ekstremālais elements.
+			</item>
+			<item tstamp="1:57">Laukumu nevienādība un iegūtā pretruna.
+				Metode: Spriedums no pretējā.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="3:25">Kādus trapeces parametrus neizmantojām un kas griešanai trijstūros bija vai nebija būtiski. 
+			</item>
+		</part>
+		<notes>
+			<item>Atrast vispārīgu pazīmi, lai trapeci varētu sagriezt 2, 3, 4 vai 5 
+			    vienlielos trijstūros. 
+			</item>
+		</notes>
+	</problem>
+
+</problems>

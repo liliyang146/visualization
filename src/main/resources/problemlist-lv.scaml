@@ -2,9 +2,14 @@
 -@ val googleAnalyticsScript: String
 -@ val plist: List[(String,String,Int,Int)]
 
+-@ val lang: String
+-@ val localizationStrings: lv.ddgatve.math.LocalizationStrings 
+-@ val olympiadTitle: String
+-@ val indexMap: Map[String,List[(String,String,String,String,String)]]
+
 %html
   %head
-    %title Math Olympiads: Problem Solutions
+    %title = localizationStrings.titleProblemSolutions(lang)
     %meta{"http-equiv"=>"content-type", :content=>"text/html;charset=utf-8"}
     %style{:type=>"text/css"} = unescape(style1)
 
@@ -12,21 +17,40 @@
     %p{:style=>"padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:0px;"}
       %small 
         %a{:href=>"amo40-list-en.html"} Angliski
-    %h1 40. Atklātā matemātikas olimpiāde (2013-04-28)
+    %h1 = olympiadTitle
     
-    %table{:cellspacing=>"0", :class=>"index"}
-      - for (i <- 0 to (plist.size-1))
-        %tr
-          - if (plist(i)._1.length == 0)
-            %th = plist(i)._3 + ". klase"
-          - else
-            %td 
-              %a{:href=>{plist(i)._1 + "-lv.html"}}<
-                = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"  
-              = unescape("&nbsp;&nbsp;" + plist(i)._2) 
-              
+    %table{:cellspacing=>"0"}	
+      %tr{:style=>"vertical-align:top"}
+        %td
+        
+          %table{:cellspacing=>"0", :class=>"index"}
+            - for (i <- 0 to (plist.size-1))
+              %tr
+                - if (plist(i)._1.length == 0)
+                  %th = plist(i)._3 + ". klase" 
+                - else
+                  %td 
+                    %a{:href=>{plist(i)._1 + "-lv.html"}}<
+                      = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"  
+                    = unescape("&nbsp;&nbsp;" + plist(i)._2)      
+        %td &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %td
+          %table{:cellspacing=>"0", :border=>"0", :class=>"rightmenu"}
+            %col{:width=>"80px"}
+            %col{:width=>"80px"}
+            %col{:width=>"80px"}
+            %tr
+              %th{:class=>"noborder"} &nbsp;
+              %th SO
+              %th AMO
+            - for (ttuple <- indexMap(lang))
+              %tr
+                %td{:class=>"noborder"} = ttuple._1
+                %td &nbsp;
+                %td
+                  %a{:href=>{ttuple._5}} = ttuple._4
     %p
-      %a{:href=>"https://www.youtube.com/user/kalvisapsitis1/videos"}< Plašāks video saraksts
+      %a{:href=>"https://www.youtube.com/user/kalvisapsitis1/videos"}< = localizationStrings.moreVideos(lang)
 
     %script = unescape(googleAnalyticsScript)
 

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems lang="lv" indexfile="amo38-list.html">
+	<title><![CDATA[38. Atklātā matemātikas olimpiāde (2011-04-17)]]></title>
+
+	<problem id="lv-openmo38-g05-p01">
+		<title>38.AMO, 5.klases 1.uzdevums</title>
+		<description><![CDATA[
+		    Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi<br/> 
+<img src="http://chart.apis.google.com/chart?cht=tx&chl=AB%5Ccdot%20CD=EEE"
+		    alt="AB*CD=EEE"/><br/>
+Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
+apzīmē vienādus ciparus, bet dažādi burti – dažādus ciparus, pie tam
+ne A, ne C nav 0. Atrodi visus iespējamos atrisinājumus! ]]>
+		</description>
+		<youtube>tWx-UGFeuSA</youtube>
+		<topic>integer-factorization</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:05">Piemērā abi reizinātāji ir īsti divciparu skaitļi.
+			</item>
+			<item tstamp="0:45">Kādēļ pilnā pārlase neder
+			</item>
+			<item tstamp="1:18">Izmantojam vienādības labo pusi, lai samazinātu
+				meklējumu telpu.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="2:00">Skaitļa 111 izteikšana ar reizinājumu. Metode:
+				Dalīšana pirmreizinātājos.
+			</item>
+			<item tstamp="2:55">Izsakām visus EEE skaitļus kā reizinājumus. Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="3:40">Kādēļ kreisajā pusē jābūt 37 vai 74? Metode:
+				Dalāmība veselu skaitļu vienādojumā.
+			</item>
+			<item tstamp="5:43">Nederīgo reizinājumu atmešana. Metode: Izslēgšanas
+				metode.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="7:08">Atbildes formulējums; reizinātāju mainīšana vietām
+				atbilžu skaitu
+				formāli palielina.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo38-g05-p02">
+		<title>38.AMO, 5.klases 2.uzdevums</title>
+		<description><![CDATA[
+		    Dotās 3×3 rūtiņu tabulas katrā rūtiņā
+jāieraksta pa vienam naturālam skaitlim tā,
+lai katrā rindā, katrā kolonnā un katrā
+diagonālē ierakstīto trīs skaitļu summas būtu
+vienādas. Ir zināmi trīs rūtiņās ierakstītie
+skaitļi (skat. 1. zīm.). Aizpildi pārējās tabulas
+rūtiņas!<br />
+<img src="lv-openmo38-fig01.png" alt="1.zīm."/> ]]>
+		</description>
+		<youtube>tcAc6S9-VlE</youtube>
+		<topic>integer-factorization</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:06">Zināms, ka summas ir vienādas, bet nav zināms, ar
+				ko tās ir vienādas.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:53">Ieviešam burta apzīmējumu. Metode:
+				Mainīgā
+				ieviešana.
+			</item>
+			<item tstamp="2:50">Vienādojuma sastādīšana un risināšana.</item>
+			<item tstamp="4:40">Skaitļu tabulas aizpildīšana.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="7:08">Atbildes formulējums; reizinātāju mainīšana vietām
+				atbilžu skaitu
+				formāli palielina.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo38-g05-p03">
+		<title>38.AMO, 5.klases 3.uzdevums</title>
+		<description><![CDATA[
+		    Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros! ]]>
+		</description>
+		<youtube>qZ3xYhXjkuA</youtube>
+		<topic>small-increment</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:06">Kādēļ varētu nestrādāt trijstūru griešana uz pusēm.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:41">Kvadrāta sadalīšana jebkādos trijstūros. Metode:
+				Uzdevuma aizstāšana ar vienkāršāku.
+			</item>
+			<item tstamp="1:10">Vai jebkādu trijstūri var sadalīt platleņķa
+				trijstūros?
+				Metode: Uzdevuma vispārināšana.
+			</item>
+			<item tstamp="1:45">Konstrukcija un pierādījums ar augstuma novilkšanu
+				pret garāko malu.
+				Metode: Spriedumi par nelielām izmaiņām.
+			</item>
+			<item tstamp="3:54">Konstrukcijas atkārtošana kvadrātam. Metode:
+				Simetrijas izmantošana.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+
+
+	<problem id="lv-openmo38-g05-p04">
+		<title>38.AMO, 5.klases 4.uzdevums</title>
+		<description><![CDATA[
+		    Vai naturālos skaitļus no 1 līdz 12, katru izmantojot tieši vienu reizi,
+var uzrakstīt pa apli tādā secībā, ka jebkuru divu blakus esošu skaitļu
+starpība ir<br/>
+a) 2 vai 3;<br/>
+b) 3 vai 4? ]]>
+		</description>
+		<youtube>ZXMm0a2NE9c</youtube>
+		<topic>graph-properties</topic>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:37">(a) piemēra konstrukcija. Skaitļu apļa kaimiņu
+				attēlošana ar grafa šķautnēm.
+				Metode: Grafu īpašības.
+			</item>
+			<item tstamp="1:50">Nesakarīgs grafs (noslēgts loks, no kura netiek
+				ārā) un tā neiespējamība. Metode: Grafu īpašības.
+			</item>
+			<item tstamp="2:14">Konstrukcija no otra gala un gabalu savienošana.
+				Metode: Simetrijas izmantošana.
+			</item>
+			<item tstamp="4:51">(b) piemēra neiespējamība. Metode: Pierādījums no
+				pretējā.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+	<problem id="lv-openmo38-g05-p05">
+		<title>38.AMO, 5.klases 5.uzdevums</title>
+		<description><![CDATA[
+		    Kvadrātā ar izmēriem 7 × 7 rūtiņas jāizvieto n „stūrīšus”
+(2. zīm. attēlotās figūras) tā, lai tajā vairāk nevarētu
+ievietot nevienu citu šādu „stūrīti”. (Stūrīšu malām jāiet
+pa rūtiņu malām. Stūrīši var arī būt pagriezti citādāk.)
+Parādi, kā to var izdarīt, ja<br/>
+a) n=9;<br/>
+b) n=8.<br />
+<img src="lv-openmo38-fig02.png" alt="2.zīm."/> ]]>
+		</description>
+		<youtube>ynAOj1ip2wM</youtube>
+		<topic>symmetry</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:04">Uzdevums par "retinātu" stūrīšu izvietošanu.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:55">Neaizņemto rūtiņu skaita aprēķins.
+			    Metode: Skaitīšana.
+			</item>
+			<item tstamp="1:10">Kādas var izskatīties brīvās rūtiņas un to 
+			    konfigurācijas.
+			</item>
+			<item tstamp="1:56">(a) Piemēra konstruēšana. Metode: Simetrijas izmantošana.
+			</item>
+			<item tstamp="4:26">(b) Piemēra konstruēšana. Metode: Simetrijas izmantošana.
+				pretējā.
+			</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+</problems>

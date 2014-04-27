@@ -19,40 +19,53 @@ object OutlineParser {
 
   }
 
-  def parseXmlOutline(path: String): List[ProblemVideo] = {
+  def parseXmlOutline(path: String): List[ProblemSlot] = {
     val rootElem = scala.xml.XML.loadFile(path)
     val languageCode = (rootElem \\ "problems").head.attribute("lang").get(0).text
-    var result = new MutableList[ProblemVideo]
+    var result = new MutableList[ProblemSlot]
+    // ignore those, which are not deployed ("youtube" tag empty), 
+    // except those that are references ("youtube" tag does not exist at all). 
     for (
-      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").head.text.length > 0)
+      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").size == 0 ||
+        (elt \\ "youtube").head.text.length > 0)
     ) {
-      val pVideo = new ProblemVideo
-      pVideo.id = elt.attribute("id").get(0).text
-      pVideo.languageCode = languageCode
-//      val (g, p) = ProblemIndex.getGradeAndProblem(pVideo.id)
-//      pVideo.g = g
-//      pVideo.p = p
-      pVideo.title = (elt \\ "title").head.text
-      pVideo.YouTubeId = (elt \\ "youtube").head.text
-      pVideo.topic = (elt \\ "topic").head.text
-      pVideo.description = (elt \\ "description").head.text.trim.replaceAll("""(?m)\s+""", " ")
-      // read part titles only
-      val partTitleSeq = (elt \\ "part") map (
-        partNode => partNode.attribute("name").get(0).text)
-      pVideo.chunkListTitles = partTitleSeq.toList
+      if ((elt \\ "youtube").size > 0) {
+        val pVideo = new ProblemVideo
+        pVideo.id = elt.attribute("id").get(0).text
+        pVideo.languageCode = languageCode
+        pVideo.title = (elt \\ "title").head.text
+        pVideo.YouTubeId = (elt \\ "youtube").head.text
+        pVideo.topic = (elt \\ "topic").head.text
+        pVideo.description = (elt \\ "description").head.text.trim.replaceAll("""(?m)\s+""", " ")
+        // read part titles only
+        val partTitleSeq = (elt \\ "part") map (
+          partNode => partNode.attribute("name").get(0).text)
+        pVideo.chunkListTitles = partTitleSeq.toList
 
-      // read notes
-      val noteSeq = (elt \\ "notes" \\ "item") map (
-        noteNode => noteNode.head.text.trim().replaceAll("""(?m)\s+""", " "))
-      pVideo.notes = noteSeq.toList
+        // read notes
+        val noteSeq = (elt \\ "notes" \\ "item") map (
+          noteNode => noteNode.head.text.trim().replaceAll("""(?m)\s+""", " "))
+        pVideo.notes = noteSeq.toList
 
-      // parse chunks in all parts
+        // parse chunks in all parts
 
-      val chunkListSeq = (elt \\ "part") map {
-        partNode => makePart(partNode)
+        val chunkListSeq = (elt \\ "part") map {
+          partNode => makePart(partNode)
+        }
+        pVideo.chunkLists = chunkListSeq.toList
+        result += pVideo
       }
-      pVideo.chunkLists = chunkListSeq.toList
-      result += pVideo
+      
+      else {
+        val pVideo = new ProblemReference
+        pVideo.id = elt.attribute("id").get(0).text
+        pVideo.languageCode = languageCode
+        pVideo.title = (elt \\ "title").head.text
+        pVideo.description = (elt \\ "description").head.text.trim.replaceAll("""(?m)\s+""", " ")
+        pVideo.linkHref = (elt \\ "problemlink").head.attribute("href").get(0).text
+        pVideo.linkText = (elt \\ "problemlink").head.text.trim()
+        result += pVideo
+      }
     }
     result.toList
   }

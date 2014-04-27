@@ -30,6 +30,7 @@ object HtmlConstants {
         padding: 5px;
       }
       table.index {
+	    border: 0px solid red;
       }
       table.index td {
         border-bottom: 1px solid #cccccc;
@@ -41,6 +42,37 @@ object HtmlConstants {
         padding-top: 10px;
         text-align: left;
         border-bottom: 1px solid #cccccc;
+      }
+	  
+	  table.rightmenu {
+	    border: 0px solid red;
+      }  
+	  table.rightmenu th {
+        font-size: 120%;
+        padding-top: 10px;
+        text-align: center;
+        border-bottom: 1px solid #cccccc;
+      }
+	  
+	  table.rightmenu th.noborder {
+        font-size: 120%;
+        padding-top: 10px;
+        text-align: center;
+        border-bottom: 0px solid #cccccc;
+      }
+	  
+	  table.rightmenu td {
+        border-bottom: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+		text-align: center;
+      }
+	  
+	  table.rightmenu td.noborder {
+        border-bottom: 0px solid #cccccc;
+        border-left: 0px solid #cccccc;
+        border-right: 1px solid #cccccc;
+		text-align: center;
       }"""
 
   val script1 = """//this function gets called when the player is ready    

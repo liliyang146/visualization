@@ -12,11 +12,19 @@ puse no trijstūra perimetra."""
       val desc2 = ProblemIndex.shortenDescription(desc)
       desc2.length() mustEqual 100
     }
-    
+
     "extract alt from images" in {
       val desc = """AAA <img src="BBB" alt="CCC"/> DDD"""
-        val desc2 = ProblemIndex.shortenDescription(desc)
+      val desc2 = ProblemIndex.shortenDescription(desc)
       desc2 mustEqual """AAA [CCC] DDD"""
     }
+
+    "The 'MakeLandingPages' object" should {
+      "compute language suffix" in {
+        val result = ProblemIndex.getLanguageSuffix("openmo40-outline-en.xml")
+        result mustEqual "en"
+      }
+    }
+
   }
 }

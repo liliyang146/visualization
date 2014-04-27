@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <problems lang="en" indexfile="amo40-list-en.html">
+	<title><![CDATA[40<sup>th</sup> Latvian Open Math Olympiad (2013-04-28)]]></title>
 	<problem id="lv-openmo40-g05-p01">
 		<title>40th OpenMO, Grade 5, Problem 1</title>
 		<description><![CDATA[
@@ -14,13 +15,15 @@
 			<item tstamp="0:19">Clarifying terminology.</item>
 			<item tstamp="0:39">What is required by the problem?</item>
 			<item tstamp="0:57">What is meant by two clock hands "meeting" each
-				other? (Continuous motion, regardless of the smoothness or uniformity of the motion.)
+				other? (Continuous motion, regardless of the smoothness or
+				uniformity of the motion.)
 			</item>
 		</part>
 		<part name="Planning the Solution">
 			<item tstamp="1:16">Describe the motion of both hands, and where one
-				may overtake another. Approximately locate the points, where meetings
-				occur. Method: Visualize the process, Case analysis. 
+				may overtake another. Approximately locate the points, where
+				meetings
+				occur. Method: Visualize the process, Case analysis.
 			</item>
 			<item tstamp="2:37">Another approach - subtracting velocities. Method:
 				Word problem with proportions.

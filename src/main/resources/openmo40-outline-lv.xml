@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <problems lang="lv" indexfile="amo40-list.html">
+	<title><![CDATA[40. Atklātā matemātikas olimpiāde (2013-04-28)]]></title>
 	<problem id="lv-openmo40-g05-p01">
 		<title>40.AMO, 5.klases 1.uzdevums</title>
 		<description><![CDATA[
@@ -877,9 +878,11 @@ pēc izvēles), tad viņš pasaka <img src="http://chart.apis.google.com/chart?c
 		</part>
 		<notes>
 			<item>Vai ir jēga veidot adaptīvu stratēģiju pēc 1.jautājuma
-				atbildes?</item>
+				atbildes?
+			</item>
 			<item>Adaptīva stratēģija - kas notiek, ja vispirms pajautātu abus
-				malējos vai abus vidējos virknes locekļus?</item>
+				malējos vai abus vidējos virknes locekļus?
+			</item>
 			<item>
 				Vai 3 locekļu virknes
 				<img
@@ -892,4 +895,66 @@ pēc izvēles), tad viņš pasaka <img src="http://chart.apis.google.com/chart?c
 			</item>
 		</notes>
 	</problem>
+
+
+	<problem id="lv-openmo40-g09-p01">
+		<title>40.AMO, 9.klases 1.uzdevums</title>
+		<description><![CDATA[ Dota trapece, kuras pamatu malu garumi ir 3 un 13. Pierādīt, ka to
+nevar sadalīt piecos vienlielos trijstūros.
+(Figūras sauc par vienlielām, ja tām ir vienādi laukumi.)
+ ]]></description>
+		<problemlink href="openmo39-outline-lv.xml#lv-openmo39-g09-p05">
+			39.AMO, 9.klases 5.uzdevums
+		</problemlink>
+	</problem>
+
+	<problem id="lv-openmo40-g09-p02">
+		<title>40.AMO, 9.klases 2.uzdevums</title>
+		<description><![CDATA[  Kvadrāta ar izmēriem 4x4 rūtiņas katra rūtiņu virsotne nokrāsota
+vienā no divām krāsām. Pierādīt, ka noteikti var atrast trīs punktus,
+kas nokrāsoti vienā krāsā un atrodas vienādsānu taisnleņķa
+trijstūra virsotnēs. 
+ ]]></description>
+		<youtube>sWhEMTTHCkw</youtube>
+		<topic>proof-by-contradiction</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:20">4x4 rūtiņu kvadrātam ir 5x5 virsotnes.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:48">Kvadrāta virsotnēm jābūt nokrāsotām pa divām katrā
+				krāsā.
+				Metode: Gadījumu pārlase.
+			</item>
+			<item tstamp="1:23">Divu sarkano kvadrāta virsotņu novietojums - divi
+				gadījumi. Metode: Pierādījums no pretējā.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="3:09">Pretrunas iegūšanai pietika ar daudz mazāku rūtiņu
+				režģi -
+				vajag 2x2 kvadrātu ar 9 virsotnēm (nevis 4x4 kvadrātu ar 25
+				virsotnēm).
+			</item>
+			<item tstamp="3:38">"Blēdīgi" un "godīgi" trijstūru novietojumi.</item>
+			<item tstamp="4:15">Grūtāka uzdevuma formulējums</item>
+			<item tstamp="4:38">Grūtāka uzdevuma risinājums, pieņemot pretējo.
+			</item>
+			<item tstamp="6:40">Ja dotā kvadrāta izmēri ir 4x4, tad pamatotāk
+				risināt grūtāko uzdevumu, jo tieši tam 4x4 iznāk pats mazākais
+				kvadrāts, kuram vienādsānu trijstūris ar virsotnēm vienā krāsā
+				obligāti eksistē. 
+			</item>
+		</part>
+		<notes>
+			<item>Dots kvadrāts 3x3 rūtiņas. Izkrāsot tajā esošās 16 rūtiņu
+				virsotnes divās krāsās tā, lai neeksistētu neviens "godīgs" (ar
+				katetēm paralēlām kvadrāta malām) vienādsānu trijstūris, kuram visas
+				virsotnes ir vienā krāsā.
+			</item>
+		</notes>
+	</problem>
+
+
+
 </problems>

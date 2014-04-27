@@ -1,6 +1,6 @@
 package lv.ddgatve.math
 
-class ProblemVideo {
+class ProblemVideo extends ProblemSlot {
   var id = ""
   var languageCode = "lv"
   var title = ""

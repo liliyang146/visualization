@@ -2,6 +2,12 @@ package lv.ddgatve.math
 
 import scala.collection.mutable.MutableList
 
+/**
+ * Returns a list of problems that is sufficient to build a problem list
+ * (index page).
+ * This class also contains various utility methods that determine
+ * event, grade, problem, language for a problem.
+ */
 object ProblemIndex {
 
   def shortenDescription(desc: String): String = {
@@ -25,9 +31,19 @@ object ProblemIndex {
     return (g, p)
   }
 
+  def getLanguageSuffix(arg: String): String = {
+    val langSuffix = arg.replaceFirst("""^.*-([a-z]+)\.[a-zA-Z]+$""", "$1")
+    return langSuffix
+  }
+
   def getOutFile(path: String): String = {
     val rootElem = scala.xml.XML.loadFile(path)
     rootElem.head.attribute("indexfile").get(0).text
+  }
+
+  def getOlympiadTitle(path: String): String = {
+    val rootElem = scala.xml.XML.loadFile(path)
+    (rootElem \\ "title").head.text
   }
 
   /*
@@ -38,7 +54,8 @@ object ProblemIndex {
 
     val rootElem = scala.xml.XML.loadFile(path)
     val items = for (
-      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").head.text.length > 0)
+      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").size == 0 || 
+          (elt \\ "youtube").head.text.length > 0)
     ) yield {
       val eltId = elt.attribute("id").get(0).text
       val gp = getGradeAndProblem(eltId)
