@@ -46,7 +46,7 @@
       %h4 = localizationStrings.notes(lang)
       %ol
         - for (note <- pv.notes) 
-          %li = note
+          %li = unescape(note)
 
     %p
       %b = localizationStrings.references(lang)

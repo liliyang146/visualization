@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <problems lang="lv" indexfile="amo41-list.html">
 	<title><![CDATA[41. Atklātā matemātikas olimpiāde (2014-04-27)]]></title>
-	<problem id="lv-openmo40-g05-p01">
+	<problem id="lv-openmo41-g05-p01">
 		<title>41.AMO, 5.klases 1.uzdevums</title>
 		<description><![CDATA[
 Pūkainīšu ciemata bērniem Lieldienu zaķis atnesa olas. 
@@ -30,7 +30,7 @@ bet pārējās – zilas. Aprēķini:<br/>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g05-p02">
+	<problem id="lv-openmo41-g05-p02">
 		<title>41.AMO, 5.klases 2.uzdevums</title>
 		<description><![CDATA[
 Divu naturālu skaitļu pierakstā izmantoti tikai cipari 2, 3, 7 un 8. 

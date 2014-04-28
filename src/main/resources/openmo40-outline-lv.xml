@@ -943,7 +943,7 @@ trijstūra virsotnēs.
 			<item tstamp="6:40">Ja dotā kvadrāta izmēri ir 4x4, tad pamatotāk
 				risināt grūtāko uzdevumu, jo tieši tam 4x4 iznāk pats mazākais
 				kvadrāts, kuram vienādsānu trijstūris ar virsotnēm vienā krāsā
-				obligāti eksistē. 
+				obligāti eksistē.
 			</item>
 		</part>
 		<notes>
@@ -955,6 +955,44 @@ trijstūra virsotnēs.
 		</notes>
 	</problem>
 
-
+	<problem id="lv-openmo40-g09-p03">
+		<title>40.AMO, 9.klases 3.uzdevums</title>
+		<description><![CDATA[  Doti četri dažādi cipari, neviens no kuriem nav 0. Visu divciparu
+skaitļu, kurus var izveidot no šiem cipariem, summa ir 484. Atrast
+dotos četrus ciparus. 
+ ]]></description>
+		<youtube>1y0f2s8MimI</youtube>
+		<topic>decimal-representationf</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:16">
+				Nezināmie ir skaitļa cipari. Mēģinājumi uzminēt var
+				būt ļoti
+				darbietilpīgi.
+				<item tstamp="0:34">Cipari vienā divciparu skaitlī var
+					atkārtoties -
+					izvēle ar atkārtošanos.
+				</item>
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:59">Cik divciparu skaitļu var izveidot no 4 cipariem -
+				un kā tos sistemātiski sakārtot.
+				Metode: Izvēļu koks.
+			</item>
+			<item tstamp="1:58">Vienādojuma sastādīšana ar nezināmajiem cipariem.
+				Metode: Decimālpieraksta izmantošana.
+			</item>
+			<item tstamp="4:05">Kuru četru ciparu summa var būt 11.
+				Metode: Gadījumu pārlase.
+			</item>
+		</part>
+		<notes>
+			<item><![CDATA[ Kāds būtu atrisinājums, ja cipari šajā vienādībā tiktu ņemti
+			    bez atkārtošanās? T.i. veidojam summu no tiem divciparu skaitļiem, 
+			    kuri pierakstīti, izmantojot divus <b>dažādus</b> ciparus no dotajiem četriem
+			    cipariem - un šī summa izrādās 484. ]]>
+			</item>
+		</notes>
+	</problem>
 
 </problems>

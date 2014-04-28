@@ -6,6 +6,8 @@
 -@ val localizationStrings: lv.ddgatve.math.LocalizationStrings 
 -@ val olympiadTitle: String
 -@ val indexMap: Map[String,List[(String,String,String,String,String)]]
+-@ val abbrevMap: Map[String,Map[String,String]]
+-@ val languageOpts: List[(String,String)]
 
 %html
   %head
@@ -15,9 +17,15 @@
 
   %body
     %p{:style=>"padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:0px;"}
-      %small 
-        %a{:href=>"amo40-list-en.html"} Angliski
-    %h1 = olympiadTitle
+      - if (languageOpts.size > 0) 
+        %small
+          - for (opt <- languageOpts)
+            - if (opt._1.endsWith("(" + lang + ")"))
+              %b = opt._1
+            - else   
+              %a{:href=>{opt._2}} = opt._1
+          
+    %h1 = unescape(olympiadTitle)
     
     %table{:cellspacing=>"0"}	
       %tr{:style=>"vertical-align:top"}
@@ -27,11 +35,17 @@
             - for (i <- 0 to (plist.size-1))
               %tr
                 - if (plist(i)._1.length == 0)
-                  %th = plist(i)._3 + ". klase" 
+                  - if (lang == "en")
+                    %th = "Grade " + plist(i)._3
+                  - if (lang == "lv")
+                    %th = plist(i)._3 + ". klase"
                 - else
                   %td 
                     %a{:href=>{plist(i)._1 + "-lv.html"}}<
-                      = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"  
+                      - if (lang == "en") 
+                        = "Grade " + plist(i)._3 + ", Problem " + plist(i)._4
+                      - if (lang == "lv") 
+                        = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"                          
                     = unescape("&nbsp;&nbsp;" + plist(i)._2)      
         %td &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         %td
@@ -41,8 +55,8 @@
             %col{:width=>"80px"}
             %tr
               %th{:class=>"noborder"} &nbsp;
-              %th SO
-              %th AMO
+              %th = abbrevMap(lang)("SOL")
+              %th = abbrevMap(lang)("AMO")
             - for (ttuple <- indexMap(lang))
               %tr
                 %td{:class=>"noborder"} = ttuple._1
