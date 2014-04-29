@@ -26,7 +26,7 @@ object MathOntology {
     "en" -> List(("2013", "", "", "1 of 40", "amo40-list-en.html")),
     "lv" -> List(
       ("2011", "", "", "5 of 40", "amo38-list.html"),
-      ("2012", "", "", "1 of 40", "amo39-list.html"),
+      ("2012", "", "", "9 of 40", "amo39-list.html"),
       ("2013", "", "", "23 of 40", "amo40-list.html"),
       ("2014", "", "", "2 of 40", "amo41-list.html")))
 

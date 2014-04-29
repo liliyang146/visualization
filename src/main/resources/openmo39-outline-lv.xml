@@ -1,6 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <problems lang="lv" indexfile="amo39-list.html">
-    <title><![CDATA[39. Atklātā matemātikas olimpiāde (2012-04-22)]]></title>
+	<title><![CDATA[39. Atklātā matemātikas olimpiāde (2012-04-22)]]></title>
+
+	<problem id="lv-openmo39-g05-p01">
+		<title>39.AMO, 5.klases 1.uzdevums</title>
+		<description><![CDATA[
+		    Divu naturālu skaitļu pierakstā izmantoti tikai cipari 1, 4, 6 un 9. Vai
+var gadīties, ka viens skaitlis ir tieši septiņas reizes lielāks nekā otrs
+skaitlis? ]]>
+		</description>
+		<youtube>RX4BrGMvxDc</youtube>
+		<topic>modular-arithmetic</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:16">Atbilde "Jā" vai "Nē" ir jāpamato.</item>
+			<item tstamp="0:30">Divu veidu pamatojumi - piemērs vai neiespējamības
+				pierādījums.
+			</item>
+			<item tstamp="1:18">Pilnā pārlase neder, jo skaitļi var būt ļoti lieli.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:43">Izmantojam doto - cenšamies iegūt secinājumus par
+				skaitļa pieraksta cipariem.
+				Metode: Secinājumi no dotā.
+			</item>
+			<item tstamp="2:02">Secinājuma iegūšana par skaitļa pēdējo ciparu.
+				Metode: Atlikumu aritmētika.
+			</item>
+			<item tstamp="3:06">Aplūkojam gadījumus par septiņkāršotā reizinājuma
+				pēdējo ciparu
+				Metode: Gadījumu pārlase. Spriedums no pretējā.
+			</item>
+		</part>
+		<notes>
+			<item>Atrast vēl kādu četru ciparu komplektu, kuram ir spēkā īpašība:
+				neeksistē divi skaitļi, kas pierakstīti tikai ar šiem cipariem un
+				viens ir 7 reizes lielāks par otru.
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="lv-openmo39-g05-p02">
+		<title>39.AMO, 5.klases 2.uzdevums</title>
+		<description><![CDATA[ Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros.
+(Trijstūri sauc par platleņķa trijstūri, ja tam ir viens plats leņķis un
+divi šauri leņķi.)
+ ]]></description>
+		<problemlink href="openmo38-outline-lv.xml#lv-openmo38-g05-p03">
+			38.AMO, 5.klases 3.uzdevums
+		</problemlink>
+	</problem>
+
+
+
+	<problem id="lv-openmo39-g05-p03">
+		<title>39.AMO, 5.klases 3.uzdevums</title>
+		<description><![CDATA[
+		    Maisā ir baltas, zaļas un sarkanas pogas (citu krāsu pogu maisā nav).
+Kādu mazāko skaitu pogu uz labu laimi (tās neredzot) ir jāizņem, lai
+noteikti būtu paņemtas vai nu 2 baltas, vai 3 zaļas, vai 4 sarkanas
+pogas. ]]>
+		</description>
+		<youtube>b-rJQuY5gO8</youtube>
+		<topic>worst-case-scenario</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:16">Vārds "noteikti" nozīmē, ka jāaplūko sliktākais
+				gadījums.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:41">Kāds ir lielākais pogu skaits, lai process
+				vēl
+				nebeigtos.
+				Metode: Novērtējumi ar nevienādībām.
+			</item>
+			<item tstamp="2:15">Novērtējumu palielinot, vismaz viena no
+				krāsām
+				sasniegs prasīto.
+				Metode: Novērtējumi ar nevienādībām.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="2:52">Kādēļ visi uzdevuma nosacījumi ir būtiski -
+				kas
+				notiek, ja uz pogām drīkst skatīties?
+			</item>
+			<item tstamp="3:10">Kādēļ visi uzdevuma nosacījumi ir būtiski - kas
+				notiek, ja maisā ir vēl arī 1000 pelēkas pogas?</item>
+		</part>
+		<notes>
+			<item>Cik pogu, uz tām neskatoties, būtu jāizvelk, lai starp
+				izvilktajām būtu GAN 2 baltas, GAN 3 zaļas, GAN 4 sarkanas?
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="lv-openmo39-g05-p04">
+		<title>39.AMO, 5.klases 4.uzdevums</title>
+		<description><![CDATA[
+		    24-stāvu mājā ir lifts, kuram ir divas pogas. Nospiežot vienu pogu,
+tas paceļas (ja iespējams) 17 stāvus uz augšu, nospiežot otru –
+nolaižas 8 stāvus uz leju (ja iespējams). Noskaidro, no kura stāva ar
+šo  liftu  var  nokļūt  uz  jebkuru  citu  stāvu  šajā  mājā.
+(Lifts nevar uzbraukt augstāk par 24. stāvu un zemāk par 1. stāvu.) ]]>
+		</description>
+		<youtube>AgHNxnHjFGY</youtube>
+		<topic>graph-properties</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:16">Vārds "noteikti" nozīmē, ka jāaplūko sliktākais
+				gadījums.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:29">No kuriem stāviem var uzbraukt par 17 uz augšu?
+				No
+				kuriem var nobraukt par 8 uz leju?
+				Metode: Gadījumu pārlase.
+			</item>
+			<item tstamp="1:42">Izvēlamies nejaušu stāvu un sākam braukt.
+				Metode:
+				Piemēra aplūkošana.
+			</item>
+			<item tstamp="4:24">Pievienojam
+				konstrukcijai 9. un 17.stāvu un
+				formulējam atbildi. Pamatojam, ka stāvs #17 ir
+				vienīgais
+				atrisinājums. Metode: Grafu īpašības.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="6:00">Kas notiks, ja stāvu būtu 25 stāvi?
+			</item>
+		</part>
+	</problem>
+
+
+	<problem id="lv-openmo39-g09-p01">
+		<title>39.AMO, 9.klases 1.uzdevums</title>
+		<description><![CDATA[
+		   Atrodi vienu skaitli, kuram ir tieši 12 veseli pozitīvi dalītāji. ]]>
+		</description>
+		<youtube>ZnSvxqDyNuk</youtube>
+		<topic>integer-factorization</topic>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:15">Cik dalītāju ir skaitļiem 1, pirmskaitļiem,
+				pirmskaitļu kvadrātiem.
+				Metode: Dalīšana reizinātājos.
+			</item>
+		</part>
+		<notes>
+			<item>Vai var atrast skaitli, kuram ir tieši 12 veseli pozitīvi
+				dalītāji un kurš dalās ar diviem (vai trim, vai četriem) dažādiem
+				pirmskaitļiem?
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="lv-openmo39-g09-p02">
+		<title>39.AMO, 9.klases 2.uzdevums</title>
+		<description><![CDATA[
+		    Trijstūrī <img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cangle%20ABC=90^{%5Ccirc}" 
+		    alt="&lt;ABC=90&#x00B0;"/>, bet punkts <i>P</i> atrodas uz malas <i>AB</i>.
+Punkti <i>M</i> un <i>N</i> ir attiecīgi nogriežņu <i>AC</i> un <i>PC</i> viduspunkti. Pierādi,
+ka <img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cangle%20BAC=%5Cangle%20BMN" 
+alt="&lt;BAC=&lt;BMN"/>. ]]>
+		</description>
+		<youtube>7PDaCUVFnbw</youtube>
+		<topic>graph-properties</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:23">Zīmējuma izveidošana.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:13">MN paralēls AB.
+				Metode: Trijstūra viduslīnija.
+			</item>
+			<item tstamp="1:27">Pierādāmās leņķu vienādības aizstāšana ar citu.
+				Metode: Šķērsleņķu aplūkošana
+			</item>
+			<item tstamp="2:26">Mediāna sadala taisnleņķa trijstūri divos vienādsānu
+				trijstūros. Metode: Simetrijas izmantošana.
+			</item>
+		</part>
+	</problem>
+
+
+	<problem id="lv-openmo39-g09-p03">
+		<title>39.AMO, 9.klases 3.uzdevums</title>
+		<description><![CDATA[
+		    Kvadrātvienādojuma <img src="http://chart.apis.google.com/chart?cht=tx&chl=x^2-507x%2Ba=0" 
+		    alt="x^2 - 507x + a = 0"/> saknes ir <img src="http://chart.apis.google.com/chart?cht=tx&chl=p^2"
+		    alt="p^2"/> un <img src="http://chart.apis.google.com/chart?cht=tx&chl=q"
+		    alt="q"/>, kur <img src="http://chart.apis.google.com/chart?cht=tx&chl=p"
+		    alt="p"/> un <img src="http://chart.apis.google.com/chart?cht=tx&chl=q"
+		    alt="q"/> ir pirmskaitļi. Aprēķini <img src="http://chart.apis.google.com/chart?cht=tx&chl=a"
+		    alt="a"/> skaitlisko vērtību. ]]>
+		</description>
+		<youtube>WV3oMgrKvaQ</youtube>
+		<topic>graph-properties</topic>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:16">Kvadrāttrinoma dalīšana reizinātājos. Metode:
+				kvadrāttrinomu īpašības.
+			</item>
+			<item tstamp="0:57">Alternatīva metode - Vjeta teorēma.
+				Metode:
+				Kvadrāttrinomu īpašības.
+			</item>
+			<item tstamp="1:21">Veselu skaitļu vienādojums pret p un q.
+				Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="2:30">Skaitlis, kas nedalās ne ar vienu pirmskaitli, kas
+				nepārsniedz skaitļa kvadrātsakni, tad skaitlis ir pirmskaitlis.
+				Metode: Pirmskaitļu īpašības.
+			</item>
+			<item tstamp="3:39">Citi gadījumi - ja ņemam nepāra pirmskaitli p.
+				Metode: Pāru un nepāru skaitļi.
+			</item>
+			<item tstamp="4:17">Iegūstam a vērtību, ja zināmas saknes p^2 un q.
+			</item>
+		</part>
+	</problem>
+
+
+	<!-- TODO: Uncommonly long explanation... -->
+	<problem id="lv-openmo39-g09-p04">
+		<title>39.AMO, 9.klases 4.uzdevums</title>
+		<description><![CDATA[
+		    Uz tāfeles uzrakstītas deviņas zvaigznītes * * * * * * * * *.<br/> Jānis
+ieraksta kādas zvaigznītes vietā jebkuru ciparu no 1 līdz 9. Pēc tam
+Pēteris jebkuru divu citu zvaigznīšu vietā ieraksta divus ciparus (tie
+var arī atkārtoties). Pēc tam vēl divas reizes viņi atkārto šo darbību.
+Pēteris uzvar, ja iegūtais deviņciparu skaitlis dalās ar 37. Vai Pēteris
+vienmēr var uzvarēt? ]]>
+		</description>
+		<youtube>gKwJyRVBxk8</youtube>
+		<topic>invariants</topic>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:45">Divu spēlētāju spēļu pozīciju grafs ar atgriešanos
+				līzsvarā. Metode: Spēles vizualizācija ar grafu.
+			</item>
+			<item tstamp="2:27">Nonākšana laimīgajā pozīcijā - kur skaitlis dalās
+				ar 37 (zvaigznīšu vietā nulles).
+				Metode: Invariantu metode.
+			</item>
+			<item tstamp="3:20">Par cik palielinās atlikums katrā gājienā?
+				Metode:
+				Skaitļa decimālpieraksts.
+			</item>
+			<item tstamp="4:24">Skaitļa ciparu dotie atlikumi. Metode: Atlikumu
+				aritmētika.
+			</item>
+			<item tstamp="8:13">Skaitļa 111 īpašība un tās lietojums spēles
+				stratēģijā. Metode: Konstrukcija.
+			</item>
+			<item tstamp="12:42">Vai Jānis var apdraudēt Pētera stratēģiju.
+			</item>
+		</part>
+	</problem>
+
+
 	<problem id="lv-openmo39-g09-p05">
 		<title>39.AMO, 9.klases 5.uzdevums</title>
 		<description><![CDATA[
@@ -12,23 +274,27 @@ nevar sadalīt piecos vienlielos trijstūros.
 		<topic>extreme-element</topic>
 		<part name="Uzdevuma saprašana">
 			<item tstamp="0:17">Kas ir dots? Trapece un tās pamatu garumu
-				attiecība.</item>
+				attiecība.
+			</item>
 		</part>
 		<part name="Risināšanas plāns">
 			<item tstamp="1:04">Izvēlamies trijstūri, kurš varētu būt vismazākais.
 				Metode: Ekstremālais elements.
 			</item>
 			<item tstamp="1:57">Laukumu nevienādība un iegūtā pretruna.
-				Metode: Spriedums no pretējā.
+				Metode:
+				Spriedums no pretējā.
 			</item>
 		</part>
 		<part name="Atskats">
-			<item tstamp="3:25">Kādus trapeces parametrus neizmantojām un kas griešanai trijstūros bija vai nebija būtiski. 
+			<item tstamp="3:25">Kādus trapeces parametrus neizmantojām un kas
+				griešanai trijstūros bija vai nebija būtiski.
 			</item>
 		</part>
 		<notes>
-			<item>Atrast vispārīgu pazīmi, lai trapeci varētu sagriezt 2, 3, 4 vai 5 
-			    vienlielos trijstūros. 
+			<item>Atrast vispārīgu pazīmi, lai trapeci varētu sagriezt 2, 3, 4
+				vai 5
+				vienlielos trijstūros.
 			</item>
 		</notes>
 	</problem>
