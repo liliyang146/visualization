@@ -8,13 +8,15 @@ object MathOntology {
     "openmo38" -> 2011,
     "openmo39" -> 2012,
     "openmo40" -> 2013,
-    "openmo41" -> 2014)
+    "openmo41" -> 2014, 
+    "sol61" -> 2011)
 
   val olympiadMap = Map(
     "openmo38" -> "LV Open Math Olympiad",
     "openmo39" -> "LV Open Math Olympiad",
     "openmo40" -> "LV Open Math Olympiad",
-    "openmo41" -> "LV Open Math Olympiad")
+    "openmo41" -> "LV Open Math Olympiad",
+    "sol61" -> "LV Prep Olympiad in Math")
 
   val languageMap = Map("lv" -> "Latvian", "en" -> "English")
 
@@ -25,7 +27,7 @@ object MathOntology {
   val indexMap = Map(
     "en" -> List(("2013", "", "", "1 of 40", "amo40-list-en.html")),
     "lv" -> List(
-      ("2011", "", "", "5 of 40", "amo38-list.html"),
+      ("2011", "1 of 40", "sol61-list.html", "5 of 40", "amo38-list.html"),
       ("2012", "", "", "9 of 40", "amo39-list.html"),
       ("2013", "", "", "23 of 40", "amo40-list.html"),
       ("2014", "", "", "2 of 40", "amo41-list.html")))

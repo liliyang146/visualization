@@ -7,6 +7,7 @@ import java.nio.file.{ Path, Paths, Files }
 import java.io.PrintWriter
 import org.apache.commons.io.FileUtils
 import scala.collection.mutable.MutableList
+import scala.io.Source
 
 object MakeLandingPages {
 
@@ -24,22 +25,24 @@ object MakeLandingPages {
     val engine = new TemplateEngine
     engine.workingDirectory = new File("src/main/resources")
 
-    val inFiles = List("openmo38-outline-lv.xml", "openmo39-outline-lv.xml", 
-        "openmo40-outline-lv.xml", "openmo40-outline-en.xml", "openmo41-outline-lv.xml")
+    val bundleLines = Source.fromFile(new File("src/main/resources/bundle.txt")).getLines().toList
+    //    val inFiles = List("openmo38-outline-lv.xml", "openmo39-outline-lv.xml", 
+    //        "openmo40-outline-lv.xml", "openmo40-outline-en.xml", "openmo41-outline-lv.xml")
+    val inFiles = bundleLines map (_.trim) filter (_.length() > 0)
 
     var problems = new MutableList[ProblemSlot]()
     for (inFile <- inFiles) {
       val outFile = ProblemIndex.getOutFile("src/main/resources/" + inFile)
       val plist = ProblemIndex.getIndex("src/main/resources/" + inFile)
-//      val templateName = "problemlist-" + ProblemIndex.getLanguageSuffix(inFile) + ".scaml"
+      //      val templateName = "problemlist-" + ProblemIndex.getLanguageSuffix(inFile) + ".scaml"
       val templateName = "problemlist-lv.scaml"
 
       var indexTemplate: FileTemplateSource = new FileTemplateSource(
         new File("src/main/resources/" + templateName),
         "http://85.254.250.28/downloads1/" + templateName)
       val languageOpts = if (inFile.startsWith("openmo40")) {
-        List(("Latvian(lv)", "amo40-list.html"), 
-            ("English(en)","amo40-list-en.html"))
+        List(("Latvian(lv)", "amo40-list.html"),
+          ("English(en)", "amo40-list-en.html"))
       } else {
         List()
       }
@@ -49,7 +52,7 @@ object MakeLandingPages {
         "olympiadTitle" -> ProblemIndex.getOlympiadTitle("src/main/resources/" + inFile),
         "lang" -> ProblemIndex.getLanguageSuffix(inFile),
         "localizationStrings" -> new LocalizationStrings,
-        "indexMap" -> MathOntology.indexMap, 
+        "indexMap" -> MathOntology.indexMap,
         "abbrevMap" -> MathOntology.abbrevMap,
         "languageOpts" -> languageOpts)
       writeToFile(engine.layout(indexTemplate, indexMap),

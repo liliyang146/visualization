@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems lang="lv" indexfile="sol61-list.html">
+	<title><![CDATA[61. sagatavošanās olimpiāde matemātikā (2012./2013.m.g.)]]></title>
+	<problem id="lv-sol61-g12-p01">
+		<title>61.SOL, 12.klases 1.uzdevums</title>
+		<description><![CDATA[
+Vai eksistē tāda <img src="http://chart.apis.google.com/chart?cht=tx&chl=a"
+alt="a"/> vērtība, ka vienādojumam <img src="http://chart.apis.google.com/chart?cht=tx&chl=\sin%20x%20=%20ax"
+alt="sin(x)=ax"/> ir tieši 2010 dažādas saknes?  ]]>
+		</description>
+		<youtube>KbJdr_5Q-oI</youtube>
+		<topic>function-properties</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:12">Uzdevumā nav jāŗisina vienādojums. Ir jāpamato sakņu
+				īpašība.
+			</item>
+			<item tstamp="0:33">Izmantojam doto - ko mēs zinām par skaitli 2010 un
+				par funkcijām sin(x) un a*x.
+			</item>
+			<item tstamp="1:04">Šādus vienādojumus skolā nemāca (toties māca sin(x)
+				= a utml.)
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="2:20">Viena no saknēm ir 0. Metode: Minēšana.
+			</item>
+			<item tstamp="2:26">Simetriskas saknes nepāra funkcijām. Metode:
+				Funkciju īpašības.
+			</item>
+			<item tstamp="3:44">Sakņu sadalīšana pa pāriem. Metode: Simetrijas
+				izmantošana.
+			</item>
+			<item tstamp="4:30">Atrisinājums, izmantojot grafiku. Metode: Funkciju
+				grafiki.</item>
+		</part>
+		<notes>
+		</notes>
+	</problem>
+
+
+</problems>

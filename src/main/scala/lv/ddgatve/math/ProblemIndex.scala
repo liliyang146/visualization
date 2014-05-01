@@ -33,7 +33,8 @@ object ProblemIndex {
 
   def getLanguageSuffix(arg: String): String = {
     val langSuffix = arg.replaceFirst("""^.*-([a-z]+)\.[a-zA-Z]+$""", "$1")
-    return langSuffix
+    if (langSuffix == "list") return "lv"
+    else return langSuffix
   }
 
   def getOutFile(path: String): String = {

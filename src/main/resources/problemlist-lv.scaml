@@ -60,9 +60,16 @@
             - for (ttuple <- indexMap(lang))
               %tr
                 %td{:class=>"noborder"} = ttuple._1
-                %td &nbsp;
+                %td 
+                  - if (ttuple._3 == "") 
+                    &nbsp;
+                  - else 
+                    %a{:href=>{ttuple._3}} = ttuple._2
                 %td
-                  %a{:href=>{ttuple._5}} = ttuple._4
+                  - if (ttuple._5 == "") 
+                    &nbsp;
+                  - else 
+                    %a{:href=>{ttuple._5}} = ttuple._4
     %p
       %a{:href=>"https://www.youtube.com/user/kalvisapsitis1/videos"}< = localizationStrings.moreVideos(lang)
 
