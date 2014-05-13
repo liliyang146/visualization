@@ -32,7 +32,7 @@ object OutlineParser {
       if ((elt \\ "youtube").size > 0) {
         val pVideo = new ProblemVideo
         pVideo.id = elt.attribute("id").get(0).text
-        println("Processing " + pVideo.id)
+//        println("Processing " + pVideo.id)
         pVideo.languageCode = languageCode
         pVideo.title = (elt \\ "title").head.text
         pVideo.YouTubeId = (elt \\ "youtube").head.text
@@ -60,7 +60,7 @@ object OutlineParser {
       else {
         val pVideo = new ProblemReference
         pVideo.id = elt.attribute("id").get(0).text
-        println("Processing " + pVideo.id)
+//        println("Processing " + pVideo.id)
         pVideo.languageCode = languageCode
         pVideo.title = (elt \\ "title").head.text
         pVideo.description = (elt \\ "description").head.text.trim.replaceAll("""(?m)\s+""", " ")

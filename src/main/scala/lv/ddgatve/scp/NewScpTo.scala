@@ -44,17 +44,17 @@ object NewScpTo {
     return b;
   }
 
-  def main(arg: Array[String]): Unit = {
+  def copyToRemote(lfile:List[String], rfile:List[String]): Unit = {
 
     var fis: FileInputStream = null;
     try {
 
-      val lfile = List("src/test/resources/README00.txt",
-        "src/test/resources/README10.txt")
+//      val lfile = List("src/test/resources/README00.txt",
+//        "src/test/resources/README10.txt")
       val user = "kalvis"
       val host = "85.254.250.28"
-      val rfile = List("/home/lighttpd/demografija.lv/http/README01.txt",
-        "/home/lighttpd/demografija.lv/http/README11.txt")
+//      val rfile = List("/home/lighttpd/demografija.lv/http/README01.txt",
+//        "/home/lighttpd/demografija.lv/http/README11.txt")
       val jsch = new JSch()
       val session = jsch.getSession(user, host, 22)
 

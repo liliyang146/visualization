@@ -5,19 +5,12 @@ import java.util.Formatter
 import java.util.Locale
 
 class MakeLandingPagesSpec extends Specification {
-//  "The 'String.format' object" should {
-//
-//    "interpolate decimals" in {
-//      val sb = new StringBuilder()
-//      val locale = Locale.US;
-//      
-//      val formatter = new java.util.Formatter(sb, locale)
-//      
-//      "" must not beNull
-      
-//      val fmt = "Grade %1d, Problem %2d"
-//      val result = String.format(fmt, 5, 4)
-//      result must not beNull
-//    }
-//  }
+  "The listFiles function" should {
+    "return javascripts" in {
+      val result = MakeLandingPages.listDirectoryByPattern("src/main/resources/web", """.*\.js$""")
+      println("JS files are " + result)
+      result.size mustEqual 4
+    }
+  }
+
 }

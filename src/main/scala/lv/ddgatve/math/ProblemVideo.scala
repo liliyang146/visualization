@@ -1,6 +1,8 @@
 package lv.ddgatve.math
 
 class ProblemVideo extends ProblemSlot {
+  val allowedCountries = List("CN", "LV", "UA")
+  
   var id = ""
   var languageCode = "lv"
   var title = ""
@@ -12,13 +14,14 @@ class ProblemVideo extends ProblemSlot {
   var topic: String = ""
 
   override def toString(): String = {
-    val countryCode = id.replaceFirst("""^([a-z]+)-.*""", "$1")
-    //println("countryCode = " + countryCode)
-    val eventCode = id.replaceFirst("""[a-z]+-([a-z0-9]+)-.*""", "$1")
-    //println("eventCode = " + eventCode)
+    var countryCode = id.replaceFirst("""^([a-z]+)-.*""", "$1")
+    if (!allowedCountries.contains(countryCode)) {
+      countryCode = "LV"
+    }
+//    val eventCode = id.replaceFirst("""([A-Z][A-Z]-)?([a-z0-9]+)-.*""", "$1")
     val country = MathOntology.countryMap(countryCode)
-    val year = MathOntology.yearMap(eventCode)
-    val olympiadName = MathOntology.olympiadMap(eventCode)
+    val year = MathOntology.getYearMap(id)
+    val olympiadName = MathOntology.getOlympiadName(id)
     val languageName = MathOntology.languageMap(languageCode)
     val tShorter = title.replaceFirst("klases", "kl.")
     val tShortest = tShorter.replaceFirst("uzdevums", "uzd.")

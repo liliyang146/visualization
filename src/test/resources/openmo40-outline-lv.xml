@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <problems lang="lv" indexfile="amo40-list.html">
-	<problem id="lv-openmo40-g05-p01">
+	<problem id="amo40-g05-p01">
 		<title>40.AMO, 5.klases 1.uzdevums</title>
 		<description><![CDATA[
 		    Cik reizes diennaktī sakrīt pulksteņa stundu un minūšu
@@ -44,7 +44,7 @@
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g05-p02">
+	<problem id="amo40-g05-p02">
 		<title>40.AMO, 5.klases 2.uzdevums</title>
 		<description><![CDATA[  24-stāvu mājā ir lifts, kuram ir divas pogas. 
 Nospiežot vienu pogu,
@@ -84,14 +84,14 @@ stāvu.) ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g05-p03">
+	<problem id="amo40-g05-p03">
 		<title>40.AMO, 5.klases 3.uzdevums</title>
 		<description><![CDATA[ 1. zīmējumā katrā aplītī ierakstīt vienu
 ciparu, katrā aplītī – citu, tā, lai katros
 trīs aplīšos, kas atrodas uz vienas
 taisnes, ierakstīto skaitļu summa būtu
 viena un tā pati.<br />
-<img src="lv-openmo40-fig01.png" alt="1.zīm."/> ]]></description>
+<img src="amo40-fig01.png" alt="1.zīm."/> ]]></description>
 		<youtube>7o9b9yKO08c</youtube>
 		<topic>adding-with-regrouping</topic>
 		<part name="Uzdevuma saprašana">
@@ -122,14 +122,14 @@ viena un tā pati.<br />
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g05-p04">
+	<problem id="amo40-g05-p04">
 		<title>40.AMO, 5.klases 4.uzdevums</title>
 		<description><![CDATA[ No 2. zīmējumā redzamajām figūrām salikt
 taisnstūri ar laukumu 40 rūtiņas. Figūras nedrīkst
 pārklāties un katra veida figūra jāizmanto vismaz
 vienu reizi. (Figūras var būt pagrieztas vai
 apgrieztas otrādi.)<br />
-<img src="lv-openmo40-fig02.png" alt="2.zīm."/>  ]]></description>
+<img src="amo40-fig02.png" alt="2.zīm."/>  ]]></description>
 		<youtube>aPtiwtx9Jkg</youtube>
 		<topic>trial-and-error</topic>
 		<part name="Uzdevuma saprašana">
@@ -181,7 +181,7 @@ apgrieztas otrādi.)<br />
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g05-p05">
+	<problem id="amo40-g05-p05">
 		<title>40.AMO, 5.klases 5.uzdevums</title>
 		<description><![CDATA[ Kuba katra skaldne sadalīta četros vienādos kvadrātos. Vai šos
 kvadrātus var nokrāsot a) divās; b) trīs krāsās tā, ka kvadrāti, kam
@@ -237,7 +237,7 @@ ir jākrāso vienā krāsā. <i>Atbildi pamatot!</i> ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g06-p01">
+	<problem id="amo40-g06-p01">
 		<title>40.AMO, 6.klases 1.uzdevums</title>
 		<description><![CDATA[ Uz tāfeles uzrakstīti desmit skaitļi:<br />
 1 2 3 4 5 6 7 8 9 10.<br />
@@ -288,7 +288,7 @@ beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir? ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g06-p02">
+	<problem id="amo40-g06-p02">
 		<title>40.AMO, 6.klases 2.uzdevums</title>
 		<description><![CDATA[ Vai var atrast tādus divus viens otram sekojošus naturālus skaitļus,
 viens no kuriem dalās ar 3 un kuru<br />
@@ -333,12 +333,12 @@ b) ciparu reizinājumi atšķiras par 3? ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g06-p03">
+	<problem id="amo40-g06-p03">
 		<title>40.AMO, 6.klases 3.uzdevums</title>
 		<description><![CDATA[ Sagriezt 3. zīmējumā attēloto figūru 20
 vienādās mazākās figūrās (figūras var būt
 pagrieztas vai apgrieztas otrādi).<br />
-<img src="lv-openmo40-fig03.png" alt="3.zīm."/>  ]]></description>
+<img src="amo40-fig03.png" alt="3.zīm."/>  ]]></description>
 		<youtube>-aJm0RGdE10</youtube>
 		<topic>trial-and-error</topic>
 		<part name="Uzdevuma saprašana">
@@ -366,7 +366,7 @@ pagrieztas vai apgrieztas otrādi).<br />
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g06-p04">
+	<problem id="amo40-g06-p04">
 		<title>40.AMO, 6.klases 4.uzdevums</title>
 		<description><![CDATA[ Vai skaitļus no 100 līdz 200 var sadalīt divās grupās tā, ka skaitļu
 reizinājumi abās grupās ir vienādi? ]]></description>
@@ -428,7 +428,7 @@ reizinājumi abās grupās ir vienādi? ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g06-p05">
+	<problem id="amo40-g06-p05">
 		<title>40.AMO, 6.klases 5.uzdevums</title>
 		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
 rūtiņas trīs <b>tukšās</b> vienas rindas vai kolonnas <b>blakus</b> rūtiņās
@@ -477,7 +477,7 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g07-p01">
+	<problem id="amo40-g07-p01">
 		<title>40.AMO, 7.klases 1.uzdevums</title>
 		<description><![CDATA[ Naturālā divciparu skaitlī neviens no cipariem nav 0. Pierādīt, ka,
 dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz 9/11. ]]></description>
@@ -513,7 +513,7 @@ dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz 9/11. ]]></des
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g07-p02">
+	<problem id="amo40-g07-p02">
 		<title>40.AMO, 7.klases 2.uzdevums</title>
 		<description><![CDATA[ Doti seši nogriežņi ar garumiem 1 cm, 3 cm, 5 cm, 7 cm, 9 cm,
 11 cm. Cik dažādos veidos no tiem var izvēlēties trīs nogriežņus
@@ -559,7 +559,7 @@ vesels nogrieznis)? ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g07-p03">
+	<problem id="amo40-g07-p03">
 		<title>40.AMO, 7.klases 3.uzdevums</title>
 		<description><![CDATA[ Pierādīt, ka skaitlis 1234567891011...175176 (pēc kārtas uzrakstīti
 visi naturālie skaitļi no 1 līdz 176) nav naturāla skaitļa kvadrāts.
@@ -591,12 +591,12 @@ visi naturālie skaitļi no 1 līdz 176) nav naturāla skaitļa kvadrāts.
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g07-p04">
+	<problem id="amo40-g07-p04">
 		<title>40.AMO, 7.klases 4.uzdevums</title>
 		<description><![CDATA[ Vai kvadrātā 5×5 rūtiņas var iekrāsot a) 6 rūtiņas; b) 5 rūtiņas tā,
 lai atlikušajā daļā nevarētu ievietot nevienu 4. zīmējumā redzamo
 figūru (tā var būt pagriezta vai apgāzta otrādi)?<br />
-<img src="lv-openmo40-fig04.png" alt="4.zīm."/>  ]]></description>
+<img src="amo40-fig04.png" alt="4.zīm."/>  ]]></description>
 		<youtube>vNAo5sk7KjA</youtube>
 		<topic>trial-and-error</topic>
 		<part name="Uzdevuma saprašana">
@@ -634,7 +634,7 @@ figūru (tā var būt pagriezta vai apgāzta otrādi)?<br />
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g07-p05">
+	<problem id="amo40-g07-p05">
 		<title>40.AMO, 7.klases 5.uzdevums</title>
 		<description><![CDATA[ Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 6x6
 rūtiņas trīs <b>tukšās</b> vienas rindas vai kolonnas <b>blakus</b> rūtiņās
@@ -681,7 +681,7 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru? ]]></description>
 	</problem>
 
 
-	<problem id="lv-openmo40-g08-p01">
+	<problem id="amo40-g08-p01">
 		<title>40.AMO, 8.klases 1.uzdevums</title>
 		<description><![CDATA[ Atrast visus naturālos skaitļus, kas nepārsniedz 1000000 un kuri,
 nosvītrojot to pirmo ciparu, samazinās 36 reizes. ]]></description>
@@ -723,7 +723,7 @@ nosvītrojot to pirmo ciparu, samazinās 36 reizes. ]]></description>
 	</problem>
 
 
-	<problem id="lv-openmo40-g08-p02">
+	<problem id="amo40-g08-p02">
 		<title>40.AMO, 8.klases 2.uzdevums</title>
 		<description><![CDATA[ Dots trijstūris ABC un punkts P tā iekšpusē. Pierādi, ka attālumu
 summa no punkta P līdz dotā trijstūra virsotnēm ir lielāka nekā
@@ -760,7 +760,7 @@ puse no trijstūra perimetra. ]]></description>
 	</problem>
 
 
-	<problem id="lv-openmo40-g08-p03">
+	<problem id="amo40-g08-p03">
 		<title>40.AMO, 8.klases 3.uzdevums</title>
 		<description><![CDATA[ Doti tādi reāli skaitļi <i>t</i> un <i>a</i>, ka 
 <img src="http://chart.apis.google.com/chart?cht=tx&chl=t^2%20-%20t%5Ccdot%5Csqrt{t}%2Ba%3D0" 
@@ -799,7 +799,7 @@ alt="t &gt;= 4a"/>. ]]></description>
 
 
 
-	<problem id="lv-openmo40-g08-p04">
+	<problem id="amo40-g08-p04">
 		<title>40.AMO, 8.klases 4.uzdevums</title>
 		<description><![CDATA[ Vai regulāru sešstūri var sadalīt <b>a)</b> deviņos; <b>b)</b> astoņos vienādos
 daudzstūros? ]]></description>
@@ -839,7 +839,7 @@ daudzstūros? ]]></description>
 		</notes>
 	</problem>
 
-	<problem id="lv-openmo40-g08-p05">
+	<problem id="amo40-g08-p05">
 		<title>40.AMO, 8.klases 5.uzdevums</title>
 		<description><![CDATA[ Rūķītis ir iedomājies skaitļus
 		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1,%5C;x_2,%5C;x_3,%5C;x_4"

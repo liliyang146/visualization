@@ -1,8 +1,10 @@
 .cache
-**/*.png
 sbt-launch.jar
-AMO40-2013
-AMO40-2013-EN
+AMO39-2012/*.png
+AMO40-2013/*.png
+AMO40-2013-EN/*.png
+AMO41-2014/*.png
+SOL61-2011/*.png
 extra-lib/*.jar
 lib/*.jar
 project/target/*

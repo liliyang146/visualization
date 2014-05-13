@@ -2,7 +2,7 @@
 <problems lang="lv" indexfile="amo39-list.html">
 	<title><![CDATA[39. Atklātā matemātikas olimpiāde (2012-04-22)]]></title>
 
-	<problem id="lv-openmo39-g05-p01">
+	<problem id="amo39-g05-p01">
 		<title>39.AMO, 5.klases 1.uzdevums</title>
 		<description><![CDATA[
 		    Divu naturālu skaitļu pierakstā izmantoti tikai cipari 1, 4, 6 un 9. Vai
@@ -41,20 +41,20 @@ skaitlis? ]]>
 	</problem>
 
 
-	<problem id="lv-openmo39-g05-p02">
+	<problem id="amo39-g05-p02">
 		<title>39.AMO, 5.klases 2.uzdevums</title>
 		<description><![CDATA[ Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros.
 (Trijstūri sauc par platleņķa trijstūri, ja tam ir viens plats leņķis un
 divi šauri leņķi.)
  ]]></description>
-		<problemlink href="openmo38-outline-lv.xml#lv-openmo38-g05-p03">
+		<problemlink href="amo38-g05-p03">
 			38.AMO, 5.klases 3.uzdevums
 		</problemlink>
 	</problem>
 
 
 
-	<problem id="lv-openmo39-g05-p03">
+	<problem id="amo39-g05-p03">
 		<title>39.AMO, 5.klases 3.uzdevums</title>
 		<description><![CDATA[
 		    Maisā ir baltas, zaļas un sarkanas pogas (citu krāsu pogu maisā nav).
@@ -97,7 +97,7 @@ pogas. ]]>
 	</problem>
 
 
-	<problem id="lv-openmo39-g05-p04">
+	<problem id="amo39-g05-p04">
 		<title>39.AMO, 5.klases 4.uzdevums</title>
 		<description><![CDATA[
 		    24-stāvu mājā ir lifts, kuram ir divas pogas. Nospiežot vienu pogu,
@@ -137,7 +137,7 @@ nolaižas 8 stāvus uz leju (ja iespējams). Noskaidro, no kura stāva ar
 	</problem>
 
 
-	<problem id="lv-openmo39-g09-p01">
+	<problem id="amo39-g09-p01">
 		<title>39.AMO, 9.klases 1.uzdevums</title>
 		<description><![CDATA[
 		   Atrodi vienu skaitli, kuram ir tieši 12 veseli pozitīvi dalītāji. ]]>
@@ -159,7 +159,7 @@ nolaižas 8 stāvus uz leju (ja iespējams). Noskaidro, no kura stāva ar
 	</problem>
 
 
-	<problem id="lv-openmo39-g09-p02">
+	<problem id="amo39-g09-p02">
 		<title>39.AMO, 9.klases 2.uzdevums</title>
 		<description><![CDATA[
 		    Trijstūrī <img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cangle%20ABC=90^{%5Ccirc}" 
@@ -188,7 +188,7 @@ alt="&lt;BAC=&lt;BMN"/>. ]]>
 	</problem>
 
 
-	<problem id="lv-openmo39-g09-p03">
+	<problem id="amo39-g09-p03">
 		<title>39.AMO, 9.klases 3.uzdevums</title>
 		<description><![CDATA[
 		    Kvadrātvienādojuma <img src="http://chart.apis.google.com/chart?cht=tx&chl=x^2-507x%2Ba=0" 
@@ -227,7 +227,7 @@ alt="&lt;BAC=&lt;BMN"/>. ]]>
 
 
 	<!-- TODO: Uncommonly long explanation... -->
-	<problem id="lv-openmo39-g09-p04">
+	<problem id="amo39-g09-p04">
 		<title>39.AMO, 9.klases 4.uzdevums</title>
 		<description><![CDATA[
 		    Uz tāfeles uzrakstītas deviņas zvaigznītes * * * * * * * * *.<br/> Jānis
@@ -263,7 +263,7 @@ vienmēr var uzvarēt? ]]>
 	</problem>
 
 
-	<problem id="lv-openmo39-g09-p05">
+	<problem id="amo39-g09-p05">
 		<title>39.AMO, 9.klases 5.uzdevums</title>
 		<description><![CDATA[
 		    Dota trapece, kuras pamatu malu garumi ir 3 un 13. Pierādīt, ka to

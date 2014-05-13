@@ -26,7 +26,7 @@ object ProblemIndex {
   def getGradeAndProblem(eltId: String): (Int, Int) = {
     val gOpt = """^.*(-g([0-9]+)-).*$""".r.findFirstMatchIn(eltId).map(_ group 2)
     val g = gOpt.get.toInt
-    val pOpt = """^.*(-p([0-9]+))$""".r.findFirstMatchIn(eltId).map(_ group 2)
+    val pOpt = """^.*(-p([0-9]+))(-(lv|en|ru|ltg))?$""".r.findFirstMatchIn(eltId).map(_ group 2)
     val p = pOpt.get.toInt
     return (g, p)
   }

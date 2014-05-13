@@ -2,27 +2,40 @@ package lv.ddgatve.math
 
 object MathOntology {
 
-  val countryMap = Map("lv" -> "Latvia")
+  val countryMap = Map("LV" -> "Latvia")
+
+  /**
+   * Find event year from the problem id
+   */
+  def getYearMap(id: String): Int = {
+    val eventCode = id.replaceFirst("""([A-Z][A-Z]-)?([a-z0-9]+)-.*""", "$2")
+    return yearMap(eventCode)
+  }
+
+  def getOlympiadName(id: String): String = {
+    val eventCode = id.replaceFirst("""([A-Z][A-Z]-)?([a-z0-9]+)-.*""", "$2")
+    return olympiadMap(eventCode)
+  }
 
   val yearMap = Map(
-    "openmo38" -> 2011,
-    "openmo39" -> 2012,
-    "openmo40" -> 2013,
-    "openmo41" -> 2014, 
+    "amo38" -> 2011,
+    "amo39" -> 2012,
+    "amo40" -> 2013,
+    "amo41" -> 2014,
     "sol61" -> 2011)
 
   val olympiadMap = Map(
-    "openmo38" -> "LV Open Math Olympiad",
-    "openmo39" -> "LV Open Math Olympiad",
-    "openmo40" -> "LV Open Math Olympiad",
-    "openmo41" -> "LV Open Math Olympiad",
+    "amo38" -> "LV Open Math Olympiad",
+    "amo39" -> "LV Open Math Olympiad",
+    "amo40" -> "LV Open Math Olympiad",
+    "amo41" -> "LV Open Math Olympiad",
     "sol61" -> "LV Prep Olympiad in Math")
 
   val languageMap = Map("lv" -> "Latvian", "en" -> "English")
 
-  val schoolAgeMap = Map("lv1" -> 8, "lv2" -> 9, "lv7" -> 10, "lv8" -> 11,
-    "lv5" -> 12, "lv6" -> 13, "lv7" -> 14, "lv8" -> 15,
-    "lv9" -> 16, "lv10" -> 17, "lv11" -> 18, "lv12" -> 19)
+  val schoolAgeMap = Map("LV1" -> 8, "LV2" -> 9, "LV7" -> 10, "LV8" -> 11,
+    "LV5" -> 12, "LV6" -> 13, "LV7" -> 14, "LV8" -> 15,
+    "LV9" -> 16, "LV10" -> 17, "LV11" -> 18, "LV12" -> 19)
 
   val indexMap = Map(
     "en" -> List(("2013", "", "", "1 of 40", "amo40-list-en.html")),

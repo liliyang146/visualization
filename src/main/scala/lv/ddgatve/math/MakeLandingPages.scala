@@ -8,6 +8,7 @@ import java.io.PrintWriter
 import org.apache.commons.io.FileUtils
 import scala.collection.mutable.MutableList
 import scala.io.Source
+import lv.ddgatve.scp.NewScpTo
 
 object MakeLandingPages {
 
@@ -17,24 +18,40 @@ object MakeLandingPages {
     writer.close()
   }
 
+  def listDirectoryByPattern(path: String, regex: String): List[File] = {
+    val dir = new File(path)
+    val myBigFileArray = dir.listFiles()
+    val result = myBigFileArray.filter(f => regex.r.findFirstIn(f.getName).isDefined)
+    result.toList
+  }
+
   def main(args: Array[String]): Unit = {
-    // create destination directory, if it does not exist
+    // create empty destination directory, if it does not exist
+    //FileUtils.deleteDirectory(new File("target/site/math/"))
     val folderPath: Path = Paths.get("target/site/math/")
     var tmpDir: Path = Files.createTempDirectory(folderPath, null)
 
+    val pngFiles = listDirectoryByPattern("src/main/resources/png", """.*\.png$""")
+    for (pngFile <- pngFiles) {
+      FileUtils.copyFile(pngFile,
+        new File("target/site/math/" + pngFile.getName()))
+    }
+    val webFiles = listDirectoryByPattern("src/main/resources/web", """.*\.(js|html|css)$""")
+    for (webFile <- webFiles) {
+      FileUtils.copyFile(webFile,
+        new File("target/site/math/" + webFile.getName()))
+    }
+
     val engine = new TemplateEngine
-    engine.workingDirectory = new File("src/main/resources")
+    engine.workingDirectory = new File("target")
 
     val bundleLines = Source.fromFile(new File("src/main/resources/bundle.txt")).getLines().toList
-    //    val inFiles = List("openmo38-outline-lv.xml", "openmo39-outline-lv.xml", 
-    //        "openmo40-outline-lv.xml", "openmo40-outline-en.xml", "openmo41-outline-lv.xml")
     val inFiles = bundleLines map (_.trim) filter (_.length() > 0)
 
     var problems = new MutableList[ProblemSlot]()
     for (inFile <- inFiles) {
       val outFile = ProblemIndex.getOutFile("src/main/resources/" + inFile)
       val plist = ProblemIndex.getIndex("src/main/resources/" + inFile)
-      //      val templateName = "problemlist-" + ProblemIndex.getLanguageSuffix(inFile) + ".scaml"
       val templateName = "problemlist-lv.scaml"
 
       var indexTemplate: FileTemplateSource = new FileTemplateSource(
@@ -80,7 +97,7 @@ object MakeLandingPages {
             "localizationStrings" -> new LocalizationStrings,
             "indexFile" -> outFile)
           writeToFile(engine.layout(fts, m),
-            new File("target/site/math/" + pvv.id + "-" + ProblemIndex.getLanguageSuffix(inFile) + ".html"))
+            new File("target/site/math/" + pvv.id + ".html"))
         }
 
         if (pv.isInstanceOf[ProblemReference]) {
@@ -93,7 +110,7 @@ object MakeLandingPages {
             "localizationStrings" -> new LocalizationStrings,
             "indexFile" -> outFile)
           writeToFile(engine.layout(fts2, m),
-            new File("target/site/math/" + pvr.id + "-" + ProblemIndex.getLanguageSuffix(inFile) + ".html"))
+            new File("target/site/math/" + pvr.id + ".html"))
 
         }
       }
@@ -102,5 +119,19 @@ object MakeLandingPages {
     val jsonText = (for (pv <- problems) yield { pv.toString }).foldLeft("")(_ + "\n\n" + _)
     val jsonFullText = "{\n    items: [" + jsonText + "]\n}"
     writeToFile(jsonFullText, new File("target/site/math/ifd.js"))
+
+//    val lfile = List("src/test/resources/README00.txt",
+//      "src/test/resources/README10.txt")
+//    val rfile = List("/home/lighttpd/dudajevagatve.lv/http/math/README01.txt",
+//      "/home/lighttpd/dudajevagatve.lv/http/math/README11.txt")
+
+    val llfile = listDirectoryByPattern("target/site/math", """.*\.(js|html|css|png)$""")
+    //println("llfile = " + llfile)
+    val lfile = llfile map (ff => "target/site/math/" + ff.getName())
+    val rfile = llfile map (ff => "/home/lighttpd/dudajevagatve.lv/http/math/" + ff.getName())
+    println("Copying " + lfile.size + " files to remote server")
+
+    NewScpTo.copyToRemote(lfile, rfile)
+
   }
 }
