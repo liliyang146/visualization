@@ -22,11 +22,14 @@ public class Application extends Controller {
 	public static Result addBook() {
 		Book book = Form.form(Book.class).bindFromRequest().get();
 		book.save();
-		return redirect(routes.Application.index());
+		return redirect(routes.Application.index()); 
 	}
-
-
 	
+
+
+	/**
+	* This is a documentation comment
+	*/
 	@BodyParser.Of(play.mvc.BodyParser.Json.class)
 	public static Result getBooks() {
 		List<Book> bookList = new Model.Finder<String, Book>(String.class,
