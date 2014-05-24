@@ -592,7 +592,7 @@ visi naturālie skaitļi no 1 līdz 176) nav naturāla skaitļa kvadrāts.
 		</notes>
 	</problem>
 
-	<!--  TODO: Video has repeated phrases; not properly cut out...  -->
+	<!-- TODO: Video has repeated phrases; not properly cut out... -->
 	<problem id="amo40-g07-p04">
 		<title>40.AMO, 7.klases 4.uzdevums</title>
 		<description><![CDATA[ Vai kvadrātā 5×5 rūtiņas var iekrāsot a) 6 rūtiņas; b) 5 rūtiņas tā,
@@ -963,16 +963,16 @@ skaitļu, kurus var izveidot no šiem cipariem, summa ir 484. Atrast
 dotos četrus ciparus. 
  ]]></description>
 		<youtube>1y0f2s8MimI</youtube>
-		<topic>decimal-representationf</topic>
+		<topic>decimal-representation</topic>
 		<part name="Uzdevuma saprašana">
 			<item tstamp="0:16">
 				Nezināmie ir skaitļa cipari. Mēģinājumi uzminēt var
 				būt ļoti
 				darbietilpīgi.
-				<item tstamp="0:34">Cipari vienā divciparu skaitlī var
-					atkārtoties -
-					izvēle ar atkārtošanos.
-				</item>
+			</item>
+			<item tstamp="0:34">Cipari vienā divciparu skaitlī var
+				atkārtoties -
+				izvēle ar atkārtošanos.
 			</item>
 		</part>
 		<part name="Risināšanas plāns">
@@ -984,7 +984,8 @@ dotos četrus ciparus.
 				Metode: Decimālpieraksta izmantošana.
 			</item>
 			<item tstamp="4:05">Kuru četru ciparu summa var būt 11.
-				Metode: Gadījumu pārlase.
+				Metode: Gadījumu
+				pārlase.
 			</item>
 		</part>
 		<notes>
@@ -994,6 +995,91 @@ dotos četrus ciparus.
 			    cipariem - un šī summa izrādās 484. ]]>
 			</item>
 		</notes>
+	</problem>
+
+	<problem id="amo40-g09-p04">
+		<title>40.AMO, 9.klases 4.uzdevums</title>
+		<description><![CDATA[  Dota skaitļu virkne <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_0,%5C;x_1,%5C;x_2,%5C;x_3%5Cldots"
+		    alt="x(0),x(1),x(2),x(3)"/>, kurā <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_0%26gt;0" alt="x(0)&gt;0"/> un 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_{n+1}=x_n%2B%5Cfrac{2}{x_n}" alt="x(n+1)=x(n)+2/x(n)"/>
+		    visiem <img src="http://chart.apis.google.com/chart?cht=tx&chl=n%26gt;=0" alt="n&gt;=0"/>. 
+		    Pierādīt, ka <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_{100}%26gt;20" alt="x(100)&gt;20"/>. 
+ ]]></description>
+		<youtube>SFmo2aeTFT0</youtube>
+		<topic>squaring</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:29">
+				Virkni viennozīmīgi uzdod pirmais loceklis un
+				formula, kas ļauj izrēķināt katru nākamo locekli.
+			</item>
+			<item tstamp="0:49">
+				Visi virknes locekļi ir pozitīvi.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:13">Kāpinot kvadrātā, mainīgais x_n var noīsināties.
+				Metode: Kāpināšana kvadrātā.
+			</item>
+			<item tstamp="2:49">Locekļa atmešana un pāreja uz nevienādību.
+				Metode:
+				Pāreja uz nevienādību.
+			</item>
+			<item tstamp="3:23">Ja katrs nākamais virknes locekļa kvadrāts ir par 4
+				lielāks nekā iepriekšējā locekļa kvadrāts,
+				tad simtais locekļa
+				kvadrāts būs par 400 lielāks nekā nulltā locekļa
+				kvadrāts.
+				Metode:
+				Indukcija.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:18">Kas notiek, ja dažādām x_0 vērtībām izrēķina x_100,
+				un
+				attēlo grafika veidā.
+			</item>
+			<item tstamp="6:30">Vai x_100 noteikti ir lielāks par 20 un pie kura
+				x_0 var iegūt
+				vismazāko x_100 vērtību.
+			</item>
+		</part>
+	</problem>
+
+
+	<problem id="amo40-g09-p05">
+		<title>40.AMO, 9.klases 5.uzdevums</title>
+		<description><![CDATA[  Dots izliekts četrstūris. Uzzīmēti četri riņķi, kuru diametri ir
+četrstūra malas. Pierādīt, ka šie riņķi pilnībā pārklāj doto četrstūri. 
+ ]]></description>
+		<youtube>ueXWH7a_hmA</youtube>
+		<topic>inscribed-angles</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:16">
+				Kas ir riņķis (figūras robeža - riņķa līnija kopā
+				ar riņķa iekšpusi)
+			</item>
+			<item tstamp="0:36">Ko nozīmē pārklāšana. Katram punktam četrstūrī
+				eksistē kāds
+				no riņķiem, kuram viņš pieder.
+			</item>
+			<item tstamp="0:55">Kas ir izliekts četrstūris.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:25">Pieņemam, ka ir punkts, kuru nepārklāj neviens no
+				četriem riņķiem.
+				Metode: Spriedums no pretējā.
+			</item>
+			<item tstamp="1:46">Leņķis, kura abas malas iet caur riņķa diametru,
+				bet virsotne ir ārpus šī riņķa noteikti ir šaurs.
+				Metode: Ievilktais
+				leņķis.
+			</item>
+			<item tstamp="2:45">Četru leņķu summa ir vienlaikus vienāda un arī
+				mazāka par 360 grādiem.
+				Metode: Spriedums no pretējā.
+			</item>
+		</part>
 	</problem>
 
 </problems>
