@@ -1082,4 +1082,224 @@ dotos četrus ciparus.
 		</part>
 	</problem>
 
+
+	<problem id="amo40-g10-p01">
+		<title>40.AMO, 10.klases 1.uzdevums</title>
+		<description><![CDATA[  Dots, ka <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1"
+		    alt="x_1"/> ir vienādojuma <img src="http://chart.apis.google.com/chart?cht=tx&chl=x^2%2Bpx%2Bq=0"
+		    alt="x^2+px+q=0"/> sakne, bet <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_2"
+		    alt="x_2"/> ir vienādojuma <img src="http://chart.apis.google.com/chart?cht=tx&chl=-x^2%2Bpx%2Bq=0"
+		    alt="-x^2+px+q=0"/>. Pierādīt, ka vienādojumam 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cfrac{1}{3}x^2%2Bpx%2Bq=0"
+		    alt="(1/3)x^2+px+q=0"/> noteikti ir sakne <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_3"
+		    alt="x_3"/>, kas atrodas starp <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1"
+		    alt="x_1"/> un <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_2"
+		    alt="x_2"/> (t.i., <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_1%5Cleq%20x_3%5Cleq%20x_2"
+		    alt="x_1&lt;=x_3&lt;=x_2"/> vai <img src="http://chart.apis.google.com/chart?cht=tx&chl=x_2%5Cleq%20x_3%5Cleq%20x_1"
+		    alt="x_2&lt;=x_3&lt;=x_1"/>). ]]></description>
+		<youtube>zgtN_jL_4Ks</youtube>
+		<topic>continuity</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:40">Pa vienai saknei diviem dažādiem
+				kvadrātvienādojumiem.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:31">Ievietojam kvadrāttrinomā.
+				Metode: Identiskie
+				pārveidojumi.
+			</item>
+			<item tstamp="4:44">Saknes eksistēšana, izmantojot nepārtrauktību.
+				Metode: Nepārtrauktu funkciju īpašības.
+			</item>
+			<item tstamp="5:48">Robežgadījumi, kad x_3 sakrīt ar x_1 vai x_2.
+				Metode: Gadījumu pārlase.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="6:40">Nepārtraukta funkcija ieņem visas starpvērtības.
+			</item>
+			<item tstamp="7:21">Sakņu kvalitatīva pētīšana neprasa risināt
+				vienādojumu.
+			</item>
+		</part>
+	</problem>
+
+
+
+	<problem id="amo40-g10-p02">
+		<title>40.AMO, 10.klases 2.uzdevums</title>
+		<description><![CDATA[  Trijstūrī <i>ABC</i> nogrieznis <i>CD</i> ir bisektrise. Caur punktu <i>C</i> novilkta
+riņķa līnija, kas pieskaras malai <i>AB</i> punktā <i>D</i>. Tā krusto malas <i>AC</i>
+un <i>BC</i> attiecīgi punktos <i>P</i> un <i>Q</i>. Pierādīt, ka   
+<img src="http://chart.apis.google.com/chart?cht=tx&chl=AB%5CparallelPQ"
+		    alt="AB||PQ"/>. ]]></description>
+		<youtube>25fEje8cBsk</youtube>
+		<topic>inscribed-angles</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:25">Viennozīmīga konstrukcija, ja dots trijstūris.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:01">Riņķa pieskare un normāle.
+				Metode: Riņķa līnijas
+				īpašības.
+			</item>
+			<item tstamp="1:36">Ievilktie leņķi ir vienādi.
+				Metode: Ievilktie leņķi.
+			</item>
+			<item tstamp="2:33">Leņķis starp pieskari un hordu.
+				Metode: Ievilktie
+				leņķi.
+			</item>
+			<item tstamp="3:28">Riņķa novietošana tā, lai tas pieskartos AB punktā
+				D un ietu arī caur C.
+				Metode: Ģeometriska konstrukcija
+			</item>
+			<item tstamp="4:32">Leņķu vienādības.
+				Metode: Ievilktie leņķi.
+			</item>
+			<item tstamp="5:36">Taišņu paralelitāte, izmantojot leņķus ar šķērso
+				taisni. Metode: Šķērsleņķu īpašības.
+			</item>
+		</part>
+	</problem>
+
+
+
+	<problem id="amo40-g10-p03">
+		<title>40.AMO, 10.klases 3.uzdevums</title>
+		<description><![CDATA[  Par n-heksu sauksim plaknes figūru, kas
+izveidota no n regulāriem sešstūriem tā, ka
+katram sešstūrim ir kopīga mala ar vismaz
+vienu citu sešstūri.
+Kādam mazākajam n ( <img src="http://chart.apis.google.com/chart?cht=tx&chl=n%5Cgeq2"
+		    alt="n&gt;=2"/> ) eksistē tāds
+n-hekss, ar kuriem nevar pārklāt 5. zīm.
+attēloto figūru (tā sastāv no regulāriem
+sešstūriem ar caurumu centrā)?<br />
+<img src="amo40-fig05.png" alt="5.zīm."/>
+. ]]></description>
+		<youtube>SpM9lx1dtGA</youtube>
+		<topic>case-analysis</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:30">Ko nozīmē uzdevuma izvirzītais mērķis - atrast
+				mazāko n, kuram eksistē...
+				(Jāatrod konstrukcija ar n-heksu, ar kuru
+				nevar aizpildīt, un arī jāpamato,
+				ka ar visiem
+				mazākiem heksiem var
+				aizpildīt.)
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:40">Visu iespējamo heksu pārskats.
+				Metode: Gadījumu
+				pārlase
+			</item>
+			<item tstamp="3:33">Kopīgais sešstūrīšu skaits ir 36; tādēļ 5-heksos
+				sadalīt nevar.
+				Metode: Skaitļu dalāmība.
+			</item>
+			<item tstamp="4:11">Sešstūrveida figūras (ar caurumu) sadalīšana 3
+				kongruentos gabalos.
+				Metode: Simetrijas izmantošana.
+			</item>
+			<item tstamp="6:46">Piemērs, kādēļ ar 4-heksu nevar
+				Metode:
+				Konstrukcija.
+			</item>
+		</part>
+	</problem>
+
+
+
+	<problem id="amo40-g10-p04">
+		<title>40.AMO, 10.klases 4.uzdevums</title>
+		<description><![CDATA[ No pirmajiem 100 naturālajiem skaitļiem izvēlēts 51 skaitlis.
+Pierādīt, ka no tiem var izvēlēties divus, no kuriem viens dalās ar
+otru. ]]></description>
+		<youtube>0URgsDdpP-A</youtube>
+		<topic>pigeonhole-principle</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15"><![CDATA[ Uzdevuma nosacījums - <b>katrai</b> 51 skaitļa izvēlei 
+			    <b>eksistē</b> divi skaitļi, no kuriem viens dalās ar otru.
+			    ]]></item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:38">Kas notiktu, ja būtu jāizvēlas tikai 50 skaitļi
+				(varētu atrast tādus skaitļus, no kuriem nekādi divi savstarpēji
+				nedalās.) Metode: Aizstājam uzdevumu ar citu.
+			</item>
+			<item tstamp="1:10">Vai skaitu 50 var palielināt tā, lai īpašība
+				(nekādi divi skaitļi nedalās) saglabātos.
+				Metode: Intuīcija.
+			</item>
+			<item tstamp="2:05">Veidojam skaitļu virknītes, kur katri divi locekļi
+				dalās viens ar otru. Metode: Kopas dalīšana klasēs.
+			</item>
+			<item tstamp="3:34">Pamatojums, ka virkņu ir 50; un katrs skaitlis
+				pieder tieši vienai virknei. Metode: Kopas dalīšana klasēs.
+			</item>
+			<item tstamp="4:40">Ja izvēlamies 51 skaitļus no 50 virknītēm, tad
+				vismaz vienā virknītē būs vismaz divi no izvēlētajiem skaitļiem.
+				Metode: Dirihlē princips.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:27">Pierādīts stiprāks apgalvojums - var atrast ne vien
+				divus skaitļus, kuri viens ar otru dalās, bet arī tādus, kurus
+				dalot
+				iegūst divnieka pakāpi (2,4,8,16,32 vai 64).
+			</item>
+		</part>
+		<notes>
+			<item>51 skaitli no 100 var izvēlēties 98913082887808032681188722800
+				dažādos veidos - tā ir kombinācija no 100 pa 51, ko aprēķina ar
+				formulu 100!/(51!*49!). Mūsu risinājums izmantoja Dirihlē principu,
+				kas attiecas uz visām iespējām izvēlēties 51 skaitli.
+			</item>
+		</notes>
+	</problem>
+
+
+
+	<problem id="amo40-g10-p05">
+		<title>40.AMO, 10.klases 5.uzdevums</title>
+		<description><![CDATA[ Vai pa riņķi var uzrakstīt 2013 naturālus skaitļus tā, lai jebkuru
+divu blakus esošu skaitļu attiecība būtu 2, 3, 12 vai 18? ]]></description>
+		<youtube>CiiboXnTWS0</youtube>
+		<topic>even-odd-numbers</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Skaitļu novietojums pa apli un blakusesamības
+				attiecība.
+			</item>
+			<item tstamp="0:40">Blakusesošo skaitļu attiecība nozīmē lielāko dalīt
+				ar mazāko.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:03">Piemēri, kā izrakstīt 2, 4, 6 skaitļus. Metode:
+				Cita uzdevuma risināšana.
+			</item>
+			<item tstamp="2:20">Skaitļa izteikšana ar 2 un 3 pakāpju reizinājumu ar
+				citu skaitli, kas ar 2 vai 3 nedalās. Metode: Skaitļa dalīšana
+				pirmreizinātājos.
+			</item>
+			<item tstamp="3:12">Kas notiek ar dalījumu pirmreizinātājos, ja reizina
+				vai dala ar 2, 3, 12 vai 18. Metode: Gadījumu pārlase.
+			</item>
+			<item tstamp="4:29">Ja pirmskaitļu 2 un 3 kāpinātāju summa ir pāru
+				skaitlis, tad kaimiņos jābūt skaitlim ar kāpinātāju summu - nepāru
+				skaitli. Metode: Pāru un nepāru skaitļi.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:42">Skaitļu apļa attēlošana uz šaha galdiņa.
+				Reizināšana vai dalīšana ar 2, 3, 12 vai 18 līdzinās pārejai uz
+				pretējās krāsas lauciņu.
+			</item>
+		</part>
+	</problem>
+
 </problems>

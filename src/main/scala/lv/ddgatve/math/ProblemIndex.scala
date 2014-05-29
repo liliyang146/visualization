@@ -1,6 +1,7 @@
 package lv.ddgatve.math
 
 import scala.collection.mutable.MutableList
+import java.io.File
 
 /**
  * Returns a list of problems that is sufficient to build a problem list
@@ -38,8 +39,11 @@ object ProblemIndex {
   }
 
   def getOutFile(path: String): String = {
-    val rootElem = scala.xml.XML.loadFile(path)
-    rootElem.head.attribute("indexfile").get(0).text
+//    val rootElem = scala.xml.XML.loadFile(path)
+//    rootElem.head.attribute("indexfile").get(0).text
+    val f = new File(path)
+    f.getName().replaceFirst("""\.[a-z]+$""", "") + ".html"
+    
   }
 
   def getOlympiadTitle(path: String): String = {

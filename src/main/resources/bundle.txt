@@ -1,6 +1,6 @@
-openmo38-outline-lv.xml
-openmo39-outline-lv.xml 
-openmo40-outline-lv.xml
-openmo40-outline-en.xml
-openmo41-outline-lv.xml
+amo38-list.xml
+amo39-list.xml 
+amo40-list.xml
+amo40-list-en.xml
+amo41-list.xml
 sol61-list.xml

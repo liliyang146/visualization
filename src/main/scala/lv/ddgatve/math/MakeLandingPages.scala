@@ -120,10 +120,7 @@ object MakeLandingPages {
     val jsonFullText = "{\n    items: [" + jsonText + "]\n}"
     writeToFile(jsonFullText, new File("target/site/math/ifd.js"))
 
-//    val lfile = List("src/test/resources/README00.txt",
-//      "src/test/resources/README10.txt")
-//    val rfile = List("/home/lighttpd/dudajevagatve.lv/http/math/README01.txt",
-//      "/home/lighttpd/dudajevagatve.lv/http/math/README11.txt")
+
 
     val llfile = listDirectoryByPattern("target/site/math", """.*\.(js|html|css|png)$""")
     //println("llfile = " + llfile)

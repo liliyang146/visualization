@@ -19,11 +19,14 @@ puse no trijstūra perimetra."""
       desc2 mustEqual """AAA [CCC] DDD"""
     }
 
-    "The 'MakeLandingPages' object" should {
-      "compute language suffix" in {
-        val result = ProblemIndex.getLanguageSuffix("openmo40-outline-en.xml")
-        result mustEqual "en"
-      }
+    "compute language suffix" in {
+      val result = ProblemIndex.getLanguageSuffix("openmo40-outline-en.xml")
+      result mustEqual "en"
+    }
+    
+    "compute outfile for problem lists" in {
+      val result = ProblemIndex.getOutFile("src/main/resources/amo38-list.xml")
+      result mustEqual "amo38-list.html"
     }
 
   }
