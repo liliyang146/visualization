@@ -4,3 +4,4 @@ amo40-list.xml
 amo40-list-en.xml
 amo41-list.xml
 sol61-list.xml
+cgmo12-list.xml

@@ -120,15 +120,17 @@ object MakeLandingPages {
     val jsonFullText = "{\n    items: [" + jsonText + "]\n}"
     writeToFile(jsonFullText, new File("target/site/math/ifd.js"))
 
+    if (args.length > 0 && args(0) == "-local") {
+      println("Skip upload")
+    } else {
+      val llfile = listDirectoryByPattern("target/site/math", """.*\.(js|html|css|png)$""")
+      //println("llfile = " + llfile)
+      val lfile = llfile map (ff => "target/site/math/" + ff.getName())
+      val rfile = llfile map (ff => "/home/lighttpd/dudajevagatve.lv/http/math/" + ff.getName())
+      println("Copying " + lfile.size + " files to remote server")
 
-
-    val llfile = listDirectoryByPattern("target/site/math", """.*\.(js|html|css|png)$""")
-    //println("llfile = " + llfile)
-    val lfile = llfile map (ff => "target/site/math/" + ff.getName())
-    val rfile = llfile map (ff => "/home/lighttpd/dudajevagatve.lv/http/math/" + ff.getName())
-    println("Copying " + lfile.size + " files to remote server")
-
-    NewScpTo.copyToRemote(lfile, rfile)
+      NewScpTo.copyToRemote(lfile, rfile)
+    }
 
   }
 }

@@ -1,5 +1,6 @@
 .cache
 sbt-launch.jar
+*.xls
 AMO39-2012/*.png
 AMO40-2013/*.png
 AMO40-2013-EN/*.png

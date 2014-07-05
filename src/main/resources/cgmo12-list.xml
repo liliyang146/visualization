@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems lang="lv" indexfile="cgmo12-list.html">
+	<title><![CDATA[12. Ķīnas meiteņu matemātikas olimpiāde (2013-08-12,13)]]></title>
+
+	<problem id="cgmo12-p01">
+		<title>12. ĶMMO, 1.uzdevums</title>
+		<description><![CDATA[
+		    Ar <img src="http://chart.apis.google.com/chart?cht=tx&chl=A"
+		    alt="A"/> apzīmējam slēgtu reģionu, ko Dekarta koordinātu sistēmā 
+		    ierobežo 3 taisnes: 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=x%3D1" alt="x=1"/>, 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=y%3D0"
+		    alt="y=0"/> un
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=y%3Dt(2x-t)"
+		    alt="y=t(2x-t)"/>, kur 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=0%3Ct%3C1"
+		    alt="0&lt;t&lt;1"/>. 
+		    Pierādīt, ka trijstūrim reģionā <img src="http://chart.apis.google.com/chart?cht=tx&chl=A"
+		    alt="A"/>, kura divas virsotnes atrodas punktos 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=P(t,t^2)"
+		    alt="P(t,t^2)"/> un
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=Q(1,0)"
+		    alt="Q(1,0)"/> laukums nepārsniedz  
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cfrac{1}{4}"
+		    alt="1/4"/>. ]]>	    
+		</description>
+		<youtube>UNyM7DyFDug</youtube>
+		<topic></topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Ko uzdevumā prasīts noskaidrot.</item>
+			<item tstamp="0:45">Ko nozīmē rādītāju sakrišana
+				(pulksteņa rādītāji
+				kustas nepārtraukti)
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:15">Aprakstām abu rādītāju kustību un kurās vietās
+				viens var apsteigt otru.
+				Metode: Gadījumu pārlase
+			</item>
+			<item tstamp="3:58">Satikšanās punktu atzīmēšana uz ciparnīcas. Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="5:22">Katrā apsteigšanas gadījumā notiek rādītāju
+				stāvokļu sakrišana. Metode: nepārtrauktība
+			</item>
+			<item tstamp="6:58">Ātrumu atņemšana. Metode: Teksta uzdevums ar
+				proporcijām
+			</item>
+		</part>
+		<notes>
+			<item>Pieņemsim, ka ir iestājies moments, kurā stundu un minūšu
+				rādītāji sakrīt. Kur šajā momentā atrodas sekunžu rādītājs? Vai ir
+				tādi brīži, izņemot 0:00 un 24:00, kuros sakrīt visi trīs rādītāji?
+			</item>
+			<item>Cik reizes diennaktī sakritīs minūšu un sekunžu rādītāji?
+				Stundu un sekunžu rādītāji?
+			</item>
+			<item>Kas notiktu tad, ja stundu un minūšu rādītāji virzītos viens
+				otram pretī?
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="cgmo12-p02">
+		<title>12. ĶMMO, 2.uzdevums</title>
+		<description><![CDATA[
+		    Zīmējumā attēlotajā trapecē <img src="http://chart.apis.google.com/chart?cht=tx&chl=ABCD"
+		    alt="ABCD"/> ir spēkā 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=AB%5Cparallel%20CD" alt="AB||CD"/>, 
+		    riņķa līnija ar centru punktā <img src="http://chart.apis.google.com/chart?cht=tx&chl=O_1"
+		    alt="O_1"/> pieskaras malām <img src="http://chart.apis.google.com/chart?cht=tx&chl=DA,%5C,AB,%5C,BC"
+		    alt="DA,AB,BC"/>, un riņķa līnija ar centru punktā <img src="http://chart.apis.google.com/chart?cht=tx&chl=O_2"
+		    alt="O_2"/> pieskaras malām <img src="http://chart.apis.google.com/chart?cht=tx&chl=BC,%5C,CD,%5C,DA"
+		    alt="BC,CD,DA"/>. Ar <img src="http://chart.apis.google.com/chart?cht=tx&chl=P"
+		    alt="P"/> apzīmējam pirmās riņķa līnijas pieskaršanās punktu malai 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=AB"
+		    alt="AB"/>, bet ar  <img src="http://chart.apis.google.com/chart?cht=tx&chl=Q"
+		    alt="Q"/> apzīmējam otrās riņķa līnijas pieskaršanās punktu malai 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=CD"
+		    alt="CD"/>. 
+		    Pierādīt, ka taisnes <img src="http://chart.apis.google.com/chart?cht=tx&chl=AC,%5C,BD,%5C,PQ"
+		    alt="AC,BD,PQ"/> krustojas vienā punktā. ]]>
+		</description>
+		<youtube>UNyM7DyFDug</youtube>
+		<topic></topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Ko uzdevumā prasīts noskaidrot.</item>
+			<item tstamp="0:45">Ko nozīmē rādītāju sakrišana
+				(pulksteņa rādītāji
+				kustas nepārtraukti)
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:15">Aprakstām abu rādītāju kustību un kurās vietās
+				viens var apsteigt otru.
+				Metode: Gadījumu pārlase
+			</item>
+			<item tstamp="3:58">Satikšanās punktu atzīmēšana uz ciparnīcas. Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="5:22">Katrā apsteigšanas gadījumā notiek rādītāju
+				stāvokļu sakrišana. Metode: nepārtrauktība
+			</item>
+			<item tstamp="6:58">Ātrumu atņemšana. Metode: Teksta uzdevums ar
+				proporcijām
+			</item>
+		</part>
+		<notes>
+			<item>Pieņemsim, ka ir iestājies moments, kurā stundu un minūšu
+				rādītāji sakrīt. Kur šajā momentā atrodas sekunžu rādītājs? Vai ir
+				tādi brīži, izņemot 0:00 un 24:00, kuros sakrīt visi trīs rādītāji?
+			</item>
+			<item>Cik reizes diennaktī sakritīs minūšu un sekunžu rādītāji?
+				Stundu un sekunžu rādītāji?
+			</item>
+			<item>Kas notiktu tad, ja stundu un minūšu rādītāji virzītos viens
+				otram pretī?
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="cgmo12-p03">
+		<title>12. ĶMMO, 3.uzdevums</title>
+		<description><![CDATA[
+		    Grupā, kas izveidota no <img src="http://chart.apis.google.com/chart?cht=tx&chl=m"
+		    alt="m"/> meitenēm un <img src="http://chart.apis.google.com/chart?cht=tx&chl=n" alt="n"/> 
+		    zēniem, jebkuri divi cilvēki vai nu ir savstarpēji pazīstami, 
+		    vai arī nav savstarpēji pazīstami. Jebkuriem diviem zēniem un divām meitenēm viņu vidū ir vismaz
+		    viens zēns un viena meitene, kuri nav savstarpēji pazīstami. Pierādīt, ka savstarpēji pazīstamo 
+		    zēnu-meiteņu nesakārtoto pāru skaits nepārsniedz 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=m%2B%5Cfrac{n(n-1)}{2}"
+		    alt="m+n(n-1)/2"/>.]]>
+		</description>
+		<youtube>UNyM7DyFDug</youtube>
+		<topic></topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Ko uzdevumā prasīts noskaidrot.</item>
+			<item tstamp="0:45">Ko nozīmē rādītāju sakrišana
+				(pulksteņa rādītāji
+				kustas nepārtraukti)
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:15">Aprakstām abu rādītāju kustību un kurās vietās
+				viens var apsteigt otru.
+				Metode: Gadījumu pārlase
+			</item>
+			<item tstamp="3:58">Satikšanās punktu atzīmēšana uz ciparnīcas. Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="5:22">Katrā apsteigšanas gadījumā notiek rādītāju
+				stāvokļu sakrišana. Metode: nepārtrauktība
+			</item>
+			<item tstamp="6:58">Ātrumu atņemšana. Metode: Teksta uzdevums ar
+				proporcijām
+			</item>
+		</part>
+		<notes>
+			<item>Pieņemsim, ka ir iestājies moments, kurā stundu un minūšu
+				rādītāji sakrīt. Kur šajā momentā atrodas sekunžu rādītājs? Vai ir
+				tādi brīži, izņemot 0:00 un 24:00, kuros sakrīt visi trīs rādītāji?
+			</item>
+			<item>Cik reizes diennaktī sakritīs minūšu un sekunžu rādītāji?
+				Stundu un sekunžu rādītāji?
+			</item>
+			<item>Kas notiktu tad, ja stundu un minūšu rādītāji virzītos viens
+				otram pretī?
+			</item>
+		</notes>
+	</problem>
+
+
+	<problem id="cgmo12-p04">
+		<title>12. ĶMMO, 4.uzdevums</title>
+		<description><![CDATA[
+		    Atrast cik pavisam ir polinomu formā
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=f(x)%3Dax^3%2Bbx"
+		    alt="f(x)=ax^3+bx"/>, kas vienlaikus apmierina divus nosacījumus:<br/>
+		    (1) <img src="http://chart.apis.google.com/chart?cht=tx&chl=a,b%5Cin%5C{1,%5C,2,%5C,%5Ccdots%5C,,%5C,2013%5C}"
+		    alt="a,b in {1,2,...,2013}"/><br/>
+		    (2) Nekādu divu no <img src="http://chart.apis.google.com/chart?cht=tx&chl=f(1),%5C,f(2),%5C,%5Ccdots%5C,,f(2013)"
+		    alt="f(1),f(2),...,f(2013)"/> izraudzītu skaitļu starpība nav skaitļa 2013 daudzkārtnis.]]>
+		</description>
+		<youtube>UNyM7DyFDug</youtube>
+		<topic></topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:17">Ko uzdevumā prasīts noskaidrot.</item>
+			<item tstamp="0:45">Ko nozīmē rādītāju sakrišana
+				(pulksteņa rādītāji
+				kustas nepārtraukti)
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:15">Aprakstām abu rādītāju kustību un kurās vietās
+				viens var apsteigt otru.
+				Metode: Gadījumu pārlase
+			</item>
+			<item tstamp="3:58">Satikšanās punktu atzīmēšana uz ciparnīcas. Metode:
+				Gadījumu pārlase.
+			</item>
+			<item tstamp="5:22">Katrā apsteigšanas gadījumā notiek rādītāju
+				stāvokļu sakrišana. Metode: nepārtrauktība
+			</item>
+			<item tstamp="6:58">Ātrumu atņemšana. Metode: Teksta uzdevums ar
+				proporcijām
+			</item>
+		</part>
+		<notes>
+			<item>Pieņemsim, ka ir iestājies moments, kurā stundu un minūšu
+				rādītāji sakrīt. Kur šajā momentā atrodas sekunžu rādītājs? Vai ir
+				tādi brīži, izņemot 0:00 un 24:00, kuros sakrīt visi trīs rādītāji?
+			</item>
+			<item>Cik reizes diennaktī sakritīs minūšu un sekunžu rādītāji?
+				Stundu un sekunžu rādītāji?
+			</item>
+			<item>Kas notiktu tad, ja stundu un minūšu rādītāji virzītos viens
+				otram pretī?
+			</item>
+		</notes>
+	</problem>
+
+</problems>

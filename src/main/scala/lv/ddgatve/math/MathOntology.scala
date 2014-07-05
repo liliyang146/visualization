@@ -22,14 +22,16 @@ object MathOntology {
     "amo39" -> 2012,
     "amo40" -> 2013,
     "amo41" -> 2014,
-    "sol61" -> 2011)
+    "sol61" -> 2011, 
+    "cgmo12" -> 2013)
 
   val olympiadMap = Map(
     "amo38" -> "LV Open Math Olympiad",
     "amo39" -> "LV Open Math Olympiad",
     "amo40" -> "LV Open Math Olympiad",
     "amo41" -> "LV Open Math Olympiad",
-    "sol61" -> "LV Prep Olympiad in Math")
+    "sol61" -> "LV Prep Olympiad in Math",
+    "cgmo12" -> "China Girls Mathematical Olympiad")
 
   val languageMap = Map("lv" -> "Latvian", "en" -> "English")
 

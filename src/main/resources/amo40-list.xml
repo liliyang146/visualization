@@ -1302,4 +1302,215 @@ divu blakus esošu skaitļu attiecība būtu 2, 3, 12 vai 18? ]]></description>
 		</part>
 	</problem>
 
+
+	<problem id="amo40-g11-p01">
+		<title>40.AMO, 11.klases 1.uzdevums</title>
+		<description><![CDATA[ Pierādīt, ka nav tāda naturāla skaitļa n, ka skaitlis 
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=n^2-3n-1" 
+		    alt="n^2-3n-1"/> dalās ar 169. ]]></description>
+		<youtube>luIp4XRAFLk</youtube>
+		<topic>modular-arithmetic</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:15">Ko nozīmē dalīšanās ar 169?
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:35">Apgalvojums - polinoma vērtības atlikumu (dalot ar
+				13) nosaka mainīgā atlikums (dalot ar 13).
+				Trīs svītriņas -
+				kongruences simbols. Metode: Modulārā aritmētika.
+			</item>
+			<item tstamp="2:06">Visi 13 iespējamie atlikumi un polinoma vērtības.
+				Metode: Gadījumu pārlase.
+			</item>
+			<item tstamp="3:48">Kāda ir polinoma vērtība, ja ievieto n, kas dod
+				atlikumu 8 dalot ar 13.
+				Metode: Substitūcija.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="5:29">Kā var risināt, ja mēs jau no sākuma zinām, ka
+				polinoma vērtības,
+				kas dalās ar 13, dod atlikumu 39, ja tās dala ar
+				169.
+				Metode: Uzmini un pārbaudi.
+			</item>
+		</part>
+	</problem>
+
+
+	<problem id="amo40-g11-p02">
+		<title>40.AMO, 11.klases 2.uzdevums</title>
+		<description><![CDATA[ Vai eksistē regulārs daudzstūris, kuram vienas diagonāles garums
+ir vienāds ar divu citu diagonāļu garumu summu? ]]></description>
+		<youtube>5Ir-ExKzdYU</youtube>
+		<topic>trigonometry</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:12">Dažāda garuma diagonāles regulārā n-stūrī.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="0:41">Diagonāļu garumu izteikšana ar sinusu. Metode:
+				Trigonometrija.
+			</item>
+			<item tstamp="3:02">Vērtību ievietošana. Metode: Uzmini un pārbaudi.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="4:07">
+				Alternatīvs risinājums - uzzīmē 12-stūri, uzvelkot
+				dažas diagonāles
+				pārliecinās,
+				ka divu īsāko diagonāļu garumu summa ir
+				vienāda ar garāko 12-stūra
+				diagonāli.
+				Metode: Konstrukcijas
+				papildināšana.
+			</item>
+		</part>
+		<notes>
+			<item>Risinājums (divas vienādas diagonāles summā dod
+				apvilktā riņķa
+				diametru)
+				var šķist īpatnējs; faktiski - situācijas, kur divu
+				diagonāļu garumu
+				summa sakrīt ar
+				trešo diagonāli, ir diezgan bieži
+				sastopama. Var, teiksim, pamatot, ka
+				sin30° + sin18° = sin54° - un
+				novilkt trīs diagonāles regulārā
+				30-stūrī, kam divu diagonāļu
+				summa
+				būs vienāda ar trešo diagonāli.
+			</item>
+			<item><![CDATA[ Uz apļveida pulksteņa ciparnīcas ārmalas vienādos attālumos atzīmēti 
+		        12 punkti - <img src="http://chart.apis.google.com/chart?cht=tx&chl=P_{12},%5C,P_1,%5C,P_2,%5C,%5Cldots,%5C,P_{11}"
+		         alt="P_12, P1, P2, ..., P11"/>. Pamatot, ka regulārajā 12-stūrī malas un diagonāles summa vienāda 
+		         ar trešo malu: <img src="http://chart.apis.google.com/chart?cht=tx&chl=P_{12}P_1%2BP_1P_4%3DP_{12}P_5"
+		         alt="P_{12}P_1 + P_1P_4 = P_{12}P_5"/>. ]]></item>
+			<item>Regulārā 9-stūrī novilkt trīs diagonāles tā, lai divu diagonāļu
+				summa būtu vienāda ar trešo diagonāli.
+			</item>
+			<item>Parādīt, ka ikvienā regulārā 3n-stūrī (n&gt;=2) var novilkt
+				trīs diagonāles tā, lai divu diagonāļu
+				summa būtu vienāda ar trešo
+				diagonāli.
+			</item>
+		</notes>
+	</problem>
+
+
+
+	<problem id="amo40-g11-p03">
+		<title>40.AMO, 11.klases 3.uzdevums</title>
+		<description><![CDATA[ Doti dažādi nepāra naturāli skaitļi
+		    <img src="http://chart.apis.google.com/chart?cht=tx&chl=a_1,%5C,a_2,%5C,%5Cldots,%5C,a_n"
+		    alt="a_1,a_2,...,a_n"/>. Neviens no tiem
+nedalās ne ar vienu pirmskaitli, kas lielāks kā 5. Pierādīt, ka 
+<img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cfrac{1}{a_1}%2B%5Cfrac{1}{a_2}%2B%5Cfrac{1}{a_3}%2B%5Cldots%2B%5Cfrac{1}{a_n}%3C2" 
+alt="1/a_1+1/a_2+...+a_n&lt;2"/>.
+]]></description>
+		<youtube>Nv-ofI9eTiU</youtube>
+		<topic>sequences</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:26">Neierobežoti daudzi skaitļi, kas ir 3 un 5 pakāpju
+				reizinājumi;
+				tātad neierobežoti daudzu skaitļu saskaitīšana.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:19">Skaitļa izteikšana ar pirmskaitļa pakāpēm.
+				Metode:
+				Viennozīmīga sadalīšana pirmreizinātājos.
+			</item>
+			<item tstamp="1:47">Nevienādības vienas puses papildināšana ar jauniem
+				saskaitāmajiem.
+				Metode: Nevienādības pārveidošana.
+			</item>
+			<item tstamp="3:32">Skaitļu tabulas summas pārveidošana par divu summu
+				reizinājumu.
+				Metode: Dalīšana reizinātājos.
+			</item>
+			<item tstamp="4:19">Ģeometriskas progresijas summas formula. Metode:
+				Algebriska identitāte.
+			</item>
+			<item tstamp="5:37">Ģeometriskas progresijas summas formulas
+				pielietojums. Metode: Ģeometriskās progresijas summa.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="8:13">
+				Kopsavilkums - nevienādības kreisās puses
+				papildināšana ar jauniem
+				saskaitāmajiem,
+				sadalīšana reizinātājos,
+				ģeometriskas progresijas summa, noapaļošana uz augšu.
+			</item>
+		</part>
+		<notes>
+			<item>Kas notiek, ja atļauj arī pāru skaitļus?
+			</item>
+			<item>Kas notiek, ja summē virknes a_n locekļu apgrieztus kvadrātus?
+				Vai kvadrātsaknes?
+			</item>
+			<item>Kas notiek, ja atļauj arī citus pirmreizinātājus - lielākus par
+				5?
+			</item>
+		</notes>
+	</problem>
+
+	<problem id="amo40-g11-p04">
+		<title>40.AMO, 11.klases 4.uzdevums</title>
+		<description><![CDATA[ Kādā valstī ir 2013 pilsētas, no katras uz katru var aizlidot ar
+lidmašīnu. Dažus no šiem reisiem apkalpo aviokompānija A,
+pārējos – aviokompānija B (ir iespējams, ka no pilsētas X uz
+pilsētu Y lido aviokompānijas A lidmašīna, bet no Y uz X –
+aviokompānijas B lidmašīna).
+Pierādīt, ka aviokompāniju atbildību par reisiem iespējams
+saplānot tā, ka ceļotājs, izlidojot no jebkuras pilsētas Z, pa ceļam
+apmeklējot vienu vai vairākas pilsētas un pēc tam atgriežoties
+pilsētā Z, noteikti būs lidojis ar abu aviokompāniju lidmašīnām,
+neatkarīgi no tā, kādu maršrutu viņš būs izvēlējies un kura ir
+sākotnējā pilsēta Z.
+]]></description>
+		<youtube>sXP1nnsLBy4</youtube>
+		<topic>graphs</topic>
+		<part name="Uzdevuma saprašana">
+			<item tstamp="0:49">Orientēts grafs ar izkrāsotām šķautnēm (2 krāsas),
+				bet bez cilpām vienā krāsā.
+			</item>
+		</part>
+		<part name="Risināšanas plāns">
+			<item tstamp="1:24">Divu pilsētu gadījums.
+				Metode:
+				Vienkāršāks uzdevums.
+			</item>
+			<item tstamp="1:52">Pāreja uz lielāku pilsētu skaitu.
+				Metode:
+				Matemātiskā indukcija.
+			</item>
+			<item tstamp="2:33">Kopskats - kāds izskatīsies risinājums 2013 pilsētu
+				gadījumā?
+				Metode: Kopas sakārtošana.
+			</item>
+			<item tstamp="3:14">Pamatojums, kādēļ nevar izveidot cilpu. Metode:
+				Sakārtojuma transitivitāte.
+			</item>
+		</part>
+		<part name="Atskats">
+			<item tstamp="4:15">
+				Kopsavilkums - Orientēti grafi un galīgas kopas
+				pilns sakārtojums.
+			</item>
+		</part>
+		<notes>
+		    <item>Kas mainās uzdevuma atrisinājumā, ja divas pilsētas atrodas tieši uz viena meridiāna - 
+		        t.i. nevar pateikt, kura atrodas uz rietumiem no otras?</item>
+			<item>Trīs bultiņu krāsas - katrā pietiekami garā ciklveida maršrutā
+				izmantotas visas trīs?
+			</item>			
+		</notes>
+	</problem>
+
+
 </problems>

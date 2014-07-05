@@ -26,7 +26,12 @@ object ProblemIndex {
 
   def getGradeAndProblem(eltId: String): (Int, Int) = {
     val gOpt = """^.*(-g([0-9]+)-).*$""".r.findFirstMatchIn(eltId).map(_ group 2)
-    val g = gOpt.get.toInt
+    //val g = gOpt.get.toInt
+    val g = gOpt match {
+      case Some(x) => x.toInt
+      case None => 12
+    }
+
     val pOpt = """^.*(-p([0-9]+))(-(lv|en|ru|ltg))?$""".r.findFirstMatchIn(eltId).map(_ group 2)
     val p = pOpt.get.toInt
     return (g, p)
@@ -39,11 +44,11 @@ object ProblemIndex {
   }
 
   def getOutFile(path: String): String = {
-//    val rootElem = scala.xml.XML.loadFile(path)
-//    rootElem.head.attribute("indexfile").get(0).text
+    //    val rootElem = scala.xml.XML.loadFile(path)
+    //    rootElem.head.attribute("indexfile").get(0).text
     val f = new File(path)
     f.getName().replaceFirst("""\.[a-z]+$""", "") + ".html"
-    
+
   }
 
   def getOlympiadTitle(path: String): String = {
@@ -59,8 +64,8 @@ object ProblemIndex {
 
     val rootElem = scala.xml.XML.loadFile(path)
     val items = for (
-      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").size == 0 || 
-          (elt \\ "youtube").head.text.length > 0)
+      elt <- rootElem \\ "problems" \\ "problem" if ((elt \\ "youtube").size == 0 ||
+        (elt \\ "youtube").head.text.length > 0)
     ) yield {
       val eltId = elt.attribute("id").get(0).text
       val gp = getGradeAndProblem(eltId)

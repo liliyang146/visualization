@@ -1,7 +1,5 @@
 (1) Language switch between problem lists. Currently it is not "orthogonal" - it only applies to the AMO40. 
-Ideally the table should fill with 
-
-(2) Problem list file names. They should coincide with the HTML names
+Ideally the table should fill with real item data from XML or the database.
 
 (3) Videos should play on mobile devices. The whole site should be Mobile Web friendly.  
 
