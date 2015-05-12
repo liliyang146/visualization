@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="Java-EIM">
+
+	<!-- Ar šiem 'baneriem' panākam, lai lapas augšmala būtu šaura -->
+	<bannerLeft>
+		<name>Java-EIM</name>
+		<src>../images/pix.png</src>
+		<href>
+			https://www.facebook.com/startitlv
+		</href>
+	</bannerLeft>
+	<bannerRight>
+		<name>Java-EIM</name>
+		<src>../images/pix.png</src>
+		<href>
+			https://www.facebook.com/startitlv
+		</href>
+	</bannerRight>
+
+	<body>
+		<links>
+			<item name="Dudajeva gatve" href="http://www.dudajevagatve.lv/" />
+			<item name="Ante.lv" href="http://ante.lv/?language=lv" />
+			<item name="Odo" href="http://odo.lv/?language=lv" />
+		</links>
+
+		<!-- <menu name="Java-EIM mācību materiāli"> <item name="LU ievads" href="index_intro_lu.html" 
+			/> <item name="TSI ievads" href="index_intro_tsi.html" /> <item name="LU 
+			kursa apraksts" href="syllabus_lu.html" /> <item name="TSI kursa apraksts" 
+			href="syllabus_tsi.html" /> <item name="LU lekcijas" href="index_lectures_lu.html" 
+			/> <item name="TSI lekcijas" href="index_lectures_tsi.html" /> <item name="Praktiskie 
+			darbi" href="index_labs.html"> <item name="Kešošanas robots" href="lab_caching_robot.html" 
+			/> <item name="Spring MVC portāls" href="lab_mvc_portal.html" /> <item name="Klasifikācija 
+			un meklēšana" href="lab_ontologies.html" /> <item name="Darbplūsmas" href="lab_ws_bpel.html" 
+			/> </item> <item name="Indiv.MD" href="homeworks.html"/> <item name="Dažādi" 
+			href="intro_env_index.html"> <item name="Virtuālas mašīnas" href="intro_env_01_vm.html" 
+			/> <item name="Tīklošanās" href="intro_env_02_networking.html" /> <item name="OO 
+			pārskats" href="intro_env_03_oo_overview.html" /> <item name="Teorijas tēmas" 
+			href="intro_env_theory_topics.html" /> </item> </menu> -->
+		<menu name="Datu mācība vidusskolām">
+			<!-- <item name="Linux instalācijas" href="linux_index.html"> <item name="VMWare" 
+				href="linux_vmware.html" /> <item name="Kubuntu 7.04" href="linux_kubuntu.html" 
+				/> <item name="Konfigurēšana" href="linux_kubuntu_upgrades.html" /> <item 
+				name="Squid" href="linux_squid.html" /> <item name="Subversion" href="linux_subversion.html" 
+				/> <item name="Citi Servisi" href="linux_services.html" /> <item name="Tomcat" 
+				href="linux_tomcat.html" /> <item name="XWiki" href="linux_xwiki.html" /> 
+				<item name="Attālinātie X-logi" href="linux_vnc.html" /> <item name="Eclipse" 
+				href="linux_eclipse.html" /> <item name="Ant/Maven" href="linux_ant.html"/> 
+				<item name="Darbstaciju vide" href="linux_developer_tools.html" /> <item 
+				name="Tīklošanās" href="linux_networking.html" /> </item> <item name="Instalācijas 
+				WinXP" href="install_index.html"> <item name="EditPlus" href="install_editplus.html" 
+				/> <item name="Total Commander" href="install_totcmd.html" /> <item name="J2SDK" 
+				href="install_j2sdk.html" /> <item name="Eclipse" href="install_eclipse.html" 
+				/> <item name="Ant" href="install_ant.html" /> <item name="Maven" href="install_maven.html" 
+				/> <item name="Unpack Spring framework" href="install_javalibs.html" /> <item 
+				name="Toplink JPA" href="install_toplink_jpa.html" /> <item name="Subversion" 
+				href="install_subversion.html" /> <item name="SVG Plugin" href="install_svgview.html" 
+				/> <item name="MySQL" href="install_mysql.html" /> <item name="Oracle XE" 
+				href="install_oraclexe.html" /> <item name="JBoss" href="install_jboss.html" 
+				/> <item name="OC4J Standalone" href="install_oc4j.html" /> <item name="Env.Variables" 
+				href="install_setenv.html" /> <item name="TCPView" href="install_tcpview.html" 
+				/> </item> -->
+
+			<item name="Kursa motivācija" href="index.html">
+			    <item name="Matemātikas evolūcija" href="dataproc-intro-math-evolution.html"/>
+			    <item name="Digitālā plaisa" href="dataproc-intro-digital-divide.html"/>
+			    <item name="Loma mūžizglītībā" href="dataproc-intro-lifelong-learning.html"/>
+			</item>
+			<item name="Statistikas tēmas" href="dataproc-index.html">
+				<item name="Kursa pārskats" href="dataproc-kursa-ievads.html" />
+				<item name="R Datu tipi" href="dataproc-r-datatypes.html" />
+				<item name="Aprakstošā statistika" href="dataproc-aprakstosa-statistika.html" />
+				<item name="Normālais sadalījums" href="dataproc-normalais-sadalijums.html" />
+				<item name="Lineārā regresija" href="dataproc-lineara-regresija.html" />
+			</item>
+
+			<item name="Vides uzstādīšana" href="dataproc-vide.html">
+				<item name="Windows instrukcijas" href="dataproc-vide-windows.html" />
+				<item name="Linux instrukcijas" href="dataproc-vide-linux.html" />
+			</item>
+
+			<item name="Praktiskie darbi" href="dataproc-pract-index.html">
+				<item name="KhanAcademy" href="dataproc-pract-khanacademy.html" />
+				<item name="Divu f-ju grafiki" href="dataproc-pract-two-function-graphs.html" />
+				<item name="Saulrietu grafiki" href="dataproc-pract-sunset-graph.html" />
+				<item name="Saulrietu atskaites" href="dataproc-pract-sunset-report.html" />
+			</item>
+
+			<item name="KnitR pārskati" href="dataproc-demo.html">
+				<item name="Peldošais punkts" href="dataproc-demo-peldosais-punkts.html" />
+				<item name="Banku depozīti" href="dataproc-demo-depoziti.html" />
+				<item name="Vislabākais piedāvājums" href="dataproc-demo-vislabakais-piedavajums.html" />
+				<item name="PVN nodoklis" href="dataproc-demo-pvn.html" />
+				<item name="Gaidīšanas laiks - 1" href="dataproc-demo-gaidisana1.html" />
+				<item name="Gaidīšanas laiks - 2" href="dataproc-demo-gaidisana2.html" />
+				<item name="Gaidīšanas laiks - 3" href="dataproc-demo-gaidisana3.html" />
+				<item name="Monētas mešana" href="dataproc-demo-monetas-mesana.html" />
+				<item name="Ģitāras zīmēšana" href="dataproc-demo-gitaras-zimesana.html" />
+				<item name="Papildu piemēri" href="dataproc-demo-papildu-piemeri.html" />
+			</item>
+
+			<item name="PMLP vizualizācijas" href="dataproc-demography.html">
+				<item name="Datu savākšana no PDF" href="dataproc-demography-pdf-data.html" />
+				<item name="Datu ielasīšana" href="dataproc-demography-load.html" />
+				<item name="Skaits pa kategorijām" href="dataproc-demography-population-categories.html" />
+				<item name="Nepilsoņu vecumstruktūra" href="dataproc-demography-histograms.html" />
+				<item name="Vecumpiramīdu zīmēšana" href="dataproc-demography-population-pyramid.html" />
+				<item name="Samazināšanās atkarībā no vecuma" href="dataproc-demography-reduction-by-age.html" />
+				<item name="Novecošanas ātrumi" href="dataproc-demography-aging-speed.html" />
+				<item name="Etniskās proporcijas - sektori" href="dataproc-demography-ethnic-piecharts.html" />
+				<item name="Nepilsoņu īpatsvari tautībās" href="dataproc-demography-ethnic-dotplots.html"/>
+				<item name="Izkrāsotas kartes" href="dataproc-demography-color-maps.html" />
+			</item>
+
+			<item name="2013./14.g. Kontroldarbs" href="dataproc-midterm.html">
+				<item name="1.variants" href="../exams/student-midterm-1.html" />
+				<item name="2.variants" href="../exams/student-midterm-2.html" />
+				<item name="3.variants" href="../exams/student-midterm-3.html" />
+				<item name="4.variants" href="../exams/student-midterm-4.html" />
+				<item name="5.variants" href="../exams/student-midterm-5.html" />
+				<item name="6.variants" href="../exams/student-midterm-6.html" />
+				<item name="7.variants" href="../exams/student-midterm-7.html" />
+				<item name="8.variants" href="../exams/student-midterm-8.html" />
+				<item name="9.variants" href="../exams/student-midterm-9.html" />
+				<item name="10.variants" href="../exams/student-midterm-10.html" />
+				<item name="11.variants" href="../exams/student-midterm-11.html" />
+				<item name="12.variants" href="../exams/student-midterm-12.html" />
+				<item name="13.variants" href="../exams/student-midterm-13.html" />
+				<item name="14.variants" href="../exams/student-midterm-14.html" />
+				<item name="15.variants" href="../exams/student-midterm-15.html" />
+				<item name="16.variants" href="../exams/student-midterm-16.html" />
+			</item>
+
+			<!-- <item name="Saturs" href="index_java.html"> <item name="Java: Ievads" 
+				href="intro_java_mod11_start.html" /> <item name="Java: OOP" href="intro_java_mod12_oop.html" 
+				/> <item name="Java: Leksika un tipi" href="intro_java_mod13_var.html" /> 
+				<item name="Java: Izteiksmes" href="intro_java_mod14_expressions.html" /> 
+				<item name="Java: Masīvi" href="intro_java_mod15_arrays.html" /> <item name="Java: 
+				Klases" href="intro_java_mod21_class.html" /> <item name="Java: Klases un 
+				interfeisi" href="intro_java_mod22_adv_class.html" /> <item name="Java: Izņēmumi" 
+				href="intro_java_mod23_exceptions.html" /> <item name="Java: Ievade/Izvade" 
+				href="intro_java_mod31_io.html" /> <item name="Java: System un parametri" 
+				href="intro_java_mod32_system.html" /> <item name="Java: Kolekcijas" href="intro_java_mod33_collections.html" 
+				/> <item name="Java: Pavedieni" href="intro_java_mod34_threads.html" /> <item 
+				name="GUI saskarnes" href="intro_java_mod41_gui.html" /> <item name="GUI 
+				notikumi" href="intro_java_mod42_events.html" /> <item name="GUI aplikācijas" 
+				href="intro_java_mod43_guiapps.html" /> <item name="Tīklošanās" href="intro_java_mod51_net.html" 
+				/> <item name="RDBMS un SQL" href="intro_java_mod52_sql.html" /> <item name="JDBC" 
+				href="intro_java_mod53_jdbc.html" /> <item name="HTTP un konteineri" href="intro_java_mod71_oc4j.html" 
+				/> <item name="Servleti" href="intro_java_mod72_servlets.html" /> <item name="JSP" 
+				href="intro_java_mod73_jsp.html" /> <item name="EJB ievads" href="intro_java_mod81_ejb_intro.html" 
+				/> <item name="Sesiju EJB" href="intro_java_mod82_ejb_session.html" /> <item 
+				name="Entīšu EJB" href="intro_java_mod83_ejb_entity.html" /> </item> -->
+
+			<!-- <item name="Citi pielikumi" href="index_appendices.html"> <item name="Kodu 
+				tabulas" href="appendix_encodings.html" /> <item name="Veseli skaitļi" href="appendix_numbers.html" 
+				/> </item> <item name="Terminu saraksts" href="glossary.html" /> <item name="EIM 
+				mājturība" href="util_index.html"> <item name="Lokalizēšana" href="util_maven_site_l10n.html" 
+				/> <item name="Rīks aptconvert" href="util_maven_aptconvert.html" /> </item> -->
+		</menu>
+	</body>
+</project>

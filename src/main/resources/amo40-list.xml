@@ -17,18 +17,18 @@
 			</item>
 		</part>
 		<part name="Risināšanas plāns">
-			<item tstamp="1:15">Aprakstām abu rādītāju kustību un kurās vietās
-				viens var apsteigt otru.
-				Metode: Gadījumu pārlase
+			<item method="visualize-process1" tstamp="1:15">Aprakstām abu rādītāju
+				kustību un kurās vietās viens var apsteigt otru. Metode: Procesa
+				vizualizācija.
 			</item>
-			<item tstamp="3:58">Satikšanās punktu atzīmēšana uz ciparnīcas. Metode:
-				Gadījumu pārlase.
+			<item method="case-analysis1" tstamp="3:58">Satikšanās punktu
+				atzīmēšana uz ciparnīcas. Metode: Gadījumu pārlase.
 			</item>
-			<item tstamp="5:22">Katrā apsteigšanas gadījumā notiek rādītāju
-				stāvokļu sakrišana. Metode: nepārtrauktība
+			<item method="continuity-intermediate-values1" tstamp="5:22">Katrā apsteigšanas gadījumā
+				notiek rādītāju stāvokļu sakrišana. Metode: Nepārtrauktība.
 			</item>
-			<item tstamp="6:58">Ātrumu atņemšana. Metode: Teksta uzdevums ar
-				proporcijām
+			<item method="word-problem-proportions1" tstamp="6:58">Ātrumu
+				atņemšana. Metode: Teksta uzdevums ar proporcijām.
 			</item>
 		</part>
 		<notes>
@@ -61,13 +61,13 @@ stāvu.) ]]></description>
 			<item tstamp="0:30">Ko uzdevumā prasīts noskaidrot</item>
 		</part>
 		<part name="Risināšanas plāns">
-			<item tstamp="0:50">Stāvu attēlošana ar aplīšiem. Metode: Pāreja uz
-				grafu
+			<item method="using-graph1" tstamp="0:50">Stāvu attēlošana ar aplīšiem. Metode: Grafa
+				izmantošana.
 			</item>
-			<item tstamp="2:05">Uzdevuma atrisinājumu skaits atkarībā no grafa
+			<item method="case-analysis1" tstamp="2:05">Uzdevuma atrisinājumu skaits atkarībā no grafa
 				izskata. Metode: Gadījumu šķirošana.
 			</item>
-			<item tstamp="3:00">Meklējam maršruta sākumpunktu, pieņemot, ka
+			<item method="" tstamp="3:00">Meklējam maršruta sākumpunktu, pieņemot, ka
 				uzdevumam ir tieši 1 atrisinājums. Metode: Pieņēmuma izmantošana.
 			</item>
 			<item tstamp="5:45">Zīmējam lifta maršŗutu. Metode: Grafa konstruēšana
@@ -1791,8 +1791,10 @@ kur <img src="http://chart.apis.google.com/chart?cht=tx&chl=P" alt="P"/> ir šī
 		<topic>induction</topic>
 		<part name="Uzdevuma saprašana">
 			<item tstamp="0:29">
-				Regulārs trijstūris arī apmierinātu uzdevuma nosacījumu; bet mums visticamāk
-				vajadzīgs trijstūris, kura malu garumi atšķiras nedaudz.
+				Regulārs trijstūris arī apmierinātu uzdevuma
+				nosacījumu; bet mums visticamāk
+				vajadzīgs trijstūris, kura malu
+				garumi atšķiras nedaudz.
 			</item>
 		</part>
 		<part name="Risināšanas plāns">
@@ -1801,10 +1803,13 @@ kur <img src="http://chart.apis.google.com/chart?cht=tx&chl=P" alt="P"/> ir šī
 				teorēma.
 			</item>
 			<item tstamp="1:41">"Gandrīz regulāra" trijstūra jēdziens.
-			    Metode: Ekstrēma sasniegšana.</item>
-			<item tstamp="2:42">Rūtiņu plaknes kvadrātā a*a iezīmētu trijstūru malu garumu
+				Metode: Ekstrēma sasniegšana.
+			</item>
+			<item tstamp="2:42">Rūtiņu plaknes kvadrātā a*a iezīmētu trijstūru malu
+				garumu
 				izteikšana ar a un b.
-				Metode: Pitagora teorēma. Gadījumu pārlase.
+				Metode: Pitagora teorēma. Gadījumu
+				pārlase.
 			</item>
 			<item tstamp="5:24">
 				Trijstūru virknes veidošana; nākamo locekļu
@@ -1821,8 +1826,8 @@ kur <img src="http://chart.apis.google.com/chart?cht=tx&chl=P" alt="P"/> ir šī
 				pārveidojumi.
 			</item>
 			<item tstamp="12:50">
-			    Kādēļ augoša trijstūru perimetru virkne pārsniegs 4026^2. 
-			    Metode: Naturālu skaitļu īpašības. 
+				Kādēļ augoša trijstūru perimetru virkne pārsniegs 4026^2.
+				Metode: Naturālu skaitļu īpašības.
 			</item>
 		</part>
 		<notes>

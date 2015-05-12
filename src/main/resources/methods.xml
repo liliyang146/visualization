@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<methods lang="lv">
+	<method id="visualize-process1">
+		<title>Procesa vizualizācija</title>
+		<!-- Līdzīga pieeja arī zinībās par algoritmiem un datu struktūrām -->
+		<description>Iztēlojamies uzdevumā veicamās darbības kā soli pa solim
+			maināmu konfigurāciju - t.i. sākumā dots plaknes zīmējums, katrā
+			nākamajā solī tam kaut ko piezīmē klāt vai nodzēš nost.
+			Vizualizācijas gaitā varam saskaitīt noteikta veida notikumus.
+		</description>
+		<samples>
+			<item>Eratostēna siets</item>
+			<item></item>
+		</samples>
+	</method>
+
+	<method id="case-analysis1">
+		<title>Gadījumu pārlase</title>
+		<description>Ieviešam vairākus savstarpēji izslēdzošus pieņēmumus un
+			aplūkojam tos katru atsevišķi. (Šo metodi nevajag jaukt ar "pilno
+			pārlasi", kas nozīmē meklēšanas stratēģiju - pēc kārtas aplūkojot
+			visus meklējumu telpas elementus, nevis pašiem veidojot izslēdzošos
+			pieņēmumus.)
+		</description>
+	</method>
+
+	<method id="continuity-intermediate-values1">
+		<title>Nepārtrauktība un starpvērtības</title>
+		<description>Izmantojam apgalvojumu, ka nogrieznī [a,b] nepārtraukta
+			funkcija pieņem visas vērtības starp f(a) un f(b).
+		</description>
+	</method>
+
+	<method id="word-problem-proportions1">
+		<title>Teksta uzdevumi par proporcijām</title>
+		<description>Dažādi uzdevumi par ātrumu saskaitīšanu, ātrumu atņemšanu
+			vai darba veikšanu, kuru atrisinājums ir atkarīgs tikai no ātrumu
+			proporcijām.
+		</description>
+	</method>
+
+	<method id="using-graph1">
+		<title>Grafa izmantošana</title>
+		<description></description>
+	</method>
+
+
+</methods>

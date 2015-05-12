@@ -1,0 +1,6 @@
+"Jautajums","Cols","Col1","Col2","Col3"
+"Atrast ārvalstnieku blīvumu katrā no 3 pašvaldībām. To iegūst, izdalot ārvalstnieku skaitu ar pašvaldības platību. ",2,"Platība","Ārvalstnieki","NA"
+"Atrast sieviešu īpatsvaru katrā no 3 pašvaldībām. To iegūst, izdalot sieviešu skaitu ar visu iedzīvotāju skaitu. ",2,"Iedzīvotāju skaits","Sievietes","NA"
+"Atrast demogrāfisko slodzi katrā no 3 pašvaldībām. To iegūst, izdalot iedzīvotāju skaitu zem 15 g.v. un virs 62.5 g.v. ar iedzīvotāju skaitu darbaspējīgajā vecumā (15-62.5) un reizinot ar 100%",3,"Iedzīvotāji līdz 15g.v.","Iedzīvotāji 15-62.5g.v.","Iedzīvotāji virs 62.5g.v."
+"Atrast LR pilsoņu blīvumu katrā no 3 pašvaldībām. To iegūst, izdalot LR pilsoņu skaitu ar pašvaldības platību. ",2,"Platība","LR Pilsoņi","NA"
+"Atrast LR nepilsoņu blīvumu katrā no 3 pašvaldībām. To iegūst, izdalot LR nepilsoņu skaitu ar pašvaldības platību. ",2,"Platība","LR Nepilsoņi","NA"

@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<problemset id="Eksāmena dati">
+
+<!-- https://chart.googleapis.com/chart?cht=tx&chl=\left\{\begin{array}{rcl}x%26=%26t\\y%26=%26t^2%2B3t%2B2\end{array}\right\. -->
+<properties>
+<entry key="Name">Students #1</entry>
+<entry key="num">1</entry>
+<entry key="first_X1">40</entry>
+<entry key="first_Y1">6</entry>
+<entry key="first_alpha">1.5E-3</entry>
+<entry key="first_beta">3E-4</entry>
+<entry key="first_gamma">3E-2</entry>
+<entry key="first_delta">1E-3</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+<entry key="second_city">Rīga</entry>
+<entry key="second_longitude">24°6′E</entry>
+<entry key="second_latitude">56°57′N</entry>
+<entry key="second_timezone">UTC+2</entry>
+
+<entry key="fourth_img">chart4-1.png</entry>
+
+<entry key="sixth_mu">51</entry>
+<entry key="sixth_sigma">4</entry>
+<entry key="sixth_x1">50.3</entry>
+<entry key="sixth_x2">58.1</entry>
+
+
+<entry key="urlProblem"><![CDATA[\left\{\begin{array}{rcl}x^2+3x+2&>&0\\\frac{1}{x}&>&-1\end{array}\right\.]]></entry>
+<entry key="urlEquationA"><![CDATA[y&=&x^2+3x+2]]></entry>
+<entry key="urlEquationB"><![CDATA[y&=&\frac{1}{t}+1]]></entry>
+<entry key="urlInterval"><![CDATA[x\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+
+<properties>
+<entry key="Name">Students #2</entry>
+<entry key="num">2</entry>
+<entry key="first_X1">5</entry>
+<entry key="first_Y1">3</entry>
+<entry key="first_alpha">4E-2</entry>
+<entry key="first_beta">4E-3</entry>
+<entry key="first_gamma">4E-3</entry>
+<entry key="first_delta">4E-3</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+<entry key="second_city">Singapūra</entry>
+<entry key="second_longitude">103°50′E</entry>
+<entry key="second_latitude">1°17′N</entry>
+<entry key="second_timezone">UTC+8</entry>
+
+<entry key="fourth_img">chart4-2.png</entry>
+
+<entry key="sixth_mu">52</entry>
+<entry key="sixth_sigma">2</entry>
+<entry key="sixth_x1">52</entry>
+<entry key="sixth_x2">54.1</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+<properties>
+<entry key="Name">Students #3</entry>
+<entry key="num">3</entry>
+<entry key="first_X1">1.5</entry>
+<entry key="first_Y1">1</entry>
+<entry key="first_alpha">4E-2</entry>
+<entry key="first_beta">4E-2</entry>
+<entry key="first_gamma">4E-3</entry>
+<entry key="first_delta">4E-3</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Frankfurte</entry>
+<entry key="second_longitude">8°41′E</entry>
+<entry key="second_latitude">50°7′N</entry>
+<entry key="second_timezone">UTC+1</entry>
+
+<entry key="fourth_img">chart4-3.png</entry>
+
+<entry key="sixth_mu">53</entry>
+<entry key="sixth_sigma">1</entry>
+<entry key="sixth_x1">53.1</entry>
+<entry key="sixth_x2">53.5</entry>
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #4</entry>
+<entry key="num">4</entry>
+<entry key="first_X1">1.5</entry>
+<entry key="first_Y1">1</entry>
+<entry key="first_alpha">4E-3</entry>
+<entry key="first_beta">4E-3</entry>
+<entry key="first_gamma">4E-3</entry>
+<entry key="first_delta">4E-3</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Urumči</entry>
+<entry key="second_longitude">87°36′E</entry>
+<entry key="second_latitude">43°50′N</entry>
+<entry key="second_timezone">UTC+8</entry>
+
+
+<entry key="fourth_img">chart4-4.png</entry>
+<entry key="sixth_sigma">4</entry>
+<entry key="sixth_mu">60</entry>
+<entry key="sixth_x1">61.4</entry>
+<entry key="sixth_x2">63.5</entry>
+
+
+
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #5</entry>
+<entry key="num">5</entry>
+<entry key="first_X1">1.5</entry>
+<entry key="first_Y1">1</entry>
+<entry key="first_alpha">2E-3</entry>
+<entry key="first_beta">7E-3</entry>
+<entry key="first_gamma">8E-3</entry>
+<entry key="first_delta">9E-3</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Kaira</entry>
+<entry key="second_longitude">31°14′E</entry>
+<entry key="second_latitude">30°3′N</entry>
+<entry key="second_timezone">UTC+2</entry>
+
+
+<entry key="fourth_img">chart4-5.png</entry>
+
+<entry key="sixth_mu">61</entry>
+<entry key="sixth_sigma">9</entry>
+<entry key="sixth_x1">56.7</entry>
+<entry key="sixth_x2">60.0</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #6</entry>
+<entry key="num">6</entry>
+<entry key="first_X1">1.5</entry>
+<entry key="first_Y1">1</entry>
+<entry key="first_alpha">6E-3</entry>
+<entry key="first_beta">8E-3</entry>
+<entry key="first_gamma">2E-3</entry>
+<entry key="first_delta">5E-3</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Keiptauna</entry>
+<entry key="second_longitude">18°25′E</entry>
+<entry key="second_latitude">33°56′S</entry>
+<entry key="second_timezone">UTC+2</entry>
+
+
+<entry key="fourth_img">chart4-6.png</entry>
+
+<entry key="sixth_mu">63</entry>
+<entry key="sixth_sigma">7</entry>
+<entry key="sixth_x1">52.3</entry>
+<entry key="sixth_x2">56.2</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+<properties>
+<entry key="Name">Students #7</entry>
+<entry key="num">7</entry>
+<entry key="first_X1">1.5</entry>
+<entry key="first_Y1">1</entry>
+<entry key="first_alpha">9E-3</entry>
+<entry key="first_beta">6E-4</entry>
+<entry key="first_gamma">3E-3</entry>
+<entry key="first_delta">1.2E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Sanpaulu</entry>
+<entry key="second_longitude">46°38′W</entry>
+<entry key="second_latitude">23°33′S</entry>
+<entry key="second_timezone">UTC-3</entry>
+
+
+<entry key="fourth_img">chart4-7.png</entry>
+
+<entry key="sixth_mu">67</entry>
+<entry key="sixth_sigma">1</entry>
+<entry key="sixth_x1">67.8</entry>
+<entry key="sixth_x2">68.0</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #8</entry>
+<entry key="num">8</entry>
+<entry key="first_X1">0.6</entry>
+<entry key="first_Y1">0.2</entry>
+<entry key="first_alpha">2E-3</entry>
+<entry key="first_beta">1.5E-2</entry>
+<entry key="first_gamma">7E-3</entry>
+<entry key="first_delta">1.9E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+
+<entry key="second_city">Losandželosa</entry>
+<entry key="second_longitude">118°15′W</entry>
+<entry key="second_latitude">34°03′N</entry>
+<entry key="second_timezone">UTC-8</entry>
+
+
+<entry key="fourth_img">chart4-8.png</entry>
+
+<entry key="sixth_mu">69</entry>
+<entry key="sixth_sigma">8</entry>
+<entry key="sixth_x1">63.4</entry>
+<entry key="sixth_x2">78.7</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #9</entry>
+<entry key="num">9</entry>
+<entry key="first_X1">0.6</entry>
+<entry key="first_Y1">0.2</entry>
+<entry key="first_alpha">4E-3</entry>
+<entry key="first_beta">1.5E-2</entry>
+<entry key="first_gamma">1E-2</entry>
+<entry key="first_delta">1.9E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+<entry key="second_city">Ankoridža</entry>
+<entry key="second_longitude">149°54′W</entry>
+<entry key="second_latitude">61°13′N</entry>
+<entry key="second_timezone">UTC-9</entry>
+
+<entry key="fourth_img">chart4-9.png</entry>
+
+<entry key="sixth_mu">72</entry>
+<entry key="sixth_sigma">8</entry>
+<entry key="sixth_x1">62.8</entry>
+<entry key="sixth_x2">71.4</entry>
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+<properties>
+<entry key="Name">Students #10</entry>
+<entry key="num">10</entry>
+<entry key="first_X1">0.6</entry>
+<entry key="first_Y1">0.2</entry>
+<entry key="first_alpha">1E-3</entry>
+<entry key="first_beta">1.2E-2</entry>
+<entry key="first_gamma">7E-3</entry>
+<entry key="first_delta">2E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+
+<entry key="second_city">Kito</entry>
+<entry key="second_longitude">78°35′W</entry>
+<entry key="second_latitude">00°15′S</entry>
+<entry key="second_timezone">UTC-5</entry>
+
+
+<entry key="fourth_img">chart4-10.png</entry>
+
+<entry key="sixth_mu">75</entry>
+<entry key="sixth_sigma">1</entry>
+<entry key="sixth_x1">74.2</entry>
+<entry key="sixth_x2">76.0</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #11</entry>
+<entry key="num">11</entry>
+<entry key="first_X1">0.6</entry>
+<entry key="first_Y1">0.2</entry>
+<entry key="first_alpha">1.6E-2</entry>
+<entry key="first_beta">3E-2</entry>
+<entry key="first_gamma">9E-3</entry>
+<entry key="first_delta">2.2E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+<entry key="second_city">Sidneja</entry>
+<entry key="second_longitude">151°13′E</entry>
+<entry key="second_latitude">33°52′S</entry>
+<entry key="second_timezone">UTC+10</entry>
+
+
+<entry key="fourth_img">chart4-11.png</entry>
+
+<entry key="sixth_mu">80</entry>
+<entry key="sixth_sigma">3</entry>
+<entry key="sixth_x1">78.9</entry>
+<entry key="sixth_x2">79.7</entry>
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+
+<properties>
+<entry key="Name">Students #12</entry>
+<entry key="num">12</entry>
+<entry key="first_X1">0.6</entry>
+<entry key="first_Y1">0.2</entry>
+<entry key="first_alpha">1.6E-2</entry>
+<entry key="first_beta">3E-2</entry>
+<entry key="first_gamma">9E-3</entry>
+<entry key="first_delta">2.2E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+<entry key="second_city">Čeļabinska</entry>
+<entry key="second_longitude">61°23′E</entry>
+<entry key="second_latitude">55°09′N</entry>
+<entry key="second_timezone">UTC+6</entry>
+
+
+<entry key="fourth_img">chart4-12.png</entry>
+
+<entry key="sixth_mu">87</entry>
+<entry key="sixth_sigma">6</entry>
+<entry key="sixth_x1">84.6</entry>
+<entry key="sixth_x2">93.9</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+<properties>
+<entry key="Name">Students #13</entry>
+<entry key="num">13</entry>
+<entry key="first_X1">6</entry>
+<entry key="first_Y1">2</entry>
+<entry key="first_alpha">1.47E-2</entry>
+<entry key="first_beta">1.63E-3</entry>
+<entry key="first_gamma">1.2E-2</entry>
+<entry key="first_delta">3E-4</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Tokija</entry>
+<entry key="second_longitude">139°42′E</entry>
+<entry key="second_latitude">35°41′N</entry>
+<entry key="second_timezone">UTC+9</entry>
+
+
+<entry key="fourth_img">chart4-13.png</entry>
+
+<entry key="sixth_mu">90</entry>
+<entry key="sixth_sigma">3</entry>
+<entry key="sixth_x1">90</entry>
+<entry key="sixth_x2">91</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+<properties>
+<entry key="Name">Students #14</entry>
+<entry key="num">14</entry>
+<entry key="first_X1">1</entry>
+<entry key="first_Y1">0.5</entry>
+<entry key="first_alpha">2E-2</entry>
+<entry key="first_beta">8.8E-2</entry>
+<entry key="first_gamma">5.4E-3</entry>
+<entry key="first_delta">1.64E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+<entry key="second_city">Hongkonga</entry>
+<entry key="second_longitude">114°10′E</entry>
+<entry key="second_latitude">22°17′N</entry>
+<entry key="second_timezone">UTC+8</entry>
+
+
+<entry key="fourth_img">chart4-14.png</entry>
+
+<entry key="sixth_mu">97</entry>
+<entry key="sixth_sigma">7</entry>
+<entry key="sixth_x1">93.8</entry>
+<entry key="sixth_x2">96.2</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+
+<properties>
+<entry key="Name">Students #15</entry>
+<entry key="num">15</entry>
+<entry key="first_X1">1</entry>
+<entry key="first_Y1">0.5</entry>
+<entry key="first_alpha">2E-2</entry>
+<entry key="first_beta">8.8E-2</entry>
+<entry key="first_gamma">5.4E-3</entry>
+<entry key="first_delta">1.64E-2</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gp</entry>
+
+
+<entry key="second_city">Liepāja</entry>
+<entry key="second_longitude">21°01′EE</entry>
+<entry key="second_latitude">56°31′N</entry>
+<entry key="second_timezone">UTC+2</entry>
+
+
+<entry key="fourth_img">chart4-15.png</entry>
+
+<entry key="sixth_mu">98</entry>
+<entry key="sixth_sigma">5</entry>
+<entry key="sixth_x1">90.1</entry>
+<entry key="sixth_x2">98.1</entry>
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+
+
+<properties>
+<entry key="Name">Students #16</entry>
+<entry key="num">16</entry>
+<entry key="first_X1">500</entry>
+<entry key="first_Y1">2</entry>
+<entry key="first_alpha">8.2E-3</entry>
+<entry key="first_beta">4.5E-3</entry>
+<entry key="first_gamma">2.4E-2</entry>
+<entry key="first_delta">5.4E-5</entry>
+<entry key="first_N">4000</entry>
+<entry key="first_chartType">gpt</entry>
+
+<entry key="second_city">Tampere</entry>
+<entry key="second_longitude">23°46′E</entry>
+<entry key="second_latitude">61°30′N</entry>
+<entry key="second_timezone">UTC+2</entry>
+
+<entry key="fourth_img">chart4-16.png</entry>
+
+<entry key="sixth_mu">99</entry>
+<entry key="sixth_sigma">9</entry>
+<entry key="sixth_x1">92.9</entry>
+<entry key="sixth_x2">117.8</entry>
+
+
+<entry key="EquationA"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&t^2+2t+3\end{array}\right\.]]></entry>
+<entry key="EquationB"><![CDATA[\left\{\begin{array}{rcl}x&=&t\\y&=&\frac{1}{3t}-1\end{array}\right\.]]></entry>
+<entry key="Interval"><![CDATA[t\in[-4;7]]]></entry>
+</properties>
+
+
+
+</problemset>
+
+

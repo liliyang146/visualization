@@ -1,0 +1,257 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Datu apstrāde un programmēšana: Tests</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 160%;
+}
+h2 {
+  font-size: 130%;
+}
+</style>
+</head>
+
+<body>
+
+<h1>'Students #16' - "Datu apstrāde un programmēšana" - Tests</h1>
+
+<h2>1. uzdevums: Lotkas-Volterras vienādojumi</h2>
+
+<p><b>Scenārijs:</b> Amerikāņu matemātiķis un demogrāfs Alfrēds Lotka un itāliešu matemātiķis 
+Vito Volterra neatkarīgi viens no otra nonāca pie modeļa, kurš apraksta mākslīgu ekosistēmu, 
+kurā dzīvo zālēdāji un plēsēji, kuru populācijas viena otru uztur līdzsvarā. 
+Par šo modeli var izlasīt, piemēram, Vikipēdijā:  
+<a href="http://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equation">Lotka–Volterra equation</a>. 
+Šajā uzdevumā jāpielāgo R valodā uzrakstīts scenārijs, kurš soli pa solim 
+rēķina zālēdāju un plēsēju populāciju skaita izmaiņas. 
+
+<p>Kādā zemē dzīvo divu veidu zvēri - paviāni un gepardi.  
+Paviāni pārtiek no augu barības, savukārt gepardi pārtiek no paviāniem. 
+Paviānu skaita pieauguma ātrums ir proporcionāls jau esošo paviānu skaitam (ar koeficientu &alpha;), 
+no šī ātruma atņem apēsto paviānu skaitu, kas proporcionāls paviānu-gepardu satikšanās reižu skaitam 
+(paviānu un gepardu skaita reizinājumam) ar koeficientu &beta;. 
+Savukārt gepardu skaita pieauguma ātrums, ja nav paviānu, ir negatīvs un proporcionāls jau 
+esošo gepardu skaitam ar koeficientu &gamma;, ko palielina par lielumu, kas 
+proporcionāls paviānu-gepardu satikšanās reižu skaitam
+(paviānu un gepardu skaita reizinājumam) ar koeficientu &delta;</p>
+
+<p>Zvēru skaitu katras dienas sākumā izsaka ar dubultās precizitātes daļskaitļiem 
+(šī ir modeļa atšķirība no realitātes - t.i. ir pilnīgi iespējami ļoti nelieli pozitīvi 
+skaitļi, kas izsaka dzīvnieku skaitu. Piemēram, mili-, mikro-, nano- un piko-gepardi.  
+Šos daļskaitļus glabā attiecīgi vektoros x (paviāni) un y (gepardi). 
+Gepardu un paviānu skaits dienas beigās mainās par lielumiem dx un dy, ko apraksta
+šādas formulas:</p>
+
+<p><img src="https://chart.googleapis.com/chart?cht=tx&chl=\left\{\begin{array}{ccl}\frac{dx}{dt}%26=%26x(\alpha-\beta%20y)\\\frac{dy}{dt}%26=%26-y(\gamma-\delta%20x)\end{array}\right." 
+alt="Lotka-Volterra equations for pray-predator"/></p>
+ 
+<p><b>1.solis</b>: Izveidot datorsimulāciju, kura darbina ciklu N reizes, 
+uzkrāj vektoros x un y vērtības katras dienas sākumā, bet pēc tam attēlo paviānu 
+un gepardu skaitu grafiski. Šim un turpmākajiem uzdevumiem 
+koda paraugu var apskatīties šeit: 
+<a href="http://java-eim.googlecode.com/svn/trunk/ddgatve-exam/script.R">http://java-eim.googlecode.com/svn/trunk/ddgatve-exam/script.R</a>
+Nepieciešamie parametri doti tabulā:</p>  
+
+<table border='1'>
+<tr><th>Mainīgais</th><th>Vērtība</th></tr>
+<tr><td>x(1)</td><td>500</td></tr>
+<tr><td>y(1)</td><td>2</td></tr>
+<tr><td>&alpha;</td><td>8.2E-3</td></tr>
+<tr><td>&beta;</td><td>4.5E-3</td></tr>
+<tr><td>&gamma;</td><td>2.4E-2</td></tr>
+<tr><td>&delta;</td><td>5.4E-5</td></tr>
+<tr><td>N</td><td>4000</td></tr>
+</table>
+
+<p><b>2.solis:</b> Zīmēt apvienotu grafiku - paviānu un gepardu skaitu atkarībā no dienu skaita. 
+Paviānu skaitu apraksta zaļš grafiks; gepardu skaitu - melns grafiks. 
+R valodas izteiksmes, ar kurām to var izdarīt, ir šādas:</p>
+<pre>
+plot(x, type="l", col="green", ylim=c(0,max(x)))
+lines(y, type="l", col="black")
+</pre>
+<p><b>3.solis:</b> Ierakstot "plot" funkcijā papildus parametrus "xlab" un "ylab" - 
+piešķirt asīm saturīgus nosaukumus:  uz horizontālās ass rakstīt "Dienas", un 
+uz vertikālās - "Zvēri".</p>
+
+<p><b>4.solis:</b> Ja Jūs pamanāt, ka grafikos neparādās latviešu modificētie burti 
+(piemēram, "ā" un "ē"), tad tos var aizstāt ar Unikoda numuriem. Teiksim, "\u0101" apzīmē 
+mazo "ā"; un "\u0113" apzīmē "ē". T.i. vārda "Zvēri" vietā var rakstīt "Zv\u0113ri", ja 
+tas ko palīdz.</p>
+
+<p><b>5.solis:</b> Izmantojot funkciju "min(y)", izskaitļot minimālo 
+gepardu skaitu - un pierakstīt to.
+
+<p><b>6.solis:</b> Eksportēt iegūto grafiku (piemēram, kā PNG failu) - novietot to 
+direktorijā <tt>/home/skolnieksNN/Dokumenti/YourName/exam/name-exam</tt>; nosaukt 
+<tt>chart1.png</tt>. Līdzīgi izveidot failu <tt>script1.R</tt>, kurš satur TIKAI 
+kodu, kas rēķina Lotkas-Volterras vienādojumu.</p> 
+
+<p><b>7.solis:</b> Ar komandām "Add" un "Commit" ievietot to savā versiju kontroles sistēmā.
+</p>
+
+ 
+
+
+
+<h2>2.uzdevums: Zīmēt Mēness lēktu/rietu grafiku</h2>
+
+<p><b>Scenārijs:</b> Mēness lēktu un rietu laiki mainās atkarībā no Mēness fāzēm - 
+atšķirībā no saules grafikiem, šo grafiku galvenais cikls ir nevis 1 gads, bet viens 
+sinodiskais mēnesis (apmēram 29.53 dienas). 
+Ņemot vērā Zemes kustību ap Sauli, var gadīties, ka vasaras mēnešos Mēness
+virs horizonta pavada ilgāku laiku nekā ziemas mēnešos. Pirmajā tuvinājumā var pieņemt, 
+ka Mēness pie debess apraksta līdzīgu redzamo ceļu kā Saule (t.s. ekliptisko plakni); 
+vienīgi Mēness pa to pārvietojas citā ritmā.</p>
+
+<p>Atšķirībā no Saules, kura mērenajā joslā katrā 24h diennaktī vispirms lēc un pēc tam noriet, Mēness
+var rīkoties dažādi - dažās mēness fāzēs tas vispirms noriet un vēlāk tanī pašā dienā
+uzlēc. Var arī notikt tā, ka dažās dienās tas tikai lēc, bet nenoriet; vai arī tikai noriet, 
+bet neuzlēc.</p>
+
+<p>Šajā praktiskajā darbā vajadzēs zīmēt Mēness lēkta un rieta 
+grafikus; kā arī - cik ilgi tas katru dienu pavada virs horizonta. 
+Lai atvieglotu uzdevumu, šoreiz neaplūkosim vietas polārajos apgabalos.
+</p> 
+
+
+<p><b>1.solis:</b> Iet uz servisu <a href="http://aa.usno.navy.mil/data/docs/RS_OneYear.php">http://aa.usno.navy.mil/data/docs/RS_OneYear.php</a>; 
+ievada datus par savu pilsētu (sk. tabulu):</p>
+
+<table border='1'>
+<tr><th>Mainīgais</th><th>Vērtība</th></tr>
+<tr><td>Pilsētas nosaukums</td><td>${second_city}</td></tr>
+<tr><td>Ģeogrāfiskais garums</td><td>${second_longitude}</td></tr>
+<tr><td>Ģeogrāfiskais platums</td><td>${second_latitude}</td></tr>
+<tr><td>Laika josla</td><td>${second_timezone}</td></tr>
+</table>
+
+<p><b>2.solis:</b> Iekopējiet izvadīto datumu un Mēness lēktu/rietu  tabulu 
+LibreOffice Calc vai līdzīgā izklājlapā. Sadalīt pa fiksēta platuma kolonnām un iekopēt 
+Google Docs izklājlapā. Izklājlapa ar "Share" jāpadara redzama ikvienam, kuram 
+ir links; šī izklājlapa arī jāpublicē Webā kā CSV.</p>
+
+<p><b>3.solis:</b>  Izmantojiet <a href="https://summerschool.googlecode.com/hg/dataproc/chapters/Astro/code/">https://summerschool.googlecode.com/hg/dataproc/chapters/Astro/code/</a>
+vai citus Jums zināmus koda paraugus (var arī to, ar kuru Jūs zīmējāt saullēktu/saulrietu 
+diagrammas kursa 1.nedēļā). Mēness-lēkta grafiku zīmēt sarkanu; Mēnes-rieta grafiku - zilu.</p>
+
+<p><b>4.solis:</b> Aprēķināt Mēness pavadīto laiku virs horizonta. Ja Mēness-riets kādu dienu gadās vēlāk nekā 
+Mēness-lēkts, tad no Mēness-rieta var atņemt Mēness-lēktu un iegūt "stundas virs horizonta". Ja viņu secība ir pretēja, 
+tad arī var atņet no lielākā skaitļa mazāko, bet bet laiks virs horizonta "24h - atraistais lielums".
+Laiku virs horizonta apzīmēt ar zaļu grafiku.</p>
+
+<p><b>5.solis:</b> Pilsētas nosaukumu, tās ģeogrāfisko garumu un platumu attēlot 
+grafika virsrakstā. Laika joslu attēlot pie vertkālās ass.</p>
+
+<p><b>6.solis:</b> Eksportēt iegūto diagrammu kā PNG - <tt>chart2.png</tt>; un 
+R scenāriju (kurš nedara neko citu - tikai zīmē augšminēto diagrammu) - kā <tt>script2.R</tt>. 
+
+<p><b>7.solis:</b> Līdzīgi kā iepriekšējā uzdevumā, abus 6. solī izveidotos failus
+ar "Add" un "Commit" ieraksta repozitorijā.   
+
+
+
+
+<h2>3.uzdevums: Cepuru samainīšana</h2>
+
+<p><b>Scenārijs:</b> Daži varbūtiski eksperimenti izceļas ar to, ka 
+to iznākums ir maz atkarīgs no eksperimenta mēroga. 
+Teiksim, ja 10 (vai attiecīgi - 1000) viesi viesību beigās nejauši 
+samaina cepures, tad ar varbūtību apmēram 1/2.71  = 0.36 neviens nedabūs
+pats savu cepuri.</p>
+
+<p><b>1.solis:</b> 1000 reižu atkārto vienu un to pašu eksperimentu - 
+piešķir mainīgos:</p>
+<pre>
+x &lt;- 1:100
+y &lt;- sample(1:100)
+</pre>
+   
+<p>Atšķirībā no koda parauga: 
+<a href="http://java-eim.googlecode.com/svn/trunk/ddgatve-exam/script.R">šeit</a>, 
+šoreiz par veiksmīgu iznākumu uzskata arī to, ka kādam i būs spēkā 
+<b>abs(x[i] - y[i]) == 1</b> VAI <b>x[i] == y[i]</b>, t.i. 
+ja neviens no viesiem nav dabūjis ne pats savu, nedz arī sava labā un kreisā kaimiņa 
+cepuri, tad šajā situācijā palielina "veiksmīgo" eksperimentu kopsummu "total". 
+
+
+<p><b>2.solis:</b> Pieraksta, cik pavisam bija veiksmīgu eksperimentu un šo skaitli izdala ar 1000; 
+ieraksta eksāmena formā. Noglabā arī scenāriju <tt>script3.R</tt> - iesūta ar "Add" un "Commit" 
+versiju kontroles rīkā.</p>
+
+
+<h2>4.uzdevums: Kvadrātiņu diagrammas</h2>
+
+<p><b>Scenārijs:</b> Ja aritmētiskai progresijai rēķina atlikumus, dalot ar kādu skaitli, 
+tad šie atlikumi parādās noteiktā, raksturīgā secībā. Šajā uzdevumā Jums dots 
+zīmējums, kurš attēlo aritmētisku progresiju ar nezināmu pirmo locekli un 
+nezināmu diferenci - un tieši 17 locekļiem: <b>xx <- seq(??, by=??, length.out = 17)</b>.</p>
+
+<p>Pēc tam šīs virknes locekļiem meklēti atlikumi dalot ar trešo nezināmo skaitli (starp 12 un 18); 
+šie locekļi nokrāsoti 3, 4 vai 6 dažādās krāsās no varavīksnes krāsu spektra, pārvērsti 
+par pilniem vai par tukšiem kvadrātiņiem (pch=15 vai arī pch=22); un sazīmēti 3 dažādos izmēros
+(cex = rep(c(1,2,3),6) vai arī rep(c(2,3,4),6)).</p>
+
+<p>Jūsu uzdevums ir atjaunot R scenāriju, kurš izveidotu doto bildīti - t.i. zemāk dotajā 
+R scenārijā pasvītrojumzīmju vietā ierakstīt konkrētus skaitļus tā, lai sanāktu attēls, 
+kurš maksimāli līdzīgs šeit pielinkotajam.</p>
+
+<pre>
+xx <- seq(___, by=___, length.out = 17)
+plot(xx %% ___, col=rep(rainbow(___),3), pch=___, cex=rep(c(_,_,_),6), xlab="", ylab="")
+grid()
+</pre>
+
+<p><b>Attēls:</b></p>
+
+<p><img src="chart4-16.png"/></p>
+
+<p><b>1.solis:</b> Izlabo R scenāriju, ierakstot tanī skaitļus - un salīdzinot rezultātu ar doto 
+bildīti. R scenāriju noglabā savā eksāmena direktorijā, un pievieno koda repozitorijam ar 
+"Add" un "Commit".</p>
+
+
+<h2>5.uzdevums: Vienkārša lineārā regresija</h2>
+
+<p><b>Scenārijs:</b> Dotajā zīmējumā attēloti punkti, kuri parāda vairāku novērojumu rezultātus: 
+kā y-parametrs atkarīgs no x-parametra. 
+Ja mēs izdarām pieņēmumu (ne vienmēr šāds pieņēmums ir attaisnots) par 
+to, ka y-parametram ir pārsvarā lineāra atkarība no x-parametra (plus vēl kaut kāds troksnis,
+kas mūs neinteresē) - tad tas nozīmē, ka caur dotajiem punktiem, kuri stingri matemātiski 
+sakot, neatrodas uz vienas taisnes, ir jānovelk taisne tā, lai attālumu kvadrātu summa
+(visus attālumus mērot no taisnes līdz katram no punktiem pa vertikāli) būtu vismazākā 
+iespējamā. Izrādās, ka šādu taisni var novilkt - un formulas ir dotas 
+mūsu eksāmena sagataves failā 
+<a href="http://java-eim.googlecode.com/svn/trunk/ddgatve-exam/script.R">šeit</a>. 
+
+
+<p><b>Attēls:</b></p>
+
+<p><img src="chart5-16.png"/></p>
+
+
+<p><b>1.solis</b> Pielabot doto lineārās regresijas scenāriju - lai tas attēlotu 
+Jūsu zīmējumā dotos punktus. Pēc tam šo scenāriju noglabājiet atsevišķā failā 
+<b>script5.R</b> un pievienojiet savam repozitorijam ar "Add" un "Commit".</p>
+ 
+ 
+<h2>6.Uzdevums: Normālais sadalījums</h2>
+
+<p>Ķīmijas centralizētajā eksāmenā rezultātu vidējā vērtība bija
+&mu; = 99, bet dispersija bija &sigma; = 9. 
+Kādai daļai eksaminējamo rezultāts bija starp 
+92.9 un 117.8?</b>
+
+ 
+<p><b>1.solis</b> Saglabāt scenāriju atsevišķā failā 
+<b>script6.R</b> un pievienojiet savam repozitorijam ar "Add" un "Commit".</p>
+ 
+ 
+
+
+</body>
+</html>

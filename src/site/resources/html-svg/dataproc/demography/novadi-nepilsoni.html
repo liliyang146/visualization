@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+<title>Stuff</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 2em 2em 2em 4em;
+}
+h1{
+  font-size: 120%;
+}
+dl dt {
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<p><a href="http://www.dudajevagatve.lv/java-eim/de/dataproc-demography-color-maps.html">Atpakaļ 
+uz "Demogrāfija: Izkrāsotas kartes"</a></p>
+
+<h1>Nepilsoņu īpatsvars pašvaldībās, 2013-07-01</h1>
+<object data="novadi-nepilsoni-2013-07-01.svg" type="image/svg+xml" width="613px" height="348px"
+style="border: 1px solid #009933"></object>
+
+<p><b>Piezīme:</b> Uzbraucot ar peles kursoru pašvaldībai, parādās paskaidre (<em>tooltip</em>) - pašvaldības nosaukums un nepilsoņu īpatsvars no visiem pašvaldības iedzīvotājiem (kategorijās - (A) dzīvesvietas norādīšana, (B) dzīvesvietas deklarēšana, (C) dzīvesvietas reģistrēšana, (D) nav spēkā reģistrācija dzīvesvietā).
+Lai pārliecinātos, ka attēls tiešām ir vektorgrafika, var izmainīt pārlūkprogrammas
+palielinājumu, atkārtoti spiežot <b>Ctrl un +</b> vai arī <b>Ctrl un -</b>.</p>
+
+<h2>Izmantoto datu definīcijas</h2>
+
+<dl>
+<dt>Datu pirmavots</dt>
+<dd><a href="http://www.pmlp.gov.lv/lv/assets/documents/statistika/IRD_01_07_2013/ISPP_Pasvaldibas_pec_VPD.pdf">Iedzīvotāju skaits pašvaldībās sadalījumā pēc valstiskās piederības</a> (Iedzīvotāju reģistra statistika uz 01.07.2013. (.pdf formāts)) - Lietots netieši, pēc pārveidošanas par "CSV datu avotu")</dd>
+<dt>CSV datu avots</dt>
+<dd><a href="https://docs.google.com/spreadsheet/pub?key=0Asrw_eAzHG5ydDFhTXlObWVPR1NxY0VKZWFxajFwUUE&single=true&gid=0&output=csv">Pasvaldibas-VPd-2013-07-01.csv</a> - Iegūts no "Datu pirmavota"</dd>
+<dt>Novadu klasifikators</dt>
+<dd><a href="https://docs.google.com/spreadsheet/pub?key=0Asrw_eAzHG5ydHI2cjFiU1ZudmdIQTUybmkxdXpUR3c&single=true&gid=0&output=csv">municipalities-lv.csv</a> (šis CSV fails tika radīts no CSP pirmavota - <a href="http://www.csb.gov.lv/node/29893/list">Administratīvo teritoriju un teritoriālo vienību klasifikators</a>; kā arī papildināts ar kolonnu "Grob" Shapefile noklusēto ranžējumu (pēc Array_Size) - sākot ar vislielāko pašvaldības teritoriju (Rēzeknes novads) ar <tt>GRID.pathgrob.15</tt>, beidzot ar vismazāko pašvaldības teritoriju (Rēzekne (pilsēta) - <tt>GRID.pathgrob.133</tt>) - kopskaitā 119 pašvaldības.</dd>
+<dt>Ģeometriskie dati</dt>
+<dd><a href="http://www.dudajevagatve.lv/java-eim/other/dataproc/demography/lv-novadi-2011.zip">Latvijas novadu karte (ESRI Shapefile formātā)</a> - pašvaldību teritorijas attēlotas kā daudzstūri (polygons); pēc atarhivēšanas visus failus novietot R scenārija tekošajā direktorijā, ko scenārija sākumā uzstāda ar <b>setwd()</b></dd>
+<dt>JavaScript fails paskaidrēm</dt>
+<dd><a href="http://www.dudajevagatve.lv/java-eim/html-svg/dataproc/demography/tooltip.js">tooltip.js</a> - 
+šis ir palīgfails, kurš ir pielinkots SVG vektorgrafikai un nodrošina to, ka paskaidres (<em>tooltips</em>) 
+parādās un pazūd atkarībā no tā kā lietotājs pārvietojas ar peles kursoru no viena novada uz citu.</dd>
+</dl>
+
+</body>
+
+</html>
