@@ -1,6 +1,8 @@
 ## These functions are called to complement math olympiad data tables
 
-setwd("/home/st/ddgatve-stat/reports/")
+#setwd("/home/st/ddgatve-stat/reports/")
+setwd("/home/kalvis/workspace/ddgatve-stat/reports/")
+
 ## Given the firstname, return the gender of the person (Male/Female)
 getGender <- function(name) {
   sex <- "Other"
@@ -67,7 +69,23 @@ getSchoolLanguageList <- function() {
   return(schoolLanguageList)
 }
 
-# %%%% Voluntāri izvēlētās valodas
+
+getResultTables <- function() {
+  schoolLanguageList <- ldply(5:12, function(gg) {    
+    dum = read.table(
+      file=sprintf("results-%02dkl.csv",gg), 
+      sep=",",
+      header=TRUE,
+      row.names=NULL,  
+      fileEncoding="UTF-8")
+    dum$Grade <- gg
+    return(dum)
+  })
+  return(schoolLanguageList)
+}
+
+
+# %%%% Skolu valodas, kas nav izsecināmas no pieteikumiem
 # %% Ozolnieku vidusskola - L
 # %% Jūrmalas pilsētas Kauguru vidusskola - K
 # %% Kalnciema pagasta vidusskola - L
@@ -114,27 +132,39 @@ getSchoolsForLanguage <- function(lang) {
 }
 
 schoolsLanguages <- read.table(
-  file="schools-languages.csv", 
+  file="schools-lang.csv", 
   sep=",",
   header=TRUE,
   row.names=NULL,  
   fileEncoding="UTF-8")
 
+# Remove special symbols from school name; normalize spaces
+normalizeName <- function(x) {
+  x1 <- gsub("[\\.\"()]|-|\\\\", " ", x)
+  x2 <- gsub("^\\s+|\\s+$","",x1)
+  x3 <- gsub("\\s+"," ",x2)
+  return(x3)  
+}
+
+rawSchools <- as.vector(schoolsLanguages$School)
+allSchools <- as.vector(sapply(rawSchools,normalizeName))
+
 
 # Given school and teacher strings, try to deduce participant's language
 getLang <- function(school, teacher) {
-  spacedSchool <- gsub("\\.", ". ", school)
-  allSchools <- as.vector(schoolsLanguages$School)
+  spacedSchool <- normalizeName(school)
+  #  allSchools <- as.vector(schoolsLanguages$School)
+  
   currSchoolLocations <- which(school == allSchools | spacedSchool == allSchools)
   if (length(currSchoolLocations) == 0) {
     # "school" is not found in the schools-languages.csv file
     # Return "L" - global default
-    print(sprintf("WARNING - Missing school: %s",school))
+    print(sprintf("WARNING - Missing school: %s",spacedSchool))
     return("L")
   } else if (length(currSchoolLocations) == 1) {
     # There is exactly one "school" entry; return its language
     lang <- schoolsLanguages[currSchoolLocations[1],"Language"]
-    return(lang)
+    return(as.character(lang))
   } else {
     # "school" is probably multi-lingual. 
     # Find a matching teacher, or return school's default (teacher=*).  
@@ -149,109 +179,27 @@ getLang <- function(school, teacher) {
       } 
     }    
     if (lang == "") {
-      return(defaultLang)
+      return(as.character(defaultLang))
     } else {
-      return(lang)
+      return(as.character(lang))
     }    
   }
 }
 
-schoolsTest <- read.table(
-  file="schools-test.csv", 
-  sep=",",
-  header=TRUE,
-  row.names=NULL,  
-  fileEncoding="UTF-8")
-
-
-for (ii in 1:nrow(schoolsTest)) {
-  arg1 <- as.character(schoolsTest[ii,1])
-  arg2 <- as.character(schoolsTest[ii,2])
-  lang <- getLang(arg1,arg2)
-  print(sprintf("'%s' '%s' '%s'",arg1, arg2, lang))
-}
-
-
-
-getLanguage <- function(school, teacher, skolasLV, skolasRU) {  
-  
-  spacedSchool <- gsub("\\.", ". ", school)
-  #   if (grepl("\x0100da\x017Eu vidusskola",
-  #             school,ignore.case = TRUE)) {
-  #     if (grepl("Dagnija Ķikāne",teacher)) {
-  #       return("K")
-  #     } else {
-  #       return("L")
-  #     }
-  #   } else 
-  
-  if (grepl("Baložu vidusskola",
-            school,ignore.case = TRUE)) { 
-    if (grepl("Margarita Ižika",teacher)) {
-      return("K")
-    } else {
-      return("L")
-    }
-  } else if (grepl("Liepājas pilsetas 8\\. ?vidusskola",
-                   school,ignore.case = TRUE) |
-               grepl("Liepājas 8\\. ?vidusskola",
-                     school,ignore.case = TRUE)) {
-    if (grepl("Elga Jēkabsone",teacher)) {
-      return("L")
-    } else {
-      return("K")
-    }
-    #   } else if (grepl("E(\\.|mīla) ?Dārziņa mūzikas vidusskola",
-    #                    school,ignore.case = TRUE)) {
-    #     if (grepl("Laila Kampe",teacher)) {
-    #       return("K")
-    #     } else {
-    #       return("L")    
-    #     }
-  } else if (grepl("Garkalnes Mākslu un vispārizglītojošā vidusskola",
-                   school,ignore.case = TRUE)) {
-    if (grepl("Inese Muižniece",teacher)) {
-      return("K")
-    } else if (grepl("Ņina Kārkliņa",teacher)) {
-      return("K")
-    } else {
-      return("L")
-    }
-  } else if (grepl("Jelgavas 4\\. ?vidusskola",
-                   school,ignore.case = TRUE)) {
-    return("L")    
-  } else if (grepl("Riga International meridian School",
-                   school,ignore.case = TRUE)) {
-    return("K")
-    #   } else if (grepl("Rīgas 33\\. ?vidusskola",
-    #                    school,ignore.case = TRUE)) {
-    #     if (grepl("Kristīne Isaka",teacher)) {
-    #       return("K")
-    #     } else if (grepl("Nataļja Kaļiņikova",teacher)) {
-    #       return("K")
-    #     } else {
-    #       return("K")
-    #     }
-  } else if (grepl("Ventspils 6\\. ?vidusskola",
-                   school,ignore.case = TRUE)) {
-    if (grepl("Tereza Rediko",teacher)) {
-      return("K")
-    } else if (grepl("Vineta Trokša",teacher)) {
-      return("L")
-    } else {
-      return("K")
-    }
-  } else if (school %in% skolasRU | 
-               spacedSchool %in% skolasRU) {
-    return("K")
-  } else if (school %in% skolasLV | 
-               spacedSchool %in% skolasLV) {
-    return("L")
-  } else {
-    print(sprintf("Missing school language: %s",school))
-    return("L")
-  }
-}
+# schoolsTest <- read.table(
+#   file="schools-test.csv", 
+#   sep=",",
+#   header=TRUE,
+#   row.names=NULL,  
+#   fileEncoding="UTF-8")
+# 
+# 
+# for (ii in 1:nrow(schoolsTest)) {
+#   arg1 <- as.character(schoolsTest[ii,1])
+#   arg2 <- as.character(schoolsTest[ii,2])
+#   lang <- getLang(arg1,arg2)
+#   print(sprintf("'%s' '%s' '%s'",arg1, arg2, lang))
+# }
 
 
 

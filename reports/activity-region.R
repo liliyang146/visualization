@@ -1,4 +1,6 @@
-setwd("/home/st/ddgatve-stat/reports/")
+#setwd("/home/st/ddgatve-stat/reports/")
+setwd("/home/kalvis/workspace/ddgatve-stat/reports/")
+
 
 if (!"plyr" %in% installed.packages()) install.packages("plyr")
 library(plyr)
@@ -97,44 +99,46 @@ getRegion14 <- function(theMunicipality) {
 }
 
 
-results <- read.table(
-  file="results-06kl.csv", 
-  sep=",",
-  header=TRUE,
-  row.names=NULL,  
-  fileEncoding="UTF-8")
-
-dzimums <- sapply(as.vector(results$Vards), getGender)
-results$Dzimums <- dzimums
-
-municipalities <- as.vector(sapply(as.vector(results$Skola), getMunicipality))
-regions <- as.vector(sapply(municipalities,getRegion))
-regions14 <- as.vector(sapply(municipalities,getRegion14))
-
-results$Municipality <- municipalities
-results$Region6 <- regions
-results$Region14 <- regions14
+# results <- read.table(
+#   file="results-10kl.csv", 
+#   sep=",",
+#   header=TRUE,
+#   row.names=NULL,  
+#   fileEncoding="UTF-8")
 
 
-
-skolasLV <- getSchoolsForLanguage("L")
-skolasRU <- getSchoolsForLanguage("K")
-languages <- character(0) 
-
-for (i in 1:nrow(results)) {
-  theSchool <- results$Skola[i]
-  theTeacher <- results$Skolotaji[i]
-  if (theTeacher == "") {
-    theTeacher <- "NA"
+getExtResults <- function() {
+  results <- getResultTables()
+  
+  dzimums <- sapply(as.vector(results$Vards), getGender)
+  results$Dzimums <- dzimums
+  
+  municipalities <- as.vector(sapply(as.vector(results$Skola), getMunicipality))
+  regions <- as.vector(sapply(municipalities,getRegion))
+  regions14 <- as.vector(sapply(municipalities,getRegion14))
+  
+  results$Municipality <- municipalities
+  results$Region6 <- regions
+  results$Region14 <- regions14
+  
+  
+  
+  # skolasLV <- getSchoolsForLanguage("L")
+  # skolasRU <- getSchoolsForLanguage("K")
+  languages <- character(0) 
+  
+  for (i in 1:nrow(results)) {
+    theSchool <- results$Skola[i]
+    theTeacher <- results$Skolotaji[i]
+    if (theTeacher == "") {
+      theTeacher <- "NA"
+    }
+    theLanguage <- getLang(theSchool,theTeacher)
+    languages <- c(languages,theLanguage)
+    #  print(sprintf("%d - %d",i,length(languages)))
   }
-  theFirstname <- results$Vards[i]
-  theLastname <- results$Uzvards[i]
-  theLanguage <- getLanguage(theSchool,theTeacher,skolasLV,skolasRU)
-  languages <- c(languages,theLanguage)
-#  print(sprintf("%d - %d",i,length(languages)))
+  
+  results$Language <- languages
+  return(results)
 }
-
-results$Language <- languages
-
-
 

@@ -18,6 +18,8 @@
 \hypersetup{
  pdfstartview={XYZ null null 1}}
 \begin{document}
+\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 <<setup, include=FALSE, cache=FALSE>>=
 library(knitr)
 # set global chunk options
@@ -44,12 +46,13 @@ Olimpiādes darba valodu esam noteikuši, aplūkojot katra konkrētā darba risi
 
 <<external-code, cache=FALSE, echo=FALSE>>=
 read_chunk('activity-region.R')
+results <- getExtResults()
 @
 
 % Varbūt arī pa 6 NUTS regioniem - visi/latvieši/krievi
 
-<<grade6-barplot, echo=FALSE, fig.width=4, fig.height=4>>=
-barplot(skoleniALL$G06)
+<<grade6-barplot, cache=FALSE, echo=FALSE, fig.width=4, fig.height=4>>=
+barplot(results$Language)
 @
 
 % 1+9+5 aktivitāšu skaitļi pa reģioniem
