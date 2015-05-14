@@ -1,5 +1,5 @@
-#setwd("/home/st/ddgatve-stat/reports/")
-setwd("/home/kalvis/workspace/ddgatve-stat/reports/")
+setwd("/home/st/ddgatve-stat/reports/")
+#setwd("/home/kalvis/workspace/ddgatve-stat/reports/")
 
 
 if (!"plyr" %in% installed.packages()) install.packages("plyr")

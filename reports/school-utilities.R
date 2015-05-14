@@ -1,7 +1,7 @@
 ## These functions are called to complement math olympiad data tables
 
-#setwd("/home/st/ddgatve-stat/reports/")
-setwd("/home/kalvis/workspace/ddgatve-stat/reports/")
+setwd("/home/st/ddgatve-stat/reports/")
+#setwd("/home/kalvis/workspace/ddgatve-stat/reports/")
 
 ## Given the firstname, return the gender of the person (Male/Female)
 getGender <- function(name) {
