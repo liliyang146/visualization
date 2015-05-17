@@ -45,7 +45,7 @@ getGender <- function(name) {
     } else if (as.u_char(utf8ToInt(lst)) == "U+009A") {
       sex <- "Male"
     } else {      
-      print(paste0("***** Unidentified name:***** ",name))
+#      print(paste0("***** Unidentified name:***** ",name))
       sex <- "Male"
     }
   }

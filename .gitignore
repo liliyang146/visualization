@@ -18,5 +18,6 @@ reports/.Rhistory
 reports/.RData
 reports/*.log
 reports/*.out
-reports/dalibnieki*.xslx
-reports/results*.csv
+reports/figure/*.pdf
+#reports/dalibnieki*.xslx
+#reports/results*.csv

@@ -8,12 +8,10 @@ if (!"Unicode" %in% installed.packages()) install.packages("Unicode")
 library(Unicode)
 
 
-source("school-utilities.R")
-
 #schoolLanguageList <- getSchoolLanguageList()
 
 skoleniALL = read.table(
-  file="vs-apmac-val-all-2014.csv", 
+  file="vs-apmac-val_all-2014.csv", 
   sep=",",
   header=TRUE,
   row.names=NULL,  
@@ -27,19 +25,19 @@ xx <- aggregate(. ~ Region6, data=skoleniALL, FUN=sum)
 
 
 
-skoleniLV = read.table(
-  file="vs-apmac-val-lv-2014.csv", 
-  sep=",",
-  header=TRUE,
-  row.names=NULL,  
-  fileEncoding="UTF-8")
-
-skoleniRU = read.table(
-  file="vs-apmac-val-ru-2014.csv", 
-  sep=",",
-  header=TRUE,
-  row.names=NULL,  
-  fileEncoding="UTF-8")
+# skoleniLV = read.table(
+#   file="vs-apmac-val-lv-2014.csv", 
+#   sep=",",
+#   header=TRUE,
+#   row.names=NULL,  
+#   fileEncoding="UTF-8")
+# 
+# skoleniRU = read.table(
+#   file="vs-apmac-val-ru-2014.csv", 
+#   sep=",",
+#   header=TRUE,
+#   row.names=NULL,  
+#   fileEncoding="UTF-8")
 
 
 skolaPasvaldiba <- read.table(
@@ -64,12 +62,14 @@ pasvaldibas <- read.table(
   row.names=NULL,  
   fileEncoding="UTF-8")
 
+
+
 pr <- list()
 pr14 <- list()
 for(i in 1:length(pasvaldibas$Municipality)) {
   aa <- as.vector(pasvaldibas$Municipality[i])
-  bb <- as.vector(pasvaldibas$Region[i])
-  cc <- as.vector(pasvaldibas$RegionOrCity[i])
+  bb <- as.vector(pasvaldibas$Region6[i])
+  cc <- as.vector(pasvaldibas$Region14[i])
   pr[[aa]] <- bb
   pr14[[aa]] <- cc
 }
@@ -141,4 +141,19 @@ getExtResults <- function() {
   results$Language <- languages
   return(results)
 }
+
+results <- getExtResults()
+
+getAllPupils <- function(year) {
+  result <- read.table(
+    file=sprintf("vs-apmac-val_all-%d.csv",year), 
+    sep=",",
+    header=TRUE,
+    row.names=NULL,  
+    fileEncoding="UTF-8")
+  return(result[1:14,])
+}
+
+
+
 
