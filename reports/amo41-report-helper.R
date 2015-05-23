@@ -7,6 +7,7 @@ library(plyr)
 if (!"Unicode" %in% installed.packages()) install.packages("Unicode")
 library(Unicode)
 
+source("school-utilities.R")
 
 #schoolLanguageList <- getSchoolLanguageList()
 
@@ -106,9 +107,25 @@ getRegion14 <- function(theMunicipality) {
 #   row.names=NULL,  
 #   fileEncoding="UTF-8")
 
+library(stringr)
+getMinutes <- function(arg) {
+  if (!grepl("^[0-9][0-9]:[0-9][0-9]$",arg)) {
+    return(NA)
+  } else {
+    hour <- as.numeric(gsub(":[0-9][0-9]","",arg))
+    minute <- as.numeric(gsub("[0-9][0-9]:","",arg))
+    return(60*hour + minute - 630)
+  }
+}
 
-getExtResults <- function() {
-  results <- getResultTables()
+getMinuteString <- function(grade, threshold, results) {
+  return(results$Minutes[which(results$Grade == grade & 
+                          results$Summa >= threshold & 
+                          !is.na(results$Minutes))])
+}
+
+getExtResults <- function(amoNum) {
+  results <- getResultTables(amoNum)
   
   dzimums <- sapply(as.vector(results$Vards), getGender)
   results$Dzimums <- dzimums
@@ -139,10 +156,12 @@ getExtResults <- function() {
   }
   
   results$Language <- languages
+  results$Minutes <- as.vector(sapply(results$Darbu.nodeva, getMinutes))
+  
   return(results)
 }
 
-results <- getExtResults()
+results <- getExtResults(41)
 
 getAllPupils <- function(year) {
   result <- read.table(
@@ -154,6 +173,150 @@ getAllPupils <- function(year) {
   return(result[1:14,])
 }
 
+
+getNumTeachers <- function(results) {
+  allTeachers <- character(0)
+  numTeachers <- numeric(0)
+  teacherList <- strsplit(as.vector(results$Skolotaji),"; +")
+  for (tt in 1:length(teacherList)) {
+    #  allTeachers <- c(allTeachers,teacherList[[tt]])
+    numTeachers <- c(numTeachers,length(teacherList[[tt]]))
+  }
+  return(numTeachers)
+}
+
+getUpperQuartiles <- function(results) {
+  upperQuartiles <- numeric(0)
+  for (theGrade in 5:12) {
+    upperQuartiles <- c(upperQuartiles,
+                        fivenum(results$Summa[results$Grade == theGrade])[4])
+  }
+  return(upperQuartiles)
+}
+
+
+replaceUnicode <- function(arg) {
+  arg <- gsub("\u0100","A",arg)
+  arg <- gsub("\u010C","C",arg)
+  arg <- gsub("\u0112","E",arg)
+  arg <- gsub("\u0122","G",arg)
+  arg <- gsub("\u012A","I",arg)
+  arg <- gsub("\u0136","K",arg)
+  arg <- gsub("\u013B","L",arg)
+  arg <- gsub("\u0145","N",arg)
+  arg <- gsub("\u0160","S",arg)
+  arg <- gsub("\u016A","U",arg)
+  arg <- gsub("\u017D","Z",arg)
+  
+  
+  arg <- gsub("\u0101","\\={a}",arg)
+  arg <- gsub("\u010D","c",arg)
+  arg <- gsub("\u0113","e",arg)
+  arg <- gsub("\u01E7","g",arg)
+  arg <- gsub("\u012B","i",arg)
+  arg <- gsub("\u0137","k",arg)
+  arg <- gsub("\u013C","l",arg)
+  arg <- gsub("\u0146","n",arg)
+  arg <- gsub("\u0161","s",arg)
+  arg <- gsub("\u016B","u",arg)
+  arg <- gsub("\u017E","z",arg)
+  return(arg)
+}
+
+getSkoloFrame <- function() {
+  allGuys <- list()
+  goodGuys <- list()
+  allPoints <- list()
+  allSchools <- list()
+  
+  # Where start the upper quartiles for each class 5 to 12
+  upperQuartiles <- getUpperQuartiles(results)
+  
+  for (skNum in 1:nrow(results)) {
+    theSks <- as.vector(strsplit(as.character(results[skNum,5]),"; +"))
+    theGrade <- as.numeric(results[skNum,"Grade"])
+    for (theSk in theSks[[1]]) {
+      if (theSk %in% names(allGuys)) {
+        allGuys[[theSk]] <- allGuys[[theSk]] + 1
+        allPoints[[theSk]] <- 
+          allPoints[[theSk]] + as.numeric(results[skNum,"Summa"])
+        goodGuys[[theSk]] <- goodGuys[[theSk]] + (as.numeric(results[skNum,"Summa"]) > 
+                                                    upperQuartiles[theGrade -4])        
+      } else {
+        allGuys[[theSk]] <- 1
+        allPoints[[theSk]] <-  as.numeric(results[skNum,"Summa"])
+        goodGuys[[theSk]] <- as.numeric(as.numeric(results[skNum,"Summa"]) > 
+                                          upperQuartiles[theGrade -4])
+        allSchools[[theSk]] <- as.character(results[skNum,4])
+      }
+    }
+    
+  }
+  
+  sNames <- as.vector(names(allGuys))
+  sParticipants <- sapply(sNames,function(name) {as.numeric(allGuys[[name]])})
+  sPoints <- sapply(sNames,function(name) {as.numeric(allPoints[[name]])})
+  sQ3 <- sapply(sNames,function(name) {as.numeric(goodGuys[[name]])})
+  sSchools <- sapply(sNames, function(name) {as.character(allSchools[[name]])})
+  
+  skoloFrame <- data.frame(    
+    Name = as.vector(sapply(sNames, replaceUnicode)), 
+    Participants = as.vector(sParticipants),                            
+    Q3 = as.vector(sQ3),
+    Points = as.vector(sPoints),
+    School = as.vector(sapply(sSchools, replaceUnicode)))
+  
+  return(skoloFrame)
+}
+
+# skoloFrame <- getSkoloFrame()
+# skoloFrame1 <- skoloFrame[ order(skoloFrame[,1]), ]
+# skoloFrame2 <- skoloFrame[ order(-skoloFrame[,2], skoloFrame[,1]), ]
+
+getLookingGlass <- function() {
+  # Pupils per teacher
+  LGTeachers <- numeric(0)
+  for (i in 1:2400) {
+    LGTeachers <- c(LGTeachers, sample(0:100, size=1))
+  }
+  
+  # Olympians per teacher
+  LGTeachOlymp <- numeric()
+  for (i in 1:2400) {
+    LGTeachOlymp <- c(LGTeachOlymp,sum(runif(LGTeachers[i])<=0.02)) 
+  }
+  
+  # Random results for olympians
+  LGTeachResults <- list()
+  for (i in 1:2400) {
+    theRes <- rep(0,LGTeachOlymp[i])
+    if (LGTeachOlymp[i] > 0) {
+      for (j in 1:LGTeachOlymp[i]) {
+        trunkNormal <- -1
+        while (trunkNormal < 0 | trunkNormal > 50) {
+          trunkNormal <- rnorm(1,mean=15,sd=10)
+        }
+        theRes[j] <- trunkNormal
+      }
+    }
+    LGTeachResults[[i]] <- theRes
+  }
+  
+#  LGParticipants <- LGTeachOlymp[LGTeachOlymp > 0]
+  LGQ3 <- numeric()
+  LGPoints <- numeric()
+  LGcutOffScore <- qnorm(0.75, mean=15, sd=10)
+  for (i in 1:2400) {
+    LGQ3 <- c(LGQ3, sum(LGTeachResults[[i]] > LGcutOffScore))
+    LGPoints <- c(LGPoints,sum(LGTeachResults[[i]]))
+  }
+  
+  theResult <- list()
+  theResult[["LGParticipants"]] <- LGTeachOlymp[LGTeachOlymp > 0]
+  theResult[["LGQ3"]] <- LGQ3[LGTeachOlymp > 0]
+  theResult[["LGPoints"]] <- LGPoints[LGTeachOlymp > 0]
+  return(theResult)
+}
 
 
 

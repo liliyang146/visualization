@@ -49,7 +49,7 @@
 "Giorgs","Cechladze","Rīgas 40.vidusskola","Lilija Roldugina",4,5,7,3,4,23,"Atzinība",13:49
 "Ineta","Celmaine","Grobiņas ģimnāzija","Anita Poriņa",4,6,1,0,1,12,,14:42
 "Kristaps","Celmiņš","Rīgas Valsts 2.ģimnāzija","Ruta Pelce",3,0,5,3,0,11,,13:01
-"Kristers","Celmiņš","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",7,10,6," --",6,29,3,13:21
+"Kristers","Celmiņš","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",7,10,6," --",6,29,3,13:21
 "Lote Katrīna","Cērpa","Siguldas Valsts ģimnāzija","Daiga Jēkabsone",6,10," --"," --",0,16,,14:02
 "Arturs","Citovičs","Rīgas Purvciema vidusskola","Jeļena Blagodarnaja",4,1,1,0,0,6,,11:53
 "Zane Maksīne","Cunska","Jelgavas Spīdolas ģimnāzija","Anita Indāre",4,10,0,3,4,21,,13:34
@@ -78,13 +78,13 @@
 "Edgars","Eglītis","DA Cēsu Valsts ģimnāzija","Sanita Baijere"," --"," --"," --"," --",0,0,,12:25
 "Valters","Eglītis","Rīgas Valsts 1.ģimnāzija","Karmena Liepiņa",3,2,4,3,0,12,,
 "Kārlis","Eiduks","Olaines 1.vidusskola","Kārlis Zalpēters",4,9,7,3,4,27,3,14:55
-"Ieva Annija","Eihmane","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",5,10,2," --",0,17,,13:15
+"Ieva Annija","Eihmane","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",5,10,2," --",0,17,,13:15
 "Edgars","Eizentāls","Cēsu pilsētas pamatskola","Ligita Neimane"," --",0,2,0,0,2,,12:25
 "Jana Nikola","Elviha","Rīgas 40.vidusskola","Lilija Roldugina",2,1,3,0,0,6,,12:04
 "Elza Indra","Enkūzena","J.Čakstes Liepājas pilsētas 10.vidusskola","Agita Betmane",1,2,7," --",1,11,,13:50
 "Karīna","Ermansone","Siguldas pilsētas vidusskola","Liene Cērpa",0," --",2,0,0,2,,12:15
 "Anastasija","Fedotova","Rīgas 72.vidusskola","Terēza Manture",3," --",0,0,0,3,,12:31
-"Anna","Fedotova","Daugavpils Krievu vidusskola - licejs","Inna Kononova Alina Magomedova",4,10,4,3,0,21,,15:02
+"Anna","Fedotova","Daugavpils Krievu vidusskola - licejs","Inna Kononova; Alina Magomedova",4,10,4,3,0,21,,15:02
 "Valdemārs","Felcis","Daugavpils Valsts ģimnāzija","Neļa Borisova",10,10,1,3,4,28,3,15:35
 "Samanta","Fiļimonova","Smiltenes ģimnāzija","Inguna Kondratjeva",3,1,2,0,0,6,,12:50
 "Toms","Fišers-Blumbergs","Engures vidusskola","Mārīte Bērziņa",3,0,3,0,0,6,,15:00
@@ -101,9 +101,9 @@
 "Līna Nerina","Gludiņa","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",8,10,10,3,2,33,2,14:42
 "Aigars","Goriņins","Rīgas Valsts 1.ģimnāzija","Karmena Liepiņa",3," --"," --"," --",0,3,,12:25
 "Leonora Anna","Gorska","Valmieras Pārgaujas ģimnāzija","Ināra Bērziņa",3,2,2,0,0,7,,13:20
-"Līga","Gorškova","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",2,10," --",2,0,14,,13:00
+"Līga","Gorškova","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",2,10," --",2,0,14,,13:00
 "Sandijs","Gotvonī","E.Dārziņa mūzikas vidusskola","Jolanta Lapiņa",10,10,10,1,4,35,1,13:30
-"Rēzija","Granta","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",0,10,2,0,0,12,,12:32
+"Rēzija","Granta","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",0,10,2,0,0,12,,12:32
 "Dmitrijs","Graubergers","Rīgas Zolitūdes ģimnāzija","Nadežda Rjabiņina",5,10,1,0,1,17,,14:07
 "Kārlis","Grindulis","Slokas pamatskola","Guna Višņevska",4,1,0," --",0,5,,12:35
 "Timofejs","Grisjuks","Rīgas 40.vidusskola","Aleksandrs Stecurins",3,1,2,3,0,9,,14:28
@@ -113,7 +113,7 @@
 "Jānis","Grīnvalds","Ventspils 6.vidusskola","Vineta Trokša",0,1,4," --",0,5,,12:30
 "Paula","Grundmane","Grobiņas ģimnāzija","Anita Poriņa",0,10,2," --",4,16,,12:50
 "Arnolds","Gudkovs","Rēzeknes 1.vidusskola","Lucija Jermacāne",3,2,0," --",0,5,,12:30
-"Dāvis","Gudzovskis","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",9,10," --",1,2,22,"Atzinība",13:50
+"Dāvis","Gudzovskis","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",9,10," --",1,2,22,"Atzinība",13:50
 "Dāvids","Gūtmanis","Limbažu novada ģimnāzija","Ieva Rukšāne",0,1,2,0,0,3,,12:50
 "Katrīna","Ģēvele","Rīgas Valsts 2.ģimnāzija","Tatjana Strigaļova",9,1," --"," --",0,10,,14:05
 "Artūrs","Hermanis","Siguldas Valsts ģimnāzija","Daiga Jēkabsone",0,10,2,0,0,12,,13:20
@@ -126,8 +126,8 @@
 "Edvards","Jansons","Rīgas 72.vidusskola","Irina Iriščenko",4,10,7,8,4,33,2,15:43
 "Paula","Jasmane","Rīgas Valsts 2.ģimnāzija","Ruta Pelce",4,10,2,3,4,23,"Atzinība",14:19
 "Niks Lauris","Jaunzems","Cēsu 2.pamatskola","Ingrīda Brizga",4,1,1,0,0,6,,13:05
-"Guna Una","Jāzepa","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",4,9,0,3,0,16,,13:02
-"Tamara","Jefremova","Daugavpils Krievu vidusskola - licejs","Inna Kononova Alina Magomedova",5,10,4,10,0,29,3,15:01
+"Guna Una","Jāzepa","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",4,9,0,3,0,16,,13:02
+"Tamara","Jefremova","Daugavpils Krievu vidusskola - licejs","Inna Kononova; Alina Magomedova",5,10,4,10,0,29,3,15:01
 "Vadims","Jegorovs","Puškina licejs","Irēna Kozlovska",5,10,2," --",6,23,"Atzinība",13:55
 "Aleksejs","Jekimovs","Madonas Valsts ģimnāzija","Anita Vabule",3,5,7," --",0,15,,12:56
 "Olga","Jeļisejeva","Rīgas 33.vidusskola","Tatjana Kuskova",0,1,2,0,0,3,,13:22
@@ -168,7 +168,7 @@
 "Krista","Kronberga","Cēsu Valsts ģimnāzija","Anita Slaidiņa",6,9,1,1,0,17,,14:20
 "Jūlija","Kruša","Carnikavas pamatskola","Žaneta Kovaļevska",0,1,1,0,0,2,,13:20
 "Madara","Krūmiņa","A.Pumpura Rīgas 11.pamatskola","Inese Lude"," --",9," --",0,0,9,,12:34
-"Elvis","Krūmiņš-Landenbergs","DA Liepājas pilsētas 5.vidusskola","Ineta Šnepe Sandra Vilsone",0,1,0,0,0,1,,12:06
+"Elvis","Krūmiņš-Landenbergs","DA Liepājas pilsētas 5.vidusskola","Ineta Šnepe; Sandra Vilsone",0,1,0,0,0,1,,12:06
 "Madara","Krūzmane","Rīgas Valsts 2.ģimnāzija","Ruta Pelce",3,1,0,0," --",4,,13:02
 "Ginters","Kublinskis","Limbažu novada ģimnāzija","Ieva Rukšāne",3,1,7," --",0,11,,12:00
 "Aleksandra","Kudrjašova","Daugavpils 13.vidusskola","Anna Sambure",5,10,0,4,0,19,,13:56
@@ -184,8 +184,8 @@
 "Krišjānis","Lācis","Valmieras Valsts ģimnāzija","Gunta Lāce",3,0,7," --",4,14,,
 "Žanis","Lācis","Maltas 1.vidusskola","Inita Kurme",3,10,2," --",0,15,,
 "Viktors","Leidmans","Rīgas 34.vidusskola","Olga Trasko",2,1,1,0,0,4,,
-"Paulīna","Leimane","Tukuma 2.vidusskola","Sanita Birzniece Olga Antule",4,0,1,3,0,8,,
-"Ralfs","Leitis","Jelgavas Valsts ģimnāzija","Sandra Rubule Anete Zača",3," --",2," --",0,5,,
+"Paulīna","Leimane","Tukuma 2.vidusskola","Sanita Birzniece; Olga Antule",4,0,1,3,0,8,,
+"Ralfs","Leitis","Jelgavas Valsts ģimnāzija","Sandra Rubule; Anete Zača",3," --",2," --",0,5,,
 "Dace","Lenša","Mazsalacas vidusskola","Nadežda Leitāne",3,1," --",0,0,4,,
 "Diāna","Leskavniece","Jelgavas Spīdolas ģimnāzija","Antonija Rudzīte",3," --"," --"," --"," --",3,,
 "Ēriks","Lielbārdis","Rīgas Valsts 1.ģimnāzija","Vita Brakovska",3,10,2," --",0,15,,
@@ -194,7 +194,7 @@
 "Lauris","Liepiņš","Rīgas 64.vidusskola","Sandra Simanoviča",4,0,7," --",0,11,,
 "Sabīne","Liepniece","Rīgas Pļavnieku pamatskola","Sofija Tīfentāle",3,10,7,0,0,20,,
 "Elīza","Lindāne","Jēkabpils Valsts ģimnāzija","Sarmīte Vilcāne",3," --",7,3,0,13,,
-"Kristiāna","Linde","Jelgavas Valsts ģimnāzija","Nora Rinkevica Sandra Rubule",0,1,7,0,0,8,,
+"Kristiāna","Linde","Jelgavas Valsts ģimnāzija","Nora Rinkevica; Sandra Rubule",0,1,7,0,0,8,,
 "Viktorija","Linde","Rīgas 72.vidusskola","Tereza Manture",2,1,1,0,0,4,,14:10
 "Harijs","Lipskis","Rīgas Mūzikas internātvidusskola",," --"," --"," --",0,0,0,,
 "Polīna","Lomakina","Rīgas 94.vidusskola","Ligita Podāne",9,1," --"," --",4,14,,
@@ -225,7 +225,7 @@
 "Kristīne","Meldrāja","Puškina licejs","Irēna Kozlovska",5,8,1," --",5,19,,13:51
 "Betija","Meļķe","Rīgas Valsts 1.ģimnāzija","Vita Brakovska",10,10,4,6,10,40,1,
 "Kaspars","Mendziņš","Jelgavas Spīdolas ģimnāzija","Anita Indāre",3,5,6,0,0,14,,
-"Linda","Mešķe","Dobeles Valsts ģimnāzija","Aiva Rituma Dace Kūma",7,10,4,3,0,24,"Atzinība",
+"Linda","Mešķe","Dobeles Valsts ģimnāzija","Aiva Rituma; Dace Kūma",7,10,4,3,0,24,"Atzinība",
 "Evelīna","Mežennaja","Liepājas 7.vidusskola","Larisa Basakova",3,9,1,0,0,13,,12:22
 "Kamila","Mickeviča","Privātā vidusskola Laisma","Vlada Petrova",4,0,0,0,0,4,,13:18
 "Kārlis","Micpaps-Vītols","Cēsu 2.pamatskola","Ingrīda Brizga",3,10,7,0,3,23,"Atzinība",
@@ -282,12 +282,12 @@
 "Kaspars","Pudāns","Rīgas Valsts 2.ģimnāzija","Kaiva Treija",0,0,1,0,0,1,,12:40
 "Eduards","Puišis","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",5,10,2,3,0,20,,14:10
 "Kristers","Puriņš","Smiltenes ģimnāzija","Ārija Viļuma",3," --",7,3,2,15,,
-"Armands","Puškarjovs","Ādažu vidusskola","Eva Jākobsone Ingrīda Veilande",3," --",7,3,2,15,,13:35
+"Armands","Puškarjovs","Ādažu vidusskola","Eva Jākobsone; Ingrīda Veilande",3," --",7,3,2,15,,13:35
 "Patriks","Pušmucāns","Rīgas Valsts 1.ģimnāzija","Karmena Liepiņa",3,1,7,0,4,15,,13:35
 "Artūrs","Putniņš","Rīgas 94.vidusskola","Ligita Podāne",3,2," --",0,4,9,,14:35
 "Deniss","Puzirevs","Rīgas Purvciema vidusskola","Viktorija Požiļenko",6,10,2," --",0,18,,12:19
 "Ance Eva","Ragaine","Valmieras Viestura vidusskola","Inese Pundure",4," --",2," --",0,6,,12:56
-"Germans","Rakitenko","Rīgas 45.vidusskola","Inga Karakone Edīte Jēruma",3,1,2,5,2,13,,
+"Germans","Rakitenko","Rīgas 45.vidusskola","Inga Karakone; Edīte Jēruma",3,1,2,5,2,13,,
 "Adrians","Rakuzovs","Mālpils novada vidusskola","Annija Brežinska",0,1,0," --",0,1,,12:38
 "Elīna","Raščevska","Daugavpils Saskaņas pamatskola","Aļesja Šapkova"," --",0,0," --",0,0,,14:13
 "Jānis Mārtiņš","Raudis","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",8,9,2,0,0,19,,13:25
@@ -306,12 +306,12 @@
 "Liene","Saklaure","Valmieras Pārgaujas ģimnāzija","Ināra Bērziņa",5," --",1," --",0,6,,12:40
 "Lāsma","Salmiņa","Rīgas 94.vidusskola","Ligita Podāne",8," --"," --"," --",0,8,,13:23
 "Agnis","Salmiņš","Līvānu 1.vidusskola","Elita Vaivode",4,10,7,10,4,35,1,12:57
-"Vladislavs","Saveļjevs","Jelgavas Valsts ģimnāzija","Sandra Rubule Anete Zača",0,1," --"," --",0,1,,12:31
+"Vladislavs","Saveļjevs","Jelgavas Valsts ģimnāzija","Sandra Rubule; Anete Zača",0,1," --"," --",0,1,,12:31
 "Darja","Sediha","Rīgas 22.vidusskola","Gaļina Kožane",8,10,2," --",6,26,3,
 "Vladimir","Semenov","Rīgas 21.vidusskola","Tatjana Sildega",3,1,0,4,0,8,,
 "Reinis","Senkāns","Āgenskalna Valsts ģimnāzija","Ņina Juste"," --"," --",2," --",0,2,,14:01
 "Jānis","Seņkāns","Rēzeknes 1.vidusskola","Lucija Jermacāne",5,10,2,3,0,20,,14:12
-"Rihards","Seržāns","Jelgavas Valsts ģimnāzija","Sandra Rubule Anete Zača",0,10,2," --",0,12,,13:58
+"Rihards","Seržāns","Jelgavas Valsts ģimnāzija","Sandra Rubule; Anete Zača",0,10,2," --",0,12,,13:58
 "Aliaksandr","Shteinhardt","Rīgas 65.vidusskola","Irina Tarasova"," --",5,6," --"," --",11,,
 "Ieva Rolanda","Sietiņa","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",2,2,2,0,0,6,,12:52
 "Ieva","Siksaliete","Daugavpils Saskaņas pamatskola","Aļesja Šapkova",6,10," --",3,0,19,,15:10
@@ -340,9 +340,9 @@
 "Āris","Spruģevics","Cēsu pilsētas pamatskola","Lidija Lisovska",3," --",4,0,0,7,,13:43
 "Lāsma","Stabinge","Rīgas Valsts 2.ģimnāzija","Ruta Pelce",3,9,2,0,0,14,,12:19
 "Klāvs","Stabulnieks","Rīgas Valsts 3. ģimnāzija","Kristīne Birava",4,10,2,3,0,19,,13:42
-"Amanda","Stalidzāne","DA Liepājas pilsētas 5.vidusskola","Ineta Šnepe Sandra Vilsone",4,1,3,0,0,8,,12:11
+"Amanda","Stalidzāne","DA Liepājas pilsētas 5.vidusskola","Ineta Šnepe; Sandra Vilsone",4,1,3,0,0,8,,12:11
 "Elīza Marta","Stangaine","Cēsu Valsts ģimnāzija","Anita Slaidiņa",8,4,5,0,0,17,,14:59
-"Marija","Starovecka","DA Liepājas pilsētas 5.vidusskola","Ineta Šnepe Sandra Vilsone",3,0,1,0,1,5,,12:12
+"Marija","Starovecka","DA Liepājas pilsētas 5.vidusskola","Ineta Šnepe; Sandra Vilsone",3,0,1,0,1,5,,12:12
 "Līga","Stepiņa","Asūnes pamatskola","Lidija Plesņa",3,10,3,0,0,16,,13:47
 "Toms","Stepiņš","Rīgas Zolitūdes ģimnāzija","Nadežda Rjabiņina",2,0,2,0,0,4,,
 "Ivanda","Stolipina","Preiļu novada Salas pamatskola","Valentīna Madalāne",3,10,2,0,4,19,,12:56
@@ -363,7 +363,7 @@
 "Alise","Ševčenko","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",7,0,1,0,0,8,,13:35
 "Raimonds","Šīrants","J.Endzelīna Kauguru pamatskola","Edīte Puķīte",3,7,2,0,4,16,,14:58
 "Ksenija","Šlotska","Jēkabpils Valsts ģimnāzija","Sarmīte Vilcāne",3,10,7,3,4,27,3,14:38
-"Anastasija","Šļapina","Jelgavas Valsts ģimnāzija","Sandra Rubule Anete Zača",8,10,2,0,0,20,,13:22
+"Anastasija","Šļapina","Jelgavas Valsts ģimnāzija","Sandra Rubule; Anete Zača",8,10,2,0,0,20,,13:22
 "Jevgenija","Šļonska","Rīgas 33.vidusskola","Tatjana Kuskova",3,1,7,0,4,15,,
 "Alens","Šņepsts","Preiļu 1.pamatskola","Ilona Isajeva",9,10,5,7,0,31,2,14:30
 "Alise","Špēra","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",6,10,6,0,4,26,3,13:21
@@ -385,10 +385,10 @@
 "Romans","Trizna","Rīgas 21.vidusskola","Tatjana Sildega",0,1,3,0,0,4,,
 "Arsenijs","Turko","Rīgas 40.vidusskola","Lilija Roldugina",9,1,2,3,0,15,,
 "Klāvs Ivo","Turkovs","Grundzāles pamatskola","Dzintra Bormane",4,7,4,0,4,19,,13:21
-"Alisa","Turukova","Daugavpils Krievu vidusskola - licejs","Alina Magomedova Inna Kononova",5,10,7,10,0,32,2,
+"Alisa","Turukova","Daugavpils Krievu vidusskola - licejs","Alina Magomedova; Inna Kononova",5,10,7,10,0,32,2,
 "Artem","Ubaydullaev","Rīgas 86.vidusskola","Natālija Savva",5,10,10,10,4,39,1,
 "Rūdolfs","Umblejs","Siguldas Valsts ģimnāzija","Daiga Jēkabsone"," --",10,1," --",0,11,,14:20
-"Mairis","Umbraško","Jelgavas Valsts ģimnāzija","Sandra Rubule Anete Zača",5,1,5," --",0,11,,13:07
+"Mairis","Umbraško","Jelgavas Valsts ģimnāzija","Sandra Rubule; Anete Zača",5,1,5," --",0,11,,13:07
 "Diāna Paula","Upmale","Cēsu Valsts ģimnāzija","Anita Slaidiņa",10,10,7,4,1,32,2,14:08
 "Arvis","Utnāns","Līvānu 1.vidusskola","Elita Vaivode",4,5,4," --",4,17,,13:05
 "Lote","Ūdre","Rīgas Valsts 1.ģimnāzija","Vita Brakovska",0," --",3," --",1,4,,12:25
@@ -429,7 +429,7 @@
 "Sindija","Zaharāne","Siguldas Valsts ģimnāzija","Daiga Jēkabsone",4,10,0," --",0,14,,13:40
 "Laura Valentīna","Zahareviča","Ventspils 6.vidusskola","Vineta Trokša",0,10,5,0,0,15,,13:15
 "Diana","Zaiceva","Daugavpils Saskaņas pamatskola","Aļesja Šapkova",4," --",1," --",5,10,,14:50
-"Jeļizaveta","Zalivanskiha","Daugavpils Krievu vidusskola - licejs","Inna Kononova Alina Magomedova",9,10,1,3,4,27,3,
+"Jeļizaveta","Zalivanskiha","Daugavpils Krievu vidusskola - licejs","Inna Kononova; Alina Magomedova",9,10,1,3,4,27,3,
 "Roberts","Zandmanis","Rīgas Franču licejs","Dace Bērziņa",3,1,5,3,0,12,,11:57
 "Vitālijs","Zapāns","Ventspils 6.vidusskola","Juzefa Petroviča",3,1,0," --",0,4,,
 "Anna Džeina","Zariņa","Rīgas Valsts 1.ģimnāzija","Inese Lagzda",9,10,6,0,0,25,3,13:10

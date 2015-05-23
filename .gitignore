@@ -13,11 +13,13 @@ src/main/resources/classes
 src/main/resources/src
 /bin
 /target
-reports/*.aux
-reports/.Rhistory
+reports/cache/*
 reports/.RData
+reports/.Rhistory
+reports/*.aux
 reports/*.log
 reports/*.out
+reports/*.Rout
 reports/figure/*.pdf
 #reports/dalibnieki*.xslx
 #reports/results*.csv

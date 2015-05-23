@@ -70,10 +70,10 @@ getSchoolLanguageList <- function() {
 }
 
 
-getResultTables <- function() {
+getResultTables <- function(amoNum) {
   schoolLanguageList <- ldply(5:12, function(gg) {    
     dum = read.table(
-      file=sprintf("results-%02dkl.csv",gg), 
+      file=sprintf("amo%02d-results-%02dkl.csv",amoNum,gg), 
       sep=",",
       header=TRUE,
       row.names=NULL,  
