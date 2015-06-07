@@ -160,6 +160,22 @@ Cita Zemgale & 91 & 9739 & 0.93\\
 \end{knitrout}
 
 
+Ir svarīgs ne tikai dalībnieku skaits, bet arī viņu sagatavotības līmenis. Šajā grafikā ikviena olimpiādes dalībnieka rezultātam ir aprēķināta z-normalizētā vērtība jeb {\em z-score}, t.i. no iegūtā punktu skaita jeb {\em raw score} atņem attiecīgās klases aritmētisko vidējo un izdala ar attiecīgās klases standartnovirzi. Pēc tam katrā re\v{g}ionā un katrā klašu grupā atsevišķi rēķina šo z-normalizēto vērtību aritmētisko vidējo. Kā redzams diagrammā, vislabākie vērtējumi olimpiādēs ir Latgalē (zilais grafiks) un Rīgā (sarkanais grafiks). Jaunāko klašu grupās Latgales skolnieku rezultāti pārsniedz valstī vidējo par aptuveni 0.3-0.5 standartnovirzēm. (Tipiski jebkurā klašu grupā punktu skaita standartnovirze ir $\sigma \in [8,11]$, t.i. Latgales skolēnu rezultāti vidēji ir par 3-4 punktiem augstāki nekā citur. Tomēr salīdzināt iegūto punktu starpības nav visai korekti, jo katrā olimpiādes gadā un klašu grupā uzdevumu grūtība un tātad arī punktu izkliede var jūtami atšķirties.)
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-averages-per-region-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+
 % 1+9+5 aktivitāšu skaitļi pa reģioniem
 % Katram no 15 reģioniem dota dzimumu proporcija
 %% Stabiņi grupās pa 3 - visi/meitenes/zēni. 
@@ -224,7 +240,7 @@ Kā redzams, dalība AMO nav pilnīgi proporcionāla latviešu un krievu skolu a
 % https://learnr.wordpress.com/2009/03/29/ggplot2_marimekko_mosaic_chart/
 %% Segmenti -- 4 urbanizācijas tipi (LV-meitenes, LV-zēni, RU-meitenes, RU-zēni)
 
-Dalībnieku demogrāfisko struktūru var attēlot arī dažādām parametru kombinācijām. Šajā zīmējumā redzams dalībnieku sadalījums pa klasēm (vertikālie stabiņi), un katras klases iekšienē --- arī pa darbu valodām un dalībnieku dzimumiem. Skolēna dzimums re\v{g}istrācijas un rezultātu datos nav dots, 41.\ AMO tos noteicām pēc skolēna vārda. Pasaulē ir zināmas matemātikas sacensības, piemēram, EGMO (European Girls' Mathematical Olympiad), kuru nolūks ir veicināt meiteņu pievēršanos eksaktajām un inženierzinātnēm. Kopš 2013.\ gada EGMO piedalās arī četras vecāko klašu skolnieces no Latvijas.
+Dalībnieku demogrāfisko struktūru var attēlot arī dažādām parametru kombinācijām. Šajā zīmējumā redzams dalībnieku sadalījums pa klasēm (vertikālie stabiņi), un katras klases iekšienē --- arī pa darbu valodām un dalībnieku dzimumiem. Skolēna dzimums re\v{g}istrācijas un rezultātu datos nav dots, 41.\ AMO tos noteicām pēc skolēna vārda. Pasaulē ir matemātikas sacensības, piemēram, EGMO (European Girls' Mathematical Olympiad), kuru nolūks ir veicināt meiteņu pievēršanos eksaktajām un inženierzinātnēm. Kopš olimpiādes pirmsākumiem (2012.\ gadā Kembridžā) EGMO piedalās arī četras vecāko klašu skolnieces no Latvijas. Sk. \url{https://www.egmo.org/}.
 
 Latviešu valodā rakstītajiem darbiem zēnu un meiteņu ir aptuveni vienāds skaits, bet krievu valodā rakstītajiem darbiem meiteņu vecāko klašu grupās ir pat divreiz mazāk nekā zēnu.
 
@@ -233,6 +249,21 @@ Latviešu valodā rakstītajiem darbiem zēnu un meiteņu ir aptuveni vienāds s
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 
 {\centering \includegraphics[width=\maxwidth]{figure/minimal-demography-segments-1} 
+
+}
+
+
+
+\end{knitrout}
+
+\subsection{Dalībnieku valodas lielajās pilsētās}
+
+Šajā diagrammā mazie aplīši parāda olimpiādes darbu valodu proporciju Latvijas lielākajās pilsētās (9 lielās pilsētas kā arī Ogre, Tukums un Cēsis, kurās iedzīvotāju skaits ir tuvu 20 tūkstošiem - t.i. daudz neatšķiras no Valmieras un Jēkabpils iedzīvotāju skaita). Aplīša laukums ir aptuveni proporcionāls dalībnieku skaitam no attiecīgās pilsētas.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-language-per-city-1} 
 
 }
 
@@ -1220,7 +1251,7 @@ Protams, olimpiāde nav izvēļu tests (un par katru no jautājumiem ir vairāk 
 \cdot \sqrt{\sum_{i=1}^{n}{y_i^2} - n \cdot E(Y)^2}}, \]
 
 \noindent
-kur $x_i$ ir $i$-tā dalībnieka vērtējums par uzdevumu $X$, $y_i$ ir vērtējumu summa par visiem 4 atlikušajiem uzdevumiem, $n$ --- darbu skaits attiecīgajā klasē, $\overline{x}$ apzīmē $x_i$ aritmētisko vidējo, $\overline{y}$ apzīmē $y_i$ aritmētisko vidējo.
+kur $x_i$ ir $i$-tā dalībnieka vērtējums par uzdevumu $X$, $y_i$ ir vērtējumu summa par visiem 4 atlikušajiem uzdevumiem, $n$ --- darbu skaits attiecīgajā klasē, $E(X)$ apzīmē $x_i$ aritmētisko vidējo.
 
 Korelācijas koeficients vienmēr ir intervālā $[-1,1]$. Teorētiski varētu gadīties arī negatīva korelācija, t.i. tāds uzdevums, kuru veiksmīgākie olimpiādes dalībnieki risināja sliktāk nekā mazāk veiksmīgie. Tad paša uzdevuma vai vērtēšanas sistēmas korektums radītu nopietnas šaubas. Olimpiāžu praksē tomēr negatīvas korelācijas nav vērojamas. Salīdzinoši zemas uzdevuma vērtējuma korelācijas ar citiem uzdevumiem ļauj atrast tos uzdevumus, kuru tēma vai vērtēšanas kritēriji ir būtiski atšķīrušies no citiem uzdevumiem tajā pašā klases 5 uzdevumu komplektā.
 

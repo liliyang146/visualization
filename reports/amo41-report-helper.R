@@ -209,7 +209,7 @@ replaceUnicode <- function(arg) {
   arg <- gsub("\u017D","Z",arg)
   
   
-  arg <- gsub("\u0101","\\={a}",arg)
+  arg <- gsub("\u0101","a",arg)
   arg <- gsub("\u010D","c",arg)
   arg <- gsub("\u0113","e",arg)
   arg <- gsub("\u01E7","g",arg)
@@ -221,6 +221,39 @@ replaceUnicode <- function(arg) {
   arg <- gsub("\u016B","u",arg)
   arg <- gsub("\u017E","z",arg)
   return(arg)
+}
+
+
+letterFromUnicode <- function(arg) {
+  if (arg == "\u0100") return("A")
+  if (arg == "\u010C") return("C")
+  if (arg == "\u0112") return("E")
+  if (arg == "\u0122") return("G")
+  if (arg == "\u012A") return("I")
+  if (arg == "\u0136") return("K")
+  if (arg == "\u013B") return("L")
+  if (arg == "\u0145") return("N")
+  if (arg == "\u0160") return("S")
+  if (arg == "\u016A") return("U")
+  if (arg == "\u017D") return("Z")  
+  if (arg == "\u0101") return("a")
+  if (arg == "\u010D") return("c")
+  if (arg == "\u0113") return("e")
+  if (arg == "\u01E7") return("g")
+  if (arg == "\u012B") return("i")
+  if (arg == "\u0137") return("k")
+  if (arg == "\u013C") return("l")
+  if (arg == "\u0146") return("n")
+  if (arg == "\u0161") return("s")
+  if (arg == "\u016B") return("u")
+  if (arg == "\u017E") return("z")
+  return(arg)
+}
+
+strFromUnicode <- function(arg) {
+  xx <- as.vector(strsplit(arg,"")[[1]])
+  yy <- as.vector(sapply(xx, letterFromUnicode))
+  return(paste(yy,sep="",collapse=""))
 }
 
 getSkoloFrame <- function() {

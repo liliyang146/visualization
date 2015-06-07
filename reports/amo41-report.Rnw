@@ -85,13 +85,13 @@ activityAllPupils <-
                      sum(allPupils[allPupils$Region14==rr,10:17])
                      }))
 activityAllPupils <- c(activityAllPupils, sum(activityAllPupils))
-activityRegion <- c(activityRegion, "*** Visa Latvija")
+activityRegion2 <- c(activityRegion, "*** Visa Latvija")
 activityTable <- 
   matrix(c(activityParticipants,
            activityAllPupils,
            100*activityParticipants/activityAllPupils), 
          nrow=length(activityParticipants),
-         dimnames = list(activityRegion,c("Participants","All (Grades 5-12)","Activity %")))
+         dimnames = list(activityRegion2,c("Participants","All (Grades 5-12)","Activity %")))
 kable(activityTable, digits=2)
 @
 
@@ -107,6 +107,101 @@ grid(col="black", ny=NA)
 abline(v=2.23,lwd=2,lty="dashed",col="red")
 par(old.par)
 @
+
+
+Ir svarīgs ne tikai dalībnieku skaits, bet arī viņu sagatavotības līmenis. Šajā grafikā ikviena olimpiādes dalībnieka rezultātam ir aprēķināta z-normalizētā vērtība jeb {\em z-score}, t.i. no iegūtā punktu skaita jeb {\em raw score} atņem attiecīgās klases aritmētisko vidējo un izdala ar attiecīgās klases standartnovirzi. Pēc tam katrā re\v{g}ionā un katrā klašu grupā atsevišķi rēķina šo z-normalizēto vērtību aritmētisko vidējo. Kā redzams diagrammā, vislabākie vērtējumi olimpiādēs ir Latgalē (zilais grafiks) un Rīgā (sarkanais grafiks). Jaunāko klašu grupās Latgales skolnieku rezultāti pārsniedz valstī vidējo par aptuveni 0.3-0.5 standartnovirzēm. (Tipiski jebkurā klašu grupā punktu skaita standartnovirze ir $\sigma \in [8,11]$, t.i. Latgales skolēnu rezultāti vidēji ir par 3-4 punktiem augstāki nekā citur. Tomēr salīdzināt iegūto punktu starpības nav visai korekti, jo katrā olimpiādes gadā un klašu grupā uzdevumu grūtība un tātad arī punktu izkliede var jūtami atšķirties.)
+
+
+<<averages-per-region, echo=FALSE, fig.width=7, fig.height=5>>=
+# regionColors <- list(
+#   "Liepaja" =  "#0868AC",
+#   "Ventspils" = "#084081",
+#   "Cita Kurzeme" = "#2FBFD5",
+#   "Daugavpils" =  "#C51B7D",
+#   "Rezekne" = "#DE77AE",
+#   "Cita Latgale" = "#3F4FFF", 
+#   "Jurmala" = "#1A9850",
+#   "Cita Pieriga" = "#68FF5F", 
+#   "Riga" = "#FF2F2F", 
+#   "Valmiera" = "#FC4E2A",
+#   "Cita Vidzeme" = "#FF982F",
+#   "Jekabpils" = "#8C510A",
+#   "Jelgava" =  "#543005",  
+#   "Cita Zemgale" = "#D5FF2F"
+# )
+
+regionColors <- list(
+  "Kurzeme" = "#2FBFD5",
+  "Latgale" = "#3F4FFF", 
+  "Pieriga" = "#68FF5F", 
+  "Riga" = "#FF2F2F", 
+  "Vidzeme" = "#FF982F",
+  "Zemgale" = "#D5FF2F"
+)
+activityRegion6 <- c("Kurzeme",
+  "Latgale",
+  "Pieriga",
+  "Riga",
+  "Vidzeme",
+  "Zemgale")
+
+
+gradeMus <- sapply(5:12, function(gg) {
+  mean(results$Summa[results$Grade == gg])
+})
+gradeSigmas <- sapply(5:12, function(gg) {
+  sd(results$Summa[results$Grade == gg])
+})
+gradesPerRegion <- numeric()
+for (actRegion in activityRegion6) {
+  for (actGrade in 5:12) {
+    gpr <- mean(results$Summa[results$Region6==actRegion & 
+                        results$Grade == actGrade])
+    gradesPerRegion <- 
+      c(gradesPerRegion, 
+        (gpr - gradeMus[actGrade - 4])/ gradeSigmas[actGrade - 4])
+    
+  }
+}
+
+gradesMatrix <- matrix(gradesPerRegion, byrow=FALSE,nrow=8)
+nRegions <- length(activityRegion6)
+
+# get the range for the x and y axis 
+xrange <- range(5:12) 
+yrange <- range(gradesPerRegion, na.rm = TRUE) 
+
+old.par <- par(mar = c(5, 4, 4, 8)+0.1, xpd=TRUE, las=1)
+# set up the plot 
+plot(xrange, yrange, type="n", xlab="Grade",
+    ylab="Average Z-Score" ) 
+regionColorVector <- 
+  as.vector(sapply(names(regionColors), function(nn) { regionColors[[nn]]}))
+
+linetype <- 1
+#plotchar <- c(18,18,20,18,18,20,18,20,18,18,20,18,18,20)
+
+# add lines 
+for (i in 1:6) { 
+  lines(5:12, gradesMatrix[,i], type="b", lwd=1.5,
+    lty=linetype, col=regionColorVector[i], pch=18) 
+} 
+
+# add a title and subtitle 
+title("Z-Scores per Region")
+
+#add a legend 
+# legend(xrange[1], yrange[2], 
+#        activityRegion6, cex=0.8, col=regionColorVector,
+#   	pch=18, lty=linetype, title="Region")
+
+legend("topright", legend=activityRegion6, 
+       inset=c(-0.3,0), cex=0.8, 
+       col=regionColorVector, pch=18, lty=linetype, title="Region")
+par(old.par)
+grid(col="black")
+@
+
 
 
 % 1+9+5 aktivitāšu skaitļi pa reģioniem
@@ -174,12 +269,13 @@ points(x=totalRatio,y=1.2*(1:8)-0.5,pch=19, col="white")
 % https://learnr.wordpress.com/2009/03/29/ggplot2_marimekko_mosaic_chart/
 %% Segmenti -- 4 urbanizācijas tipi (LV-meitenes, LV-zēni, RU-meitenes, RU-zēni)
 
-Dalībnieku demogrāfisko struktūru var attēlot arī dažādām parametru kombinācijām. Šajā zīmējumā redzams dalībnieku sadalījums pa klasēm (vertikālie stabiņi), un katras klases iekšienē --- arī pa darbu valodām un dalībnieku dzimumiem. Skolēna dzimums re\v{g}istrācijas un rezultātu datos nav dots, 41.\ AMO tos noteicām pēc skolēna vārda. Pasaulē ir zināmas matemātikas sacensības, piemēram, EGMO (European Girls' Mathematical Olympiad), kuru nolūks ir veicināt meiteņu pievēršanos eksaktajām un inženierzinātnēm. Kopš 2013.\ gada EGMO piedalās arī četras vecāko klašu skolnieces no Latvijas.
+Dalībnieku demogrāfisko struktūru var attēlot arī dažādām parametru kombinācijām. Šajā zīmējumā redzams dalībnieku sadalījums pa klasēm (vertikālie stabiņi), un katras klases iekšienē --- arī pa darbu valodām un dalībnieku dzimumiem. Skolēna dzimums re\v{g}istrācijas un rezultātu datos nav dots, 41.\ AMO tos noteicām pēc skolēna vārda. Pasaulē ir matemātikas sacensības, piemēram, EGMO (European Girls' Mathematical Olympiad), kuru nolūks ir veicināt meiteņu pievēršanos eksaktajām un inženierzinātnēm. Kopš olimpiādes pirmsākumiem (2012.\ gadā Kembridžā) EGMO piedalās arī četras vecāko klašu skolnieces no Latvijas. Sk. \url{https://www.egmo.org/}.
 
 Latviešu valodā rakstītajiem darbiem zēnu un meiteņu ir aptuveni vienāds skaits, bet krievu valodā rakstītajiem darbiem meiteņu vecāko klašu grupās ir pat divreiz mazāk nekā zēnu.
 
 
 <<demography-segments, echo=FALSE, fig.width=7, fig.height=6>>=
+options(warn=-1)
 library(reshape)
 library(ggplot2)
 
@@ -243,6 +339,110 @@ p3 + theme_bw() +
   theme(legend.position = "bottom",
        panel.grid.major = element_line(colour = NA),
        panel.grid.minor = element_line(colour = NA))
+options(warn=0)
+@
+
+\subsection{Dalībnieku valodas lielajās pilsētās}
+
+Šajā diagrammā mazie aplīši parāda olimpiādes darbu valodu proporciju Latvijas lielākajās pilsētās (9 lielās pilsētas kā arī Ogre, Tukums un Cēsis, kurās iedzīvotāju skaits ir tuvu 20 tūkstošiem - t.i. daudz neatšķiras no Valmieras un Jēkabpils iedzīvotāju skaita). Aplīša laukums ir aptuveni proporcionāls dalībnieku skaitam no attiecīgās pilsētas.
+
+<<language-per-city, echo=FALSE, fig.width=7, fig.height=6.5>>=
+if (!"classInt" %in% installed.packages()) install.packages("classInt")
+library(classInt)
+if (!"grid" %in% installed.packages()) install.packages("grid")
+library(grid)
+if (!"gridBase" %in% installed.packages()) install.packages("gridBase")
+library(gridBase)
+if (!"maptools" %in% installed.packages()) install.packages("maptools")
+library(maptools)
+if (!"RColorBrewer" %in% installed.packages()) install.packages("RColorBrewer")
+library(RColorBrewer)
+if (!"RCurl" %in% installed.packages()) install.packages("RCurl")
+library(RCurl)
+
+
+cities<- readShapePoints("maps/lielas_pilsetas.shp")
+
+## DRAW CITIES AS GRAY CROSSES
+#old.par <- par(mar=c(5,4,4,0)+0.1)
+plot(cities, col="white", lwd=2, axes=F)
+#box()
+title(paste ("Participants by Language in Cities"))
+
+## DRAW OUTLINE
+axx <- readShapeLines("maps/robezas_line.shp")
+plot(axx, col="darkblue", lwd=1, add=TRUE)
+
+
+# SET THE NAMES OF BIG CITIES AND THEIR INDICIES IN THE SHAPEFILE
+bigCityNames <- c("Riga", "Daugavpils", "Jelgava", 
+                  "Jekabpils", "Jurmala", "Liepaja", 
+                  "Rezekne", "Valmiera", "Ventspils",
+                  "Ogre","Tukums","Cesis")
+bigMunicipalityNames <- c("Riga", "Daugavpils", "Jelgava", 
+                          "Jekabpils", "Jurmala", "Liepaja", 
+                          "Rezekne", "Valmiera", "Ventspils",
+                          "Ogres novads",
+                          "Tukuma novads",
+                          "Cesu novads")
+
+# Indices of the 9 big cities in the shapefile table
+bigCities <- c(10,25,17,22,12,27,21,2,4,
+               15,13,6)
+# Extract coordinates of these 9 cities. 
+cityLocations <- coordinates(cities[bigCities,])
+
+## PREPARE THE DATA THAT WILL BE DISPLAYED IN DIAGRAMS
+langAll <- as.vector(table(
+  results$Municipality)[bigMunicipalityNames])
+langLV <- as.vector(table(
+  results$Municipality[results$Language=="L"])[bigMunicipalityNames])
+langRU <- as.vector(table(
+  results$Municipality[results$Language=="K"])[bigMunicipalityNames])
+
+langLV[is.na(langLV)] <- 0
+langRU[is.na(langRU)] <- 0
+
+# PREPARE TO DRAW PIE-CHARTS
+oldpar <- par(no.readonly = TRUE)
+vps <- baseViewports()
+pushViewport(vps$inner, vps$figure, vps$plot)
+
+# COMPUTE PIE-CHART SIZES
+# city with 3000 inhabitants would look as a dot on the map
+smallestCity <- 10
+# the largest city is represented as a circle with an inch diameter
+maxpiesize <- unit(1.00, "inches")
+totals <- sqrt(langAll)
+sizemult <- totals/max(totals)
+
+colorScheme <- c("darkgreen","red","gray")
+
+for (i in 1:length(bigCityNames)) {
+  pushViewport(
+    viewport(x = unit(cityLocations[i,1], "native"), 
+             y = unit(cityLocations[i,2], "native"), 
+             width = sizemult[i] * maxpiesize, 
+             height = sizemult[i] * maxpiesize))
+  par(plt = gridPLT(), new = TRUE)
+  pie(c(langLV[i],langRU[i]), 
+      radius = 1, labels = rep("", 2), col=colorScheme)
+  popViewport()
+}
+
+
+#current.vpTree()
+popViewport(3)
+par(oldpar)
+
+SpatialPolygonsRescale(layout.scale.bar(), offset= c(600000,6150000), scale= 50000, fill= c("transparent", "black"), plot.grid= F)
+text(620000,6130000, "40km", cex= 1)
+SpatialPolygonsRescale(layout.north.arrow(1), offset= c(350000,6450000), scale = 30000, plot.grid=F)
+legend(x=400000, y=6200000, 
+       legend=c("Latvian", 
+                "Russian"), fill=colorScheme, bty="n")
+
+#par(old.par)
 
 @
 
@@ -601,7 +801,7 @@ Protams, olimpiāde nav izvēļu tests (un par katru no jautājumiem ir vairāk 
 \cdot \sqrt{\sum_{i=1}^{n}{y_i^2} - n \cdot E(Y)^2}}, \]
 
 \noindent
-kur $x_i$ ir $i$-tā dalībnieka vērtējums par uzdevumu $X$, $y_i$ ir vērtējumu summa par visiem 4 atlikušajiem uzdevumiem, $n$ --- darbu skaits attiecīgajā klasē, $\overline{x}$ apzīmē $x_i$ aritmētisko vidējo, $\overline{y}$ apzīmē $y_i$ aritmētisko vidējo.
+kur $x_i$ ir $i$-tā dalībnieka vērtējums par uzdevumu $X$, $y_i$ ir vērtējumu summa par visiem 4 atlikušajiem uzdevumiem, $n$ --- darbu skaits attiecīgajā klasē, $E(X)$ apzīmē $x_i$ aritmētisko vidējo.
 
 Korelācijas koeficients vienmēr ir intervālā $[-1,1]$. Teorētiski varētu gadīties arī negatīva korelācija, t.i. tāds uzdevums, kuru veiksmīgākie olimpiādes dalībnieki risināja sliktāk nekā mazāk veiksmīgie. Tad paša uzdevuma vai vērtēšanas sistēmas korektums radītu nopietnas šaubas. Olimpiāžu praksē tomēr negatīvas korelācijas nav vērojamas. Salīdzinoši zemas uzdevuma vērtējuma korelācijas ar citiem uzdevumiem ļauj atrast tos uzdevumus, kuru tēma vai vērtēšanas kritēriji ir būtiski atšķīrušies no citiem uzdevumiem tajā pašā klases 5 uzdevumu komplektā.
 
