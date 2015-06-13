@@ -3,6 +3,7 @@ setwd("/home/st/ddgatve-stat/reports/")
 
 library(knitr)
 source("school-utilities.R")
-source("amo41-report-helper.R")
+source("amo-report-helper.R")
 
-knit("amo41-report.Rnw")
+knit("amo42-report.Rnw")
+#knit("amo-report-notes.Rnw")

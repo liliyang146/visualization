@@ -161,7 +161,7 @@ getExtResults <- function(amoNum) {
   return(results)
 }
 
-results <- getExtResults(41)
+results <- getExtResults(42)
 
 getAllPupils <- function(year) {
   result <- read.table(
@@ -177,7 +177,7 @@ getAllPupils <- function(year) {
 getNumTeachers <- function(results) {
   allTeachers <- character(0)
   numTeachers <- numeric(0)
-  teacherList <- strsplit(as.vector(results$Skolotaji),"; +")
+  teacherList <- strsplit(as.vector(results$Skolotaji),"[;,] +")
   for (tt in 1:length(teacherList)) {
     #  allTeachers <- c(allTeachers,teacherList[[tt]])
     numTeachers <- c(numTeachers,length(teacherList[[tt]]))
@@ -266,7 +266,7 @@ getSkoloFrame <- function() {
   upperQuartiles <- getUpperQuartiles(results)
   
   for (skNum in 1:nrow(results)) {
-    theSks <- as.vector(strsplit(as.character(results[skNum,5]),"; +"))
+    theSks <- as.vector(strsplit(as.character(results[skNum,5]),"[;,] +"))
     theGrade <- as.numeric(results[skNum,"Grade"])
     for (theSk in theSks[[1]]) {
       if (theSk %in% names(allGuys)) {

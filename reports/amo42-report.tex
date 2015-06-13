@@ -1,0 +1,1345 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt} 
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1 uzdevums:}
+\noindent}
+{}
+
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage{url}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+\renewcommand{\abstractname}{Anotācija}
+\hypersetup{
+ pdfstartview={XYZ null null 1}}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+
+
+
+\title{42.\ AMO rezultāti tabulās un zīmējumos}
+
+\author{}
+\date{}
+
+\maketitle
+
+\begin{abstract}
+Šajā dokumentā apkopoti daži 42.\ Atklātās matemātikas olimpiādes (2015.m.g.) rezultātu kop\-sa\-vil\-ku\-mi. Izmantojot izklājlapas, ko publisko LU Neklātienes Matemātikas Skola, aprēķināts dalībnieku skaits, dalības aktivitāte (AMO dalībnieku īpatsvars no visiem attiecīgā vecuma skolēniem), dalība un rezultāti atkarībā no skolēnu \v{g}eogrāfijas, urbanizācijas, valodas, dzimuma. Apkopoti saraksti ar skolotājiem un skolām, kas nodrošinājuši augstu dalību vai ieguvuši lielu punktu kopskaitu. Pārskata nobeigumā minēti dati arī par uzdevumiem --- vidējais punktu skaits un vērtējumu sadalījums, kāda daļa no rēķinātājiem neuzsāka risināt (``mīnusu'' jeb neatrasto risinājumu skaits galavērtējumā), kāda ir konkrētā uzdevuma vērtējumu korelācija ar pārējo uzdevumu vērtējumu summu. 
+\end{abstract}
+
+\section{Dalībnieku aktivitāte}
+
+Šajā sadaļā atbildēsim uz jautājumu, kāda daļa no katrai klasei atbilstošās vecuma grupas skolēniem piedalījās 42.\ AMO. 
+Dati par skolēnu skaitu pa re\v{g}ioniem, klasēm un mācību valodām ņemti no IZM publiskotās statistikas --- \url{http://izm.gov.lv/lv/publikacijas-un-statistika/statistika-par-visparejo-izglitibu/2014-2015-m-g}. Dati apkopoti par 9 lielajām pilsētām kā arī par re\v{g}ioniem, kuros nav ietvertas lielās pilsētas. Ar {\em re\v{g}ioniem} domāti NUTS 3 re\v{g}ioni --- sk. \url{http://en.wikipedia.org/wiki/Statistical_regions_of_Latvia} - Kurzeme, Latgale, Pierīga Rīga, Vidzeme, Zemgale.
+
+
+\subsection{Dalība olimpiādē}
+
+
+
+%% col1 = region
+%% col2 = participants
+%% col3 = total guys
+%% col4 = percentage participated
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|r|r|r}
+\hline
+  & Participants & All (Grades 5-12) & Activity \%\\
+\hline
+Liepaja & 120 & 4863 & 2.47\\
+\hline
+Ventspils & 47 & 2456 & 1.91\\
+\hline
+Cita Kurzeme & 110 & 9371 & 1.17\\
+\hline
+Daugavpils & 236 & 5206 & 4.53\\
+\hline
+Rezekne & 55 & 2453 & 2.24\\
+\hline
+Cita Latgale & 168 & 10590 & 1.59\\
+\hline
+Jurmala & 37 & 2507 & 1.48\\
+\hline
+Cita Pieriga & 396 & 15769 & 2.51\\
+\hline
+Riga & 1247 & 38631 & 3.23\\
+\hline
+Valmiera & 90 & 2275 & 3.96\\
+\hline
+Cita Vidzeme & 335 & 10987 & 3.05\\
+\hline
+Jekabpils & 51 & 1465 & 3.48\\
+\hline
+Jelgava & 145 & 3689 & 3.93\\
+\hline
+Cita Zemgale & 127 & 9739 & 1.30\\
+\hline
+*** Visa Latvija & 3164 & 120001 & 2.64\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-regional-activity-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+Ir svarīgs ne tikai dalībnieku skaits, bet arī viņu sagatavotības līmenis. Šajā grafikā ikviena olimpiādes dalībnieka rezultātam ir aprēķināta z-normalizētā vērtība jeb {\em z-score}, t.i. no iegūtā punktu skaita jeb {\em raw score} atņem attiecīgās klases aritmētisko vidējo un izdala ar attiecīgās klases standartnovirzi. Pēc tam katrā re\v{g}ionā un katrā klašu grupā atsevišķi rēķina šo z-normalizēto vērtību aritmētisko vidējo. Kā redzams diagrammā, vislabākie vērtējumi olimpiādēs ir Rīgā (sarkanais grafiks) un Latgalē (zilais grafiks).
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-averages-per-region-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+
+% 1+9+5 aktivitāšu skaitļi pa reģioniem
+% Katram no 15 reģioniem dota dzimumu proporcija
+%% Stabiņi grupās pa 3 - visi/meitenes/zēni. 
+
+% 1+9+5 aktivitāšu skaitļi pa reģioniem - darbi latviešu valodā
+% Katram no 15 reģioniem dota dzimumu proporcija
+
+% 1+9+5 aktivitāšu skaitļi pa reģioniem - darbi krievu valodā
+% Katram no 15 reģioniem dota dzimumu proporcija
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-per-class-1} 
+
+}
+
+
+
+\end{knitrout}
+
+\subsection{Dalība un sociāli-ekonomiskie rādītāji}
+
+% Trīs 14-bumbulīšu diagrammas
+
+Šeit varētu ievietot diagrammas pa novadiem vai novadu grupām, kas parāda divu parametru attiecību (varētu būt runa par burbulīšu diagrammām, ko zīmē divās dimensijās; turklāt burbulīša laukums ir aptuveni proporcionāls skolēnu skaitam olimpiādē).
+
+\begin{itemize}
+\item Sociāli-ekonomisko rādītāju --- bezdarbu, IIN uz 1 iedzīvotāju, pašvaldības izdevumus uz 1 skolēnu vai skolēnu skaitu skolā.
+\item Dalībnieku aktivitāti (dalībnieku attiecību pret visiem skolēniem novadā) kā arī olimpiādes summāro rezultātu (punktu summas attiecību pret visiem skolēniem novadā). 
+\end{itemize}
+
+Šādas diagrammas palīdzētu saprast, kādi sociālie priekšnoteikumi veicina interesi par olimpiādēm, kāda izglītības politika (piemēram, mazo skolu saglabāšana vai slēgšana; lielāki vai mazāki izdevumi par vienu skolēnu) varētu pozitīvi iespaidot olimpiāžu rezultātus. 
+
+\subsection{Dalībnieku struktūra}
+
+
+
+%% Segmenti -- 6 NUTS reģioni
+% http://en.wikipedia.org/wiki/Statistical_regions_of_Latvia
+
+Atklātajā matemātikas olimpiādē sastopami darbi latviešu un krievu valodās. Valodu būtu visprecīzāk noteikt, aplūkojot katru konkrēto darbu.Katras klases joslas iekšpusē iezīmēts balts aplītis, kurš parāda latviešu skolēnu īpatsvaru visu attiecīgās klases audzēkņu vidū. Izņemot 5.\ un 6.\ klasi, latviešu darbu īpatsvars 42.\ AMO ir nedaudz lielāks nekā skolēnu īpatsvars latviešu plūsmas skolās kopumā. Latvijas vispārizglītojošajās skolās mācības mēdz notikt arī poļu, ukraiņu, baltkrievu, angļu un franču valodās. Šo skolu audzēkņi var izvēlēties rakstīt darbu latviski vai krieviski. Viņu darbi pieskaitīti atkarībā no re\v{g}istrācijā norādītās valodas.
+
+
+%% K/L skaita attiecība pa klasēm 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-lang-proportions-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+
+%% Marimekko diagrammas - dalībnieku dzimumu struktūra pa reģioniem. 
+% https://learnr.wordpress.com/2009/03/29/ggplot2_marimekko_mosaic_chart/
+%% Segmenti -- 4 urbanizācijas tipi (LV-meitenes, LV-zēni, RU-meitenes, RU-zēni)
+
+Dalībnieku demogrāfisko struktūru var attēlot arī dažādām parametru kombinācijām. Šajā zīmējumā redzams dalībnieku sadalījums pa klasēm (vertikālie stabiņi), un katras klases iekšienē --- arī pa darbu valodām un dalībnieku dzimumiem. Skolēna dzimums re\v{g}istrācijas un rezultātu datos nav dots, 42.\ AMO tos noteicām pēc skolēna vārda. Pasaulē ir matemātikas sacensības, piemēram, EGMO (European Girls' Mathematical Olympiad), kuru nolūks ir veicināt meiteņu pievēršanos eksaktajām un inženierzinātnēm. Kopš olimpiādes pirmsākumiem (2012.\ gadā Kembridžā) EGMO piedalās arī četras vecāko klašu skolnieces no Latvijas. Sk. \url{https://www.egmo.org/}.
+
+Latviešu valodā rakstītajiem darbiem zēnu un meiteņu ir aptuveni vienāds skaits, bet krievu valodā rakstītajiem darbiem meiteņu vecāko klašu grupās ir ievērojami mazāk nekā zēnu.
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-demography-segments-1} 
+
+}
+
+
+
+\end{knitrout}
+
+\subsection{Dalībnieku valodas lielajās pilsētās}
+
+Šajā diagrammā mazie aplīši parāda olimpiādes darbu valodu proporciju Latvijas lielākajās pilsētās (9 lielās pilsētas kā arī Ogre, Tukums un Cēsis, kurās iedzīvotāju skaits ir tuvu 20 tūkstošiem - t.i. daudz neatšķiras no Valmieras un Jēkabpils iedzīvotāju skaita). Aplīša laukums ir aptuveni proporcionāls dalībnieku skaitam no attiecīgās pilsētas.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-language-per-city-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+
+
+
+\section{Vidējie rezultāti dalībnieku kategorijām}
+
+Zīmējumā dots rezultātu intervāls katrai klasei. ``Kastītes'' kreisā mala atbilst apakšējai kvartilei, labā mala --- augšējai kvartilei, bet platā zilā svītriņa vidū --- mediānai. Ja klases darbus sakārtotu punktu pieaugšanas secībā un sadalītu četrās vienādās daļās, tad viszemāko punktu ieguvēju ceturtdaļa atrastos uz kreisās ūsas, divas vidējās ceturtdaļas --- kastītes iekšpusē, bet augšējā ceturtdaļa --- uz labās ūsas. Šī diagramma parāda, ka atkarībā no klašu grupas, var  atšķirties punktu skaits, kas nepieciešams nonākšanai līdz ``vidusmēram'' vai līdz augšējai ceturtdaļai. 
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-boxplots-per-grade-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+
+
+%% Visu dalībnieku darbi, iekrāsotas godalgotās vietas 
+%% Meiteņu un zēnu darbi (Meitenes zīmējam tanī pašā histogrammā)
+%% Meitenes ir sazīmētas apakšā. 
+
+%% Urbaniz. tips. Rīgas, 8 lielo pilsētu, mazpilsētu un lauku darbi
+
+%% Latviešu un krievu valodā rakstītie darbi
+
+%% Latviešu un krievu valodā rakstītie darbi -- tikai 9 lielajās pilsētās
+
+
+\section{Skolas un skolotāji}
+
+
+
+Tabulā apkopoti dati par matemātikas skolotājiem:
+
+\noindent
+{\bf Participants} --- Cik dalībnieku piedalījās olimpiādē.\\
+{\bf Q3} --- Cik no viņiem ir ieguvuši rezultātu savas klases augšējā kvartilē. Punktu skaits, kas nepieciešams iekļūšanai augšējā kvartilē, ir atkarīgs no klases ($Q_3(Grade5)=21\;$, $Q_3(Grade6)=15\;$, $Q_3(Grade7)=24\;$, $Q_3(Grade8)=18\;$, $Q_3(Grade9)=17\;$, $Q_3(Grade10)=20\;$, $Q_3(Grade11)=18\;$, $Q_3(Grade12)=17\;$.)\\
+{\bf Points} --- Kāda ir attiecīgā skolotāja sagatavoto skolēnu punktu summa.\\
+{\bf School} --- Skolotāja pārstāvētā skola.
+
+
+
+Tajos gadījumos, kad skolēns norādījis vairākus skolotājus, attiecīgo dalībnieku un viņa punktus pieskaita visiem skolotājiem. Kā redzams tabuliņā, vairums risinātāju (93.3\%) norādījuši tieši vienu skolotāju. 
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|r}
+\hline
+Noraditi skolotaji & Darbu skaits\\
+\hline
+0 & 34\\
+\hline
+1 & 2953\\
+\hline
+2 & 157\\
+\hline
+3 & 20\\
+\hline
+Kopa & 3164\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+
+
+
+Turpmākajās tabulās doti trīs dažādu veidu reitingi --- pirmie 100 skolotāji (pavisam bija 735 skolotāju, kuru vārdus skolēni norādīja savos darbos). Pirmajā reitingā skolotāji sakārtoti atbilstoši kopīgajam dalībnieku skaitam; otrajā reitingā --- atbilstoši dalībnieku skaitam, kuru rezultāts ir augšējā kvartilē, trešajā reitingā --- atbilstoši visu dalībnieku kopīgajam punktu skaitam. 
+
+{\em Apzināti neveidojām reitingu pēc ``aritmētiskā vidējā rezultāta'', jo arī neliela punktu skaita saņemšana olimpiādē ir pozitīvs sasniegums; nebūtu attaisnojami tādi reitingi, kuros masveidīgāka dalība vilktu skolas vai skolotāja kopvērtējumu lejup.}
+
+
+% Skolas pēc dalībnieku skaita
+
+% Skolas pēc savāktajiem punktiem
+
+%% Skolotāji pēc dalībnieku skaita
+
+\newpage
+{\bf Pirmie 100 skolotāji pēc dalībnieku skaita}\\ \nopagebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{r|l|r|r|r|l}
+\hline
+Num & Name & Participants & Q3 & Points & School\\
+\hline
+1 & Dace Andzane & 48 & 26 & 1217 & Rigas Valsts 1. gimnazija\\
+\hline
+2 & Dzintars Zicans & 45 & 14 & 792 & Rigas Valsts 1. gimnazija\\
+\hline
+3 & Inese Lagzda & 43 & 26 & 848 & Rigas Valsts 1. gimnazija\\
+\hline
+4 & Irena Oksenuka & 30 & 16 & 519 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+5 & Daiga Jekabsone & 29 & 9 & 457 & Siguldas Valsts gimnazija\\
+\hline
+6 & Ingrida Veilande & 27 & 4 & 317 & Adazu vidusskola\\
+\hline
+7 & Inese Lude & 25 & 3 & 265 & Andreja Pumpura Rigas 11. pamatskola\\
+\hline
+8 & Agrita Bartusevica & 24 & 4 & 324 & Cesu Valsts gimnazija\\
+\hline
+9 & Emils Veide & 23 & 12 & 568 & Rigas Valsts 1. gimnazija\\
+\hline
+10 & Anita Slaidina & 23 & 12 & 513 & Cesu Valsts gimnazija\\
+\hline
+11 & Inga Ruskule & 23 & 4 & 256 & Priekulu vidusskola\\
+\hline
+12 & Alina Magomedova & 22 & 11 & 391 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+13 & Aija Vasilevska & 21 & 11 & 404 & Rigas Valsts 1. gimnazija\\
+\hline
+14 & Zane Kaibe & 21 & 8 & 408 & Rigas 64.vidusskola\\
+\hline
+15 & Nina Juste & 20 & 9 & 342 & Agenskalna Valsts gimnazija\\
+\hline
+16 & Laila Aigare & 19 & 9 & 271 & Rigas Valda Zalisa sakumskola\\
+\hline
+17 & Margita Jirgensone & 19 & 5 & 200 & Jelgavas Spidolas gimnazija\\
+\hline
+18 & Vera Solovjova & 18 & 7 & 255 & Rigas 10.vidusskola\\
+\hline
+19 & Karmena Liepina & 18 & 6 & 268 & Rigas Valsts 1. gimnazija\\
+\hline
+20 & Valentina Cesnokova & 18 & 4 & 227 & Rigas 13.vidusskola\\
+\hline
+21 & Alesja Sapkova & 17 & 12 & 357 & Daugavpils Saskanas pamatskola\\
+\hline
+22 & Anita Indare & 17 & 4 & 212 & Jelgavas Spidolas gimnazija\\
+\hline
+23 & Irina Morusa & 17 & 2 & 219 & Rigas 72. vidusskola\\
+\hline
+24 & Ludmila Ulinska & 16 & 9 & 352 & Daugavpils Saskanas pamatskola\\
+\hline
+25 & Natalja Mosolova & 16 & 4 & 209 & Rigas 13.vidusskola\\
+\hline
+26 & Daina Brinke & 16 & 0 & 173 & Rigas Valsts 2. gimnazija\\
+\hline
+27 & Inta Ozolina & 15 & 5 & 242 & Siguldas pilsetas vidusskola\\
+\hline
+28 & Liene Cerpa & 15 & 4 & 187 & Siguldas pilsetas vidusskola\\
+\hline
+29 & Lidija Lisovska & 15 & 2 & 195 & Cesu pilsetas pamatskola\\
+\hline
+30 & Inga Kauskale & 15 & 1 & 121 & Mezciema pamatskola\\
+\hline
+31 & Irina Polakova & 14 & 10 & 334 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+32 & Stanislav Didych & 14 & 9 & 322 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+33 & Olga Sheremet & 14 & 6 & 241 & Rigas Zolitudes gimnazija\\
+\hline
+34 & Inga Neilande & 14 & 2 & 160 & Jelgavas 4.sakumskola\\
+\hline
+35 & Olga Kostenko & 14 & 2 & 160 & Rigas Rinuzu vidusskola\\
+\hline
+36 & Inese Boze & 14 & 1 & 151 & Draudziga Aicinajuma Cesu Valsts gimnazija\\
+\hline
+37 & Inna Glebova & 13 & 7 & 243 & Rigas 34. vidusskola\\
+\hline
+38 & Indra Upite-Dambite & 13 & 6 & 279 & Siguldas Valsts gimnazija\\
+\hline
+39 & Lilija Roldugina & 13 & 5 & 205 & Rigas 40. vidusskola\\
+\hline
+40 & Viola Levina & 13 & 1 & 168 & Valkas gimnazija\\
+\hline
+41 & Jolanta Klamere & 13 & 1 & 109 & J. Cakstes Liepajas pilsetas 10. vidusskola\\
+\hline
+42 & Regina Simanovska & 12 & 7 & 268 & Rigas Valsts 1. gimnazija\\
+\hline
+43 & Nadezda Koleda & 12 & 6 & 221 & Rigas 34. vidusskola\\
+\hline
+44 & Liene Andzane & 12 & 1 & 119 & Kraslavas Valsts gimnazija\\
+\hline
+45 & Iveta Perkona & 12 & 0 & 119 & Jelgavas 3.sakumskola\\
+\hline
+46 & Anna Jansone & 11 & 7 & 272 & Rigas Valsts 1. gimnazija\\
+\hline
+47 & Ilze Vitina & 11 & 1 & 153 & Sakumskola "Taurenitis"\\
+\hline
+48 & Ira Nikiforova & 11 & 1 & 79 & Plavinu novada gimnazija\\
+\hline
+49 & Vaira Buza & 11 & 0 & 112 & Draudziga Aicinajuma Cesu Valsts gimnazija\\
+\hline
+50 & Dagnija Kikane & 11 & 0 & 94 & Adazu vidusskola\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{r|l|r|r|r|l}
+\hline
+Num & Name & Participants & Q3 & Points & School\\
+\hline
+51 & Svetlana Elksnina & 11 & 0 & 68 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+52 & Dina Vertasonoka & 11 & 0 & 61 & Daugavpils 15.vidusskola\\
+\hline
+53 & Nadezda Zuka & 11 & 0 & 60 & Rigas 21.vidusskola\\
+\hline
+54 & Rita Hrapane & 10 & 9 & 218 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+55 & Ingrida Brizga & 10 & 6 & 176 & Cesu 2. pamatskola\\
+\hline
+56 & Tamara Jersova & 10 & 4 & 175 & Rigas 10.vidusskola\\
+\hline
+57 & Dace Celina & 10 & 4 & 154 & Agenskalna sakumskola\\
+\hline
+58 & Evija Slokenberga & 10 & 3 & 185 & Jelgavas Valsts gimnazija\\
+\hline
+59 & Edite Teterovska & 10 & 3 & 157 & Rigas Lietuviesu vidusskola\\
+\hline
+60 & Laila Ruke & 10 & 3 & 154 & Cesu Valsts gimnazija\\
+\hline
+61 & Zane Berga & 10 & 3 & 140 & Straupes pamatskola\\
+\hline
+62 & Ligita Neimane & 10 & 2 & 148 & Cesu pilsetas pamatskola\\
+\hline
+63 & Aleksandra Fjodorova & 10 & 2 & 97 & Rigas Centra humanitara vidusskola\\
+\hline
+64 & Eva Jakobsone & 10 & 1 & 121 & Adazu vidusskola\\
+\hline
+65 & Valda Bickova & 10 & 1 & 121 & Uzvaras vidusskola\\
+\hline
+66 & Zinaida Panarada & 10 & 1 & 102 & Jelgavas 6.vidusskola\\
+\hline
+67 & Aivars Ancupans & 10 & 1 & 90 & Agenskalna Valsts gimnazija\\
+\hline
+68 & Liga Plauca & 10 & 0 & 103 & Agenskalna Valsts gimnazija\\
+\hline
+69 & Irina Macanova & 10 & 0 & 95 & Olaines 2.vidusskola\\
+\hline
+70 & Nadezda Leitane & 10 & 0 & 75 & Valmieras Valsts gimnazija\\
+\hline
+71 & Selga Lukjanska & 10 & 0 & 74 & Cesu 1. pamatskola\\
+\hline
+72 & Valda Zviedre & 10 & 0 & 20 & Malpils novada vidusskola\\
+\hline
+73 & Iveta Zarane & 9 & 7 & 230 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+74 & Irena Kozlovska & 9 & 4 & 158 & Puskina  licejs\\
+\hline
+75 & Veneranda Springe & 9 & 4 & 135 & Rudzatu vidusskola\\
+\hline
+76 & Olga Malkova & 9 & 3 & 145 & Liepajas A.Puskina 2.vidusskola\\
+\hline
+77 & Aiva Rituma & 9 & 3 & 138 & Dobeles Valsts gimnazija\\
+\hline
+78 & Kaiva Treija & 9 & 3 & 115 & Rigas Valsts 2. gimnazija\\
+\hline
+79 & Anna Gustava & 9 & 2 & 124 & Rigas 25.vidusskola\\
+\hline
+80 & Kristine Gaigala & 9 & 2 & 90 & Rigas 64.vidusskola\\
+\hline
+81 & Laura Freija & 9 & 1 & 125 & Rigas Valsts 2. gimnazija\\
+\hline
+82 & Laila Berzina & 9 & 1 & 91 & Priekulu vidusskola\\
+\hline
+83 & Agita Seglicka & 9 & 1 & 79 & Vecumnieku vidusskola\\
+\hline
+84 & Inara Veita & 9 & 0 & 114 & Valmieras Pargaujas gimnazija\\
+\hline
+85 & Aleksandra Ivanova & 9 & 0 & 81 & Zvejniekciema vidusskola\\
+\hline
+86 & Anete Zaca & 9 & 0 & 66 & Jelgavas Valsts gimnazija\\
+\hline
+87 & Antra Punovska & 9 & 0 & 59 & Andreja Eglisa Laudonas vidusskola\\
+\hline
+88 & Dzintra Zingule & 9 & 0 & 55 & Jelgavas 3.sakumskola\\
+\hline
+89 & Ilze Kale & 9 & 0 & 47 & Grobinas gimnazija\\
+\hline
+90 & Mara Ieleja & 9 & 0 & 44 & Limbazu 3. vidusskola\\
+\hline
+91 & Gunta Kuzmina & 9 & 0 & 42 & Priekules vidusskola\\
+\hline
+92 & Ilona Mackevica-Manko & 8 & 5 & 218 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+93 & Kristine Sevcenko & 8 & 5 & 183 & Rigas Valsts 1. gimnazija\\
+\hline
+94 & Anna Stavicka & 8 & 5 & 165 & Daugavpils 3.vidusskola\\
+\hline
+95 & Maija Balode & 8 & 4 & 172 & Rigas Valsts 1.gimnazija\\
+\hline
+96 & Galina Rizakova & 8 & 4 & 151 & Rezeknes 2.vidusskola\\
+\hline
+97 & Svetlana Saveiko & 8 & 3 & 113 & Rigas 40. vidusskola\\
+\hline
+98 & Ilze Ose & 8 & 2 & 121 & Majoru vidusskola\\
+\hline
+99 & Jelena Blagodarnaja & 8 & 2 & 120 & Rigas Purvciema vidusskola\\
+\hline
+100 & Zaneta Kovalevska & 8 & 2 & 120 & Carnikavas pamatskola\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+
+\newpage
+{\bf Pirmie 100 skolotāji pēc dalībnieku skaita augšējā kvartilē}\\ \nopagebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{r|l|r|r|r|l}
+\hline
+Num & Name & Participants & Q3 & Points & School\\
+\hline
+1 & Dace Andzane & 48 & 26 & 1217 & Rigas Valsts 1. gimnazija\\
+\hline
+2 & Inese Lagzda & 43 & 26 & 848 & Rigas Valsts 1. gimnazija\\
+\hline
+3 & Irena Oksenuka & 30 & 16 & 519 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+4 & Dzintars Zicans & 45 & 14 & 792 & Rigas Valsts 1. gimnazija\\
+\hline
+5 & Emils Veide & 23 & 12 & 568 & Rigas Valsts 1. gimnazija\\
+\hline
+6 & Anita Slaidina & 23 & 12 & 513 & Cesu Valsts gimnazija\\
+\hline
+7 & Alesja Sapkova & 17 & 12 & 357 & Daugavpils Saskanas pamatskola\\
+\hline
+8 & Alina Magomedova & 22 & 11 & 391 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+9 & Aija Vasilevska & 21 & 11 & 404 & Rigas Valsts 1. gimnazija\\
+\hline
+10 & Irina Polakova & 14 & 10 & 334 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+11 & Daiga Jekabsone & 29 & 9 & 457 & Siguldas Valsts gimnazija\\
+\hline
+12 & Nina Juste & 20 & 9 & 342 & Agenskalna Valsts gimnazija\\
+\hline
+13 & Laila Aigare & 19 & 9 & 271 & Rigas Valda Zalisa sakumskola\\
+\hline
+14 & Ludmila Ulinska & 16 & 9 & 352 & Daugavpils Saskanas pamatskola\\
+\hline
+15 & Stanislav Didych & 14 & 9 & 322 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+16 & Rita Hrapane & 10 & 9 & 218 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+17 & Zane Kaibe & 21 & 8 & 408 & Rigas 64.vidusskola\\
+\hline
+18 & Vera Solovjova & 18 & 7 & 255 & Rigas 10.vidusskola\\
+\hline
+19 & Inna Glebova & 13 & 7 & 243 & Rigas 34. vidusskola\\
+\hline
+20 & Regina Simanovska & 12 & 7 & 268 & Rigas Valsts 1. gimnazija\\
+\hline
+21 & Anna Jansone & 11 & 7 & 272 & Rigas Valsts 1. gimnazija\\
+\hline
+22 & Iveta Zarane & 9 & 7 & 230 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+23 & Karmena Liepina & 18 & 6 & 268 & Rigas Valsts 1. gimnazija\\
+\hline
+24 & Olga Sheremet & 14 & 6 & 241 & Rigas Zolitudes gimnazija\\
+\hline
+25 & Indra Upite-Dambite & 13 & 6 & 279 & Siguldas Valsts gimnazija\\
+\hline
+26 & Nadezda Koleda & 12 & 6 & 221 & Rigas 34. vidusskola\\
+\hline
+27 & Ingrida Brizga & 10 & 6 & 176 & Cesu 2. pamatskola\\
+\hline
+28 & Margita Jirgensone & 19 & 5 & 200 & Jelgavas Spidolas gimnazija\\
+\hline
+29 & Inta Ozolina & 15 & 5 & 242 & Siguldas pilsetas vidusskola\\
+\hline
+30 & Lilija Roldugina & 13 & 5 & 205 & Rigas 40. vidusskola\\
+\hline
+31 & Ilona Mackevica-Manko & 8 & 5 & 218 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+32 & Kristine Sevcenko & 8 & 5 & 183 & Rigas Valsts 1. gimnazija\\
+\hline
+33 & Anna Stavicka & 8 & 5 & 165 & Daugavpils 3.vidusskola\\
+\hline
+34 & Jekaterina Klanovska & 7 & 5 & 135 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+35 & Tatjana Alika & 7 & 5 & 135 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+36 & Dainis Krikis & 6 & 5 & 138 & Rigas Valsts 1. gimnazija\\
+\hline
+37 & Daina Denjuscenkova & 5 & 5 & 138 & Jelgavas 4.sakumskola\\
+\hline
+38 & Valentina Paradovica & 5 & 5 & 137 & Rigas Klasiska gimnazija\\
+\hline
+39 & Ingrida Veilande & 27 & 4 & 317 & Adazu vidusskola\\
+\hline
+40 & Agrita Bartusevica & 24 & 4 & 324 & Cesu Valsts gimnazija\\
+\hline
+41 & Inga Ruskule & 23 & 4 & 256 & Priekulu vidusskola\\
+\hline
+42 & Valentina Cesnokova & 18 & 4 & 227 & Rigas 13.vidusskola\\
+\hline
+43 & Anita Indare & 17 & 4 & 212 & Jelgavas Spidolas gimnazija\\
+\hline
+44 & Natalja Mosolova & 16 & 4 & 209 & Rigas 13.vidusskola\\
+\hline
+45 & Liene Cerpa & 15 & 4 & 187 & Siguldas pilsetas vidusskola\\
+\hline
+46 & Tamara Jersova & 10 & 4 & 175 & Rigas 10.vidusskola\\
+\hline
+47 & Dace Celina & 10 & 4 & 154 & Agenskalna sakumskola\\
+\hline
+48 & Irena Kozlovska & 9 & 4 & 158 & Puskina  licejs\\
+\hline
+49 & Veneranda Springe & 9 & 4 & 135 & Rudzatu vidusskola\\
+\hline
+50 & Maija Balode & 8 & 4 & 172 & Rigas Valsts 1.gimnazija\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{r|l|r|r|r|l}
+\hline
+Num & Name & Participants & Q3 & Points & School\\
+\hline
+51 & Galina Rizakova & 8 & 4 & 151 & Rezeknes 2.vidusskola\\
+\hline
+52 & Ligita Pickaine & 7 & 4 & 148 & Valmieras Valsts gimnazija\\
+\hline
+53 & Lilija Stunza & 7 & 4 & 142 & Rigas Zolitudes gimnazija\\
+\hline
+54 & Lidija Gaidamanova & 7 & 4 & 133 & Rigas Zolitudes gimnazija\\
+\hline
+55 & Olga Mikulova & 5 & 4 & 88 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+56 & Irina Kravcenko & 4 & 4 & 123 & Puskina  licejs\\
+\hline
+57 & Inese Lude & 25 & 3 & 265 & Andreja Pumpura Rigas 11. pamatskola\\
+\hline
+58 & Evija Slokenberga & 10 & 3 & 185 & Jelgavas Valsts gimnazija\\
+\hline
+59 & Edite Teterovska & 10 & 3 & 157 & Rigas Lietuviesu vidusskola\\
+\hline
+60 & Laila Ruke & 10 & 3 & 154 & Cesu Valsts gimnazija\\
+\hline
+61 & Zane Berga & 10 & 3 & 140 & Straupes pamatskola\\
+\hline
+62 & Olga Malkova & 9 & 3 & 145 & Liepajas A.Puskina 2.vidusskola\\
+\hline
+63 & Aiva Rituma & 9 & 3 & 138 & Dobeles Valsts gimnazija\\
+\hline
+64 & Kaiva Treija & 9 & 3 & 115 & Rigas Valsts 2. gimnazija\\
+\hline
+65 & Svetlana Saveiko & 8 & 3 & 113 & Rigas 40. vidusskola\\
+\hline
+66 & Zanda Nelsone & 7 & 3 & 146 & Salaspils 1.vidusskola\\
+\hline
+67 & Zoja Novikova & 7 & 3 & 129 & Rigas Zolitudes gimnazija\\
+\hline
+68 & Elita Vaivode & 7 & 3 & 125 & Livanu 1. vidusskola\\
+\hline
+69 & Agnese Suste & 7 & 3 & 120 & Dobeles Valsts gimnazija\\
+\hline
+70 & Nadezda Rjabinina & 7 & 3 & 108 & Rigas Zolitudes gimnazija\\
+\hline
+71 & Johanna Adakovska & 6 & 3 & 146 & Bauskas sakumskola\\
+\hline
+72 & Elina Fridmane & 6 & 3 & 145 & Rigas 64.vidusskola\\
+\hline
+73 & Aldis Bomis & 6 & 3 & 120 & Rigas Valsts 2. gimnazija\\
+\hline
+74 & Vita Reinbooma & 6 & 3 & 120 & Adazu vidusskola\\
+\hline
+75 & Valentina Pavule & 5 & 3 & 148 & Rigas 40. vidusskola\\
+\hline
+76 & Alla Kitajeva & 4 & 3 & 92 & Ventspils 2.vidusskola\\
+\hline
+77 & Regina Danilane & 4 & 3 & 85 & Rezeknes 5.vidusskola\\
+\hline
+78 & Edite Pukite & 3 & 3 & 78 & J.Endzelina Kauguru pamatskola\\
+\hline
+79 & Ilona Gulbe & 3 & 3 & 73 & Rigas 84. vidusskola\\
+\hline
+80 & Irina Morusa & 17 & 2 & 219 & Rigas 72. vidusskola\\
+\hline
+81 & Lidija Lisovska & 15 & 2 & 195 & Cesu pilsetas pamatskola\\
+\hline
+82 & Inga Neilande & 14 & 2 & 160 & Jelgavas 4.sakumskola\\
+\hline
+83 & Olga Kostenko & 14 & 2 & 160 & Rigas Rinuzu vidusskola\\
+\hline
+84 & Ligita Neimane & 10 & 2 & 148 & Cesu pilsetas pamatskola\\
+\hline
+85 & Aleksandra Fjodorova & 10 & 2 & 97 & Rigas Centra humanitara vidusskola\\
+\hline
+86 & Anna Gustava & 9 & 2 & 124 & Rigas 25.vidusskola\\
+\hline
+87 & Kristine Gaigala & 9 & 2 & 90 & Rigas 64.vidusskola\\
+\hline
+88 & Ilze Ose & 8 & 2 & 121 & Majoru vidusskola\\
+\hline
+89 & Jelena Blagodarnaja & 8 & 2 & 120 & Rigas Purvciema vidusskola\\
+\hline
+90 & Zaneta Kovalevska & 8 & 2 & 120 & Carnikavas pamatskola\\
+\hline
+91 & Anita Stakova & 8 & 2 & 118 & Laurencu sakumskola\\
+\hline
+92 & Jelena Kurdjumova & 8 & 2 & 64 & Rigas 10.vidusskola\\
+\hline
+93 & Andrejs Cibulis & 7 & 2 & 139 & Bauskas sakumskola\\
+\hline
+94 & Zanna Klava & 7 & 2 & 133 & Ata Kronvalda Durbes vidusskola\\
+\hline
+95 & Liga Liepa & 7 & 2 & 111 & Valmieras Viestura vidusskola\\
+\hline
+96 & Irina Tarasova & 7 & 2 & 99 & Rigas 65. vidusskola\\
+\hline
+97 & Tatjana Strigalova & 7 & 2 & 94 & Rigas Valsts 2. gimnazija\\
+\hline
+98 & Natalja Kozelska & 7 & 2 & 82 & Rigas 40. vidusskola\\
+\hline
+99 & Irina Iriscenko & 7 & 2 & 73 & Rigas 72. vidusskola\\
+\hline
+100 & Diana Bugaja & 7 & 2 & 58 & Liepajas pilsetas 8. vidusskola\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+
+\newpage
+{\bf Pirmie 100 skolotāji pēc visu dalībnieku punktu kopskaita}\\ \nopagebreak
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{r|l|r|r|r|l}
+\hline
+Num & Name & Participants & Q3 & Points & School\\
+\hline
+1 & Dace Andzane & 48 & 26 & 1217 & Rigas Valsts 1. gimnazija\\
+\hline
+2 & Inese Lagzda & 43 & 26 & 848 & Rigas Valsts 1. gimnazija\\
+\hline
+3 & Dzintars Zicans & 45 & 14 & 792 & Rigas Valsts 1. gimnazija\\
+\hline
+4 & Emils Veide & 23 & 12 & 568 & Rigas Valsts 1. gimnazija\\
+\hline
+5 & Irena Oksenuka & 30 & 16 & 519 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+6 & Anita Slaidina & 23 & 12 & 513 & Cesu Valsts gimnazija\\
+\hline
+7 & Daiga Jekabsone & 29 & 9 & 457 & Siguldas Valsts gimnazija\\
+\hline
+8 & Zane Kaibe & 21 & 8 & 408 & Rigas 64.vidusskola\\
+\hline
+9 & Aija Vasilevska & 21 & 11 & 404 & Rigas Valsts 1. gimnazija\\
+\hline
+10 & Alina Magomedova & 22 & 11 & 391 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+11 & Alesja Sapkova & 17 & 12 & 357 & Daugavpils Saskanas pamatskola\\
+\hline
+12 & Ludmila Ulinska & 16 & 9 & 352 & Daugavpils Saskanas pamatskola\\
+\hline
+13 & Nina Juste & 20 & 9 & 342 & Agenskalna Valsts gimnazija\\
+\hline
+14 & Irina Polakova & 14 & 10 & 334 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+15 & Agrita Bartusevica & 24 & 4 & 324 & Cesu Valsts gimnazija\\
+\hline
+16 & Stanislav Didych & 14 & 9 & 322 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+17 & Ingrida Veilande & 27 & 4 & 317 & Adazu vidusskola\\
+\hline
+18 & Indra Upite-Dambite & 13 & 6 & 279 & Siguldas Valsts gimnazija\\
+\hline
+19 & Anna Jansone & 11 & 7 & 272 & Rigas Valsts 1. gimnazija\\
+\hline
+20 & Laila Aigare & 19 & 9 & 271 & Rigas Valda Zalisa sakumskola\\
+\hline
+21 & Karmena Liepina & 18 & 6 & 268 & Rigas Valsts 1. gimnazija\\
+\hline
+22 & Regina Simanovska & 12 & 7 & 268 & Rigas Valsts 1. gimnazija\\
+\hline
+23 & Inese Lude & 25 & 3 & 265 & Andreja Pumpura Rigas 11. pamatskola\\
+\hline
+24 & Inga Ruskule & 23 & 4 & 256 & Priekulu vidusskola\\
+\hline
+25 & Vera Solovjova & 18 & 7 & 255 & Rigas 10.vidusskola\\
+\hline
+26 & Inna Glebova & 13 & 7 & 243 & Rigas 34. vidusskola\\
+\hline
+27 & Inta Ozolina & 15 & 5 & 242 & Siguldas pilsetas vidusskola\\
+\hline
+28 & Olga Sheremet & 14 & 6 & 241 & Rigas Zolitudes gimnazija\\
+\hline
+29 & Iveta Zarane & 9 & 7 & 230 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+30 & Valentina Cesnokova & 18 & 4 & 227 & Rigas 13.vidusskola\\
+\hline
+31 & Nadezda Koleda & 12 & 6 & 221 & Rigas 34. vidusskola\\
+\hline
+32 & Irina Morusa & 17 & 2 & 219 & Rigas 72. vidusskola\\
+\hline
+33 & Rita Hrapane & 10 & 9 & 218 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+34 & Ilona Mackevica-Manko & 8 & 5 & 218 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+35 & Anita Indare & 17 & 4 & 212 & Jelgavas Spidolas gimnazija\\
+\hline
+36 & Natalja Mosolova & 16 & 4 & 209 & Rigas 13.vidusskola\\
+\hline
+37 & Lilija Roldugina & 13 & 5 & 205 & Rigas 40. vidusskola\\
+\hline
+38 & Margita Jirgensone & 19 & 5 & 200 & Jelgavas Spidolas gimnazija\\
+\hline
+39 & Lidija Lisovska & 15 & 2 & 195 & Cesu pilsetas pamatskola\\
+\hline
+40 & Liene Cerpa & 15 & 4 & 187 & Siguldas pilsetas vidusskola\\
+\hline
+41 & Evija Slokenberga & 10 & 3 & 185 & Jelgavas Valsts gimnazija\\
+\hline
+42 & Kristine Sevcenko & 8 & 5 & 183 & Rigas Valsts 1. gimnazija\\
+\hline
+43 & Ingrida Brizga & 10 & 6 & 176 & Cesu 2. pamatskola\\
+\hline
+44 & Tamara Jersova & 10 & 4 & 175 & Rigas 10.vidusskola\\
+\hline
+45 & Daina Brinke & 16 & 0 & 173 & Rigas Valsts 2. gimnazija\\
+\hline
+46 & Maija Balode & 8 & 4 & 172 & Rigas Valsts 1.gimnazija\\
+\hline
+47 & Viola Levina & 13 & 1 & 168 & Valkas gimnazija\\
+\hline
+48 & Anna Stavicka & 8 & 5 & 165 & Daugavpils 3.vidusskola\\
+\hline
+49 & Inga Neilande & 14 & 2 & 160 & Jelgavas 4.sakumskola\\
+\hline
+50 & Olga Kostenko & 14 & 2 & 160 & Rigas Rinuzu vidusskola\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{r|l|r|r|r|l}
+\hline
+Num & Name & Participants & Q3 & Points & School\\
+\hline
+51 & Irena Kozlovska & 9 & 4 & 158 & Puskina  licejs\\
+\hline
+52 & Edite Teterovska & 10 & 3 & 157 & Rigas Lietuviesu vidusskola\\
+\hline
+53 & Dace Celina & 10 & 4 & 154 & Agenskalna sakumskola\\
+\hline
+54 & Laila Ruke & 10 & 3 & 154 & Cesu Valsts gimnazija\\
+\hline
+55 & Ilze Vitina & 11 & 1 & 153 & Sakumskola "Taurenitis"\\
+\hline
+56 & Inese Boze & 14 & 1 & 151 & Draudziga Aicinajuma Cesu Valsts gimnazija\\
+\hline
+57 & Galina Rizakova & 8 & 4 & 151 & Rezeknes 2.vidusskola\\
+\hline
+58 & Ligita Neimane & 10 & 2 & 148 & Cesu pilsetas pamatskola\\
+\hline
+59 & Ligita Pickaine & 7 & 4 & 148 & Valmieras Valsts gimnazija\\
+\hline
+60 & Valentina Pavule & 5 & 3 & 148 & Rigas 40. vidusskola\\
+\hline
+61 & Zanda Nelsone & 7 & 3 & 146 & Salaspils 1.vidusskola\\
+\hline
+62 & Johanna Adakovska & 6 & 3 & 146 & Bauskas sakumskola\\
+\hline
+63 & Olga Malkova & 9 & 3 & 145 & Liepajas A.Puskina 2.vidusskola\\
+\hline
+64 & Elina Fridmane & 6 & 3 & 145 & Rigas 64.vidusskola\\
+\hline
+65 & Lilija Stunza & 7 & 4 & 142 & Rigas Zolitudes gimnazija\\
+\hline
+66 & Zane Berga & 10 & 3 & 140 & Straupes pamatskola\\
+\hline
+67 & Andrejs Cibulis & 7 & 2 & 139 & Bauskas sakumskola\\
+\hline
+68 & Aiva Rituma & 9 & 3 & 138 & Dobeles Valsts gimnazija\\
+\hline
+69 & Dainis Krikis & 6 & 5 & 138 & Rigas Valsts 1. gimnazija\\
+\hline
+70 & Daina Denjuscenkova & 5 & 5 & 138 & Jelgavas 4.sakumskola\\
+\hline
+71 & Valentina Paradovica & 5 & 5 & 137 & Rigas Klasiska gimnazija\\
+\hline
+72 & Veneranda Springe & 9 & 4 & 135 & Rudzatu vidusskola\\
+\hline
+73 & Jekaterina Klanovska & 7 & 5 & 135 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+74 & Tatjana Alika & 7 & 5 & 135 & Daugavpils Krievu vidusskola - licejs\\
+\hline
+75 & Lidija Gaidamanova & 7 & 4 & 133 & Rigas Zolitudes gimnazija\\
+\hline
+76 & Zanna Klava & 7 & 2 & 133 & Ata Kronvalda Durbes vidusskola\\
+\hline
+77 & Gunta Stepite & 8 & 1 & 130 & Rigas 49. vidusskola\\
+\hline
+78 & Zoja Novikova & 7 & 3 & 129 & Rigas Zolitudes gimnazija\\
+\hline
+79 & Laura Freija & 9 & 1 & 125 & Rigas Valsts 2. gimnazija\\
+\hline
+80 & Elita Vaivode & 7 & 3 & 125 & Livanu 1. vidusskola\\
+\hline
+81 & Anna Gustava & 9 & 2 & 124 & Rigas 25.vidusskola\\
+\hline
+82 & Irina Kravcenko & 4 & 4 & 123 & Puskina  licejs\\
+\hline
+83 & Inga Kauskale & 15 & 1 & 121 & Mezciema pamatskola\\
+\hline
+84 & Eva Jakobsone & 10 & 1 & 121 & Adazu vidusskola\\
+\hline
+85 & Valda Bickova & 10 & 1 & 121 & Uzvaras vidusskola\\
+\hline
+86 & Ilze Ose & 8 & 2 & 121 & Majoru vidusskola\\
+\hline
+87 & Jelena Blagodarnaja & 8 & 2 & 120 & Rigas Purvciema vidusskola\\
+\hline
+88 & Zaneta Kovalevska & 8 & 2 & 120 & Carnikavas pamatskola\\
+\hline
+89 & Agnese Suste & 7 & 3 & 120 & Dobeles Valsts gimnazija\\
+\hline
+90 & Aldis Bomis & 6 & 3 & 120 & Rigas Valsts 2. gimnazija\\
+\hline
+91 & Vita Reinbooma & 6 & 3 & 120 & Adazu vidusskola\\
+\hline
+92 & Liene Andzane & 12 & 1 & 119 & Kraslavas Valsts gimnazija\\
+\hline
+93 & Iveta Perkona & 12 & 0 & 119 & Jelgavas 3.sakumskola\\
+\hline
+94 & Anita Stakova & 8 & 2 & 118 & Laurencu sakumskola\\
+\hline
+95 & Kaiva Treija & 9 & 3 & 115 & Rigas Valsts 2. gimnazija\\
+\hline
+96 & Inara Veita & 9 & 0 & 114 & Valmieras Pargaujas gimnazija\\
+\hline
+97 & Aleksandrs Smirnovs & 4 & 2 & 114 & Jelgavas 5. vidusskola\\
+\hline
+98 & Svetlana Saveiko & 8 & 3 & 113 & Rigas 40. vidusskola\\
+\hline
+99 & Vaira Buza & 11 & 0 & 112 & Draudziga Aicinajuma Cesu Valsts gimnazija\\
+\hline
+100 & Tamara Aleksandrova & 8 & 1 & 112 & Rigas 10.vidusskola\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+\subsection{``Nevienlīdzība'' un Džini koeficienti}
+
+
+\noindent
+{\bf Lorenca līkne dalībnieku skaita, augšējās kvartiles dalībnieku skaita un punktu summas sadalījumam starp skolotājiem Latvijā:}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-gini1-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|r}
+\hline
+Measurement Type & Gini for Latvia\\
+\hline
+Participants & 0.477\\
+\hline
+Q3 & 0.732\\
+\hline
+Points & 0.541\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+
+
+\section{Rakstīšanas ilgums un rezultāti}
+
+Daudzās risināšanas telpās dežuranti atzīmēja darba nodošanas laiku. Diemžēl dažām klašu grupām risināšanas laiki protokolā ir atzīmēti diezgan fragmentāri --- tādēļ aicinām šeit minētos rezultātus uztvert ar zināmu skepsi. Vizualizējam rakstīšanas laiku amplitūdas visiem risinātājiem (mērītas minūtēs starp 10:30 un nodošanas laiku). Un atsevišķi --- arī labākajiem risinātājiem, kuriem punktu summa ir augšējā ceturtdaļa (precīzāk: punktu summa sasniedz attiecīgās klases $Q_3$: $Q_3(Grade5)=21\;$, $Q_3(Grade6)=15\;$, $Q_3(Grade7)=24\;$, $Q_3(Grade8)=18\;$, $Q_3(Grade9)=17\;$, $Q_3(Grade10)=20\;$, $Q_3(Grade11)=18\;$, $Q_3(Grade12)=17\;$).
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-boxplots-minutes1-1} 
+
+}
+
+
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\maxwidth]{figure/minimal-boxplots-minutes2-1} 
+
+}
+
+
+
+\end{knitrout}
+
+
+\section{Dati par atsevišķajiem uzdevumiem}
+
+\subsection{Vidējais vērtējums}
+
+Ikviena uzdevuma vērtējums ir skaitlis no 0 līdz 10. Šajā tabulā apkopoti visu uzdevumu vidējie vērtējumi katrā no klašu grupām.
+
+% Vidējais rezultāts pa uzdevumiem
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|l|l|l|l|l}
+\hline
+  & Uzd1 & Uzd2 & Uzd3 & Uzd4 & Uzd5\\
+\hline
+G5 & 3.98 & 3.97 & 5.07 & 2.27 & 2.58\\
+\hline
+G6 & 3.80 & 5.73 & 2.99 & 0.06 & 5.51\\
+\hline
+G7 & 7.59 & 5.99 & 7.14 & 1.54 & 5.69\\
+\hline
+G8 & 3.39 & 5.28 & 4.42 & 1.35 & 4.99\\
+\hline
+G9 & 4.04 & 4.59 & 3.05 & 3.42 & 5.24\\
+\hline
+G10 & 6.08 & 4.22 & 6.95 & 0.57 & 7.52\\
+\hline
+G11 & 7.00 & 2.74 & 3.47 & 0.46 & 2.12\\
+\hline
+G12 & 4.91 & 3.01 & 2.22 & 3.93 & 2.87\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+\noindent
+
+\begin{uzdevums}[7.1 (visaugstākais vērtējums)]
+Deviņas vienādas cepures kopā maksā mazāk nekā 10 eiro, bet desmit
+tādas pašas vienādas cepures maksā vairāk nekā 11 eiro. Cik maksā
+viena cepure?
+\end{uzdevums}
+
+
+\begin{uzdevums}[6.4 (viszemākais vērtējums)]
+Pierādi, ka naturāla skaitļa kvadrāts nevar
+sastāvēt tikai no sešiniekiem un nullēm!
+(Skaitļa kvadrāts ir skaitļa reizinājums
+pašam ar sevi).
+\end{uzdevums}
+
+
+
+
+
+
+\subsection{Šenona entropija}
+
+Entropiju uzdevuma $X$ vērtējumiem aprēķina pēc formulas:
+
+\[ H(X) = - \sum_{i = 0}^{10}{p_i}\cdot \log_2{p_i}, \]
+
+\noindent
+kur $p_i$ ir varbūtība saņemt par uzdevumu $X$ vērtējumu $i$. 
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|l|l|l|l|l}
+\hline
+  & Uzd1 & Uzd2 & Uzd3 & Uzd4 & Uzd5\\
+\hline
+G5 & 2.15 & 2.41 & 3.19 & 2.32 & 1.86\\
+\hline
+G6 & 2.53 & 3.31 & 2.01 & 0.30 & 3.31\\
+\hline
+G7 & 3.48 & 3.11 & 2.88 & 2.34 & 3.17\\
+\hline
+G8 & 1.66 & 2.81 & 1.33 & 1.55 & 3.05\\
+\hline
+G9 & 2.82 & 2.88 & 2.09 & 3.02 & 2.89\\
+\hline
+G10 & 2.57 & 2.53 & 2.86 & 0.63 & 3.13\\
+\hline
+G11 & 3.00 & 1.33 & 2.44 & 0.71 & 1.35\\
+\hline
+G12 & 2.72 & 1.84 & 1.96 & 2.84 & 1.76\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+Viegli redzēt, ka visaugstākā entropija ir bijusi uzdevumiem, par kuriem vidējais vērtējums ir samērā augsts, savukārt viszemākā - par visgrūtākajiem uzdevumiem, kuru vidējais vērtējums ir zems (sal. ar iepriekšējo apakšnodaļu). Lai entropiju varētu izmantot vērtēšanas sistēmas struktūras sarež\v{g}ītības salīdzināšanai, droši vien jāņem vērā vidējais punktu skaits par attiecīgo uzdevumu. Ir neiespējami ieviest niansētus vērtēšanas kritērijus, ja vairumā darbu uzdevums nav pat sākts risināt. 
+
+
+
+\subsection{Uzdevuma korelācija ar pārējo vērtējumu summu}
+
+Šo korelāciju aprēķina kā Pīrsona korelācijas koeficientu $\mbox{cor}(X,Y)$, kur $X = (x_i)$ ir vērtējumi par uzdevumu $X$, $Y = (y_i)$ ir summa par visiem 4 atlikušajiem uzdevumiem. Katram olimpiādes dalībniekam atrodam $x_i$ un $y_i$ un nosakām, kādā mērā viens lielums iespaido otru. Korelāciju koeficienti vienmēr ir intervālā $[-1,1]$.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|l|l|l|l|l}
+\hline
+  & Uzd1 & Uzd2 & Uzd3 & Uzd4 & Uzd5\\
+\hline
+G5 & 0.18 & 0.21 & 0.37 & 0.38 & 0.23\\
+\hline
+G6 & 0.15 & 0.07 & 0.07 & 0.12 & 0.15\\
+\hline
+G7 & 0.27 & 0.22 & 0.43 & 0.29 & 0.28\\
+\hline
+G8 & 0.24 & 0.06 & 0.10 & 0.06 & 0.12\\
+\hline
+G9 & 0.33 & 0.28 & 0.29 & 0.33 & 0.38\\
+\hline
+G10 & 0.01 & 0.05 & 0.12 & -0.01 & 0.02\\
+\hline
+G11 & 0.11 & 0.22 & 0.24 & 0.24 & 0.36\\
+\hline
+G12 & 0.07 & 0.28 & 0.26 & 0.37 & 0.41\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+
+Salīdzinoši augstas korelācijas ar pārējo uzdevumu komplektu ir vērojamas 7.klasei. Zemas korelācijas - 10.klasei. 
+Augstas korelācijas nozīmē, ka komplektā ikviens uzdevums mēra līdzīgas prasmes (olimpiādes komplekts ir iekšēji konsekvents, bet nav sevišķi daudzpusīgs). Zemas korelācijas nozīmē, ka ikviens uzdevums komplektā mēra citādas prasmes (uzdevumu un/vai vērtēšanas kritēriju daudzveidība ir liela, bet dalībniekiem var būt grūtāk šādai olimpiādei sagatavoties, apgūstot noteiktas tēmas un uzdevumu risināšanas stilu).
+
+\begin{uzdevums}[7.3 (augsta korelācija ar komplektu)]
+(a) Atrast tādu naturālu skaitli, kura ciparu summa ir 13, pēdējie divi cipari ir 13 un kurš dalās ar 13.\\
+(b) Vai var atrast tādu naturālu skaitli, kura ciparu summa ir 11, pēdējie divi cipari ir 11 un kurš dalās ar 11?
+\end{uzdevums}
+
+
+\begin{uzdevums}[10.4 (zema/negatīva korelācija ar komplektu)]
+Uz vienādsānu trijstūra $ABC$ pamata $AC$ atlikts iekšējs punkts $D$, bet uz $AC$ pagarinājuma –-- punkts $E$ ($C$ atrodas starp $D$ un $E$) tā, ka $AD = CE$. Pierādīt, ka $BD + BE > 2BC$.
+\end{uzdevums}
+
+
+
+
+
+
+
+\subsection{Vērtējumu atšķirības zēniem un meitenēm}
+
+Tabulā apkopota AMO uzdevuma punktu starpība $\Delta_{\mbox{gender}}(X)$ atkarībā no risinātāja dzimuma (pozitīvs skaitlis nozīmē to, ka zēnu vērtējums bija augstāks, negatīvs skaitlis --- to, ka meiteņu vērtējums bija augstāks).
+
+\[ \Delta_{\mbox{gender}}(X) = E\left(X_{\mbox{male}}\right) - E\left(X_{\mbox{female}}\right), \]
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|l|l|l|l|l}
+\hline
+  & Uzd1 & Uzd2 & Uzd3 & Uzd4 & Uzd5\\
+\hline
+G5 & 0.05 & -0.06 & -0.08 & 0.19 & 0.02\\
+\hline
+G6 & 0.03 & -0.02 & -0.15 & 0.01 & -0.22\\
+\hline
+G7 & 0.38 & -0.05 & 0.32 & -0.24 & 0.27\\
+\hline
+G8 & 0.36 & -0.57 & -0.10 & 0.77 & 0.26\\
+\hline
+G9 & 0.23 & 0.72 & 0.11 & 0.38 & -0.06\\
+\hline
+G10 & 1.00 & 0.15 & -0.23 & 0.67 & 0.23\\
+\hline
+G11 & 1.02 & 0.04 & 0.62 & 0.04 & 0.22\\
+\hline
+G12 & 0.44 & -0.12 & 0.01 & 0.70 & 0.21\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+{\em Punktu-biseriālo korelācijas koeficientu} katram no uzdevumiem aprēķina kā Pīrsona korelāciju starp diviem skaitļu vektoriem: $X = \{x_i\}$ (punktu vērtējumi konkrētajam uzdevumam, $x_i \in \{1,\ldots,10\}$) un $\chi^{\mbox{male}}_i$ (raksturfunkcija, kas pieņem vērtību 1 zēniem un vērtību 0 meitenēm). Pozitīvs korelācijas koeficients nozīmē priekšrocības zēniem, negatīvs - meitenēm. Koeficienta kvadrāts $r_{\mbox{pb}}^2$ raksturo to daļu, par kuru uzdevuma vērtējuma atšķirības ir atkarīgas no risinātāja dzimuma.
+
+\[ r_{\mbox{pb}} = \mbox{cor}\left(X, \chi^{\mbox{male}}\right) \]
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\begin{tabular}{l|l|l|l|l|l}
+\hline
+  & Uzd1 & Uzd2 & Uzd3 & Uzd4 & Uzd5\\
+\hline
+G5 & 0.01 & -0.01 & -0.01 & 0.04 & 0.01\\
+\hline
+G6 & 0.01 & -0.00 & -0.05 & 0.01 & -0.03\\
+\hline
+G7 & 0.06 & -0.01 & 0.05 & -0.07 & 0.04\\
+\hline
+G8 & 0.06 & -0.08 & -0.01 & 0.13 & 0.04\\
+\hline
+G9 & 0.05 & 0.15 & 0.03 & 0.07 & -0.01\\
+\hline
+G10 & 0.13 & 0.03 & -0.04 & 0.15 & 0.04\\
+\hline
+G11 & 0.14 & 0.01 & 0.10 & 0.01 & 0.12\\
+\hline
+G12 & 0.08 & -0.04 & 0.00 & 0.10 & 0.05\\
+\hline
+\end{tabular}
+
+
+\end{knitrout}
+
+Pat lielākās no korelācijām ir salīdzinoši nelielas ($r_{\mbox{pb}} = 0.15$), t.i. risinātāja dzimums reti kad izskaidro vairāk kā aptuveni 2\% no atšķirībām vērtējumā. Atrodot (pēc absolūtās vērtības) lielākās korelācijas, dzimumu atšķirības visvairāk izpaudās \v{g}eometriska satura uzdevumos.
+
+\begin{uzdevums}[9.2 (labāk risināja zēni)]
+Tornis ir salikts no vienības kubiņiem, kur katra kubiņa izmērs ir
+$1 \times 1 \times 1$. Apakšējā slānī ir $7 \times 7$ kubiņi. 
+Otrs slānis ir novietots virs pirmā slāņa centrālās daļās, tajā ir
+$5 \times 5$ kubiņi. Trešajā slānī, kurš novietots apakšējās daļas centrā, ir $3 \times 3$ kubiņi un augšā centrā ir 1 vienības kubiņš (sk. attēlu). Vai šo torni var salikt no blokiem ar izmēriem
+$1 \times 1 \times 3$?\\
+\includegraphics[width=60mm]{amo42-9-2-pyramid.png}
+\end{uzdevums}
+
+
+\begin{uzdevums}[10.4 (labāk risināja zēni)]
+Uz vienādsānu trijstūra $ABC$ pamata $AC$ atlikts iekšējs punkts $D$, bet uz $AC$ pagarinājuma –-- punkts $E$ ($C$ atrodas starp $D$ un $E$) tā, ka $AD = CE$. Pierādīt, ka $BD + BE > 2BC$.
+\end{uzdevums}
+
+\begin{uzdevums}[8.2 (labāk risināja meitenes)]
+Vai taisnstūri ar izmēriem $10 \times 9$ rūtiņas var pārklāt ar attēlā
+redzamajām figūrām? Taisnstūrim jābūt pilnībā pārklātam. Figūras
+nedrīkst iziet ārpus taisnstūra, nedrīkst pārklāties, tās drīkst būt
+pagrieztas vai apgrieztas spoguļattēlā.\\
+\includegraphics[width=80mm]{amo42-8-2-shapes.png}
+\end{uzdevums}
+
+\begin{uzdevums}[7.4 (labāk risināja meitenes)]
+Vienādsānu trijstūrī $ABC$ uz pamata malas $BC$ atzīmēts iekšējs punkts $D$ tā, ka arī trijstūri $ABD$ un $ACD$ ir vienādsānu. Aprēķini trijstūra $ABC$ leņķus! {\em Atrodi visus gadījumus un pamato, ka citu nav!}
+\end{uzdevums}
+
+
+\end{document}

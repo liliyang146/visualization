@@ -50,38 +50,36 @@ allChMun <- chMun[chMun$Category == "School.All", c("Location","Total")]
 allChMun$Location <- 
   sapply(as.vector(allChMun$Location),strFromUnicode)
 
-results <- getExtResults(42)
-results$UpperMunicipality <- 
-  toupper(sapply(as.vector(results$Municipality),strFromUnicode))
+results41 <- getExtResults(41)
+results42 <- getExtResults(42)
+results41$UpperMunicipality <- 
+  toupper(sapply(as.vector(results41$Municipality),strFromUnicode))
+results42$UpperMunicipality <- 
+  toupper(sapply(as.vector(results42$Municipality),strFromUnicode))
+
 
 olympParticipation <- numeric()
 olympCC <- numeric()
-olympPP <- numeric()
-olympMM <- numeric()
-olympFF <- numeric()
+olympPP41 <- numeric()
+olympPP42 <- numeric()
 
 for (theLoc in allChMun$Location) {
   theChTotal <- allChMun$Total[allChMun$Location == theLoc]
-  pp <- nrow(results[results$UpperMunicipality == theLoc,])
-  ppmm <- nrow(results[results$UpperMunicipality == theLoc & 
-                         results$Dzimums == "Male",])
-  ppff <- nrow(results[results$UpperMunicipality == theLoc & 
-                         results$Dzimums == "Female",])
+  pp41 <- nrow(results41[results41$UpperMunicipality == theLoc,])
+  pp42 <- nrow(results42[results42$UpperMunicipality == theLoc,])
   cc <- allChMun$Total[allChMun$Location == theLoc]*(8/11)
-  olympParticipation <- c(olympParticipation, pp/cc)
+  olympParticipation <- c(olympParticipation, (pp42-pp41)/cc)
   olympCC <- c(olympCC,round(cc))
-  olympPP <- c(olympPP, pp)
-  olympMM <- c(olympMM, ppmm)
-  olympFF <- c(olympFF, ppff)
+  olympPP41 <- c(olympPP41, pp41)
+  olympPP42 <- c(olympPP42, pp42)
 }
 
 intensityFrame <- 
   data.frame(loc = allChMun$Location, 
              per = olympParticipation,
              cc = olympCC,
-             pp = olympPP,
-             mm = olympMM, 
-             ff = olympFF)
+             pp41 = olympPP41,
+             pp42 = olympPP42)
 
 novFrame <- read.table(
   file="maps/lv-municipalities.csv", 
@@ -118,9 +116,9 @@ n=7
 theVector = c(min(biggerdata$per)*0.999,
               as.vector(biggerdata$per),max(biggerdata$per)*1.001)
 int <- classIntervals(theVector, n, style='jenks')
-pal <- brewer.pal(n, 'Reds')
-palWhite <- c("#ffffff", pal)
-brksWhite <- c(0, 0.000001,int$brks[-1])
+pal <- brewer.pal(9, 'PRGn')[3:9]
+#palWhite <- c("#ffffff", pal)
+#brksWhite <- c(0, 0.000001,int$brks[-1])
 # Possible palettes: Blues BuGn BuPu GnBu Greens Greys Oranges 
 # OrRd PuBu PuBuGn PuRd Purples RdPu Reds YlGn 
 # YlGnBu YlOrBr YlOrRd
@@ -128,7 +126,7 @@ brksWhite <- c(0, 0.000001,int$brks[-1])
 Total <- biggerdata$per
 mapSHP@data <- cbind(mapSHP@data, Total)
 p <- spplot(mapSHP["Total"], panel=panel.polygonNames,
-            col.regions=palWhite, at=brksWhite)
+            col.regions=pal, at=int$brks)
 p
 
 ## grobs in the graphical output
@@ -145,10 +143,10 @@ for (id in unique(IDs)){
   info <-  paste0(dat$FullName, ": ", round(100*dat$per,2), "%")  
   g <- grid.get(id)
   
-  theMM <- intensityFrame$mm[intensityFrame$loc == dat$UpperName]
-  theFF <- intensityFrame$ff[intensityFrame$loc == dat$UpperName]
+  thePP41 <- intensityFrame$pp41[intensityFrame$loc == dat$UpperName]
+  thePP42 <- intensityFrame$pp42[intensityFrame$loc == dat$UpperName]
   theCC <- intensityFrame$cc[intensityFrame$loc == dat$UpperName]
-  info2 <- sprintf("%1.0fM,%1.0fF no %1.0f",theMM, theFF, theCC)
+  info2 <- sprintf("%1.0f&#8594;%1.0f no %1.0f",thePP41, thePP42, theCC)
   ## attach SVG attributes
   grid.garnish(id,
                onmouseover=paste("showTooltip(evt, '", info, "','",info2,"')"),
@@ -158,4 +156,4 @@ for (id in unique(IDs)){
 
 grid.script(filename="maps/tooltip.js")
 
-grid.export("olympiad-participation-amo42.svg")
+grid.export("olympiad-participation-change.svg")
