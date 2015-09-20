@@ -1,0 +1,312 @@
+<div class="content">
+    <div ex:role="collection" ex:itemTypes="Video"></div>
+    <div id="header">
+
+      <table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td id="logo">
+
+	    <h1>Problem Solutions: Videos</h1>
+
+	  </td>
+	  <!--
+	  <td id="menu">
+	    <div id="primary">
+	      <a href="ifd.html">Video Index</a> 
+	    </div>
+	  </td>
+	  -->
+
+	</tr>
+      </table>
+
+
+      <p>This page lists video-recordings where school math olympiad problems are solved.
+        You can use the boxes at the left to select various
+        subsets of the videos.  Each box handles a different property of the
+        dance. You can
+        click more than one line to get a combination; e.g. problems for certain grade
+        that were offered on certain year. 
+		The line above the videos, labeled "Thumbnails . Table ..." can be
+        clicked to select different layouts of the videos, with or without
+        various details.</p>
+      </div>
+    </div>
+
+
+
+    <div id="body">
+      <div style="width: 100%">
+        <table cellpadding="5" cellspacing="0" border="0" id="exhibit">
+
+          <col width="20%"/>
+          <col/>
+          <tr valign="top">
+            <td>
+	      <b>Search:</b> <div ex:role="facet" ex:facetClass="TextSearch"></div>
+	      <div ex:role="facet"
+	           ex:expression=".choreographer" ex:fixedOrder="unknown" ex:missingLabel="unknown"></div>
+	      <div ex:role="facet" ex:expression=".year" ex:fixedOrder="unknown" ex:missingLabel="unknown" ex:sortdirection="reverse"></div>
+	      <div ex:role="facet" ex:expression=".form" ex:fixedOrder="unknown" ex:missingLabel="unknown" ex:scroll="false"></div>
+
+	      <div ex:role="facet" ex:expression=".subjects" ex:fixedOrder="unknown" ex:missingLabel="unknown" ex:scroll="false"></div>
+	      <div ex:role="facet" ex:expression=".lesson" ex:fixedOrder="unknown" ex:scroll="false" ex:missingLabel="unknown"></div>
+	      <div ex:role="facet"
+	           ex:expression=".withChoreographer"
+	           ex:missingLabel="unknown" ex:fixedOrder="yes;voiceover;no;unknown" ex:height="10ex" ex:scroll="false"></div>
+	      <div ex:role="facet" ex:expression=".quality"
+	           ex:missingLabel="unknown" ex:fixedOrder="high;ok;low;unknown" ex:height="10ex" ex:scroll="false"></div>
+	      <div>Click on the plus signs to open other searchable facets</div>
+              <div ex:role="facet" ex:expression=".speed" ex:missingLabel="unknown" ex:fixedOrder="unknown;Very Fast;Fast;Medium-fast;Medium;Slow;Varies" ex:scroll="false" ex:collapsed="true"></div>
+              <div ex:role="facet" ex:facetClass="NumericRange" ex:interval="10" ex:expression=".tempo" ex:facetLabel="Tempo (Beats/Minute)" ex:missingLabel="unknown" ex:fixedOrder="unknown" ex:collapsed="true"></div>
+              <div ex:role="facet" ex:expression=".musicPerformer" ex:facetLabel="Musician" ex:missingLabel="unknown" ex:fixedOrder="unknown" ex:collapsed="true"></div>
+
+              <div ex:role="facet" ex:expression=".site" ex:facetLabel="Web Site" ex:missingLabel="unknown" ex:fixedOrder="unknown" ex:collapsed="true"></div>
+	      <div ex:role="facet" ex:expression=".camp" ex:missingLabel="unknown" ex:fixedOrder="unknown" ex:collapsed="true"></div>
+	      <div ex:role="facet" ex:expression=".loc" ex:missingLabel="unknown" ex:fixedOrder="unknown" ex:collapsed="true"></div>
+	      <div ex:role="facet" ex:expression=".vyear" ex:missingLabel="unknown" ex:fixedOrder="unknown" ex:collapsed="true"></div>
+            </td>
+            <td>
+              <div ex:role="viewPanel">
+                <div ex:role="lens" style="display:none;" class="item" ex:itemTypes="Subjects, Quality">
+                  <span ex:content=".description"></span>
+
+                </div>
+                <div ex:role="lens" style="display:none;" class="item" ex:itemTypes="Dance, Video">
+                  <table cellspacing="5">
+		    <col width="180px"/>
+		    <col/>
+                    <tr>
+                      <td >
+                        <br/><br/>
+		        <div style="text-align: center">
+
+		          <a ex:href-content=".vurl" target="new">
+			    <img  ex:if-exists=".thumbnail"
+			          ex:src-content=".thumbnail" width="160px"/>
+		          </a>
+		        </div>
+		        <div style="text-align: center">
+				
+		          <a ex:href-content=".vurl" target="new">Click for Video</a>
+		        </div>
+		      </td>
+
+                      
+                      <td>
+                        <h1><span ex:content=".label"></span>
+		          <span ex:if-exists=".hebrewName">(<span class="hebrew" ex:content=".hebrewName"></span>)</span>
+		        </h1>
+                        <h2><span ex:content=".form"></span> dance</h2>
+                        <h2><span ex:content=".choreographer"></span>, <span ex:content=".year"  ex:formats="date {template:'yyyy'}"></span></h2>
+
+                        <div>
+		          <span ex:if-exists=".lesson">
+			    Language: 
+                            <span ex:content=".lesson"></span>
+                            <br/>
+		          </span>
+		          <span ex:if-exists=".withChoreographer">
+                            Led by choreographer: 
+                            <span 
+			       ex:content=".withChoreographer"></span>
+                            <br/>
+
+		          </span>
+		          <span ex:if-exists=".subjects">
+                            Demonstrators: 
+                            <span
+			       ex:content=".subjects"></span>
+                            <br/>
+		          </span>
+		          <span ex:if-exists=".quality">
+                            Video quality: 
+                            <span ex:content=".quality"></span>
+		          </span>
+
+		          <div ex:if-exists=".tempo">
+			    Tempo: <span ex:content=".tempo"></span> BPM 
+			    <span ex:if-exists=".speed">(<span ex:content=".speed"></span>)</span>
+		          </div>
+		        </div>
+                      </td>
+                    </tr>
+
+		    <tr style="{vertical-align:top}">
+		      <td>                    
+		        <div ex:if-exists=".hasVenue">
+		          Filmed 
+		          <span ex:if-exists=".camp">
+			    at 
+			    <span ex:content=".camp"></span>
+		          </span>
+                          <span ex:if-exists=".loc"> 
+			    in
+			    <span ex:content=".loc"></span>
+
+		          </span><span ex:if-exists=".vyear">in
+			    <span ex:formats="date {template:'yyyy'}" ex:content=".vyear"></span>
+                          </span>
+		        </div>
+		        <div ex:if-exists=".site">
+		          On <a ex:href-content=".site.siteUrl"><span ex:content=".site.label"></span></a>
+		        </div>
+		      </td>
+		      <td>
+
+                        <div ex:if-exists=".musicPerformer">
+		          Musician: <span ex:content=".musicPerformer"></span></div>
+                        <div ex:if-exists=".musicComposer">
+		          Composer: <span ex:content=".musicComposer"></span></div>
+                        <div ex:if-exists=".musicLyricist">
+		          Lyrics: <span ex:content=".musicLyricist"></span></div>
+                        <span
+		           ex:content=".comment"></span>
+
+		        <form action="cgi-bin/edit.pl" target="new">
+		          <div style="height: 10; display: none; visibility:
+		           hidden" height="10px">
+			    <input style="display: none;" name="label"
+			    ex:value-content=".label" type="hidden"/>
+			    <input style="display: none;" name="id"
+			    ex:value-content=".id" type="hidden"/>
+			    <input style="display: none;" name="hebrewname"
+			    ex:value-content=".hebrewName" type="hidden"/>
+			    <input style="display: none;" name="form"
+			    ex:value-content=".form"  type="hidden"/>
+			    <input style="display: none;" name="year" ex:value-content=".year" type="hidden"/>
+			    <input style="display: none;" name="choreographer" ex:value-content=".choreographer" type="hidden"/>
+
+			    <input style="display: none;" name="lesson" ex:value-content=".lesson" type="hidden"/>
+			    <input style="display: none;" name="withChoreographer" ex:value-content=".withChoreographer" type="hidden"/>
+			    <input style="display: none;" name="subjects" ex:value-content=".subjects" type="hidden"/>
+			    <input style="display: none;" name="vurl" ex:value-content=".vurl" type="hidden"/>
+			    <input style="display: none;" name="thumbnail" ex:value-content=".thumbnail" type="hidden"/>
+			    <input style="display: none;" name="quality" ex:value-content=".quality" type="hidden"/>
+			    <input style="display: none;" name="site" ex:value-content=".site" type="hidden"/>
+			    <input style="display: none;" name="vyear" ex:value-content=".vyear" type="hidden"/>
+			    <input style="display: none;" name="loc" ex:value-content=".loc" type="hidden"/>
+
+			    <input style="display: none;" name="camp" ex:value-content=".camp" type="hidden"/>
+			    <input style="display: none;" name="hebrewname" ex:value-content=".hebrewName" type="hidden"/>
+			    <input style="display: none;" name="tempo" ex:value-content=".tempo" type="hidden"/>
+			    <input style="display: none;" name="speed" ex:value-content=".speed" type="hidden"/>
+			    <input style="display: none;" name="musicperformer" ex:value-content=".musicPerformer" type="hidden"/>
+
+			    <input style="display: none;" name="musiccomposer" ex:value-content=".musicComposer" type="hidden"/>
+			    <input style="display: none;" name="musiclyricist" ex:value-content=".musicLyricist" type="hidden"/>
+
+			    <input style="display: none;" name="source" ex:value-content=".source" type="hidden"/>
+
+			    <input style="display: none;" name="notes" value="Proposed edit." type="hidden"/>
+			    <input style="display: none;" type=hidden
+			    name="submitDate"
+			    ex:value-content=".submitDate"  type="hidden">
+
+			    <input type="submit" value="Edit this info"/>
+		          </div>
+		        </form>
+
+		      </td>
+		    </tr>
+                  </table>
+
+                </div>
+                <div ex:role="view" 
+                     ex:viewClass="Exhibit.ThumbnailView"
+                     ex:orders = ".label"
+                     ex:grouped="false"
+		     ex:formats="date {template:'yyyy'; show:date;}"
+                     ex:possibleOrders=".label, .hebrewName, .choreographer, .year, .form, .submitDate, .tempo">
+                  <div  ex:role="lens" style="display:none;" class="itemThumbnail">
+		    <table>
+                      <tr>
+                        <td valign="bottom" class="itemThumbnail-thumbnailContainer">
+                          <div>
+			    <span ex:if-exists=".thumbnail">
+			      <img height="97px" style="height: 97px" 
+                                   ex:src-content=".thumbnail"
+			           alt="video link"/>
+
+			    </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="itemThumbnail-caption"><span ex:content="value"></span>
+		          <div ex:if-exists=".hebrewName">
+			    <span ex:content=".hebrewName" class="hebrew"></span>
+		          </div>
+
+		        </td>
+		      </tr>
+		    </table>
+	          </div>
+	        </div>
+		<div ex:role="view" 
+		     ex:label="Compact"
+		     ex:orders = ".upDate, .submitDate"
+		     ex:directions = "descending"
+		     ex:grouped="false"
+		     ex:showAll="true"
+		     ex:formats="date {template:'yyyy'; show:date;}"
+		     ex:possibleOrders=".label, .choreographer, .year, .form">
+		  <div ex:role="lens" style="display:none;">
+		     <a ex:href-content=".vurl"><span ex:content=".label"></span></a>
+		     (<span ex:content=".choreographer"></span>, 
+		     <span ex:content=".form"></span>,
+		     <span ex:content=".year"></span>)
+		  </div>
+
+		     </div>
+
+                <div ex:role="view"
+                     ex:viewClass="Exhibit.TabularView"
+                     ex:label="Table"
+                     ex:columns=".label, .thumbnail,  .form,
+                                 .year, .choreographer, 
+                                 .withChoreographer,.subjects,
+                                 .lesson, .quality, .loc, .vurl" 
+                     ex:columnLabels="Dance, Image, Form, Year,
+                                      Choreographer, Appears,
+                                      Presentation, Lesson,
+                                      Quality, Location,Video"
+                     ex:columnFormats="list, image, list, list,
+                                       list, list, list, list,
+                                       list, list, list"
+                     ex:sortColumn="0"
+                     ex:sortAscending="true"
+                     ex:rowStyler="rowStyler"
+                     ></div>
+                <div ex:role="view"
+                     ex:viewClass="Exhibit.TileView"
+                     ex:orders = ".label"
+                     ex:grouped="false"
+                     ex:possibleOrders=".label, .choreographer,
+                                        .year, .form"
+                     ex:label="Details"
+                     ></div>
+                <div ex:role="view" 
+                     ex:viewClass="Exhibit.TimelineView"
+                     ex:start=".year"
+                     ex:marker=".form"
+                     ex:topBandIntervalPixels="250"
+                     ex:bottomBandIntervalPixels="400"
+                     ex:densityFactor="1"></div>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+    </div>
+
+    <noscript>
+    </noscript>
+
+
+    <script type="text/javascript">
+      document.getElementById('hide_me').style.display='none';
+    </script>
+</div>

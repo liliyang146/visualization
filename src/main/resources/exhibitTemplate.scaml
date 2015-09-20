@@ -1,0 +1,41 @@
+-@ val googleAnalyticsScript: String
+-@ val bodyText: String
+-@ val topMenu: Map[String,String]
+-@ val menuKeys: List[String]
+-@ val lvamoMap: scala.collection.immutable.TreeMap[String,String]
+-@ val lvsolMap: scala.collection.immutable.TreeMap[String,String]
+-@ val exhibitScript1: String
+-@ val exhibitScript2: String
+
+%html
+  %head
+    %title Matemātikas pulciņš
+    %meta{"http-equiv"=>"content-type", :content=>"text/html;charset=utf-8"}
+    
+    %link{:rel=>"stylesheet", :type=>"text/css", :href=>"style1.css"}
+    
+    %link{:rel=>"stylesheet", :type=>"text/css", :href=>"styles.css"}
+    
+    %link{:href=>"schema.js", :type=>"application/json", :rel=>"exhibit/data"}
+    %link{:href=>"ifd.js", :type=>"application/json", :rel=>"exhibit/data"}
+    %link{:href=>"qualities.js", :type=>"application/json", :rel=>"exhibit/data"}
+    %link{:href=>"sites.js", :type=>"application/json", :rel=>"exhibit/data"}
+    %link{:href=>"subjects.js", :type=>"application/json", :rel=>"exhibit/data"}
+
+    %script{:src=>"http://trunk.simile-widgets.org/exhibit/api/exhibit-api.js?views=timeline&log=true",
+    :type=>"text/javascript"}
+    %script{:src=>"http://trunk.simile-widgets.org/exhibit/api/extensions/data-editor/data-editor-extension.js"}
+    %script = unescape(exhibitScript1)
+    %script = unescape(exhibitScript2)
+
+  %body 
+    - render("nav.scaml")             
+
+
+    %div = unescape(bodyText)
+
+
+    %script = unescape(googleAnalyticsScript)
+
+
+

@@ -1,0 +1,464 @@
+﻿<div class="content" script="onload(alert(getHashParams()))">
+<script><![CDATA[
+function getHashParams() {
+
+    var hashParams = {};
+    var e,
+        a = /\+/g,  // Regex for replacing addition symbol with a space
+        r = /([^&;=]+)=?([^&;]*)/g,
+        d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+        q = window.location.hash.substring(1);
+
+    while (e = r.exec(q))
+       hashParams[d(e[1])] = d(e[2]);
+
+    return hashParams;
+}
+]]></script>
+<h1>Latvijas olimpiāžu tēmas</h1>
+
+<p>Saraksts aizgūts no Agneses Šustes maģistra darba 
+("Atbalsta materiālu skolotājiem matemātikas padziļinātai mācīšanai 
+nepieciešamības apzināšana un izstrāde", LU FMF, 2014.g. 6.pielikums 7.-9.lpp.)</p>
+
+<h2>Algebra</h2>
+
+<ol class="topic">
+
+<li id="ALG_A">Algebriski pārveidojumi:
+<ul>
+<li>saskaitīšanas un reizināšanas darbību īpašības</li>
+<li>saīsinātās reizināšanas formulas</li>
+<li>grupēšanas paņēmiens</li>
+<li>saistītie lielumi</li>
+<li>procentu uzdevumi</li>
+</ul>
+</li>
+
+<li id="ALG_B">Vienādojumi (28):
+<ul>
+<li>vienādojumu risināšanas paņēmieni:
+<ul>
+<li>sadalīšana reizinātājos</li>
+<li>jaunu mainīgo ieviešana</li>
+<li>Vjeta teorēmas lietošana</li>
+<li>nevienādību lietošana (28)</li>
+<li>vienādojuma abu pušu pētīšana (uztverot tās
+kā funkcijas)</li>
+<li>algebras pamatteorēmas izmantošana</li>
+</ul>
+</li>
+<li>vienādojumu pētīšana, tos nerisinot:
+<ul>
+<li>kvadrātvienādojuma atrisinājuma eksistences
+nosacījumi</li>
+<li>nevienādību lietošana</li>
+<li>Vjeta teorēmas lietošana</li>
+<li>funkciju īpašību izmantošana (monotonitāte,
+nepārtrauktība, ekstremālās vērtības)</li>
+<li>funkciju grafiku izmantošana</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li id="ALG_C">Vienādojumu sistēmas:
+<ul>
+<li>saskaitīšanas paņēmiens</li>
+<li>ievietošanas paņēmiens</li>
+<li>nevienādību lietošana</li>
+</ul>
+</li>
+
+<li id="ALG_D">Teksta uzdevumi:
+<ul>
+<li>Uzdevumi par kopīgo darbu</li>
+<li>Uzdevumi par kustību</li>
+<li>Citi</li>
+</ul>
+</li>
+
+<li id="ALG_E">Nevienādības, nevienādību sistēmas (28)</li>
+
+<li id="ALG_F">Nevienādību pierādīšana (28):
+<ul>
+<li>ekvivalentie pārveidojumi</li>
+<li>nevienādības pastiprināšanas metode</li>
+<li>citu nevienādību lietošana:
+<ul>
+<li>nevienādības starp vidējiem lielumiem</li>
+<li>Košī-Buņakovska nevienādība</li>
+<li>Jensena nevienādība</li>
+<li>Čebiševa nevienādība</li>
+</ul>
+</li>
+<li>interpretāciju metode:
+<ul>
+<li>ģeometriskās interpretācijas (lauztas līnijas
+garums, trijstūra nevienādība, laukumi)</li>
+<li>varbūtību teorijas interpretācijas</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li id="ALG_G">Ekstrēmu uzdevumi (29):
+<ul>
+<li>ekstrēmu atrašana, lietojot nevienādības (29)</li>
+<li>ģeometriskās interpretācijas</li>
+<li>funkcijas vērtības pakāpeniska palielināšana</li>
+<li>funkciju īpašību izmantošana</li>
+</ul>
+</li>
+
+<li id="ALG_H">Skaitļu virknes (29):
+<ul>
+<li>aritmētiskā un ģeometriskā progresija:
+<ul>
+<li>vispārīgā locekļa un summas formulas</li>
+<li>progresiju locekļu īpašības</li>
+<li>interpretācijas (27)</li>
+</ul>
+</li>
+<li>rekurentās virknes (29):
+<ul>
+<li>rekurento virkņu sastādīšana un lietojumi
+skaitliska rezultāta iegūšanai</li>
+<li>Fibonači skaitļi un to īpašības</li>
+<li>rekurento virkņu vispārīgo locekļu formulas</li>
+</ul>
+</li>
+<li>skaitlisku virkņu īpašības (periodiskums,
+monotonitāte) (72)</li>
+</ul>
+</li>
+
+<li id="ALG_I">Funkcijas un to pētīšana</li>
+
+<li id="ALG_J">Funkcionālvienādojumi (30):
+<ul>
+<li>ievietošanas paņēmiens (30)</li>
+<li>substitūcijas metode</li>
+<li>vienādojumu sistēmu veidošana</li>
+<li>rekurentās sakarības ar konstantiem
+koeficientiem</li>
+<li>Košī vienādojums</li>
+<li>klasisko elementāro funkciju raksturīgākie
+funkcionālvienādojumi</li>
+<li>nevienādību lietošana</li>
+<li>nepārtrauktības īpašības izmantošana</li>
+</ul>
+</li>
+
+<li id="ALG_K">Funkcionālnevienādības</li>
+
+<li id="ALG_L">Aksiomātika (30)</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Ģeometrija</h2>
+
+<ol class="topic">
+<li id="GEO_A">Ģeometrijas pamatjēdzieni</li>
+
+<li id="GEO_B">Figūru sagriešana un salikšana:
+<ul>
+<li>dažādu figūru sagriešana</li>
+<li>invariantu metode (krāsošana) (21)</li>
+<li>dažādi režģi</li>
+</ul>
+</li>
+
+<li id="GEO_C">Figūru sistēmas, to savstarpējais novietojums</li>
+
+<li id="GEO_D">Daudzstūri:
+<ul>
+<li>laukuma jēdziens un īpašības</li>
+<li>trijstūri:
+<ul>
+<li>trijstūru vienādība</li>
+<li>trijstūru līdzība</li>
+<li>metriskās sakarības trijstūrī</li>
+</ul>
+</li>
+<li>regulāri daudzstūri</li>
+<li>citi daudzstūri</li>
+</ul>
+</li>
+
+<li id="GEO_E">Riņķa līnija un riņķis:
+<ul>
+<li>ar riņķa līniju saistītie leņķi</li>
+<li>ar riņķa līniju saistītās taisnes un nogriežņi</li>
+<li>riņķa sektors, segments</li>
+</ul>
+</li>
+
+<li id="GEO_F">Ievilkti un apvilkti daudzstūri</li>
+
+<li id="GEO_G">Ģeometriskie pārveidojumi:
+<ul>
+<li>simetrija (30)</li>
+<li>pagrieziens</li>
+<li>paralēlā pārnese</li>
+<li>inversija</li>
+<li>homotētija</li>
+</ul>
+</li>
+
+<li id="GEO_H">Analītiskā ģeometrija:
+<ul>
+<li>koordinātu sistēmas ieviešana un izmantošana</li>
+<li>vektori (summa, skalārais reizinājums)</li>
+</ul>
+</li>
+
+<li id="GEO_I">Ekstremālā elementa metode (22):
+<ul>
+<li>izliektais apvalks</li>
+<li>klasiskie ekstremālie elementi</li>
+</ul>
+</li>
+
+<li id="GEO_J">Invariantu metode (21)</li>
+
+</ol>
+
+
+
+
+
+
+
+<h2>Kombinatorika</h2>
+
+<ol class="topic">
+
+<li id="COM_A">Objektu skaitīšana:
+<ul>
+<li>kombinatorikas reizinājuma likums un
+saskaitīšanas likums</li>
+<li>kombinācijas, variācijas, permutācijas</li>
+<li>Ņūtona binoms un binomiālie koeficienti</li>
+<li>gadījumu pārlase</li>
+<li>rekurento sakarību metode (29)</li>
+<li>ieslēgšanas-izslēgšanas formula (31)</li>
+</ul>
+</li>
+
+<li id="COM_B">Grafi (32):
+<ul>
+<li>interpretācijas ar grafu palīdzību (32)</li>
+<li>grafa virsotņu pakāpe (33)</li>
+<li>Eilera formula (34)</li>
+<li>dažādi grafi (koks, cikls, divdaļīgs grafs, planārs
+grafs)</li>
+<li>grafi ar krāsainām šķautnēm, virsotnēm</li>
+</ul>
+</li>
+
+<li id="COM_C">Kombinatoriskās struktūras:
+<ul>
+<li>apakškopu sistēmas (visu apakškopu skaits,
+Eilera-Venna diagrammas) (34)</li>
+<li>Paskāla trijstūris</li>
+<li>turnīri</li>
+<li>latīņu kvadrāti (maģiskie skaitļu kvadrāti)</li>
+</ul>
+</li>
+
+<li id="COM_D">Invariantu metode (20, 56):
+<ul>
+<li>invarianti skaitīšanā</li>
+<li>invarianti procesos:
+<ul>
+<li>aritmētiskie invarianti (paritāte, specifiskas
+atlikumu vērtības)</li>
+<li>algebriskie invarianti (summa, reizinājums, citi
+invarianti)</li>
+<li>ģeometriskie invarianti (laukums, garums,
+orientācija (virziens))</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li id="COM_E">Vidējās vērtības metode (VVM) (16):
+<ul>
+<li>Dirihlē princips (17, 64):
+<ul>
+<li>vienkāršākie lietojumi</li>
+<li>uzdevumos par ekstremālajām vērtībām</li>
+<li>uzdevumos par grafiem</li>
+</ul>
+</li>
+<li>citi VVM lietojumi</li>
+</ul>
+</li>
+
+<li id="COM_F">Ekstremālā elementa metode (22)</li>
+
+<li id="COM_G">Interpretāciju metode (26)</li>
+
+<li id="COM_H">Varbūtību teorijas elementi</li>
+
+</ol>
+
+
+
+
+<h2>Skaitļu teorija</h2>
+
+<ol class="topic">
+<li id="NUM_A">Aritmētika:
+<ul>
+<li>Operācijas ar veseliem skaitļiem</li>
+<li>Skaitļu rēbusi (35)</li>
+</ul>
+</li>
+
+<li id="NUM_B">Skaitļu dalāmība (35):
+<ul>
+<li>dalāmības pazīmes un īpašības (36)</li>
+<li>LKD un MKD</li>
+<li>dalīšana ar atlikumu (36)</li>
+<li>Eiklīda algoritms</li>
+<li>skaitļa 𝑛n! dalītāji</li>
+</ul>
+</li>
+
+<li id="NUM_C">Aritmētikas pamatteorēma (37):
+<ul>
+<li>pirmskaitļi (37)</li>
+<li>skaitļa sadalījums pirmreizinātājos (37)</li>
+<li>naturāla skaitļa dalītāju skaita un summas
+formulas (37)</li>
+</ul>
+</li>
+
+<li id="NUM_D">Skaitļu kongruence pēc moduļa (37):
+<ul>
+<li>kongruence pēc moduļa n</li>
+<li>aprēķini pēc moduļa</li>
+<li>periodiskas atlikumu virknes</li>
+<li>Mazā Fermā teorēma un Eilera teorēma</li>
+</ul>
+</li>
+
+<li id="NUM_E">Vienādojumi veselos skaitļos (38):
+<ul>
+<li>sadalīšana reizinātājos</li>
+<li>bezgalīgā kritiena metode</li>
+<li>vienādojuma pārveidošana formā 𝑓f g𝑔= u^m</li>
+<li>vienādojuma abu pušu salīdzināšana pēc
+lieluma</li>
+</ul>
+</li>
+
+<li id="NUM_F">Skaitļa decimālais pieraksts (38)</li>
+
+<li id="NUM_G">Ne-decimālās skaitīšanas sistēmas (binārā
+skaitīšanas sistēma u.c.) (38)</li>
+
+<li id="NUM_H">Dirihlē princips (atlikumi) (17)</li>
+
+<li id="NUM_I">Invariantu metode (invariants – dalāmība, summa,
+reizinājums) (20)</li>
+
+<li id="NUM_J">Ekstremālā elementa metode (mazākā/lielākā
+pirmreizinātāja izvēle)</li>
+
+<li id="NUM_K">Matemātiskās indukcijas metode (23):
+<ul>
+<li>indukcijas shēma no k uz k+1</li>
+<li>indukcijas shēma no k un k+1 uz k+2</li>
+<li>indukcijas shēma no visiem skaitļiem &lt;k uz k</li>
+<li>citas indukcijas shēmas</li>
+</ul>
+</li>
+
+<li id="NUM_L">Gadījumu pārlase:
+<ul>
+<li>gadījumu pārlase pēc moduļa</li>
+<li>ciparu pārlase decimālajā pierakstā (39)</li>
+</ul>
+</li>
+
+<li id="NUM_M">Polinomi ar veseliem koeficientiem:
+<ul>
+<li>polinoma vērtības dažādos punktos</li>
+<li>īpašība (f(x)-f(y)) dalās ar (x-y) (39)</li>
+<li>polinoma dalīšana ar atlikumu (39)</li>
+<li>vispārīgā Vjeta teorēma</li>
+<li>polinoma racionālās saknes</li>
+</ul>
+</li>
+</ol>
+
+
+
+<h2>Algoritmika</h2>
+
+<ol class="topic">
+<li id="LOG_A">Matemātiskās spēles:
+<ul>
+<li>spēles ar simetrijas stratēģiju (40)</li>
+<li>spēles invariants</li>
+<li>spēles modeļa veidošana:
+<ul>
+<li>rūtiņu režģī</li>
+<li>grafā (41)</li>
+</ul>
+</li>
+<li>prom ņemšanas spēles (41)</li>
+<li>varbūtiskās spēles (41)</li>
+<li>citas spēles</li>
+</ul>
+</li>
+
+<li id="LOG_B">Algoritma atšifrēšana (42)</li>
+
+<li id="LOG_C">Algoritmu un procesu analīze (43)</li>
+
+<li id="LOG_D">Algoritma izstrāde (43):
+<ul>
+<li>variantu pārlase (43)</li>
+<li>meklēšanas un kārtošanas algoritmi (43):
+<ul>
+<li>turnīru organizēšana (uzvarētāja
+noskaidrošana; 1. un 2. vietas ieguvēja
+noskaidrošana)</li>
+<li>informācijas izplatīšanās uzdevumi</li>
+</ul>
+</li>
+<li>"skaldi un valdi" tipa algoritmi (44)</li>
+<li>apakšprogrammas tipa algoritmi (44)</li>
+<li>induktīvie algoritmi (45)</li>
+</ul>
+</li>
+
+<li id="LOG_E">Algoritmu optimalitātes pierādījumi (45)</li>
+
+<li id="LOG_F">Algoritmu neiespējamības pierādījumi (45)</li>
+
+<li id="LOG_G">Loģiska rakstura uzdevumi:
+<ul>
+<li>uzdevumi, par izteikumu patiesumu (46)</li>
+<li>uzdevumi ar apslēptu informāciju (46)</li>
+<li>paradoksi</li>
+</ul>
+</li>
+</ol>
+
+
+</div>

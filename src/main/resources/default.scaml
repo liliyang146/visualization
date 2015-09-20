@@ -1,0 +1,22 @@
+-@ val googleAnalyticsScript: String
+-@ val bodyText: String
+-@ val topMenu: Map[String,String]
+-@ val menuKeys: List[String]
+-@ val lvamoMap: scala.collection.immutable.TreeMap[String,String]
+-@ val lvsolMap: scala.collection.immutable.TreeMap[String,String]
+
+%html
+  %head
+    %title Matemātikas pulciņš
+    %meta{"http-equiv"=>"content-type", :content=>"text/html;charset=utf-8"}
+    %link{:rel=>"stylesheet", :type=>"text/css", :href=>"style1.css"}
+
+  %body 
+    - render("nav.scaml")             
+
+
+    %div = unescape(bodyText)
+
+
+    %script = unescape(googleAnalyticsScript)
+

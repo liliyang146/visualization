@@ -35,3 +35,34 @@
 
     %script = unescape(googleAnalyticsScript)
 
+
+
+
+
+
+
+
+
+        %td &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %td
+          %table{:cellspacing=>"0", :border=>"0", :class=>"rightmenu"}
+            %col{:width=>"80px"}
+            %col{:width=>"80px"}
+            %col{:width=>"80px"}
+            %tr
+              %th{:class=>"noborder"} &nbsp;
+              %th = abbrevMap(lang)("SOL")
+              %th = abbrevMap(lang)("AMO")
+            - for (ttuple <- indexMap(lang))
+              %tr
+                %td{:class=>"noborder"} = ttuple._1
+                %td 
+                  - if (ttuple._3 == "") 
+                    &nbsp;
+                  - else 
+                    %a{:href=>{ttuple._3}} = ttuple._2
+                %td
+                  - if (ttuple._5 == "") 
+                    &nbsp;
+                  - else 
+                    %a{:href=>{ttuple._5}} = ttuple._4

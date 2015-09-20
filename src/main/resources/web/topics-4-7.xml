@@ -1,0 +1,136 @@
+<div class="content">
+
+<h1>4.-8.klasei piemērotas tēmas</h1>
+
+<p>Saīsinājumi: LVSOL (LV sagatavošanās olimpiāde); 
+    LVNOL (LV novadu olimpiāde); 
+    LVVOL (LV valsts olimpiāde); LVAMO (LV atklātā olimpiāde).
+    Gads ir mācību gada pavasara gads, piemēram, LVSOL2010.5.1 apzīmē 2009./2010.m.g. 
+    sagatavošanās olimpiādi, 5.klases 1.uzdevumu. Visus uzdevumus var meklēt 
+    <a href="http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/">NMS uzdevumu arhīvā</a>.</p>
+ 
+<dl class="topic">
+<dt>Algebra (b): Vienādojumi (sk. <a href="all-topics.html#ALG_B">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi, kuros noder nezināmā apzīmēšana ar burtu vai kāda vienādojuma atrisināšana pret nezināmu mainīgo.
+<ul>
+<li>LVAMO2010.5.3</li>
+<li>LVAMO2011.5.2</li>
+</ul>
+</dd>
+
+<dt>Ģeometrija (a): Pamatjēdzieni (sk. <a href="all-topics.html#GEO_A">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi, kuros jāizmanto figūru pamatīpašības (sakarība, piederība, izliektība, u.c.) 
+    kā arī ģeometriskie attālumi un laukumi (laukumu saskaitīšanas īpašības, u.c.).
+<ul>
+<li>LVNOL2011.5.2</li>
+</ul>
+</dd>
+
+<dt>Ģeometrija (b): Figūru salikšana (sk. <a href="all-topics.html#GEO_B">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi par figūru salikšanu vai sagriešanu gabalos ar noteiktām īpašībām. 
+    (Daudzos gadījumos šīs kategorijas uzdevumi izmanto arī simetriju – t.i. figūru kongruences pārveidojumus.)
+<ul>
+<li>LVSOL2010.5.1</li>
+<li>LVAMO2010.5.2</li>
+<li>LVSOL2011.5.3</li>
+<li>LVNOL2010.5.4</li>
+<li>LVAMO2011.5.5</li>
+</ul>
+</dd>
+
+<dt>Ģeometrija (d): Daudzstūri (sk. <a href="all-topics.html#GEO_D">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi par taišņu un nogriežņu īpašībām, leņķu summām, punktu piederību taisnēm, 
+    taišņu krustošanos vienā punktā. Visām tām taišņu un nogriežņu veidoto figūru 
+    īpašībām, kuru pamatošanai nav nepieciešamas dziļas zināšanas par apļa īpašībām, 
+    plaknes pārveidojumiem, utml.
+<ul>
+<li>LVAMO2011.5.3</li>
+</ul>
+</dd>
+
+<dt>Kombinatorika (a): Objektu skaitīšana (sk. <a href="all-topics.html#COM_A">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi, kurus var atrisināt, saskaitot kopas elementuas, kuri apmierina kādu īpašību. 
+    Vai arī – secīgi aplūkojot galīgu skaitu iespēju. Formāli runājot, 
+    jebkurš kombinatorikas uzdevums ir par kādu galīgu kopu; variantu pārlase 
+    ir risināšanas metode vienīgi tad, ja aplūkojamo variantu nav pārāk daudz, 
+    un kur risinājuma interesantākā daļa ir – lielas iespējamo atrisinājumu kopas 
+    pareiza sadalīšana nelielā skaitā apakšgadījumu.
+<ul>    
+<li>LVSOL2010.5.3</li>
+<li>LVNOL2010.5.2</li>
+</ul>
+</dd>
+
+<dt>Kombinatorika (b): Grafi (sk. <a href="all-topics.html#COM_B">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi, kuru risināšanā noder grafu virsotnes un šķautnes (vispārīgā gadījumā arī – daudzvietīgas relācijas starp galīgas kopas elementiem).
+<ul>
+<li>LVNOL2011.5.5</li>
+<li>LVAMO2010.5.5</li>
+<li>LVNOL2010.5.1</li>
+<li>LVAMO2011.5.4</li>
+</ul>
+</dd>
+
+<dt>Kombinatorika (d): Invariantu metode (sk. <a href="all-topics.html#COM_D">pilnajā sarakstā</a>)</dt>
+<dd>Dažos uzdevumos aprakstīti atļautie situācijas pārveidojumi jeb gājieni. 
+    Ja jānoskaidro, vai no sākuma stāvokļa var vai nevar nonākt gala stāvoklī, 
+    var aplūkot kādu nemainīgu kritēriju (jeb invariantu), kas pārveidojumu gaitā nemainās.
+<ul>    
+<li>LVSOL2010.5.5</li>
+<li>LVAMO2010.5.4</li>
+<li>LVNOL2011.5.3</li>
+</ul>
+</dd>
+
+<dt>Kombinatorika (e): Vidējās vērtības metode (sk. <a href="all-topics.html#COM_E">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi, kuros novērtējums iegūstams, dalot lielāku kopu vairākās apakškopās 
+    un novērtējot, cik elementu var būt katrā apakškopā. Dirihlē princips ir atsevišķs gadījums.
+<ul>
+<li>LVSOL2010.5.4</li>
+<li>LVNOL2011.5.4</li>
+<li>LVNOL2010.5.3</li>
+</ul>
+</dd>
+
+<dt>Kombinatorika (f): Ekstremālais elements (sk. <a href="all-topics.html#COM_F">pilnajā sarakstā</a>)</dt>
+<dd>Gan konstrukcijas, gan neiespējamības pierādījumos var atrast un izmantot 
+    kādu elementu, kura īpašības (skaitliskais lielums, izmērs, u.c.) 
+    pieņem galējas jeb ekstrēmas vērtības. Dažu problēmu risināšanā noder arī 
+    “rijīgie algoritmi” (greedy algorithms) ,kuri katrā solī izvēlas 
+    maksimālo ieguvumu – tādējādi maksimizējot galarezultātu kopumā.
+<ul>
+<li>LVSOL2010.5.2</li>
+<li>LVAMO2010.5.1</li>
+<li>LVSOL2011.5.5</li>
+</ul>
+</dd>
+
+<dt>Skaitļu teorija (a): Aritmētika un rēbusi (sk. <a href="all-topics.html#NUM_A">pilnajā sarakstā</a>)</dt>
+<dd>Aritmētiskas darbības ar veseliem skaitļiem, aprēķinu veikšana uz papīra, 
+    rēbusi, kur cipari aizstāti ar burtiem.
+<ul>
+<li>LVSOL2011.5.1</li>
+<li>LVAMO2011.5.1</li>
+</ul>
+</dd>
+
+<dt>Skaitļu teorija (b): Dalāmība (sk. <a href="all-topics.html#NUM_B">pilnajā sarakstā</a>)</dt>
+<dd>Uzdevumi, kuri izmanto veselu skaitļu dalāmības īpašības.
+<ul>
+<li>LVNOL2011.5.1</li>
+<li>LVSOL2011.5.2</li>
+<li>LVSOL2011.5.4</li>
+</ul>
+</dd>
+
+<dt>Algoritmika (d): Algoritmu izstrāde (sk. <a href="all-topics.html#LOG_D">pilnajā sarakstā</a>)</dt>
+<dd>Algoritmi, kas saistīti ar kārtošanu, meklēšanu, monētu svēršanu utml. 
+    Uzdevumā prasīts atrast algoritmu noteiktas uzdevumu kopas atrisināšanai.
+<ul>
+<li>LVNOL2010.5.5</li>
+</ul>
+</dd>
+</dl>
+
+</div>
+

@@ -1,0 +1,42 @@
+-@ val topMenu: Map[String,String]
+-@ val menuKeys: List[String]
+-@ val lvamoMap: scala.collection.immutable.TreeMap[String,String]
+-@ val lvsolMap: scala.collection.immutable.TreeMap[String,String]
+
+
+%'nav'
+  %ul
+    - for (menuKey <- menuKeys)
+      - if (menuKey.equals("about-lvamo.html"))
+        %li
+          %a{:href=>menuKey} = unescape(topMenu(menuKey)) 
+          %div
+            %ul
+              - for (kk <- lvamoMap.keySet)  
+                %li
+                  %a{:href=>{kk}} = unescape(lvamoMap(kk))
+      - else if (menuKey.equals("about-lvsol.html"))
+        %li
+          %a{:href=>menuKey} = unescape(topMenu(menuKey))   
+          %div
+            %ul
+              - for (kk <- lvsolMap.keySet)
+                %li
+                  %a{:href=>{kk}} = unescape(lvsolMap(kk))
+      - else if (menuKey.equals("contest-math-class.html"))
+        %li
+          %a{:href=>menuKey} = unescape(topMenu(menuKey))   
+          %div
+            %ul
+              %li
+                %a{:href=>"topics-4-7.html"} = "Tēmas (4.-7.kl.)"
+              %li
+                %a{:href=>"topics-8-12.html"} = "Tēmas (8.-12.kl.)"
+              %li
+                %a{:href=>"all-topics.html"} = "Visas tēmas"
+              %li
+                %a{:href=>"index.html"} = "Video šķirotājs"
+                
+      - else
+        %li
+          %a{:href=>{menuKey}} = topMenu(menuKey)

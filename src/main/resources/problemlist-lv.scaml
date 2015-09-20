@@ -1,4 +1,3 @@
--@ val style1: String
 -@ val googleAnalyticsScript: String
 -@ val plist: List[(String,String,Int,Int)]
 
@@ -9,13 +8,21 @@
 -@ val abbrevMap: Map[String,Map[String,String]]
 -@ val languageOpts: List[(String,String)]
 
+-@ val topMenu: Map[String,String]
+-@ val menuKeys: List[String]
+-@ val lvamoMap: scala.collection.immutable.TreeMap[String,String]
+-@ val lvsolMap: scala.collection.immutable.TreeMap[String,String]
+
+
 %html
   %head
     %title = localizationStrings.titleProblemSolutions(lang)
     %meta{"http-equiv"=>"content-type", :content=>"text/html;charset=utf-8"}
-    %style{:type=>"text/css"} = unescape(style1)
+    %link{:rel=>"stylesheet", :type=>"text/css", :href=>"style1.css"}
 
   %body
+    - render("nav.scaml")
+
     %p{:style=>"padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:0px;"}
       - if (languageOpts.size > 0) 
         %small
@@ -47,29 +54,7 @@
                       - if (lang == "lv") 
                         = plist(i)._3 + ".klases " + plist(i)._4 + ".uzdevums"                          
                     = unescape("&nbsp;&nbsp;" + plist(i)._2)      
-        %td &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        %td
-          %table{:cellspacing=>"0", :border=>"0", :class=>"rightmenu"}
-            %col{:width=>"80px"}
-            %col{:width=>"80px"}
-            %col{:width=>"80px"}
-            %tr
-              %th{:class=>"noborder"} &nbsp;
-              %th = abbrevMap(lang)("SOL")
-              %th = abbrevMap(lang)("AMO")
-            - for (ttuple <- indexMap(lang))
-              %tr
-                %td{:class=>"noborder"} = ttuple._1
-                %td 
-                  - if (ttuple._3 == "") 
-                    &nbsp;
-                  - else 
-                    %a{:href=>{ttuple._3}} = ttuple._2
-                %td
-                  - if (ttuple._5 == "") 
-                    &nbsp;
-                  - else 
-                    %a{:href=>{ttuple._5}} = ttuple._4
+
     %p
       %a{:href=>"https://www.youtube.com/user/kalvisapsitis1/videos"}< = localizationStrings.moreVideos(lang)
 
