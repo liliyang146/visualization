@@ -1,0 +1,32 @@
+<div>
+<table class="game">
+<col class="empty"/><col/><col/><col/>
+<tr ng-repeat="move in nimGameData.result.moves">
+<td>{{move.player === "N" ? "&nbsp;" : ("(" + move.player + ")") }}</td>
+<td ng-style="playerStyle(move,'1')">{{move.first}}</td>
+<td ng-style="playerStyle(move,'2')">{{move.second}}</td>
+<td ng-style="playerStyle(move,'3')">{{move.third}}</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td ng-click="moveEnable(1)"><input ng-model="data1"  
+       class="largeInput" 
+       type="text"         
+       ng-disabled="isDisabledField(1)"
+	   my-enter="doSomething(1)"
+	   /></td>
+<td ng-click="moveEnable(2)"><input ng-model="data2"  
+       class="largeInput" 
+       type="text"    
+       ng-disabled="isDisabledField(2)"
+	   my-enter="doSomething(2)"/></td>
+<td ng-click="moveEnable(3)" ><input ng-model="data3"  
+       class="largeInput" 
+       type="text"
+       ng-disabled="isDisabledField(3)"
+	   my-enter="doSomething(3)"/></td>
+</tr>
+</table>
+
+<p><small style="color:red">{{moveEnabled}}</small></p>
+</div>

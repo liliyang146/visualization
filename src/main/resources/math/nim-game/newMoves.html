@@ -1,0 +1,53 @@
+<div style="color:darkgreen" ng-if="!doesDataExist()">
+<p><b>Loading</b></p>
+</div>
+
+<div ng-if="doesDataExist()">
+<p><small>{{description.$value}}</small></p>
+
+<table class="game">
+<col class="empty"/><col/><col/><col/>
+<tr ng-repeat="(id,move) in moves">
+<td>{{move.movePlayer === "N" ? "&nbsp;" : ("(" + move.movePlayer + ")") }}</td>
+<td ng-style="playerStyle(move,'0')">{{move.num[0]}}</td>
+<td ng-style="playerStyle(move,'1')">{{move.num[1]}}</td>
+<td ng-style="playerStyle(move,'2')">{{move.num[2]}}</td>
+</tr>
+<tr ng-if="!isGameOver()">
+<td>&nbsp;</td>
+<td ng-click="moveEnable(0)"><input ng-model="theMove.num[0]"  
+       class="largeInput" 
+       type="number"         
+       ng-disabled="isDisabledField(0)"
+	   my-enter="doSomething(0)"
+	   /></td>
+<td ng-click="moveEnable(1)"><input ng-model="theMove.num[1]"  
+       class="largeInput" 
+       type="number"    
+       ng-disabled="isDisabledField(1)"
+	   my-enter="doSomething(1)"/></td>
+<td ng-click="moveEnable(2)" ><input ng-model="theMove.num[2]"  
+       class="largeInput" 
+       type="number"
+       ng-disabled="isDisabledField(2)"
+	   my-enter="doSomething(2)"/></td>
+</tr>
+<tr ng-if="isGameOver()">
+<td style="text-align:left" colspan="4"><b style="font-size:120%; color:#32cd32">Uzvar spēlētājs {{winner}}!</b></td>
+</tr>
+</table>
+
+
+<p style="color:red">{{gameMessage}}</p>
+<!--
+<p style="color:darkred">theMove is ({{theMove.num[0]}},{{theMove.num[1]}},{{theMove.num[2]}})</p>
+<p style="color:darkred">lastMove is ({{lastMove.num[0]}},{{lastMove.num[1]}},{{lastMove.num[2]}})</p>
+<p style="color:darkred">scope.moves.length is {{moves.length}}</p>
+<p style="color:darkred">scope.moves.last is ({{moves[moves.length - 1].num}})</p>
+<p style="color:darkred">scope.gameOver is ({{gameOver}}); (isPositive,is0,is0,is0) is 
+({{moves.length > 1}},{{+theMove.num[0] == 0}},{{+theMove.num[1] == 0}},{{theMove.num[2] == 0}}),
+{{(+theMove.num[0]) + (+theMove.num[1]) + (+theMove.num[2])}}</p>
+<p style="color:darkred">scope.date1 is ({{date1}})</p>
+-->
+</div>
+

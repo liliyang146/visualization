@@ -1,0 +1,43 @@
+<div style="color:darkgreen" ng-if="!doesDataExist()">
+<p><b>Loading...</b></p>
+</div>
+
+
+<div>
+<p><small>{{description.$value}}</small></p>
+
+<p><a href="/math/math/nim-game/index.html#/reset">Jauna spēle</a></p>
+
+<table class="game">
+<col class="empty"/><col/><col/><col/>
+<tr ng-repeat="(id,move) in moves">
+<td>{{move.movePlayer === "N" ? "&nbsp;" : ("(" + move.movePlayer + ")") }}</td>
+<td ng-style="playerStyle(move,0)">{{move.num[0]}}</td>
+<td ng-style="playerStyle(move,1)">{{move.num[1]}}</td>
+<td ng-style="playerStyle(move,2)">{{move.num[2]}}</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td ng-click="moveEnable(0)"><input ng-model="theMove.num[0]"  
+       class="largeInput" 
+       type="number"         
+       ng-disabled="isDisabledField(0)"
+	   my-enter="doSomething(0)"
+	   /></td>
+<td ng-click="moveEnable(1)"><input ng-model="theMove.num[1]"  
+       class="largeInput" 
+       type="number"    
+       ng-disabled="isDisabledField(1)"
+	   my-enter="doSomething(1)"/></td>
+<td ng-click="moveEnable(2)" ><input ng-model="theMove.num[2]"  
+       class="largeInput" 
+       type="number"
+       ng-disabled="isDisabledField(2)"
+	   my-enter="doSomething(2)"/></td>
+</tr>
+</table>
+
+<p style="color:darkred">{{gameMessage}}</p>
+
+</div>
+

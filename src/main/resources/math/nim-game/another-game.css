@@ -1,0 +1,28 @@
+body {
+  font-family: Sans-Serif;
+  margin: 30pt;
+}
+h1, h2 {
+  font-weight: normal;
+}
+table.game {
+   width: 300pt;
+}
+table.game col {
+   width: 30%;
+   background-color: lightgray;
+}
+table.game col.empty {
+   width: 10%;
+   background-color: white;
+}
+table.game td {
+   padding: 5pt;
+   text-align: right;
+   font-size: 200%;
+   font-family: monospace;
+}
+
+input.largeInput {
+   font-family: monospace;
+}

@@ -1,0 +1,11 @@
+{
+	"status":200,
+	"result": {
+		"moves": [
+		    {"first":"7", "second":"8","third":"9","changed":"0","player":"N"},
+			{"first":"5", "second":"7","third":"9","changed":"1","player":"A"},
+			{"first":"5", "second":"7","third":"2","changed":"3","player":"B"}
+		]
+	}
+}
+

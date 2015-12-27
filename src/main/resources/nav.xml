@@ -1,0 +1,39 @@
+<list>
+    
+<item id="home.html" title="Sākums">
+<list>
+<item id="home-ad.html" title="Reklāmraksts"/>
+</list>    
+</item>
+
+<item id="contest-math-class.html" title="Materiāli">
+<list>
+<item id="topics-4-7.html" title="Tēmas (4.-7.kl.)"/>
+<item id="topics-8-12.html" title="Tēmas (8.-12.kl.)"/>
+<item id="all-topics.html" title="Visas tēmas"/>
+<item id="index.html" title="Video šķirotājs"/>
+</list>    
+</item>
+
+<item id="about-lvamo.html" title="LV AMO">
+<list>
+<item id="amo38-list.html" title="2010./2011.m.g."/>
+<item id="amo39-list.html" title="2011./2012.m.g."/>
+<item id="amo40-list.html" title="2012./2013.m.g."/>
+<item id="amo41-list.html" title="2013./2014.m.g."/>
+</list>
+</item>    
+
+<item id="about-lvsol.html" title="LV Sagat.">
+<list>
+<item id="sol61-list.html" title="2010./2011.m.g."/>
+</list>
+</item>
+    
+<item id="other-videos.html" title="Citi video">
+<list>
+<item id="other-videos-fr.html" title="Video franciski"/>    
+</list>
+</item>
+
+</list>

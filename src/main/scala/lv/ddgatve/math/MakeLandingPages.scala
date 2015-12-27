@@ -14,19 +14,34 @@ import scala.collection.immutable.TreeMap
 
 object MakeLandingPages {
 
-  val menuKeys = List("home.html",
-    "contest-math-class.html",
-    "about-lvamo.html",
-    "about-lvsol.html")
-  val topMenu = Map("home.html" -> "Sākums",
+  //  val menuKeys = List("home.html",
+  //    "contest-math-class.html",
+  //    "about-lvamo.html",
+  //    "about-lvsol.html",
+  //    "other-videos.html")
+  val topMenu = Map("home.html" -> "Sākums <span class='caret'></span>",
     "contest-math-class.html" -> "Materiāli <span class='caret'></span>",
     "about-lvamo.html" -> "LV AMO <span class='caret'></span>",
-    "about-lvsol.html" -> "LV Sagat. <span class='caret'></span>")
+    "about-lvsol.html" -> "LV Sagat. <span class='caret'></span>",
+    "other-videos.html" -> "Citi video <span class='caret'></span>")
   val lvamoMap = TreeMap("amo38-list.html" -> "2010./2011.m.g.",
     "amo39-list.html" -> "2011./2012.m.g.",
     "amo40-list.html" -> "2012./2013.m.g.",
     "amo41-list.html" -> "2013./2014.m.g.")
   val lvsolMap = TreeMap("sol61-list.html" -> "2010./2011.m.g.")
+  val tempMap = TreeMap(
+    "k" -> "index.html",
+    "v" -> "Video šķirotājs",
+    "http://www.delfi.lv" -> "Delfi",
+    "http://www.apollo.lv" -> "Apollo")
+
+  val navRoot = scala.xml.XML.loadFile("src/main/resources/nav.xml")
+  val menuKeys = ((navRoot \ "item") map
+    { x => x.head.attribute("id").get(0).text }).toList
+  val theMenu = ((navRoot \ "item") map
+    { x => x.head.attribute("id").get(0).text }).toList
+
+  //println("menuKeys = " + menuKeys)
 
   def writeToFile(text: String, file: File): Unit = {
     val writer = new PrintWriter(file, "UTF-8")
@@ -58,10 +73,40 @@ object MakeLandingPages {
         new File("target/site/math/" + webFile.getName()))
     }
 
-    val pdfFiles = listDirectoryByPattern("../ddgatve-problems", """^mathclass.*\.pdf$""")
-    for (pdfFile <- pdfFiles) {
-      FileUtils.copyFile(pdfFile,
-        new File("target/site/math/" + pdfFile.getName()))
+    val subDirs = List("pdf", "pptx")
+    val filePatterns = List("""\.pdf$""", """\.pptx$""", """\.(js|json)$""", """\.css$""")
+    //val pattern = """\.(pdf|pptx|js|json)$"""
+
+    for (subDir <- subDirs) {
+      val theFiles = listDirectoryByPattern("src/main/resources/" + subDir, filePatterns.mkString("|"))
+      for (theFile <- theFiles) {
+        FileUtils.copyFile(theFile,
+          new File("target/site/math/" + theFile.getName()))
+      }
+    }
+
+    val projectDirs = List("math/nim-game",
+        "math/nim-game2",
+        "math/ajax-ex", 
+        "math/another-game", 
+        "math/chapter01", 
+        "math/sync-objs-arrays", 
+        "math/simple-fb")
+    val projectSubDirs = List(".", "js", "libs", 
+        "domain", "property", "sync-array", "sync-object", "game")
+    val projectFilePatterns = List("""\.html$""", """\.js$""", """\.json$""", """\.css$""")
+    for (projectDir <- projectDirs) {
+      for (projectSubDir <- projectSubDirs) {
+        if ((new File("src/main/resources/" + projectDir + "/" + projectSubDir)).exists) {
+          val theFiles = listDirectoryByPattern(
+            "src/main/resources/" + projectDir + "/" + projectSubDir,
+            projectFilePatterns.mkString("|"))
+          for (theFile <- theFiles) {
+            FileUtils.copyFile(theFile,
+              new File("target/site/math/" + projectDir + "/" + projectSubDir + "/" + theFile.getName()))
+          }
+        }
+      }
     }
 
     val engine = new TemplateEngine
@@ -105,6 +150,9 @@ object MakeLandingPages {
         "all-topics.xml",
         "contest-math-class.xml",
         "home.xml",
+        "home-ad.xml",
+        "other-videos.xml",
+        "other-videos-fr.xml",
         "topics-4-7.xml",
         "topics-8-12.xml")
       for (staticFile <- staticFiles) {
@@ -120,8 +168,7 @@ object MakeLandingPages {
         writeToFile(engine.layout(defaultTemplate, m),
           new File("target/site/math/" + newName))
       }
-      
-      
+
       val facetFiles = List("index.xml")
       for (facetFile <- facetFiles) {
         val bodyText = scala.io.Source.fromFile("src/main/resources/web/" + facetFile).mkString
@@ -189,14 +236,35 @@ object MakeLandingPages {
     if (args.length > 0 && args(0) == "-local") {
       println("Skip upload")
     } else {
-      val llfile = listDirectoryByPattern("target/site/math", """.*\.(js|html|css|png|pdf)$""")
-      //println("llfile = " + llfile)
-      val lfile = llfile map (ff => "target/site/math/" + ff.getName())
-      val rfile = llfile map (ff => "/home/lighttpd/dudajevagatve.lv/http/math/" + ff.getName())
+      val llfile = listDirectoryByPattern("target/site/math", """.*\.(js|json|html|css|png|pdf|pptx)$""")
+      val projLlFile = for (projectDir <- projectDirs) yield {
+        for (projectSubDir <- projectSubDirs) yield {
+          if ((new File("src/main/resources/" + projectDir + "/" + projectSubDir)).exists) {
+            listDirectoryByPattern(
+              "target/site/math/" + projectDir + "/" + projectSubDir,
+              projectFilePatterns.mkString("|"))
+          } else { List() }
+        }
+      }
+      val projFlatLlFile = (projLlFile.flatten).flatten
+      val commonList = llfile ++ projFlatLlFile
+
+      val lfile = commonList map (ff => attachPrefix("target/site/math/", ff))
+      val rfile = commonList map (ff => attachPrefix("/home/lighttpd/dudajevagatve.lv/http/math/", ff))
       println("Copying " + lfile.size + " files to remote server")
 
+      //      for (commonFile <- rfile) {
+      //        println("path = " + commonFile)
+      //      }
       NewScpTo.copyToRemote(lfile, rfile)
+
     }
 
+  }
+
+  def attachPrefix(prefix: String, file: File): String = {
+    val result = prefix +
+      file.getPath.substring("target/site/math/".length())
+    result.replaceAll("""\\""", """/""")
   }
 }

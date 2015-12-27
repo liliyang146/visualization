@@ -36,7 +36,26 @@
                 %a{:href=>"all-topics.html"} = "Visas tēmas"
               %li
                 %a{:href=>"index.html"} = "Video šķirotājs"
-                
+                %div
+                  %ul
+                    %li
+                      %a{:href=>"http://www.delfi.lv"} = "Delfi"
+                    %li
+                      %a{:href=>"http://www.apollo.lv"} = "Apollo"                
+      - else if (menuKey.equals("home.html"))
+        %li
+          %a{:href=>menuKey} = unescape(topMenu(menuKey))   
+          %div
+            %ul
+              %li
+                %a{:href=>"home-ad.html"} = "Reklāmraksts"
+      - else if (menuKey.equals("other-videos.html"))
+        %li
+          %a{:href=>menuKey} = unescape(topMenu(menuKey))
+          %div
+            %ul
+              %li
+                %a{:href=>"other-videos-fr.html"} = "Video franciski"
       - else
         %li
           %a{:href=>{menuKey}} = topMenu(menuKey)
