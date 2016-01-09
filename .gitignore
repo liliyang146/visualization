@@ -24,3 +24,4 @@ reports/*.Rout
 reports/figure/*.pdf
 #reports/dalibnieki*.xslx
 #reports/results*.csv
+/src/main/resources/math/sample-svg/nbproject/private/

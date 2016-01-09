@@ -1,0 +1,28 @@
+<table cellspacing="0">
+    <tr ng-repeat="i in array5">
+        <td ng-repeat="j in array20">
+            <div ng-class="myStyle(i, j)">&nbsp;</div>
+        </td>
+    </tr>
+</table>
+<div id="game-over" ng-if="gameOver" class="game-overlay">
+    <div style="text-align: center; vertical-align: middle; font-size: 200%">Reizrēķina<br/> beigas!</div>
+
+    <div class="lower">
+        <a class="retry-button" ng-click='ctrl.newGame()'>Try again</a>
+    </div>
+</div>
+
+
+<p style="font-size:150%;font-weight:bold"><span ng-class="colorClass(currentQuestion.theType)">{{currentQuestion.theText}}</span></p>
+<p>
+<form ui-keypress="{13:'checkResponse()'}" style="margin:0pt;padding:0pt;">
+    <input type="text" ng-model="response" placeholder="Ieraksti skaitli">
+    <button ng-click="checkResponse()">Pārbaudīt</button></form>
+<br/>
+<span ng-if="result && respStyles.length > 0" style="font-weight:bold;color:darkgreen">{{currentQuestion.theText}}={{response}}</span>
+<span ng-if="!result" style="color:red">{{currentQuestion.theText}} nav {{response}}. Jābūt {{currentQuestion.theAnswer}}.</span>
+</p>
+
+<p>Atbildēti {{respStyles.length}} (t.sk. ar kļūdām {{totalErrors}})</p>
+
