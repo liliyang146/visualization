@@ -2,8 +2,6 @@ app.controller('MainCtl', function($scope) {
 
   var WIDTH = 3;
   var HEIGHT = 2; 
-  
-  $scope.width = 100;
   $scope.array20 = Array.apply(null, {length: WIDTH}).map(Number.call, Number)
   $scope.array5 = Array.apply(null, {length: HEIGHT}).map(Number.call, Number)
 //  $scope.array20 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
@@ -106,7 +104,6 @@ app.controller('MainCtl', function($scope) {
   var isFirst = true;
   $scope.totalErrors = 0;
   $scope.result = true;
-  $scope.gameOver = false;
   
   $scope.checkResponse = function () {
     $scope.result = (+$scope.response == $scope.currentQuestion.theAnswer);
@@ -116,9 +113,6 @@ app.controller('MainCtl', function($scope) {
 	  } else {
 	    $scope.respStyles.push("wrong");
 	  }
-          if ($scope.respStyles.length >= WIDTH*HEIGHT) {
-              $scope.gameOver = true;
-          }
 	  isFirst = true;
 	} else {
 	  //$scope.respStyles.push("wrong");

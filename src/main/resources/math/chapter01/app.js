@@ -20,4 +20,3 @@ helloWorldApp.config(['$routeProvider', '$locationProvider',
 });
 $locationProvider.html5Mode(false).hashPrefix('!');
 }]);
-

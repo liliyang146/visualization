@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 app.controller('newGameCtrl', ['$scope', '$timeout', 'newGameSvc',
   function ($scope, $timeout, newGameSvc) { 

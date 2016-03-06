@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" type="text/css" href="another-game.css">
+
+<!-- External libs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+
+<script src="app.js"></script>
+<script src="nim-game.ctl.js"></script>
+<script src="nim-game.svc.js"></script>
+<script src="new-game.ctl.js"></script>
+<script src="new-game.svc.js"></script>
+<script src="move.js"></script>
+
+<title>Pie chart</title>
+</head>
+
+<!--
+http://cmaurer.github.io/angularjs-nvd3-directives/multi.bar.chart.html
+-->
+
+<body ng-app="nvd3PieChart">
+
+<nvd3-pie-chart id="{{id}}"
+                data="pieData"
+                width="80"
+                height="80"
+                x="xFunction()"
+                y="yFunction()">
+</nvd3-pie-chart>
+</body>
+</html>
+

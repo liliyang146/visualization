@@ -33,5 +33,3 @@ app.service('newGameSvc', ['FIREBASE_GAME', '$firebaseArray', '$firebaseObject',
   
 }]);
 
-
-
