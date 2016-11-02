@@ -1,0 +1,4541 @@
+---
+  output: html_document
+---
+
+# Dzegužlaiks
+
+## * * *
+
+| Kāds mani atkal sauc uz satikšanos. 
+
+| It kā pēc izcirtuma izklausās, 
+| Pār kuru
+| Ir atkal saulē notrīcējis gaiss. 
+
+| It kā pēc mežu pļavās aizmirstajiem šķūnīšiem, 
+| Kas stāv un stāv kā vecas baravikas
+| Un reiz no vientulības
+| Saļogās un krīt. 
+
+| Tā balss ir veca. 
+| Es reiz dzegužlaikā dzirdēju, 
+| Ka manu vectēvu 
+| No pamales tā sauca. 
+
+| Un vectēvs aizgāja. 
+| Un līdz pat mūža mājām
+| Nekādi labumi, ne sliktumi
+| To nevarēja atsaukt
+| No turienes, kurp aicināja balss. 
+
+| Es izliekos, ka nedzirdu,
+| Bet dzirdu. 
+| Es izliekos, ka neredzu, 
+| Bet klūpu
+| Pār manā ceļā izliktajiem staipekņiem. 
+
+| Un krītu
+| Ar seju atmiņpilnos vaivarājos. 
+
+| Un tad? 
+| Un tad --- rīt sāpēs galva 
+| Un tāla balss uz satikšanos sauks. 
+
+
+## Ievads
+
+| Piedod, dzimtene, 
+| Ka tu man biji
+| Kartona vākos, 
+| Kādās divsimt lappusēs, 
+| Un pusmiljonā
+| Miega un nomodas sapņu. 
+
+| Kā tu varēji paciest, 
+| Kad es tev skatījos acīs, 
+| Bet skatījos garām kā blēdis --- 
+| Izdomātajās?
+
+| Kā tu varēji saprast, 
+| Kad čukstēju ausī tev, 
+| Bet zemes vēji noplēsa vārdus
+| No stērbeles, 
+| Pie kuras es biju pieklupis?
+
+| Un, dieva dēļ, 
+| Kur es turēju roku, 
+| Kad zvērēju tev, --- 
+
+| Varbūt asnam uz galvas?
+| Varbūt skudrai uz ceļa?
+| Varbūt sev
+| Un saviem draugiem uz acīm? 
+
+| Tā ir briesmīgi runāt, 
+| Bet vēl briesmīgāk būtu --- 
+| Dzīvot, 
+| To nesaprotot. 
+
+| Tagad es zinu, 
+| Ka man vairs nav jākāpj Everestā, 
+| Lai redzētu. 
+
+| Es biju kalnā. 
+
+| Tagad es zinu, 
+| Ka man vairs nav jāatkāpjas, 
+| Lai saprastu. 
+
+| Es biju tālu. 
+
+| Es varēju atnākt noguris, 
+| Bet esmu atnācis izsalcis.
+
+
+## Dziesmu grāmata
+
+| Vecāmāte
+| Man varēja atstāt
+| Šo vienīgo mantu, 
+| "Ko rūsa un kodes maitā". 
+
+| Un vēl pāris bezkrāsas brunču, 
+| Kuru krāsa izbalējusi
+| Spiedīgu vasaru saulē. 
+
+| Ko es varēju iesākt ar tādiem
+| Un vispār --- brunčiem, 
+| Bet dziesmu grāmatu 
+| Paņēmu. 
+
+| Nelasiet tur tās blēņas.
+| Es vienīgais zinu, 
+| Kas tur ir iekšā. 
+
+**Dievs kungs ir mūsu stipra pils ---**
+
+| Un vienīgi dievs tas kungs. 
+| Jo nelīdzēja nekādi klīsteri
+| Un janvāra vēji pa istabu staigāja
+| Tāpat kā pa āru. 
+
+| Un arī no šīs
+| Mūžīgi izvēdinātās pils
+| Saimnieks, kad tikai gribēja, 
+| Varēja izsviest.
+
+| Par to, 
+| Ka viņš atradis citu kalpu, 
+| Par to, 
+| Ka nav laikā izslauktas govis, 
+| Par to, 
+| Ka ar saimnieka dēlu neiet uz šķūni, 
+| Par to, 
+| Ka vienkārši gribas izsviest. 
+
+| Un tad paliek dievs tas kungs
+| Un pazīstams meldiņš, 
+| Kur savu nedienu kucēnus slīcināt. 
+
+| Un tad nu ir, pie kā tverties, 
+| Jo vīrs būs no meža mājās
+| Un, nosviezdams sveķainos cimdus, 
+| Prasīs:
+| --- Nu ko, lika mierā? --- 
+
+| Un tad būs klusēšana.
+| Un tad ---
+| Būs viss miers pie velna
+| Un meža cirtēja cirvis dauzīsies
+| Saimnieka durvīs. 
+
+| Pēc tam visas pinckas būs kupenā
+| Un pāri zvaigžņota janvāra debess
+| Un stipra pils, 
+| Un vienīgi dievs tas kungs. 
+
+**Ak, galva asiņaina...**
+
+| Viena pēc otras. 
+| Pie vienas būs vainīga priede, 
+| Pie otras --- 
+| Dūmi aiz meža. 
+
+| Cik priecīgi barona mēbeles, 
+| Tik baismīgi šautenes sprakstēja. 
+
+| Ak, galva, 
+| Ak, galvas, 
+| Ko jūs augāt uz trakiem pleciem!...
+
+| Ak, galva --- 
+| Un šoreiz ne Jēzus Kristus, 
+| Bet pašas galvā
+| Ar katru asiņaino 
+| Ir deniņos sadzīti ērkšķi, 
+| Tik asi, 
+| Ka tajā vietā
+| Aug vienīgi sirmi mati. 
+
+| Ak, galva, 
+| Tu palice viena
+| Un atbildi
+| Par trim mazām galviņām. 
+
+| Tu tausti
+| Un nevari saprast, 
+| Vai arī zem tām
+| Pleci nav traki. 
+
+| Un laikam jau ir
+| Un laikam jau būs
+| No tā paša kaula, 
+| No tās pašas miesas. 
+
+| Un priežu bez jēgas
+| Un muižu arī vēl pietiekoši. 
+
+| Ak, galva asiņaina!
+| Bet arī asiņainai tev
+| Jādomā. 
+
+**Pie rokas ņem un vadi ---** 
+
+| Ņem, ja reiz es tā saku, 
+| Un vadi. 
+| Bet, kad es skatos, kur mani ved, 
+| Tad jākliedz --- 
+| Lai velns tevi parautu, 
+| Kungs!
+
+| Pie rokas ņem, 
+| TIkai nesien. 
+| Uz kā es nesīšu savus bērnus!
+
+| Tu tos pat neesi paturējis, 
+| Kad gāžos no kājām. 
+
+| Un es nesūdzos, kungs, 
+| Viņiem ne reizi vien būs jākrīt. 
+
+| Uz savas zemes
+| Tu savām avīm
+| Esi saracis tik daudz
+| Vilka bedru,
+| Ka neviens nevar iztikt 
+| Bez krišanas. 
+
+| Lai zin, kas ir krist
+
+| Pret zemi nosisties
+| Vienmēr ir svētīgāk
+| Nekā pret nelieša rokām. 
+
+| Krītiet, mani bērni, 
+| Es papūtīšu uz ziluma --- 
+| Tā nav nemaz tik briesmīga krāsa. 
+| Briesmīga ir tā rozā
+| Uz taukiem purniem. 
+
+| Ja ņem pie rokas, 
+| Tad izraujiet roku, 
+| Ja izraut nevar --- 
+| Noraujiet roku, 
+| Bērni. 
+
+| Tu nekur nevari aizvest, 
+| Kungs, mani pats, 
+| Bet es gribu, lai vienu mirkli
+| Kāds mani ved
+| Un lai es
+| Varu ticēt, 
+| Ka mani neved uz bedri. 
+
+| Kungs, 
+| Tā ir liela laime --- 
+| Ticēt kaut kam. 
+
+**Vāks ---**
+
+| Pret visādiem pasaules galdiem
+| Un pret ceļgalu deldēts, 
+| Un deldēta sāpe
+| Un pārestība, 
+| Un vientulība, 
+| Un izmisums, 
+| Un bezcerība, 
+| Un apspiests kliedziens:
+| --- Dzīve,
+| Kāpēc tev ir tik cieta sirds, 
+| Kāpēc tu man nedod 
+| Nevienu gabaliņu, 
+| Nevienu drusciņu, 
+| Nevienu puteklīti, 
+| Un kāpēc man visu 
+| Pa melnu nakti, 
+| Pa šautriem sapņiem
+| Vajag izdomāt, izdomāt, izdomāt --- 
+| Un no rīta
+| Tu atnāc ar koku
+| Un sasit...
+
+
+## Vectēvam
+
+| Vai tu atceries vēl, kalēj, 
+| Večuku ar baltu bārdu?
+| Iekal, dzeni, labi dziļi 
+| Resnā priedē viņa vārdu. 
+
+| Stāmerienas muižas liesmās
+| Baltā bārda rūsga svila, 
+| Vēl no Piektā gada dūmiem
+| Gadu pamale ir zila. 
+
+| Viņa alus mucu piemin
+| Tajā pusē, kur es augu, 
+| Un vēl katru pavasari
+| Zeme rūgst ar viņa raugu. 
+
+| Vēl to dēlu asins piles, 
+| Kuri dzima muižas vergam, 
+| Atmin saplosītā zeme
+| Breslavā un Kēnigsbergā. 
+
+| Vēl nav kodes saēdušas
+| Viņa gadu meitu sagšas, 
+| Vēl jau viņa taisīts kāts ir
+| Dēladēlu siena dakšās. 
+
+| Viņa vārdam akmens neder. 
+| Iekal dziļi priedē, dzeni, 
+| Tāpēc ka viņš pats jau bija
+| Ļoti līdzīgs laukakmenim. 
+
+
+## Mantojums
+
+| Pletne, ar ko manu vectēvu pēra, 
+| Guļ muzeja zālē zem stikla. 
+| Lode, kas bija domāta tēvam, 
+| Ieurbās priedē, 
+| Un vēl tagad tek sveķi. 
+
+| Pletne vēl atmiņas uzpātago, 
+| Un lode vēl kādreiz zāģim
+| Izlauzīs zobus. 
+
+| Bet tas arī ir viss. 
+
+| Zilu velvi pār galvu es esmu saņēmis, 
+| Steigā dunošu zemi
+| Tēvs un vectēvs zem kājām man nolicis. 
+
+| Un man pa naktīm sapņos nāk --- 
+| Apvārsnis, 
+| Apvārsnis, 
+| Apvārsnis....
+
+| Es dzirdu vectēva domīgo balsi, 
+| Es redzu tēva pētošo skatu, 
+| Es jūtu mātes saudzīgo roku. 
+| Un tie it kā saka: 
+
+| --- Tev sākas liela cilvēka sapņi. 
+| Tu esi pārkāpis slieksni, 
+| Un tagad tev jāpārkāpj apvārsnis. 
+
+
+## Dzērves
+
+| Ap manu bērnību apkārt ir apkritis
+| Pelēku lapu pelēks laprkitis. 
+
+| Kokos lapas vēl bija. 
+| Krita dzērves. 
+| Un fronti jau varēja dzirdēt. 
+
+| Droši vien no šīs skaņas
+| Katrs automāts kļuva ārprātīgs
+| Un meklēja visu dzīvo. 
+
+| Kā vāgūzī
+| Uz zirgu sviedros sabrauktām sakām
+| Palika Taņa --- 
+| Es neredzēju. 
+
+| Es redzēju, kā krita dzērves, 
+| Kā sniga līdz pašam tālākam mežam
+| Pelēkas pārslas. 
+
+| Kā piesēja kaķi pie ozola
+| Un kā viņš kūleņoja --- 
+| Es redzēju. 
+
+| Pār krūmu, kurš mani slēpa, 
+| Krita pelēki sniegi, 
+| Pār vāgūzi krita, 
+| Pār kaķa raibajiem sāniem, 
+| Pār visiem, kas krita, 
+| Dzērvju pelēkās spalvas krita. 
+
+| Un neļāva kliegt
+| Un neļāva nostāties tiem, 
+| Kam automāts nebija ieskatījies 
+| Vēl acīs. 
+
+| Es nezinu, vai tā ir diena vai gads, 
+| Bet manī ir palicis nomiris laiks. 
+| Tas ir šis, 
+| Kad ap bērnību bija apkritis
+| Pelēku lapu pelēks lapkritis. 
+
+
+## Minhenes tosti
+
+| Minhenes pagrabos
+| Atkal alu dzer
+| Pirms un pēc vārda, 
+| Pirms un pēc cīsiņa. 
+
+| Atmiņa, dzer!
+| Lai šīs zāles tev der. 
+| Lai tu kļūsti, kā vajag, --- 
+| Īsiņa. 
+
+| Pieskandini, mans čehu draugs, 
+| Ko tur šņākt, 
+| Daudz jau par visu to
+| Īdēts. 
+| Viss ir tik tālu, 
+| Ka var sākt. 
+| Viņiem --- kārtībā durkļi, 
+| Un tev ir kārtībā lādiņi. 
+
+| Pieskandini, mans angļu draugs, 
+| Atmiņas rūs. 
+| Zārkiem pietiekoši 
+| Ir savākts cinka, 
+| Un tas jau nav svarīgi, 
+| Kur tas būs, 
+| Nav taču obligāta
+| Dinkerka. 
+
+| Pieskandini, mans vācu draugs, 
+| Jau ir pārkausēts tavs tēva tanks.
+| Saskandināsim, 
+
+| Lai krūzes nosten
+| Par _nach Westen drang,_
+| Par _nach Süden drang_
+| Un katrā ziņā
+| Par _drang nach Osten._
+
+| Atmiņa, tu esi īsa jau? 
+| Arī mums jau trauki ir sausi. 
+
+| Minhenes alus pagrabos
+| Kausu nav. 
+| Minhenes pagrabos
+| Stāv galvaskausi. 
+
+
+## Kadri no trofeju kara kinohronikas
+
+**Ļoti jūsmīgs kadrs ar diemžēl laikā 
+nenošautā sarkanā briesmoņa piebildēm**
+
+| Smaidiet... tautietes...
+
+| Lido puķes
+| Kā viņu rokas
+| Pret debesīm: 
+| --- Heil! --- 
+
+| Skatieties augšup uz viņiem
+| Kā uz debesīm, 
+| Sarkstiet, 
+| Lai zin, kādā krāsā 
+| Pēc tam 
+| Degt jūsu mājām. 
+
+| Dieva dēļ, negrieziet muguras, 
+| Grieziet priekšas...
+| Vēl jau tāds laiciņš ir. 
+
+| Un viņu lodes ir gudras --- 
+| Tās pašas prot atrast
+| Muguras.
+
+| Smaidiet... tautietes... 
+
+| Nu, kas tad tas ir par smaidu?
+| Ar tādu smaidu
+| Pārdodas katra netikle...
+
+| Vismaz smaidiet, kā nākas|
+| Velns rāvis --- 
+| Ar jūsu smaidu
+| Vesela tauta iet pārdoties. 
+
+**Ļoti rotaļīgs kadrs, kas noteikti ir uzņemts
+pirms Paulusa armijas sagrāves**
+
+| --- Alu, šņabi, friktvaseri --- 
+| Reiz lai skan viss krogs!
+| Alu, šņabi, fruktvaseri --- 
+| Karavīrs nav koks! --- 
+
+| Blaukt!
+| Un šķūņa galā, zieniet, 
+| Džimlairūdi, dzirksts. 
+| Spārdās, savās zarnās pinies, 
+| Džimlairūdi, zirgs. 
+
+| Džimlairūdi, puto brūni
+| Sveša alus stops, 
+| Spārdās svešas zemes šķūnī
+| Svešas zemes lops. 
+
+| --- Alu, šņabi, fruktvaseri --- 
+| Reiz lai skan viss krogs! --- 
+
+| Blaukt!
+| Tas karš ir ļoti derīgs, 
+| Ļoti derīgs joks. 
+
+| Džimlairūdi, lielgabali, 
+| Džimlairūdi, šauj. 
+| Viens pussamalts grāvī paliek, 
+| Džimlairūdi, bļauj. 
+
+| --- Alu, šņabi, fruktvaseri --- 
+| Reiz lai skan viss krogs! --- 
+
+| Blaukt! 
+| Bet ko ar mātēm darīt, 
+| Ko tām rakstīt? Ko? 
+
+| Džimlairūdi, kaujās visās, 
+| Ejot slavu vīt, 
+| Vienam otram arī misas, 
+| Džimlairūdi, --- krīt. 
+
+| Džimlairūdi, neciet kaunu --- 
+| Lai var rindā stāt, 
+| Labi ātri dzemdē jaunu, 
+| Džimlairūdi, māt!
+
+| --- Alu, šņabi, fruktvaseri ---
+| Reiz lai skan viss krogs!
+| Alu, šņabi, fruktvaseri --- 
+| Karavīrs nav koks!
+
+**Kadrs, pilns svēta sašutuma, 
+ar dažiem šo svētumu apgānošiem atgādinājumiem**
+
+| Skatieties!
+| Tur viņi lido --- 
+| Četrmotorīgie cilvēkēdāji! 
+
+| Klausieties! 
+| Tā ir viņu --- četrmotorīgo cilvēkēdāju 
+| Ķērkstošā balss. 
+
+| Skatieties! Klausieties!
+| Nīstiet!
+
+| Redziet, kā viņiem vajag!
+| Redziet šo mīlīgo _frau_? 
+| Viņa ratiņos ved savu bērnu. 
+
+| ... Vai tas patiešām ir bērns?
+| Bērns?
+| Tad kāpēc viņš nav uz durkļa? 
+
+| Redziet, kā viņiem vajag!
+| Redziet šo mājīgo klasi
+| Un šo mierīgo ābeci!
+
+| ... Vai tā tiešām ir ābece?
+| Ābece?
+| Tad kāpēc tai nav
+| Pārogļojušās lapas?
+
+| Redziet, kā viņiem vajag!
+| Redziet šīs vācu meitenes, 
+| Redziet, cik stalti tās iet, 
+| Cik vingri kustina rokas!
+
+| ... Vai tās patiešām ir meitenes?
+| ... Vai tās patiešām kustina rokas?
+| Ja tās ir meitenes
+| Un tām ir rokas --- 
+| Tad kāpēc tām rokas
+| Nav sasietas ar telefona stiepli
+| Un kāpēc 
+| Tās iet tik stalti
+| Pēc izvarošanas?
+
+| Skatieties!
+| Viņi ir tuvu --- 
+| Četrmotorīgie cilvēkēdāji!
+
+| ... Vai tiešām viņi ir tuvu? 
+| Vai viņi nav klāt?
+| ... Vai tiešām tie ir
+| Četrmotorīgie bumbvedēji?
+| Vai tiešām jūs pareizi redzat? 
+
+| Rūc!
+| Visa pamale rūc --- 
+| Veļas verdošu asiņu vilnis. 
+
+
+## Kapitulācija
+
+| Vakar 
+| Zem vārdiem "Mēs beidzam karu"
+| Keitela pildspalvas tinte
+| Nožuva. 
+
+| Šorīt 
+| Sieviņa gāja pie krāsns cept maizi
+| Un palika... 
+
+| Šodien
+| Pie kapa uz soliņa apsēdās vecenīte
+| Un uzsprāga... 
+
+| Šovakar
+| Puika dārzā pie ābeles gāja
+| Un pazuda... 
+
+| Rūras tērauds
+| Ar sievām un zīdaiņiem, 
+| Un mūsu bērnību
+| Karoja. 
+
+| Un pat tiem, 
+| Kuri četrdesmit piektajā
+| Piedzima, 
+| Karš pie šūpuļa
+| Un virs šūpuļa 
+| Stāvēja. 
+
+| Viņu kritušos uz lielgaballafetēm 
+| Neveda. 
+
+| Viņu zārku tēvs
+| Cēla plecā un 
+| Aiznesa... 
+
+| Vai ir karā bijuši --- 
+| To viņiem šodien 
+| Neprasa. 
+
+| Jā, ir bijuši. 
+| Kad pērkonīgās frontes norima
+| Un klusēja. 
+| Kad karā kritušie zem zemes
+| Dusēja. 
+| Kad zeme bumbu bedrēm zāli uzsēja, 
+| Kad viņus vēl ar krūti māte
+| Baroja, 
+| Viņi karoja!
+
+
+## Nodedzinātā Rūjiena
+
+| Katrs akmens šeit --- 
+| Kapakmens:
+| Kāda cilvēka dzīves gabalam
+| Un paša cilvēka gabalam, 
+| Un dažam --- 
+| Pašam. 
+| Un Prometejam
+| Un Olimpiskajai ugunij, 
+| Un lāpu gājieniem. 
+
+**Pirmais kapakmens**
+
+| Te guļ mans darbs
+| Un laime, 
+| Kādu to es biju iedomājies. 
+
+| Pie santīma santīms --- 
+| Tā tas izskatījās. 
+
+| Paša kroplums. 
+| (Limbažu mežos, 
+| Pa tumsu vēl gāzdams kokus, 
+| Es lauzu kāju
+| Un kļuvu klibs.)
+
+| Sievas nāve. 
+| (Viņa dzemdēja mežā
+| Un turpat uz zariem nomira.)
+| Dēla bārenība. 
+| (Viņš aizgāja 
+| Uz Rīgas pusi, 
+| Un es nezinu, 
+| Cik tālu viņš ir ticis.)
+
+| Bet es uzcēlu māju. 
+| Tas laikam ir viss, 
+| Ko es varēju. 
+| Un līdz tai naktij
+| Es biju lepns, 
+| Ka devis laimi
+| Sievai un dēlam. 
+
+| Mani nošāva šaipus Saulkrastiem. 
+
+**Otrais kapakmens**
+
+| Es esmu sadegusi vista. 
+| Olas es dēju
+| Un pavasarī izperēju cāļus. 
+| Būtu izvārījuši zupā --- 
+| Tāds ir visu vistu liktenis. 
+| Būtu izcepuši... 
+| Bet man it nekad nebūs skaidrs, 
+| Par ko mani sadedzināja. 
+
+| Var būt, ka pārāk daudz 
+| Ēdu graudus?
+| Bet graudus man tikai vienreiz iedeva. 
+| Vai tad tas būtu par daudz?
+
+**Trešais kapakmens**
+
+| Te guļ mana manta. 
+| Žēl gan. 
+
+| Vislabāk, ja viss būtu sadedzis, --- 
+| Karā ne tas vien deg. 
+
+| Bet nav manā dabā, 
+| Ja kāds ņem manu krūzi, 
+| Nes nēšos manu spaini
+| Un lepojas ar manu krēslu. 
+
+| Lai pelna pats!
+| Katrs ir savas laimes kalējs. 
+
+| Žēl jau ir, 
+| Bet labi, ka krieviem netika. 
+
+**Ceturtais kapakmens**
+
+| Es esmu puikas skumjas
+| Par koka zirgu. 
+
+| Saimnieki tā neskumst
+| Par īstiem --- 
+| Kā puikas par koka zirgiem. 
+
+| Koka zirgs sadegdams
+| Skatījās mūžībai acīs
+| Un bija briesmās mierīgs: 
+|   --- I-ā, es kļūstu ogle. 
+|   --- I-ā, es kļūstu pelni. 
+|   Mani nes vēji. 
+|   Es baroju koku. 
+|   Mani sazāģē dēļos. 
+|   No manis iztaisa zirgu. 
+|   Un nāk atkal
+|   Puika... --- 
+| Bet puikas skumjas es esmu. 
+| Tajā naktī
+| Viņš pēdējoreiz skuma
+| Bērnišķīgi. 
+
+**Piektais kapakmens**
+
+| Te guļ mana dzimtene. 
+| Šeit dzīvoja mana māte
+| Tajā naktī, 
+| Kad rados. 
+
+| Un, ja arī sabruks
+| Šis pusapdegušais mūrītis, 
+| Kad nezāles nomāks
+| Vai citi izraks
+| Un aiznesīs savā dārzā
+| Tos ķeizarkroņus, 
+| Kurus es ostīju kādreiz
+| Un nosmērēju sev degunu brūnu
+| Ar putekšņiem, 
+
+| Pat tad, 
+| Kad te nobrauks ar buldozeru
+| Un uztupsies jauna māja
+| Uz mauriņa, 
+| Kurā pliks dibens man mirka rasā, --- 
+| Te būs mana dzimtene. 
+
+| Jauna mirušās vietā, 
+| Bet --- dzimtene, 
+| Jo nevar izkustināt no vietas
+| Pirmo bļāvienu
+| Un nav apmaināms
+| Nosmērēts deguns
+| Un rasā samērcēts dibens. 
+
+**Sestais kapakmens**
+
+| Es esmu suns
+| Un neesmu sadedzis ugunī. 
+
+| Es sadegu savādāk
+| Un nosprāgu pēc kāda mēneša. 
+
+| Es ilgi meklēju
+| Savus saimniekus tonakt. 
+
+| Bet bija palikušas
+| Vienīgi smakas. 
+
+| Malkas bluķis
+| Oda pēc saimnieka. 
+
+| Viena lupata
+| Un koks ar slotu --- 
+| Pēc saimnieces. 
+
+| Un lejkanna dārza stūrī
+| Oda pēc viņas --- 
+| Pēc saimnieka meitas, 
+| Ar kuru mēs runājāmies 
+| No rīta līdz vakaram. 
+
+| Tā bija mana vismīļākā smaka. 
+| Bet, kad viens gribēja kannu aiznest, 
+| Es nedevu, 
+| Un man pārsita muguru. 
+
+| Es nevarēju vairs paiet, 
+| Un kannu aiznesa. 
+
+| Tad es gulēju
+| Un domāju, 
+| Ko teikšu saimniecei, 
+| Kad viņa atnāks, 
+| Bet es nebūšu kannu nosargājis. 
+
+**\***
+
+| Te beidzās viena no ieliņām, 
+| Un te es atradu šķiltavas
+| No zaļas čaulītes. 
+
+| Un redzēju, ja tās palabo, 
+| Tad vēl var šķilt. 
+
+| Salabojis vēl neesmu, 
+| Nēsāju kabatā
+| Un reizēm domāju --- 
+| Ko man tās izšķils? --- 
+
+| Vai dieviem nozagto, 
+| Vai olimpisko, 
+| Vai aizdegs lāpu gājiena lāpas, 
+| Vai pielaidīs uguni
+| Kādai Rūjienai klāt? 
+
+
+## Bedre pie hospitāļa
+
+| Un šoreiz es to pierakstu sev pašam, 
+| Jo nav man it neviena cita veida, 
+| Kā sev no atmiņas un acīm izsviest
+| To balto, sarmas mežģīņoto rītu
+| Un melno kara hospitāļa bedri, 
+| No kuras sanitāri projām gāja
+| Kā divi miera laika sniegavīri... 
+
+| Un nolādu to brīdi, kad es paskatījos, 
+| Jo bedrē bija sasviests juku jukām
+| Gan asiņainas marles melnās skrandas, 
+| Gan kaut kas sarkans, notraipīts ar brūnu, 
+| Gan brūns ar sarkanu. Un viena kāja --- 
+| Tik neciešami vesela, ka likās, 
+| Ņem, liec sev klāt --- un vari staigāt tālāk... 
+
+| Pie visa tā un visa kā bij pierasts, 
+| Jo reizēm šāva bērnu acu priekšā, 
+| Lai viņu acu vietā --- citas acis
+| Un viņu siržu vietā citas tiktu. 
+| Bet šermuļi jau bija. Un tad pēkšņi, 
+| Es nezinu, no kurienes tās radās, 
+
+| Bet bariņš zīlīšu jau metās bedrē
+| Un sāka knābāt tieši balto kāju. 
+| Ko mēs par cilvēkēdējiem tur muldam!
+| Ko mēs par cilvēkēdējiem tur rakstām!
+| Būs brīdis --- un mēs paši atkal rēksim
+| Un dursim, kamēr pienāks atkal diena --- 
+| Par cilvēkēdējiem būs padarīti stārķi. 
+| Par cilvēkēdējiem būš padarīti... 
+| Ko zīlītēm lai saka, tās ir labi putni, 
+| Tās ielidoja laikā, kuru devām, 
+| Un ēda savu kara laika speķi. 
+
+## * * * 
+
+| Cik tev pāri vajag bumbu līt, 
+| Mana Galaktikas kniepadatas galviņa, 
+| Manu zemeslodīt, 
+| Manu bumbulīt? 
+
+| Es jau zinu, ne jau tu tur vainīga, 
+| Vainīgs ir tas divkājainais gudrais --- 
+| Apšauj četrkājainos, 
+| Kārta divkājainiem, 
+| Apnicis ir mīdīt tikai skudras, 
+| Dzīvei taču jābūt mainīgai. 
+
+| Nu, tad iesim šauties, sisties, durties, 
+| Kožas viena otrai rīklē
+| Brīvība un brīvība, 
+| Kauli žļakst pret kauliem. 
+| Apnīk klausīties šo mūziku!
+| Un aiziet
+| Dzīvība. 
+
+| Nu, un tiem, kas paliek?
+| Ja kāds paliek...
+| Kas tiem paliek?
+
+| Savu lielumu reiz apzināties
+| Kad tie sāks?
+| Nē, es neticu, ka cilvēks dzīvībai ir kronis, 
+| Pats visindīgākais augs
+| Un draņķīgākais zvērs
+| Ir patiesāks. 
+
+| Kādu izgudrot tev bumbu rīt --- 
+| Super?
+| Super-super? --- 
+| Mana Galaktikas kniepadatas galviņa, 
+| Manu zemeslodīt, 
+| Manu bumbulīt? 
+
+
+## * * * 
+
+| Tu esi labs, 
+| Mans dzimtais gabaliņ zemes. 
+| Uz globusa pakaļas
+| Niecīgs ielāps --- 
+| Tu aizlāpīji man dvēselē izšautu caurumu, 
+| Lai likteņa caurvēji
+| Neizrauj dvēseli laukā. 
+
+| Tu man teici --- 
+| Ja ēdot kāds šūpo kājas, 
+| Tad tas šūpo velnu. 
+
+| Tagad viena
+| Man stāsta par dzīvi, 
+| Šūpo kājas
+| Un gvelž. 
+
+| Tu man teici --- 
+| Ja kāds sit bites, 
+| Viņš daudz ko vairāk var nosist. 
+
+| Tagad es skatos uz vienu
+| Un redzu, ka viņš ir sitis. 
+
+| Tu man teici --- 
+| Ja zārka nesējs jūt svaru, 
+| Viņš nav mīlējis nomirušo. 
+
+| Nezin kāpēc 
+| Man visi zārki 
+| Bez svara. 
+
+| Tikai to pārāk daudz. 
+
+| Es odu tavējo zemi, 
+| Kad tā smaržoja pēc siltas zāles
+| Un kūpošā granātas bedrē
+| Pēc sēra, 
+| Un sapratu, 
+| Cik līdz ārprātam tuvu es esmu bijis
+| No zvēra. 
+
+
+## Oda priedei
+
+| Dzegužu silos --- stīga
+| Un jūrmalas vējos šķība, 
+| Un Rainim --- lauztā
+| Un nesalauztā, 
+| Un pirmā latviešu elektrība, 
+| Un zaļi mati
+| Uz kāpu skausta, 
+| Un galdi, un zārki, un grozi...
+
+| Visu, kas jāpanes lepniem, 
+| Tu panes. 
+| Mūžam ar vējiem tu karoji
+| Un mūžos karosi, 
+| Mūžam tu vētrā
+| Kā ērģeles skanēsi. 
+
+| Un vienā vētrā 
+| Vai --- no viena zāģa
+| Tu dabūsi galu. 
+| Bet tavas beigas
+| Nav nāves stingums un aklums. 
+
+| Ja manam vectēvam būtu pietrūcis
+| Tavu
+| Ar sarkanu uguni degošu skalu --- 
+| Tad lords Bairons 
+| Pie manis nebūtu varējis 
+| Atklibot. 
+
+| Kādos zaros tad varētu
+| Manas ziemeļu dzeguzes mesties?
+| Un bez dzeguzēm --- 
+| Kas tad tie ir par siliem?
+| Kādā zārkā man savus mīļos
+| Uz kapsētu nest, 
+| Un kur dzintaram dzimt, 
+| Ja nesastingst
+| Tavu saulaino asaru piliens? 
+
+| Bez taviem ugunsgrēkiem
+| Es būtu daudz mazāk svilis. 
+| Man būtu grūti elpot, 
+| Ja plaušas man neiztīrītu priedājs
+| Un ja nesvilptu vēji. 
+
+| Ja dzeguzes nebūtu kūkojušas, 
+| Ja nebūtu šalkuši sili --- 
+| Nezin vai cilvēkam ienāktu prātā, 
+| Ka viņš var dziedāt. 
+
+| Nezin vai ienāktu. 
+
+
+## Tetera kāposti
+
+| Ja tos dabū pa īstam
+| Un vēl no šmaugāka bērza --- 
+| Nenosēdēt 
+| Pat uz paša mīkstākā
+| Ar sūnu apzaļojuša akmens. 
+
+| Tagad par to, protams, var tērzēt. 
+| Kā nekā --- 
+| Bērnības atmiņa... 
+
+| Bet bija tā --- 
+| Mēs zāģējām aviobumbu
+| Ar dzelzs zāģīti, 
+| Un arī dzirkstele nezin vai 
+| Būtu mums gadījusies. 
+
+| Nedzirdējām, 
+| Kā blakus mums piečīkstēja vāģi, 
+| Un nezinājām, ka teterkāposti
+| Nedēļu sapņos rādīsies... 
+
+| Bet kas tad tur bija vainīgs!
+| Ar kara padarīšanām
+| Piebāztas visas vietas
+| Ar mīnām un bumbām
+| Piebērtas visas priedes. 
+| Un mēs bijām tādā vecumā, 
+| Kad dod rotaļlietas, ---
+| Mēs arī spēlējāmies ar to, 
+| Ko laikmets mums bija iedevis. 
+
+| Un aviobumbu mēs pārzāģējām
+| Pēc nedēļas
+| Vecajos kapos.
+| Un es neteikšu, kas mūs vadīja --- 
+| Slikta vai laba tieksme. 
+
+| Bet katrā ziņā tur piedalījās
+| Tetera kāposts
+| Un mūsu --- pret netaisnu pēršanu --- 
+| Attieksme. 
+
+
+## Dziesma
+
+| Ko tu domā šai pelēkā, pelēkā lietū, 
+| Mana dzimtā un bezgala tālā puse?
+
+| Lapas
+| Nobirst kā notis --- 
+| Un katra sev meklē vietu.
+| Kā operas partitūra
+| Ziemeļvidzemes augstiene klusē. 
+
+| Stāv meži kā kori. 
+| No Alūksnes līdz pašai Rīgai
+| Stiepjas vilcienu stigas
+| Ar gulšņu melnajiem taustiņiem, 
+| Stiepjas tālruņa vadu
+| Tūkstoš vijoļu stīgas. 
+
+| Manai dzimtajai pusei
+| Pelēkā lietū ir auksti. 
+
+| Kad uzspīdēs saule, 
+| Asaras nožūs
+| No bērzu zeltaini smalkām
+| Un apšu sarkanām notīm. 
+
+| Tad upēs un ezeros iedzirkstīs
+| ģēnija spožums
+
+| Man ļoti gribas dzirdēt to operu. 
+| Ļoti. 
+
+| Kad pacelsies gaisā
+| Kapsētas nošu sēras
+| Un jaunā osēna
+| Dauzoņas svilpiens smalkais,
+| Un noslēpumainais bass --- 
+| Tumšais Pārgaujas vēris
+| Savu himnu 
+| Kā okeānu 
+| Uz zariem šalkos. 
+
+| Bet tagad līst lietus. 
+| Līst dzeltenīgs lieplapu lietus. 
+| Par ko tu domā
+| Šai pelēkā, pelēkā lietū?
+
+
+## Balsij bez pavadījuma
+
+### Pusdivos
+
+| Dzīvi dzerot, 
+| Es esmu palicis skaidrā... 
+| Dodiet man vēl simt gramu sapņu. 
+
+| --- Sapņu... 
+| ... apņu... --- 
+
+| Bufete ir slēgta, 
+| Un ar mani tirgojas vienīgi atbalss. 
+| Tā iet, kad nezin bufetes slēgšanas laiku. 
+
+| --- Laiku... 
+| ... aiku... --- 
+
+| Atbalss, tu nemēdies, 
+| Cilvēki to lietu pieprot par tevi labāk. 
+
+| Šinī vietā tu mani nesakaitināsi, 
+| Es zinu --- kad stulbeņi dzīves krogā vairs nedod dzert, 
+| Tad var aiziet uz Nebūtības restorānu. 
+| Riebīgi tikai, ka tur iekšā laiž vienīgi miroņus. 
+
+| Bet, ja šim, kas stāv pie durvīm
+| Un saucas par šveicaru, 
+| Kādreiz ir bijusi sirds, 
+| Gan viņš iznesīs laukā. 
+
+| Sapņu jau tajā restorānā nav. 
+| Lai iznes pusstopu nopūtu suslas, 
+| Vai nav vienalga, no kā paliek nelabi... 
+
+| --- Nelabi... 
+| ... elabi...
+| ... labi... ---
+
+| Nemēdies, atbalss, bet velc mēteli, 
+| Un iesim. 
+
+### Divos
+
+| Paklausies, kaulu kambar, 
+| Es varu apgalvot, ka tu reiz esi par cilvēku saukts. 
+
+| Neatceries?
+| Nu, tad tici man, 
+| Pīlītes pūst es te nebūtu nācis. 
+| Aizgrabi, lūdzu, līdz bufetei
+| Un atnes vienu pudeli pašas draņķīgākās kaislības...
+
+| Tu tādu dzērienu nezini? 
+| Ak, pareizi, tas ir tajā otrajā krogā, 
+| Bet to mūlāpi ir aiztaisījuši ciet. 
+| Nu, visviens, 
+| Atnes vienalga ko, 
+| Ko tavi miroņi vēl nav izlakuši. 
+
+| Kur tu esi aizmaldījusies, mana atbalss, 
+| Tūlīt viņš nesīs, 
+| Protams, tas būs kaut kas riebīgs, 
+| Un pie tam dzerot būs jātaisa priecīgs ģīmis, 
+| Bet vai tad mazumu mēs abi tā esam darījuši? 
+
+| --- Darījuši...
+| ... arījuši... --- 
+
+| Skaidrs, ka darījuši.
+| Redzi, viņš jau nāk. 
+| Cienījamais, nenāciet laukā, 
+| Vējš sāks svilpot caur jūsu ribām, 
+| Un gan jau es šinī mūzikā
+| Dabūšu klausīties līdz apnikumam. 
+
+| Cik man jāmaksā? 
+| Divas ciešanu kapeikas?
+| Ņemiet, cienījamais, veselu sauju. 
+| Sevišķi daudz man viņu nav atlicis, 
+| Bet, kamēr vēl ir, 
+| Tikmēr jūsu krogā mani nelaidīs iekšā. 
+
+| Saspiediet pirkstus ciešāk, 
+| Jūs tomēr neesat pieradis, 
+| Ka uz jūsu pirkstiem vairs sen nav miesas. 
+
+| Nu, ko es teicu? 
+| Manas kapeikas nobira zemē. 
+| Cienījamais, lasiet tās kopā pats, 
+| Atšķirībā no dzīves kroga
+| Jums ir uz pusi mazāk darba --- 
+| Jums tacu vienīgi jālaiž iekšā. 
+
+| No nebūtības restorāna es neesmu redzējis nevienu
+| Ne iznākam, ne izrāpojam. 
+
+| Uz redzēšanos, cienījamaos, 
+| Pēc cik ilga laika --- 
+| To jūs paprasiet kādam citam. 
+
+### Pustrijos
+
+| Es domāju, atbalss, 
+| Ka mēs apsēdīsimies tepat uz soliņa
+| Un neiesim ne pie viena. 
+
+| Ir --- pie kā gribas, 
+| Bet es domāju, ka viņus nevajag traucēt
+| Tik vēlā stundā. 
+
+| Es viņiem varu būt vai nebūt --- 
+| Atradīs citu, 
+| Un piecas minūtes tas liksies tikpat labs, 
+| Tikpat vienīgs, 
+| Kā es kādreiz likos. 
+| Bet pēc tam... 
+| Arī tas kļūs ik stundu sliktāks. 
+
+| Labāk mēs dzersim divatā. 
+| Tu esi mana atbalss, 
+| Un, gribam vai negribam, 
+| Mēs vienīgie esam pa īstam salaulāti. 
+
+| Bet ko viņš mums īsti ir iedevis? 
+
+| Tas ir visbrīnišķīgākais dzēriens --- 
+| "Bija",
+| Tu nemaz nevari iedomāties, 
+| Cik pasakaini no viņa reibst... 
+
+| Dzīves krogā arī ir "Bija", 
+| Tikai daudz sliktāks. 
+
+| Atbalss, tu, neiedomājami tukšā vecene, 
+| Ja tu no šitā nekļūsi pilna... 
+
+| --- Pilna...
+| ... ilna... --- 
+
+| Neklaigā pirms laika,
+| Šitas vēl ir cilvēku parks, 
+| Un milicim tu neiestāstīsi, cik esi man nepieciešama. 
+
+| --- Dzeram... 
+| ... eram...
+| ... ram...
+| ... ram... ---
+
+| Es tev teicu, nedziedi, 
+| Bez manis tik un tā tev nekas nesanāks. 
+
+### Trijos
+
+| Un tagad dziedāsim par to, kas bija. 
+
+| --- Bija... 
+| ... ja... --- 
+
+| Jā, tas reiz bija. 
+
+| --- Bija... 
+| ... ja... --- 
+
+| Zini, tu mazāk jaucies man pa vidu --- 
+| Un redzēsi, ka būs labāk. 
+
+| Es dziedāšu par zvaigznēm. 
+| Vai tu zini, kas ir zvaigznes?
+| Faktiski tev nav ko prasīt, jo tu esi dumja. 
+
+| --- Dumja...
+| ... ja... --- 
+
+| Pat nelabojami. 
+| Mācies no cilvēkiem. 
+| Viņi nekad neatzīstas šinī grēkā. 
+
+| Bet es dziedāšu par zvaigznēm. 
+
+| Nolādēts!
+| Mēle neklausa. 
+| Tas dzēriens ir tik stiprs, 
+| Ka es varu dziedāt vienīgi par nokritušajām. 
+| Tātad, tas ir, par tukšu vietu --- 
+| Vai arī par to spožumu, kas krītot bija? 
+
+| --- Bija... 
+| ... ja... --- 
+
+| Zini, man ar tevi ir neinteresanti, 
+| Tu vienmēr man piekrīti. 
+
+| --- Piekrīti... 
+| ... iekrīti... 
+| ... krīti... --- 
+
+| Jā, man līdz riebumam uzticīgā, 
+| Dari, ko zini, 
+| Bet par tukšu vietu es neprotu dziedāt. 
+
+| Ja debesīs būtu tas mirdzums,
+| Kas sensenā gadsimtā bija. 
+
+| --- Bija... 
+| ... ja ... --- 
+
+| Ja saliktu atpakaļ zvaigznes, 
+| Kas rudeņu pusnaktīs lija. 
+
+| --- Lija...
+| ... ja... --- 
+
+| Ja atdotu atpakaļ starus, 
+| Ko zeme ar zvaigznājiem mija. 
+
+| --- Mija... 
+| ... ja... ---
+
+| Nu un kas tad būtu? 
+| Mēs te gaudojam kā divas vientuļas kuces, 
+| Un es tomēr piederu pie vīriešu kārtas. 
+
+| Pie kā mēs palikām? 
+
+| --- Palikām... 
+| ... alikām... 
+| ... likām... ---
+
+| Atbalss, nu paskaties man acīs. 
+| Tā jau es domāju...
+| Ja tev dod, cik tu gribi, 
+| Tad tev noteikti jāpiedzeras līdz nesamaņai. 
+
+### Pusčetros
+
+| Biedri milici, 
+| Mēs neesam zagļi
+| Un, ja apzogam kādu, tad vienīgi paši sevi. 
+
+| ... Un te nu mēs esam, mana atbalss, 
+| Kamera tāda pati kā dzīve, 
+| TIkai ar to starpību, 
+| Ka šeit visu var aptaustīt. 
+
+| --- Taustīt... 
+| Taustīt... --- 
+
+| Tu runā tikpat dumji kā visas sievietes. 
+
+| Neko es netaustīšu. 
+| Te ir tik auksts, 
+| It kā čoks domāts dvēselei, 
+| Nevis miesai. 
+
+| --- Miesai... 
+| Miesai... --- 
+
+| Miesai, lai cik viņas mums katram būtu, 
+| Te ir par aukstu, 
+| Un dvēselei cietumi ir citādi. 
+
+| --- CItādi?... --- 
+
+| Un ko tu brīnies? 
+| Varbūt tu nopietni domā, 
+| Ka šis ir kaut kāds cietums? 
+
+| --- Cietums?...
+| Cietums... --- 
+
+| Biedri milici, laidiet mani laukā, 
+| Mana atbalss netic, 
+| Ka mēs abi jokojam. 
+
+| Laidiet mani laukā --- 
+| Un es viņai parādīšu to dzīves cehu, 
+| Kur taisa kropļus. 
+
+| Tu redzi to gaišo logu, 
+| Tātad tur vēl neguļ.
+| Tu dzirdi varenus akordus. 
+| Tātad tā ir "Ungāru rapsodija". 
+
+| Muļķe, atjēdzies taču, 
+| Kopš kura laika mēs sāksim klauvēt
+| Pie aizslēgtām durvīam, 
+| Mans amats šai ziņā ir visuvarens --- 
+| Ver vaļā. 
+| Un, kamēr mēs ciemosimies, 
+| Lai atslēgas stāv uz ceļiem... 
+
+| Dzirdi --- kā viļņu valzivis
+| Veļas lielā ungāra jūtas. 
+| Ieplet spārnus --- 
+| Un akordi pacels tevi. 
+| Pārgriez vēnas --- 
+| Un akordi pielies tevi... 
+
+| Un tagad paskaties
+| Uz šiem gremojošiem žokļiem, 
+| Uz šo pārīti, 
+| Kura acīs aust mīlestība
+| Runča un kaķenes apjomā. 
+| Paskaties uz šo "Leonardo da Vinči", 
+| Kurš aizspiež klavierēm rīkli, 
+| Paskaties uz šiem podiem, 
+| Kāda slepkavnieciska ekstāze ir viņu 
+| Porcelāna fizionomijās, 
+| Un, cienībā noliecot galvu, 
+| Paskaties šinī tumšajā kaktā --- 
+| Tur sēž ar galvā uzmauktu kastroli 
+| Lists. 
+
+| Ejam. 
+| Atbalss, tu esi meitene, 
+| Pamodini pie durvīm snaudošo vecenīti, 
+| Lai viņa nelaiž šai mājā nevienu kurlo, 
+| Jo tas var būt arī Bēthovens. 
+
+| Un tagad kāpsim
+| Pa šīm lielīgajām kāpnēm, 
+| Kuras izliekas vedam debesīs. 
+
+| Atbalss, tu uzmanies, 
+| Te dzīvo meitene, 
+| Kurai viss aizliegts, 
+| Atskaitot vienu --- kļūt vecai, 
+| Un divi cilvēki, kuri šo kļūšanu pūlas nosargāt. 
+
+| Labvakar, cienījamais, 
+| Jums esot skaista meita, 
+| Paturiet, lūdzu, manu cepuri.
+| Un nelieciet kāju priekšā, 
+| Te nav dzelzceļa pārbrauktuve. 
+
+| Labrīt, meitene, kurai viss aizliegts!
+| Es laikam iztraucēju vienu no jūsu dzidrajiem sapņiem. 
+
+| Meitene, jums ir tik lielas un izbaiļu pilnas acis
+| Kā stirnai. 
+
+| Es zinu, jūs baida no tālumā skanošām taurēm, 
+| Pulveru smakas un dīvainu zvēru rejām, --- 
+| Daži no tiem, kuriem jāmirst, 
+| Ir netaisni greizsirdīgi uz palicējiem, 
+| Bet tur nekā nevar darīt. 
+
+| Rīt izejiet, stirniņ, savā šalcošajā mežā, 
+| ejiet turp, kur skan draudošās taures, 
+| Un mācieties
+| Skriet. 
+
+| Un nekas, ja jūs saskrambās zari, 
+| Nolīs pa sarkanai lāsei... 
+| Toties jūs zināsit, 
+| Kā garšo avota ūdens, 
+| Kāda ir sirds cīņas kaisles un azarta laimīgā dziesma, 
+| Citādi rīt jums būs jāaiziet bojā
+| Un lielo atmodas dziesmu 
+| Pavasarī 
+| Stirnas dziedās bez jums... 
+
+| Meitene, kurai viss aizliegts, 
+| Neskaties manī tik cieši --- 
+| Es neesmu atnācis ne pēc kā, 
+| Un pēc kaut kā es pie tevis nemaz nevaru atnākt, 
+| Man tagad vajag tik daudz, 
+| Lai aizrautos elpa. 
+
+| Tu esi stirna, 
+| Es iešu meklēt niknāku zvēru. 
+| Skaties tālāk savu visdzidrāko sapni
+| Un neklausi vecumam, 
+| Vecums ir labs vienīgi tādēļ, 
+| Ka drīz vien jāmirst. 
+
+| Atbalss, tālāk pa ielu visi logi ir tumši. 
+
+| --- Tumši...
+| Tumši... --- 
+
+| Bet mēs esam gandrīz kaķi, 
+| Vismaz mums ir tāds amats, 
+| Kas atļauj redzēt arī pa nakti
+
+| Atbalss, neklaudzini papēžus. 
+| Gultā var gulēt daudz kas, 
+| Šinī gultā guļ mīlestība... 
+
+| Nevar saprast, vai pukst
+| Viena vai divas sirdis, 
+| Lai viņas izrunā pašas. 
+| Atbalss, bet paskaties apkārt, 
+| Vai tu redzi pelēkās ikdienas pīķus, 
+| Ikdienas rūpju trulos asmeņus:
+| Plītis, 
+| Veļas baļļas
+| Un tālumā --- televizora haubices draudošo purnu... 
+
+| Šausmas!
+
+| Paskaties mirkli --- 
+| Viņi taču gandrīz vēl bērni, 
+| Neskarta, pirmatnēja uguns
+| Deg viņu sakļautajās, aizmigušajās lūpās. 
+
+| Paskaties palmā pār viņiem --- 
+| Palmas lapas kā zaļas rokas ar izplestiem pirkstiem. 
+| Bet es redzu aukstus ikdienas ģindeņa pirkstus --- 
+| Slepkavas pirkstus. 
+
+| Guli, mīlestība, 
+| Rīt tevi vārīs uz plīts, 
+| Tveicēs netīrās veļas garaiņos
+| Un indēs ar siltās ligzdiņas indi, 
+| No katras šīs lietas
+| Tevī kāds mazumiņš paliks. 
+
+| Guli, mīlestība, 
+| Guli saldāk un ātrāk, 
+| Rīt tevi vārīs uz plīts. 
+
+### Četros 
+
+| Atbalss, pasaki man pilnīgi godīgi, 
+| Ko tu domā par manu sirdi. 
+
+| --- Sirdi? ... 
+| Sirdi? ... 
+
+| Es tev to neprasu prieka pēc --- 
+| Man ir grūti ar viņu. 
+
+| Bērnībā man bija cita --- ļoti skanīga --- sirds, 
+| Ja es nebūtu nabagu ģimenē piedzimis, 
+| Varētu teikt, ka no sudraba. 
+
+| --- Sudraba? ... 
+| .... ba-a-a... --- 
+
+| Es jau zinu, ka nebija. 
+
+| Tikai atceros --- lietus lija un skanēja, 
+| It kā kristāla traukos kāds bērtu 
+| Vissmalkākās skrotis. 
+
+| Pagalmā stāvēja veca ieva
+| Ar nokārušamies zariem, 
+| Un es šūpojos šinīs bizēs, 
+| Gan tumšās un zaļās, gan ziedošās un sirmās, 
+| Un ieva neteica man, ka sāp, 
+| Jo es šo vārdu vēl nebiju dzirdējis, 
+| Un ieva negribēja būt pirmā, 
+| Kas man to pasaka. 
+
+| Pēc tam es saslimu
+| Un daudz ko neatceros, 
+| Tikai kad kļuvu vesels, 
+| Sirds bija it kā cita. 
+
+| Lietus vairs nebēra skrotis
+| Kristāla traukos, 
+| Bet aumaļām plūda pa loga rūtīm, 
+| Un man šķita, ka aiz loga krāc okeāns
+| Un ar brāzmainām šaltīm
+| Noskalo stiklu, 
+| Lai es varētu labāk redzēt. 
+
+| Un ievai es jau lauzu zarus... 
+
+| Atbalss, pasaki man --- 
+| Varbūt sirdi man apmainīja tas ārsts, 
+| Kurš man dūra plecā
+| Tad, kad māte atstāja mūs abus vienatnē? 
+
+| --- Vienatnē... 
+| ... nē... --- 
+
+| Nu, bet kas tad tas varētu būt? 
+
+| Es biju ļoti kauslīgs, 
+| Un man nebija lielāka prieka
+| Kā --- sist tos, kuri ikdien varēja paēst, cik grib. 
+| Es viņus situ
+| Un tajā brīdī pats sev likos paēdis...
+
+| Un tad viņi mani aicināja cept ugunskurā kartupeļus
+| Un nogrūda mani no kraujas. 
+
+| Atbalss, bet viņi taču pa to laiku, 
+| Kamēr es neatceros, kur biju, 
+| Varēja nozagt manu skanīgo sirdi, vai ne? 
+
+| --- Vai ne? ... 
+| ... nē... --- 
+
+| Tad es nezinu. 
+| Tikai pēc tam lietus varēja līt vai nelīt --- 
+| Mani interesēja tikai zibeņu baltie raksti, 
+| Un ar savādu bijību
+| Es liku roku pie zibens saspertas apses, 
+| Liku tā kā pie nepazīstama suņa purna, 
+| Kā pie sarkani sakurinātas plīts. 
+
+| Un ievas?
+| Es neatceros vairs --- ko, 
+| Bet kaut ko es drāzu no ievas koka. 
+
+| Un pēc tam... 
+
+| Lielceļu smiltis ir aprijušas daudz manu pēdu, 
+| Man jau, atbalss, nav tā kā tev --- 
+| Ej, un neviens nevar pateikt, ka iets. 
+
+| Es atstāju pēdas --- 
+| Un manī atstāj. 
+
+| Jā. 
+| Bija reiz tāda stunda:
+| Trotuāru asfalts bija mīksts no karstuma, 
+| Un es atvadījos no meitenes, 
+| Kura no manis gribēja par maz. 
+
+| Šķirties... 
+| Ja no divu cilvēku lūpām
+| Vienas ir teikušas --- šķirties, 
+| Tad tas jau ir noticis. 
+
+| Un es uzliku sirdi uz delnas. 
+| Ir grūti bez sirds, 
+| Un uz mirkli man satumsa acīs, 
+| Sagrīļojās zem kājām... 
+
+| Kad es atjēdzos, 
+| Mīkstajā asfaltā bija vienīgi pēdas
+| Un uz delnas nekā. 
+
+| Atbalss, 
+| Vai var būt, ka manu skanīgo sirdi
+| Paņēma līdzi šī meitene? 
+
+| --- Meitene? ... 
+| ... nē... --- 
+
+| Droši vien sirds ir ielēkusi atpakaļ krūtīs, 
+| Lai neredzētu, kā viņa aiziet. 
+
+| Atbalss, un tagad man ir pavisam citāda sirds --- 
+| Tāda pati kā Rīga, pa kuru mēs ejam. 
+| Tāpat saucas --- 
+| Manu asiņu galvaspilsēta.
+
+| Viņai tāpat --- savi parki un izsisti logi, 
+| Savi tilti un savas pārdēvētās ielas, 
+| Savi taksometri un savi spekulanti. 
+| Un gluži tāpat --- 
+| Tajā dzīvo bez gala, kas varētu nebūt, 
+| Un nedzīvo tie, kuriem vajag būt. 
+
+| Smaga ir tāda galvaspilsēta, 
+| Kura jānēsā sevī, 
+| Kuras stacijām jāpieņem
+| Straujie un sarkanie asiņu vilcieni, 
+| Jābruģē jaunas ielas
+| Un jāizķer ielasmeitas, 
+| Kuras ne vienmēr ir sliktākas par slavenībām. 
+
+| Ak, atbalss, atbalss, 
+| Kuro kilometru mēs jau ejam, 
+| Manī sāk pāriet reibums, 
+| Un sāk gribēties gulēt. 
+
+| --- Gulēt...
+| Gulēt... --- 
+
+| Kāpēc tu neteici agrāk? 
+| Pilsēta. 
+| Galvaspilsēta. 
+| Vai tev ir viena dzeltena lapu kaudze
+| Priekš diviem blandoņām? 
+
+| Cieta? 
+| Tad pasauc vēju, 
+| Lai sapūš
+| Labi smaržīgu un labi lielu --- 
+| Mēs ar atbalsi gribam skatīties smaržīgus sapņus. 
+
+### Puspiecos
+
+| Atbalss, par ko tu domā? 
+| Par to pašu? 
+
+| --- To pašu... 
+| To pašu... --- 
+
+| Es domāju par to, kāpēc atnācu uz pilsētu. 
+
+| Vai tu atceries, kā pavasarī
+| Strazdi sviež zvirbuļus ārā no būriem?
+| Atceries?
+
+| --- Atceries... ---
+
+| Vai tu atceries, kā mēs ar bērzu sulām
+| Iedzērām dzimtenes garšu? 
+| Atceries?
+
+| --- Atceries... ---
+
+| Un, ka vasarā birzī no četrām pusēm
+| Mūs sargāja zaļgans un caurspīdīgs aizkars, 
+| Atceries?
+
+| --- Atceries... ---
+
+| Un skaisto, zilacaino netikli rudzupuķi, 
+| Uz kuru rudeņos visas vārpas sāk skatīties, 
+| Atceries? 
+
+| --- Atceries... --- 
+
+| Un vienu rudzu salmu, spīguļojošu mēness naktī uz ceļa, 
+| Un kuļmašīnu dūkoņu 
+| Atceries?
+
+| --- Atceries... ---
+
+| Un rudeņos, kad peļķes aizstiklojas
+| Un cilvēki, kuriem viens logs jau ir, 
+| Ķēmodamies peļķēm pakaļ, liek otru, 
+| Atceries?
+
+| --- Atceries... --- 
+
+| Un ziemā, kad sniegs vienādi snieg
+| Uz veciem un jauniem, 
+| Uz izpildkomitejām un kapsētām, 
+| Atceries? 
+
+| Vai tu tiešām neatceries?
+| Atbalss, tu esi nejauka. 
+| Kā tev nav kauna sākt skatīties sapni bez manis... 
+
+|   ... Rudzi zied. 
+|   Ar tūkstoš, tūkstoš ziediem rudzi zied. 
+|   Pret mākoņiem, kas savu ceļu iet, 
+|   Ar tūkstoš, tūkstoš ziediem rudzi zied. 
+
+| Zeme, tev šodien viens mākonis vairāk. 
+
+|   ... Ceļi kūp. 
+|   Ar baltiem, baltiem dūmiem ceļi kūp. 
+|   Uz galda ceļamaizes rieciens drūp --- 
+|   Ar baltiem, baltiem dūmiem ceļi kūp. 
+
+| Zeme, tev šodien viens ceļinieks vairāk. 
+
+|   ... Zvaigznes krīt. 
+|   Ar spožām, spožām šautrām zvaigznes krīt. 
+|   Līst zvaigžņu lietus, nevar saskaitīt --- 
+|   Ar spožām, spožām šautrām zvaigznes krīt. 
+
+| Zeme, tev šodien simt akmeņu vairāk. 
+
+| Un pēkšņi --- nav. 
+| Un pēkšņi --- līdzens asfalts. 
+| Uz visām četrām debespusēm --- asfalts. 
+| Līdz visiem četriem horizontiem --- asfalts. 
+| Asfalt, ja arī tev nav sirds, 
+| Atdod vismaz manu atbalsi. 
+| Atdod. 
+
+| Par mani nabagāka vairs uz zemes nav --- 
+| Pat klaiņojošam sunim
+| Sava ēna ir
+| Un arī atbalss. 
+
+| Sāk trīcēt asfalts. 
+| Milzu mājas aug... 
+
+| Es nolecu no tikko izdīguša jumta, 
+| Un atkal man zem kājām asfalts trīc --- 
+| Dīgst atkal jumts, 
+| Es lecu atkal, 
+| Atkal trīc, 
+| Es lecu, 
+| Trīc, 
+| Es lecu... 
+
+| Un vairs vietas nav, kur lēkt, ---
+| Aiz jumta malas sestā stāva augstums... 
+
+| Bet sīkas tirpas skrien pār ielu bruģi, 
+| Man piere aukstus baiļu sviedrus svīst --- 
+| No ielu bruģa rudzu druva dīgst. 
+
+| Es kliedzu:
+| --- Neaudz šinī vietā, mīļais lauks, 
+| Tev nejūtīgas riepas pāri brauks, 
+| Te --- pilsēta
+| Un viņas apkvēpušās debesis
+| Pret lūgšanām ir kurlas... ---
+
+| Aug rudzu lauks, 
+| Jau stiepjas rudzupuķes... 
+
+| --- Lien ātrāk zemē, palaidnīgā skuķe, 
+| Te --- pilsēta
+| Un tavas netiklības pilsētai par maz... --- 
+
+| Dārd vias ielas, 
+| Vārpas krīt uz ceļiem --- 
+| Mirst stāvošie, 
+| Mirst lūdzošie --- 
+| Iet pāri dārdošs metāliskais dēmons, 
+| Un dobji runā asfaltētā balss: 
+
+| --- Neesi sentimentāls, manu zēn, 
+| Katram ir dzīvē jāzin sava vieta. 
+| Kurš nezin, tam jāiemāca. 
+| Ja nevar dzīvam --- jāmāca mirušam --- 
+
+| Dārd dobji, dobji asfaltētā balss: 
+
+| --- Es atmācīšu tevi, manu zēn, 
+| No desmit gudrībām, ko lauki iemācīja, 
+| Un tūkstoš nekrietnības iemācīšu tajā vietā. --- 
+
+| Es saucu --- man nav balss, 
+| Es lecu lejā --- nevar nosisties, 
+| Un šinī brīdī atbalss mani pamodina. 
+
+## Sešos
+
+| Iet pirmie tramvaji, 
+| Tā ir bijusi viņu rūkoņa... 
+
+| Atbalss, lien ārā!
+| Draņķīgā stundā mēs esam pamodušies, 
+| Bet vēlāk te būs daudz cilvēku. 
+
+| Paskaties, atbalss, šis blēdis
+| Kaut kā tomēr iešugulējies dzīves restorānā 
+| Un ir laimīgi pillā vēl šorīt. 
+
+| Miers viņa pīšļiem!
+| Paskaties, atbalss, šinī bālajā sejā. 
+| Baidos minēt, bet izskatās, 
+| Ka viņš bijis pie savas nelaimes ciemā. 
+
+| Vispār, pēc acīm spriežot, 
+| Viņš pats nesaprot, 
+| Kur laime, kur nelaime, 
+| Un kamēr tas nav saprasts, 
+| Mums it nekā nav, ko saprast. 
+
+| Un lai!
+| Teiksim skaļi, 
+| Ka ikviens dzejnieks
+| Ir vairāk vai mazāk Kvazimodo. 
+
+| Lai dzīve paciestu viņa kroplumu, 
+| Viņš maksā ar visu sevi. 
+
+| Šie jaunekļi arī ir kropļi, 
+| Tikai tie negrib maksāt, 
+| Un dzīve pret viņiem arī nebūs
+| Diez cik pašaizliedzīga. 
+
+| No nekurienes viņi nāk, 
+| Uz nekurieni viņi aiziet? 
+
+| Pulkstens seši, 
+| Un pāri pilsētai skan
+| Atgriešanās maršs. 
+
+| Atgriežas katrs pie tā, kas viņam ir. 
+
+
+## * * * 
+
+| Drīz būs zili, zili ūdeņi, 
+| Drīz būs balti, balti pūpoli, 
+| Drīz es beigšu sevi mierināt. 
+
+| Zirgs es esmu. 
+| Ziemās man no izkaltēta āboliņa
+| Siltā stallī bezdievīgi slāpst. 
+
+| Ķīvītes ir prom. 
+| Un nedūc kamene ap ausīm. 
+| Tikai mašīnas. 
+
+| Bezspalvaini
+| Bezdvēseles
+| Zirgi
+| Dūc ap manu stalli, 
+| Dūc to pašu, ko es sen jau zinu: 
+| "Var-r-ram, var-r-ram, var-r-ram..."
+
+| Jūs par manām slāpēm
+| Smieties varat, 
+| Bet, kad ārā nobirs visas sarmas, 
+| Ko jūs, pļavā iziedami, darīsit:
+| "Var-r-ram, var-r-ram..."?
+
+| Man būs vēji krēpēs, 
+| Man būs zāle apkārt, 
+| Man būs kumeļš blakām. 
+
+| Rūciet, kamēr vēl nav zili ūdeņi, 
+| Rūciet, kamēr vēl nav balti pūpoli, 
+| Rūciet, kamēr man vēl jāiztiek
+| Ar sausu, 
+| Izkaltušu
+| Pagājušo
+| Vasaru. 
+
+
+## Svilpojamas dziesmiņas
+
+### Dziesmiņa par trako Līzi
+
+| Pērkonlietus šonakt līs, 
+| Trako Līz, trako Līz, 
+| Nāc pie manis labi drīz, 
+| Trako Līz. 
+
+| Tavos matos, trako Līz, 
+| Trako Līz, trako Līz, 
+| Velni ūdensrozes pīs, 
+| Trako Līz. 
+
+| Manā sirdī, trako Līz, 
+| Trako Līz, trako Līz, 
+| Velni tevi apbedīs,
+| Trako Līz. 
+
+| Kamēr dievs to sapratīs, 
+| Trako Līz, trako Līz, 
+| Mūs vairs nebūs, trako Līz, 
+| Trako Līz. 
+
+| Saskries bērni, trako Līz, 
+| Trako Līz, trako Līz, 
+| Un mums pāri govis dzīs, 
+| Trako Līz. 
+
+### Svilpiens par lielo olu
+
+| Vienu lielu olu 
+| Zvirbulis dēja, 
+| Septiņas dienas
+| Apkārt tai skrēja, 
+| Uzsēdās perēt --- 
+| Bet izperēt 
+| Nevarēja. 
+| Fuit!
+
+### Dziesmiņa par labo roku
+
+| Ar labo roku 
+| Apņemt var sievu, 
+| Ar labo roku
+| Nolauzt var ievu, 
+| Ar labo roku
+| Var glaudīt pa spalvu, 
+| Ar labo roku 
+| Nocirst var galvu, 
+| Un, darot labu, 
+| Pa galvu var dabūt. 
+
+### Dziesmiņa par strazdu
+
+Es neprotot laist ziepju burbuļu krāsainās domas pie
+kafijas tases un zilganu actiņu bezdibens tukšumā
+verdziski izdomāt pērles, un vispār uz spoguļu parketa
+es esot kājslauķa mērogā prasts. 
+
+Bet es svilpoju tālāk, jo es esmu būris un manī ir
+apmeties strazds. 
+
+Es neesot prātīgs un neprotot izskaitļot satiktos 
+ziedus un smaidus, un, oticot parastai nopūtai, es
+esot aiznests pār draudosu jūru tik tālu, ka vairs arī 
+rūdītu vanagu acīm nekur neesot samanāms krasts. 
+
+Bet es svilpoju tālāk, jo, kamēr strazds manī nes mazuļiem
+paēst, man kaut vai ar šūpuļa dziesmu ir jāaizstāj
+strazds. 
+
+Es nemīlot strādāt, jo pamanīts esot, ka rokas pa reizei
+gar sāniem man krītot kā virves un pats reizēm
+gāžoties cilvēku priekšā kā pensijā izdzīts un vētrai pa grābienam gadījies masts. 
+
+Bet es svilpoju klusi, jo manī ir bēres, jo priecīga puišeļa 
+šaujamā palaista priecīga akmeņa ceļā bij aizmirsies 
+parasts un savējai mūzikai līdz pašai pēdējai spalviņai
+atdevies strazds. 
+
+### Dziesmiņa par minisvārkiem
+
+| Pland matu baltie lini, 
+| Iet meitene iekš mini
+| Un modri skatās apkārt, 
+| Kurš skatiens viņai tiks. 
+
+| Ak, likteņkleitas īsās, 
+| Es jūtu sevī trīsas
+| Un, pasaulei par spīti, 
+| Pats arī ģērbjos pliks. 
+
+| Jo, ja reiz viss ir mini, 
+| Pie velna, lai ir mini!
+| Mūs, tāpat kā reiz senčus, 
+| No paradīzes trieks, 
+| Bet mums būs minibučas
+| Un pēc tam miničuča --- 
+| Un pēc tam tikai bērni 
+| Un morālisti kliegs. 
+
+| Bet tad nāks miniraizes, 
+| Jo pietrūks minimaizes, 
+| Un glābjoties mums abiem
+| Kļūs apkārblandošs skats. 
+| Bet tas jau ir tāds likums, 
+| Kā izpārdodams plikums. 
+| Zem visiem dzīves mini
+| Ir apmēram tas pats. 
+
+| Es ķeros koku zaros
+| Un raibā šlipsē karos, 
+| Un izveļos no gultas, 
+| Un tūlīt mostos ar... 
+| Tad pērku skaistu kleitu
+| Un eju meklēt meitu, 
+| Ko satikt, precēt apģērbt
+| Un arī izģērbt var.
+
+### Dziesmiņa par svilpošanu
+
+| Kad puikām no biksēm 
+| Ārā aug lieli, 
+| Puišeļi svilpo, 
+| Jo vēlas būt lieli. 
+
+| Kad vīriešiem dzīve
+| Sirdī lej mieles, 
+| Vīrieši svilpo, 
+| Jo vēlas kļūt lieli. 
+
+| Nosvilpjas akmens, 
+| No kalna grūstot, 
+| Nosvilpjas lode, 
+| Par nāvi tev kļūstot. 
+
+| Bet, ja nu tev kādreiz
+| Kaklā mauc cilpu, 
+| Izkļūsti ārā. 
+| Ja nevari --- 
+| Svilpo. 
+
+
+## Dziesma
+
+| Pie nātres skāries, 
+| Neraudi, ka skāries, --- 
+| Kas tevi dzina
+| To ziedu plūkt!
+| Reiz sāpes pāries, 
+| Visas sāpes pāries, 
+| Tik nevajaga 
+| Nevienam lūgt. 
+
+| Lai tevi sargā 
+| Tā, kā sevi sargā, 
+| Kā sargā ausis
+| No pērkonbalss, 
+| Kā sargā acis
+| Tie, kas zin, kas --- acis, 
+| Kā sargā dzīvi, 
+| Kad tai ir gals. 
+
+| Lai tevi aizskar
+| Tas, kas visus aizskar, 
+| Lai lūpās smaidu
+| Vai naidu liek, 
+| Bet tēraudaizkars --- 
+| Tas ir visam aizkars, 
+| Ne cauri lode, 
+| Ne smarža tiek. 
+
+| Kur paliks smaržas
+| Pasaulē bez smaržas? 
+| Ko ļaudīm elpot, 
+| Ko vējam nest?
+| Tad dienu baržas --- 
+| Smagi krautās baržas --- 
+| Melns, miris ūdens
+| Var tālāk vest...
+
+| Pie nātres skāries, 
+| Neraudi, ka skāries, --- 
+| Ir visām nātrēm
+| Savs savāds maijs. 
+| Ja sāpes pāries
+| Un pavisam pāries, 
+| Tad aizies arī
+| Viss pārējais. 
+
+
+## * * * 
+
+| Drīz negants vējš no ziemeļpuses skries
+| Un kritīs manam bulvārim ap kaklu, 
+| Pa naktīm raudās un pa dienām smies
+| Un ezeriem pēc bezmiega nāks aklums. 
+
+| Un cauri sniegputeņiem iesim mēs
+| Pa aizmigušās zemes dzīvām acīm. 
+| Caur sniegiem mūsu pavasari neredzēs, 
+| Un, kur tas dzīv, mums to nepasacīs. 
+
+| Ciet mūsu pēdas sniegputeņi vilks, 
+| Lai citiem mūsu ceļu atrast grūtāk, 
+| Un ziema bezdievīgi ilgi ilgs
+| Gan zemes klajumos, gan mūsu jūtās. 
+
+| Pa vēnām lēnām asinis mums skries
+| Un brīži būs, kad liksies --- nu vairs nevar, 
+| Bet paliks viens, viens vienīgs glābjošs miers --- 
+| Mēs vēl pirms ziemas zemei kaut ko devām. 
+
+| Un tāpēc nāvei --- nē! Un salam --- nē!
+| Lai baltā nāves dvaša kūp no mutes!
+| Mēs zīli ielikām reiz zemei padusē, 
+| Un zeme modīsies, jo viņai kutēs. 
+
+
+## * * * 
+
+| Saki --- 
+| Cikreiz starp mums nodegs pīlādži, 
+| Cikreiz pērkona negaisi noplandīs, 
+| CIkreiz vasaras dzīs
+| Kāpu vieglo un sanošo smilti?
+
+| Es šai neziņā brienu 
+| Kā vīgriežos. 
+
+| Pāri man 
+| Ar visbaltāko baltumu 
+| Debess jūra
+| Savas bangotnes putotos mākoņus nes. 
+
+| Kaut kur 
+| Pēc lietus vālodze kliedz. 
+
+| Vēl viens lietus
+| No tūkstoš lietiem,
+| Kas tecēs no matiem --- 
+| Bet tikai no maniem. 
+
+| Saki --- 
+| Vai tu dzirdi tos šalcošos soļus?
+| Tur nāk pļavas bez tevis, 
+| Tur nāk rudens un ziema bez tevis, 
+| Tur nāk gadi bez tevis. 
+
+| Un uz tā soliņa parkā, 
+| Uz kura mums jāsēd, 
+| Ir divi. 
+
+| Bez manis un tevis. 
+
+
+## * * * 
+
+| Šajos ceriņos rīt ziedi būs --- 
+| Mēļas liesmas no tumšzaļas pekles. 
+| Un pa debesīm eņģeļus --- mūs
+| Un pa zemi mūs --- grēcīgos meklēs. 
+
+| Viņu smaržu šķels tavējais ils, 
+| Viņu ēnu mans autobuss sabrauks. 
+| Krūtīs sāpēs kāds aromāts zils, 
+| Un viens atlidos, un otrs atbrauks. 
+
+| Vārdu lavīna nogrūs un mirs, 
+| Ļaujot rokām, ko vēls, to darīt. 
+| Vien no ceriņiem smaržojot birs
+| Mēļas zvaigznes ar nepāra stariem. 
+
+| Kvēlos liesmā un plaiksnīsies sārts
+| Zilā debesu sejā mums pāri, 
+| Un uz ceriņu krūma būs kārts
+| Viena eņģeļa lieks spārnu pāris. 
+
+
+## Palāses
+
+| Krīt rudens ar pavasari
+| Gar logu, 
+| Jo lāse ir viršu zila. 
+| Aiz prieka par sauli
+| Tos vēji ir sajaukuši. 
+| Krīt lāse un nosten --- 
+|   tu skaties uz mani
+|   caur aizejoša vagona stiklu. 
+| Krīt lāse un smaida --- 
+|   tu nāc, 
+|   un es tevi redzu 
+|   caur lidostas stikla sienu, 
+|   bet mēs vēl netiekam kopā. 
+
+| Un tāpēc 
+| Krīt dzintarā mirdzoša lāse --- 
+| Mūsu pārakmeņojušies sveķi --- 
+| No brūcēm, 
+| Ko rāvuši visādi braucamie, 
+| Visādi ļāudis
+| Un visādi strīdi, 
+| Nelaizdami mūs kopā. 
+
+| Bet tagad 
+| Līdz nākošai reizei neko 
+| Viņi mums nevar izdarīt. 
+
+| Mums ir mūžība. 
+ 
+| Un tikai nākošā šķiršanās brūce
+| Mums sacīs, 
+| Cik bija šī mūžība īsa. 
+
+
+## * * * 
+
+| Es gaidu tevi 
+| Uz šī pavasarīgā stūra
+| Jau visu dzīvi. 
+
+| Var būt, ka tu 
+| Mani gaidi citur, 
+| Bet, tikai šeit satikušies, 
+| Mēs satiksimies. 
+
+| Mirguļo kupenas, 
+| Un upēs ir daudz ūdens. 
+
+| Lieli kuģi var peldēt
+| Pa tādu dziļu un brūnu ūdeni. 
+
+| Bet es gaidu tevi 
+| Un skatos 
+| Uz papīra kuģīti
+| Marta ledos. 
+
+
+## * * * 
+
+| Apturēsim autobusu. Klausa. 
+| Palūgsim, lai tālāk dodas. Brauc. 
+| Šausmas, cik man mute tagad sausa, 
+| Šausmas, cik tai tagad vajag daudz! --- 
+
+| Ezera, kur ir viens miljons salu, 
+| Lūpu, kuras miljons skūpstu ļauj, 
+| Līču, kur visvairāk lakstīgalu, 
+| Pļavas, kur visskaļāk sienu pļauj, 
+
+| Lietu, kas vistīrāk mazgā pieri, 
+| Zibens, kas vistaisnāk priedē krīt, 
+| Nakti, kurā it kā miljons mieru, 
+| Miljons zilu zvaigžņu pārī spīd. 
+
+| Man nav it nekā. Un tā ir labāk. 
+| Tikai tad jau īsto skaņu jūt. 
+| Pareizi jau saka --- kur der nabags, 
+| Kurš par miljonāru negrib kļūt!
+
+
+## * * * 
+
+| Ja tu zini, kāds ir Gaujas alts, 
+| Tad tu zini, kā mākoņi šalc, 
+| Tad tu zini, cik silts katrs zieds, 
+| Tad tu zini, kā vējš pļavas liec, --- 
+| Tad tu zini. Un nevarēs posts
+| Tavā atvērtā dvēselē kost. 
+| Grūtā brīdī tad varēšu es
+| Slapju biti tev nožāvēt nest. 
+| Lieti līst, salnas ir, sniegi snieg, 
+| Skropstās līst, vaigos kož, sirdī tiek. 
+| Bet tev neziņā netumsīs skats, 
+| Ja kaut reizi tu būsi viens pats, 
+| Gaujas balss ilgi meklēts un saukts, 
+| Baltu mākoņu kopenās jaukts, 
+| Ziedu sildīts un viesuļu nests, --- 
+| Ja tu būsi. Bet saredzu es --- 
+| Katrā solī, ko tālāk tu liec, 
+| Pelēks, silts, samīts zaķītis kliedz. 
+| Tā jau nav kāda varena balss --- 
+| Tā kliedz viss, 
+| Kur iet sals, 
+| Kur iet sals. 
+
+
+## Skabargas
+
+| Kad pirkstā tu ierausi skabargu --- 
+| Aizej pie mammas. 
+
+| Jods nav visbriesmīgākais, 
+| Ko cilvēki liek uz pušuma. 
+
+| Kad sirdī tu ierausi lāsteku ---
+| Aizej pie mīlestības, 
+
+| Ja tu vēl vari paiet, 
+| Ja lāsteka nav pārāk dziļi. 
+
+| Bet, ja būs pārāk dziļi, 
+| Tad tevis dēļ 
+| Kāds ieraus pirkstā skabargu, 
+| Kāds ieraus sirdī lāsteku
+| Un vēl kāds
+| Var sirdī ieraut durkli. 
+
+| No viena baļķa neiznāk māja, 
+| Bet iznāk trīs miljoni skabargu. 
+
+
+## Šķiršanās
+
+| Pagājušas divdesmit septiņas stundas
+| Varbūt...
+
+| Bet ir pagājis pavasars --- 
+| Es redzēju čurkstes, 
+| Kas ņudzēja Gaujas kraujā, 
+| Un ķīvītes kliedza. 
+
+| Varbūt blakus istabā raudāja bērns. 
+
+| Pēc tam sāka smaržot siens
+| Un gaiss dūca. 
+| Ar basu kāju es laikam uzkāpis biju
+| Uz kameņu perēkļa. 
+
+| Varbūt garām brauca mašīna
+
+| Pēc tam 
+| Kļavas lapa
+| Dzinās pakaļ autobusam. 
+| Aizkusa, apstājās 
+| Un atkal dzinās ---
+| It kā autobusā būtu aizbraucis
+| Tās pavasaris. 
+
+| Varbūt es vēl ticu, ka tu atnāksi. 
+
+| Pēc tam bija krusa. 
+| Tā krita patvertnes uzbēruma zaļajā zālē, 
+| Ripoja lejup pa Doma zaļgano jumtu, 
+| Sitās cauri caur divu koķetējošo 
+| Mākslīgo vārdu saharīnu, 
+| Bira skursteņos kuģiem
+| Un kā trokšņu stacija dūdinājās uz palodzes, 
+| Slāpējot sirdsapziņu diviem, 
+| Kas zaga mīlestību "kaut kāpēc", 
+| Kam pietrūka ņemt to tāpat. 
+
+| Var būt, ka es neatšķiru vairs galveni, 
+| Pēc tam nāca sniegs. 
+| No sākuma kusa uz rokas, 
+| Bet vēlāk vairs nekusa. 
+| Tāpat kā toreiz es laikam jūtas Rīga, 
+| Kad pa viņu brauc saldētavas. 
+| Es pat nezinu, 
+| Uz kuras ielas es biju apstājies, 
+| Bet garāmgājējs bij asprātīgs:
+| --- Viņas nav mājās. ---
+
+| Varbūt šodien viņu visu nav mājās. 
+
+| Un tad atkal lidoja čurkstes, 
+| Spietoja bites --- 
+| Un divi iemīlējušies
+| Dzimtsarakstu nodaļā
+| Teica viens otram "jā"
+| Un apmainījās ar televizoriem. 
+
+
+## * * * 
+
+| Ja man rādītu ceļu
+| Kāda no Rīgas ugunīm, 
+| Ja tā nebūtu tikai elektrība... 
+
+| Ja nebūtu. 
+
+| Ja mani varētu aizvest pie tevis
+| Kāds no daudzajiem tramvajiem, 
+| Ja tie nebūtu tikai satiksmes līdzekļi... 
+
+| Ja nebūtu. 
+
+| Es tev pieklauvētu pie loga
+| Tik klusu, 
+| Ka tu jautātu man:
+| "Ziema, vai tā esi tu?"
+
+| Es nebūtu ziema
+| Es būtu vēl rudens. 
+| Viena vējos kvēloša lapa
+| No tā, kas šalca
+| Un ziedēja reiz. 
+
+| Ja ugunis rādītu ceļu. 
+| Ja tramvaji vestu. 
+
+| Bet tagad es palieku
+| Salna
+| Uz zāles, pa kuru ej, 
+| Uz durvīm, kuras tu ver. 
+| Uz deniņiem taviem, 
+| Kur tikko redzami pulsē
+| Zila bērnība tava, 
+| Sārta jaunība tava
+| Un zils vakars tavs. 
+
+
+## * * * 
+
+> _Visvaldim Lāmam_
+
+| Kad graudu samaļ miltos
+| Un miltus mājās ved, 
+| Lai briedīgs zemes siltums
+| Tev kaulos spēku met. 
+
+| Lai sirds kā kumeļs kārpās
+| Un vēji krēpes šķir --- 
+| Kamēr uz zemes vārpas
+| Un rudzu maize ir. 
+
+| Tev nedrīkst prasīt vājums, 
+| Cik netic tev, cik tic, 
+| Šis gājums ir tavs gājums, 
+| To nevar noiet cits. 
+
+| Būs nevienādi ceļi, 
+| Cits --- dūkšņains un cits --- sauss, 
+| Bet neizmelos meļi 
+| Par svešu, kas ir tavs. 
+
+| Būs soģi krēslos platos
+| Un platu tiesu lems, 
+| Bet vēju tavos matos
+| Neviens tev neatņems. 
+
+| Būs asiņaini kāvi, 
+| Tu paņem acīs tos, 
+| Bez tavas --- citu nāvi
+| Neviens tev neiedos. 
+
+| Nemaz nav briesmīgs šķīrums
+| Starp "dzīvot" un starp "mirt", 
+| Ja tevi apsēts tīrums
+| Un mīlestība dzird. 
+
+
+## Tikai
+
+| Tikai āboli krīt
+| Rudens rasainā zālē. 
+| Rasa zila kā tāle, 
+| Kurp tu aizbrauksi rīt. 
+
+| Tikai mākonis snauž
+| Tālam mežam uz kakla, 
+| Diena izliekas akla, 
+| Dienai drusciņ vēl skauž. 
+
+| Tikai veltīgi viss. 
+| Stājas asiņu dima, 
+| Un tās zvaigznes, kas dzima, 
+| Visas nolemtas dzist. 
+
+| Tikai pagaidi vēl, 
+| Ne jau tāpēc, ka baidos, 
+| ne jau tāpēc, ka svaidos, 
+| Ne jau tāpēc, ka žēl. 
+
+| Tikai tāpēc, ka ir
+| Man no tevis kas iedzimts
+| Un vēl reizi ir piedzimts, 
+| Lai vel reizi var mirt. 
+
+| Tikai neteiksim --- "rīt", 
+| Kaut gan lūpas jau plešas. 
+| Krīt kā planētas svešas, 
+| Tikai āboli krīt. 
+
+
+## Salna
+
+| Atkal ir zāle no skārda. 
+| Atkal naktī ir vārītas puķes. 
+
+| Kļavas lapa
+| Liek logiem plaukstu uz acīm:
+| --- Nav ko skatīties bērni, 
+| Tā gadās... --- 
+
+| Bet bērni ir slimi 
+| Ar "kāpēc?". 
+
+| Kāpēc skārda zālē
+| Nav kameņu?
+
+| Kaut vai skārda kameņu
+| Kāpēc nav?
+
+| Kāpēc jāvāra puķes, 
+| Ja abrā rūgst maize? 
+
+| Vectēv, tev ir gara dzīve
+| Un mums ir tik īsi "kāpēc?",
+| Saki. 
+
+| Bet vectēvam pašam 
+| Gar deniņiem baltums
+| Un rokas uz spieķa 
+| Kā puķes pēc salnas. 
+
+| Un viņa "kāpēc?" vēl lielāks. 
+| Un nav neviena tik liela, 
+| Kas atbildētu.
+
+| Un kad viņš uz mūrīša lien, 
+| Sauc vedekla bērnus: 
+| --- Nav ko skatīties, 
+| Gadās... ---
+
+| Un grūti gadās, 
+| Kad cilvēkiem jāiet
+| Pa vārītām puķēm
+| Un skārda zāli. 
+
+
+## * * * 
+
+| --- Tu par mani pārāk daudz zini. --- 
+| Un Bordžija izdomā indi. 
+| Un ķīmija, vēl nemaz neapjēgdama, 
+| Kas viņa pati ir, --- 
+| Dod. 
+
+| Bet skalpeļi paver spraugu 
+| Un ierauga indi. 
+
+| Šķir vēsture vecas dzeltenas lapas
+| Un ierauga
+| Kardinālu. 
+
+| Nojauš. 
+
+| Es arī nojaušu, 
+| Ka man pilina indi
+| No rīta debesīs, 
+| Dienā acīs un ausīs
+| Un naktī ber pilnu galvu. 
+
+| Ne lapas, ne skalpeļi nelīdz. 
+| Un neatsedzas
+| Ne trauks, no kā lej, 
+| Ne melnā kapuce, 
+| Zem kuras slēpjas
+| Tā draudīgā seja, 
+| Kas par mani var sacīt: 
+| --- Tu esi vientiesis, 
+| Tu esi muļķis, 
+| Tāpēc 
+| Tu par mani pārāk daudz zini. 
+
+
+## * * * 
+
+| Viena minūte, protams, būs pēdējā, 
+| Es jau dzirdu, ka viņa nāk. 
+| Garām sētai, kur mēness sēdēja, 
+| Garām liepai, kas ziedēt sāk, 
+| Nāk uz sirdi, kuras vairs nevajag. 
+| Klāt ir brīdis, ko gudrie sauc
+| Vienkārši --- "viss dotais atdodas devējam". 
+| Tagad var redzēt, ka tā nav daudz. 
+| Drusku vienaldzības un drusku vājības, 
+| Drusku izlikšanās, uz sirds ko segt, 
+| Drusku par daudz tās remdenās mājības, 
+| Kas gandrīz vienmēr neļauj degt. 
+| Drusku par maz domu jaunās vingrības, 
+| Rokas spiediens sasteigts un ass, 
+| Drusku par daudz pret citiem stingrības --- 
+| Tik daudz, ka pašam tās paliek maz. 
+| Nu, un viss pārējais --- tas ir kā maize dots
+| Un līdz tam brīdim, kad skropstas vēl trīc. 
+| Un tas, kas teikts nav, --- to mēs visi aizejot
+| Arī uz turieni paņemam līdz. 
+
+
+## * * * 
+
+| Kamēr vēl visi lēkti nav padzīti, 
+| Kamēr es dzirdu vēl, kā šalc bērzs, 
+| Kādos grēkos man vēl vajag atzīties
+| Tā, lai sanāktu pilns soda mērs --- 
+| Nepārsūdzamais un visaugstākais, 
+| Nepielūdzamais augstais sārts?
+| Prasiet, ja tas būtu pats visaukstākais
+| Un visgrūtāk sakāmais vārds, --- 
+| Es to teikšu. Jau lūpas paplešas, 
+| Un nemaz vairs tik grūti nav, 
+| Man paša lūpas jau ir diezgan pasvešas, 
+| Un kaut kur tās ir mirušas jau. 
+| Nolādēts siltums, kas gaisīgi aulēkšo
+| Un pēc kādas tur atbalss kliedz, 
+| Mostas uz gaišu un laimīgu saullēktu, 
+| Bet dienu nobeidz tumšs, nelaimīgs riets. 
+| Sirdi spiež mākoņi paši zemākie, 
+| Tukšas stundas pēc atbildes nāk. 
+| Nē, ja reiz pats tu ziedēt nemāki, 
+| Kļūsti par zemi tiem, kuri māk. 
+| Tāpēc es atzīstos ikvienā mūcībā, 
+| Ikvienā grēkā. Lai visi dzird. 
+| Sakņu skopumā, zaru trūcībā --- 
+| Kroplam kokam ir vieglāk mirt. 
+
+
+## * * * 
+
+| Tad, kad viss būs izkliegts un kad atbalss norims, 
+| Vasaras nakts migla vēsi acīs kāps
+| Un kā brīnumsveču dzirkstis zvaigznes nobirs, --- 
+| Sirdij tajā brīdī vairs ne salks, ne slāps. 
+
+| Noreibs sirds no sava izdomātā miera, 
+| Izdomātā sapnī pievērs acis ciet. 
+| Var jau būt ne tā, jo cilvēkam nav pierasts
+| Smagiem soļiem pāri savai sirdij iet. 
+
+| Tacu gribas man, lai tobrīd nav ne vēja, 
+| Nav ne rasas piles, kas no zariem lās, 
+| Un tā Gauja, kas man sudrabsmieklus smēja, 
+| Lai uz citu pusi tobrīd paskatās. 
+
+| Bērzs uz īsu mirkli aiziet prom no kalna, 
+| Apsei lai uz mirkli arī klusums dots, --- 
+| Nebija jau manī pārāk liela salna, 
+| Nav jau pārāk maigs man paša piespriests sods. 
+
+| Negaiss jau ar stūri ir pār mani pleties, 
+| Vai tad vajaga vēl, ja tā labi šķir, 
+| Man ar dzīvi tagad vēlreiz sastrīdēties? --- 
+| Iztiksim bez strīda. Pietiek to, kas ir. 
+
+
+## Atvadvārdi
+
+| Baltā māt, veļu māt, 
+| Mazgā baltu paladziņu, 
+| Jau ganās mani zirgi
+| Viņas saules pļaviņā. 
+
+| Auksta, auksta tā pļavaiņa, 
+| Kur es jāšu pieguļā, 
+| Es tur iešu, veļu māt, 
+| Ar oglīti azotē. 
+
+| Velti, velti, bērza tāss, 
+| Tu raujies čokurā, 
+| Nesildīji šai zemē, 
+| Tad sasildi aizsaulē. 
+
+| Baltā māt, veļu māt, 
+| Ņem mani savā daļā, 
+| Tur jau īd manas govis
+| Neganītas, neizslauktas. 
+
+| Nelieciet rožu kroni
+| Manā galvas galiņā, 
+| Es saviem teliņiem
+| Aiznesīšu pienenīti. 
+
+| Viens ziediņis, simts ēdēju, 
+| Kam nu dot, kam nedot?
+| Visiem došu pienenīti, 
+| Un būs visi paēduši. 
+
+| Baltā māt, veļu māt, 
+| Aizver man acu vārtus, 
+| Kad atnācu, tad atvēru, 
+| Nu ir reize aizdarīt. 
+
+| Jūs, dēliņi, neraudiet
+| Par tētiņa aiziešanu, 
+| Katru rīt' rasa raud
+| Par visiem gājējiem. 
+
+| Nesakiet savu bēdu --- 
+| Es jau vairs nedzirdēšu, 
+| Ciet lodziņi, ciet durtiņas, 
+| Nav neviena istabā. 
+
+
+## * * * 
+
+| Var pierast pie paša velna, 
+| Kā fabrika pierod pie plāna, 
+| Var pierast pie garām sapulcēm
+| Un lūpām no celofāna. 
+
+| Bet pierašana ir dzērums --- 
+| Velk pirmā glāzīte otru,
+| Un otra pēc tam velk trešo, 
+| Un ceturto nav vairs kam noturēt. 
+
+| Var pierast pie trušu kaušanas, 
+| Un tad visi truši ir gaļa, 
+| Var pierast pie sevis puses
+| Un pēc tam pie desmitdaļas. 
+
+| Var pierast pie matu garuma, 
+| Var pierast pie prāta īsuma. 
+| Mums ārsti neizsniedz zīmes
+| Par dvēseles daltonismu. 
+
+| Un slimojošo bez jēgas. 
+| Pats sev pat reizem neprasi, 
+| Lai neredzētu, ka pieradis, 
+| Ka esi aizmirsis --- nepierast.
+
+
+## * * * 
+
+| Bail. 
+| Ļoti bail dzīves dziļumos jaukties, 
+| Bail grambu ceļā svaidīties. 
+| Ja reiz tev bail nav par cilvēku saukties, 
+| Ko tad no pārējā baidīties?
+
+| Saukties par cilvēku nav tev bail. Pierasts. 
+| Un ja sirds liekuļot aizkusīs, 
+| Nolīdīs malā un smiltīs ieraks, 
+| Ņems un kā kaķis --- aizkasīs. 
+
+| Kad būs no mūža kā no rudens apses
+| Nolemtais dienu skaits nobiris, 
+| Tad jau var vējs tavu darīto atsegt, 
+| Var. Jo tu būsi jau nomiris. 
+
+| Žagaru rīkstēm un likteņa rīkstēm
+| Tad jau var atsegt plikumus, 
+| Mums vajag mācīties šodien drīkstēt
+| Un uztrīt šodienas likumus. 
+
+| Citādi, elpojot apvāršņu dūmus, 
+| Mēs nedzirdam tāles pašas. 
+| Nedzirdam. Tāpēc ka visos krūmos
+| Čab. Pārāk daudzi tur kašājas. 
+
+
+## * * * 
+
+| Putniņu vajag noķert, 
+| Citādi lidos augstu, 
+| Citādi nevarēs aizlikt
+| Priekšā tā mutei plaukstu. 
+
+| Citādi pavasaros
+| Atkal kaut ko tur cerēs, 
+| Dēs kaut kādas tur olas
+| Un sev līdzīgus perēs. 
+
+| Putniņu vajag noķert --- 
+| Un noķert tieši aiz astes, 
+| Citādi --- kas tad dziedās
+| Stiepļotu režģu kastēs? 
+
+| Viņam ir jādzied, ko pavēl, 
+| Vai arī jāaiziet bojā, 
+| Viņam ir jāzin --- no dziesmām
+| Ēstgriba uzlabojas. 
+
+| Putniņu vajag noķert, 
+| Lai vieglāk ir pieēst punci. 
+| Putniņš lai dzied, kamēr piekūst, 
+| Pēc tam viņu atdos runcim. 
+
+| Man pēc maltītes dzīvesprieks 
+| Pāri sirds malām kūsās --- 
+| Un uz tepiķa gulēs
+| Runcis ar sarkanām ūsām. 
+
+
+## Balāde par cirvja kātiem
+
+| Jauno dienu zilais asmens nodila. 
+| Večuks tirgojās ar cirvja kātiem, 
+| Puskažociņš smaržoja pēc skaidām. 
+
+| Milicim, kas viņu noķēra, 
+| Zābakstulmi spīdēja pēc saules, 
+| Pats --- pēc frizētavas smaržoja. 
+
+| Pārējo
+| Neviens tur neošņāja. 
+
+| Večuks atpirkās ar trijiem rubļiem, 
+| Četriem nepārdotiem cirvja kātiem, 
+| Pāris desmit garāmslīdošiem 
+| Un nosodošiem skatieniem. 
+
+| Večukam bij cirvja kātu žēl. 
+| Ko ar četriem cirvjiem
+| Jaunais cilvēks darīs?
+
+| Un trīs rubļu arī bija žel. 
+| Žēl to divu dēļ, 
+| Kas bija palikuši. 
+
+| Milicim par visu prieka nebija. 
+| Vienīgi kad četrus cirvja kātus
+| Iebāza viņš pirmā atkritumu kastē, 
+| Atgriezās tam labs un pierasts miers. 
+
+| Dzīve atkal tālāk ritēja. 
+| Saimniecības preču plaukta gulēja
+| Četru cirfju nocirstās dzelzs galvas. 
+
+
+## Sienas
+
+| Ko jūs man stāstāt, sienas?
+
+| Dzeriet, ko gribat, 
+| Bet nekliedziet, lūdzu, man ausīs
+| To, ko es zinu, 
+| Un to, ko parasti čukst.
+
+| Es ar jums runāju katru dienu. 
+| Nevajag bojāt mūsu attiecības. 
+
+| Es ilgi stāvu
+| Pie caurumainām
+| Un nelādu jauno paaudzi, 
+| Kas iet garām. 
+
+| Viņi nezin, ko atstāj lodes. 
+| Un lai viņi nezin --- 
+| Tas nav nekas interesants. 
+
+| Man ir labi, 
+| Kad mājas krāso
+| Un tās sastatnēs stāv
+| Kā trākeldiegos pie drēbnieka. 
+
+| Tad man šķiet, 
+| Ka tās pošas uz satikšanos
+| Ar maniem ciemiņiem, 
+| Kuri rīt atbrauks. 
+
+| Logu gaismas un tumsas Morzi
+| Es mācījos, tikko atbraucis, 
+| Reizē ar tramvaju maršrutiem. 
+
+| Es esmu dusmīgs, siena, 
+| Kad tu uz mani kliedz. 
+
+| Es nāku no darba
+| Un eju uz mājām ēst,
+| Bet tu man pa visu sienu:
+| --- Mīliet mūsu Padomju Dzimteni! --- 
+
+
+## * * * 
+
+| Dzeja mīksta kā dīvāns --- 
+| Liecies uz auss un pampsti. 
+| Visādu lupatu deķi
+| Kaudzē līdz griestiem samesti. 
+
+| No svešām masku ballēm --- 
+| No katras atstiepts pa skrandai. 
+| Vienīgi plikais karalis, 
+| Kā bija pliks tā blandās. 
+
+| Kad uz tā dīvāna mosties, 
+| Tad visi šie krāšņie mēsli
+| Izskatās tā kā maisi, 
+| No kuriem izbērta dvēsele. 
+
+| Piesvīduši un pieputējuši, 
+| Un arī saplēsti daži. 
+| Trīs musketieru trīs zobeni --- 
+| Taukaini ķēķa naži. 
+
+| Viss Donkihota bruņojums --- 
+| Spocīga dzelžu čupa. 
+| Karaļa meitas šķidrauts --- 
+| Vai kājauts, vai grīdas lupata. 
+
+| Nē, es te nevaru gulēt, 
+| Man tavas naktsmājas smird.
+| Es šajā dailes kapsētā
+| Vēl dažu nopūtu dzirdu. 
+
+| Taču ne smaids te uzžilbst, 
+| Ne asins no brūces izšļāc, 
+| Kāpēc tu vāci šo orķestri, 
+| Cilvēciņ, ja tev nav zižļa? 
+
+
+## Jūrasslimība
+
+| Viņu cēla uz augšu
+| Un laida uz leju, 
+| Līdz viņam palika slikti. 
+
+| Tā iet visiem, 
+| Kas itin nekur nav gājuši paši, 
+| Bet --- likti. 
+
+| Kā ziedi, 
+| Kā podi, 
+| Kā trauki. 
+
+| Liek tevi tikmēr, 
+| Kamēr uz cita plaukta
+| Paliek tavs paša prieks, 
+| Tavs paša gods
+| Un tavi draugi. 
+
+| Un uz pasauli dusmas
+| No savas vemšanas.
+
+| Bet pasaule jau nav vainīga, 
+| Ka dzīve tev vienīgi sastāv
+| No ņemšanas. 
+
+
+## * * * 
+
+| Es esmu staigājis visādos rūpnīcu cehos
+| Būvbedrēs
+| Rijis miljardus
+| Pa gaisu skrejošu smilšu, 
+| Pa rudens ceļiem
+| Mašīnas stūmis --- 
+| Un iznācis tīrs. 
+
+| Kāpēc smērējas rokas un sirdsapziņa
+| Šinī spoguļotajā zālē?
+
+| Te roka jāspiež visiem, 
+| Bet pēc daža saldena spiediena, 
+| Pats nemanot, nobraucu plaukstu
+| Gar rūpīgi izgludinātām biksēm. 
+
+| Un dažs labs acu pāris
+| Ar riebumu skatās
+| Uz šo šeit tik ļoti nepiedienīgo žestu. 
+
+| Bet tas ir tāds instinkts. 
+| Kad sunim blusas --- kasās, 
+| Es daru, kā es māku. 
+
+| Un sirdsapziņa te smērējas. 
+
+| Vienādi mīlīgs smaidiņš uz lūpām
+| Gan tiem, kas mīl jubilāru aiz nevarības, 
+| Gan tiem, kas to skaita par lopu. 
+
+| Lūpas kā vienlīdzības zīmes
+| Starp naidu un mīlestību, 
+| Starp kāzām un bērēm. 
+
+| Lai velns rauj šo karātavu diplomātiju!
+
+| Es eju uz garderobi
+| Un sargāju savu mēteli, 
+| Lai blakus karājošies
+| Ar mīlīgu smaidu
+| Neietriec dunci tā raibajā mugurā. 
+
+
+## Briesmas
+
+| Nu ir šausmas!
+| Manā kupejā cilvēks bez iekšām!
+| Izbāzts cilvēks ir manā kupejā!
+
+| Visu laiku viņš runā 
+| Kā plate:
+| --- He, viņš skatās pa logu!
+| Visus kokus bez lapām
+| Noskatīsi. 
+| Visas meitenes līdz sirmiem matiem
+| Izskatīsi. 
+
+| He, viņš meitenei pasaku stāsta!
+| Tumsā nedzīvo nekādi tur
+| Tīģeri. 
+| Tumsā noķers to kaut kādi 
+| Brūtgāni. 
+
+| He, viņš lasīs un uguni nedzēsīs!
+| Visas gudrības tikpat
+| Neizlsasīsi. 
+| Visam jēgu tikpat jau 
+| Neizpētīsi. ---
+
+| Tā viņš tur atraugājas, 
+| Kamēr es ceļos un saku:
+| --- Mīļais, 
+| Kopš tās dienas, kad tev nav iekšu, 
+| Tu vairs nezini, kas ir izsalkums. 
+
+| Mani neviens līdz šim vēl nav izbāzis. 
+| Es esmu kokuēdājs, 
+| Es esmu pilsētēdājs, 
+| Es esmu cilvēkēdājs --- 
+| Es esmu
+| Badmira. 
+| He!
+
+
+## Darbs
+
+| Kā viņi bij nomocījušies,
+| Malēnieši, 
+| Veldami baļķus atpakaļ kalnā
+| Un stiepdami gaismu ar maisu!
+
+| Kā zivis uz sauszemes mutes vārstīja, 
+| Skaties --- 
+| Un gribas raudāt aiz žēluma. 
+
+| Mani nabaga tantali!
+| Mani nabaga novadnieki!
+
+| Un kas tie bija, 
+| Kas ēdās caur biezputras kalniem? 
+| Vai tad tiem bija vieglāk?
+
+| Nabaga Gargantija!
+| Nabaga leiputrijieši!
+
+| Un atkal vai jāraud --- 
+| Cilvēki plīsdami
+| Kaujas ar savu pārpilnību. 
+
+| Bet katru vasaru slejas pār mežiem
+| Pilnīgi nenopietnā
+| Varavīksne. 
+
+| Par viņu vīpsnā --- 
+| Nu, kas tad tur ir? --- 
+| Varavīksne ir celta bez sastatnēm:
+| Ne baļķi pret kalnu velti, 
+| Ne kalni ēsti. 
+| Ne galvenie inženieri 
+| Desmitreiz mainīti. 
+
+| Un pats galvenais --- 
+| Netek sviedri, 
+| Trūkst pašas galvenās
+| Cilvēka nemācēšanas pazīmes. 
+
+| Es spļauju uz varavīksni
+| Un žēlumā raudu:
+| --- Malēnieši!
+| Mani nabaga tantali!
+| Mani pašaizliedzīgie novadnieki!
+
+
+## Nu labi
+
+| Nu labi. 
+| Mēs abi esam tik briesmīgi labi, 
+| Ka normāliem droši vien liekamies spoki --- 
+| Mēs nezinām, kas tas ir īsti --- dzert šņabi, --- 
+| Tik taisni kā biezoknī auguši koki. 
+
+| No mums iznāks zirgu loki. 
+| Ja meistars mūs salieks... 
+
+| Bet kas var mūs saliekt, 
+| Ja mēs pašā vidū biezoknim augam, 
+| Ja skaidri zinām, cik jābūt šmaugam
+| Un nedrīksti pārstiepties pāri draugam!
+| Kas stiepjas, 
+| Tam vētra pa purnu saliek. 
+
+| Nu labi. 
+| Mums nezināt, kas ir salīkt, 
+| Jo mums līdz kaklam ir māksla --- būt labiem. 
+| Mēs zinām katrs un divkārt pa abiem
+| Mēs zinām šo mākslu, 
+| Kā labiem palikt. 
+
+| Nu labi. 
+| Bet citi dzer šķiroties šņabi
+| Un brauc ar pirkstu pa meridiāniem, 
+| Un pēc tam paši --- 
+| Pa kreisi, pa labi,
+| Un mūsu meitenes iet pie to sāniem. 
+
+| Nu labi. 
+| Jau tad, kad mums nācās tikties, 
+| Mēs zinājām --- labums jau viņām nav cieņā, 
+| Tām gribas likt salā mēli pie stieņa. 
+| Nu lai viņas iet... 
+| Un lai aiziet pie sliktiem. 
+
+| Un labi. 
+| Bet mēs taču esam labi. 
+| Lai sliktie pa purviem, pa ciņiem bristu. 
+| Lai izlec, 
+| Lai par tiem avīzes raksta!
+| Mēs neesam no tādiem. 
+| Mēs abi. 
+
+| Nu labi. 
+| Un sliktiem par mums nespriest tiesu. 
+| Pat sīkākais muskulis mums nav ļengans, 
+| Mēs atbildam paši par savu miesu, 
+| Par mums var liecināt katrs rentgens. 
+
+| Un tomēr mūs iesūdz? 
+| Nu labi. 
+
+
+## Jūs --- pie telegrāfa!
+
+| --- Rīga jūs izsauc. 
+| Ne pie Centrālā --- 
+| Pie sirds telegrāfa! --- 
+
+| Un es zinu un saprotu --- kāpēc. 
+| Pārāk daudz
+| Ir jūsmīgi pļāpāts.
+| Jāmācās
+| Pukstošas sirds Morzes ābece. 
+
+| Lūpas pabālās, lūpas vairīgās
+| Daudzkrāsu ņirboņas bīstas, 
+| Izdomā Akrīgas, 
+| Izdomā Airīgas, 
+| Lai tikai aizšmauktu garām
+| Īstajai. 
+
+| Tam, kur aptiekās galvas pulveri, 
+| Tam, kur cilvēki nīst, mīl un izkaro, 
+| Tam, kur pār vecu un sirmu bulvāri
+| Jauniņas lampas
+| Gaismu izstaro. 
+
+| Un ko līdz šī liekuļu izdoma, 
+| Ja viņš pats strādā, 
+| Guļ, sēd, iemet sīvo
+| Ne jau tai pilsētā, kuru izdomā, --- 
+| Nē, viņš īstajā Rīgā dzīvo. 
+
+| Nevis Airīgā, 
+| Nevis Akrīgā
+| Tajā, kur it neko nevajag zubrīt, 
+| Tajā, kur vienā teikumā sakarīgā
+| Ir miliču svilpes
+| Un pilsētu žubītes. 
+
+| Baznīcu torņu zaļganais pelējums
+| Un jauno kvartālu 
+| Augšanas untums, 
+| Sirdis, kur dzīvo apsūbējušas peles, 
+| Un sirdis, 
+| Kas pret visu mēreno buntojas. 
+
+| Ej pie sirds telegrāfa!
+| Rīga izsauc. 
+| Tu esi viņai kā sētnieks
+| Padots. 
+| Pēc visa tā, ko vēl nezini, izsalc, 
+| Pēc visa tā, ko vēl nejūti, badojies. 
+
+| Telegrāfs saplosīs Airīgas rīmi, 
+| Diktēs tev jauno kvartālu formu. 
+| Izpēti visu pilsētas ķīmiju, 
+| Lai vari pateikt
+| Tās vienkāršo formulu. 
+
+| --- Rīga jūs izsauc! --- 
+| Lai Morzes pīkstieni
+| Tavās asinīs mūžīgi skanētu, 
+| Izpēti miglājus, mudžekļus, haosus, 
+| Lai reiz tu drīkstētu
+| Uztaisīt vienu vienkāršu planētu. 
+
+
+## Arkādija
+
+| Piemiedz acis un paver --- 
+| Parīze, vai? 
+| Rīga, vai?
+| Dzeltenu kļavziedu pilni mati,
+| Un bites pinas kā trakas, 
+| Un pirmie negaisi danco apkārt
+| Kā līgavai. 
+
+| Un upītes dzelmē guļ
+| Noslēpta sievišķība --- 
+| Tāds no atvaru atvariem lielākais
+| Dziļums. 
+
+| Bet saule līdz potītēm izbrien. 
+| Visi strazdi un zvirbuļi
+| Un visas žubītes
+| Apbērnojas.
+
+| Un --- te tev nu bija!
+| Bet bija gan...
+
+| Kad vasaras mēness
+| Sudrabo koku kupolus,
+| Kad no brieduma, šķiet, 
+| Plešas kalns, 
+| Pa kuru reiz gāja
+| Rainis ar Aspaziju. 
+
+| Puikām līdz sešpadsmit gadiem
+| Te nav ko meklēt. 
+
+| Bet meklē gan. 
+
+| Ar ko tu, neliete Arkādij, spekulē
+| Un pa kuru laiku tu paspēj, 
+| Un kurā speltē 
+| Tu slēp savu zeķi, 
+| Ka rudeņos tev ir tāds milzums
+| Vara un zelta naudas?
+
+| Es brienu kā Rokfellers, 
+| Kamēr virs manis
+| Tu lauzi kļavu un kastaņu rokas
+| Pēc tiem vējiem, 
+| Ko paņēma citas. 
+
+| Pati vainīga, tā nemaz nevar sanākt. 
+| Bet sanāk gan... 
+
+| Un tad 
+| Tu palien zem vatētas segas, 
+| Un tev ir silts prieciņš, 
+| Ka mazbērni staigā pa tevi
+| Un --- 
+| Ka tev vēl mazdrusciņ kut. 
+
+
+## Iļģuciema alus
+
+| Vai tad Iļģuciemā mieži aug?
+| Kurā vietā?
+| Mājas saaugušas ir no vienas vietas, 
+| Visa zeme 
+| Mašīnu un ļaužu nopēdota, 
+| Labi vēl, 
+| Ja kādai puķei paliek stūris. 
+
+| Kas par miežiem!
+| Mieži --- tie ir tur --- 
+| Aiz tiem zilgiem torņiem
+| Zili meži, 
+| Aiz tiem ziliem mežiem
+| Tāli lauki, 
+| Tur, tur --- akotu pie akota 
+| Iļģuciema alus mieži aug. 
+
+| Apīņi, kā virves savijušies, 
+| Kārtis žņaudz aiz mīlestības nost. 
+
+| Kāpēc tie uz Iļģuciemu brauc?
+| To jūs paprasiet tam galdniekam. 
+| Uz zārka
+| Divas biezas sviestmaizes un alus, 
+| Un pats meistars --- 
+| Dzīvība uz nāves. 
+
+| --- Sviestmaize par sausu, --- 
+| Meistars smejas, 
+| --- Tumšais maizi pataisa par maizi. --- 
+| Paprasiet tiem, kas uz baļķa sēž, --- 
+| Kāpēc alus? 
+| Bet vislabāk --- 
+| Paši zāģētavā izkarstiet kā tuksneši. 
+
+| Visi "kāpēc" dabū savus "tāpēc". 
+
+| Un patiešām 
+| Puto visi "tāpēc":
+| Tāpēc, ka es izaugu uz lauka, 
+| Tāpēc, ka es cieši, cieši vijos, 
+| Tāpēc, ka ap mani daudz ir gudrots. 
+| Tāpēc, ka tev patīk ņemt to visu, 
+| Kas vistaisnāk atnācis no zemes. 
+
+| Ozolkoka mucā ilgi rūgstu, 
+| Dzer
+| Un nepaliec par piparkūku!
+| Dzer un rūgsti, 
+| Rūgsti pāri malām. 
+
+| Visiem horizontiem pāri rūgsti. 
+
+
+## Paegļi
+
+| Viņiem ir ciprešu šmaugums. 
+| Tā ir
+| Un reizē nav maska. 
+| Viņi reti aug garāk
+| Par cilvēka augumu --- 
+| Viņiem gribas, 
+| Lai cilvēki saskata
+| Paegļu sīkstumu,
+| Ko vētra nekad nevar nogāzt, 
+| Paegļa ilgas pēc debesīm, 
+| Kaut arī tas vairāk tic zemei, 
+| Paegļu zilās, 
+| Apsūbējušās ogas, 
+| Kaut arī tās
+| Ne reizi nav runājušās ar zemenēm. 
+
+| Ka mēs nesaskatītu, 
+| Nav jau tā tīri:
+| Kad jāstāsta pasaka,
+| Tad iešalcas meža skaņa, 
+| Pa gravām kāpelē
+| Zaļgani paegļu vīriņi. 
+
+| Kad vajag paegļu sīkstuma --- 
+| Ejam un paņemam. 
+
+| Viņš visās gaitās
+| Mums līdzi nākt alcis. 
+| Kāpēc mēs negribam 
+| Viņa paegļa dvēselei ticēt?
+| Mezos un pasakās
+| Viņš ir palicis
+| Vienīgais koks, 
+| Ko Rīgas parks nolēmis
+| Nepublicēt. 
+
+
+## * * * 
+
+| Tādas nu ir tās pasaules lietas --- 
+| Dažs savu mīļo 
+| Dēvē par cielaviņu, 
+| Dažs par kaiju un dažs par irbi. 
+| Es esmu plebejs
+| Un netaisos noliegt tās cilvēka vietas, 
+| Kurām ir attāla radniecība
+| Ar ķirbi. 
+
+| "Fui!" var izpalikt. 
+| "Pē!" var izpalikt. 
+| Normas? 
+| Ko viņas ēd pa ziemu --- šīs normas?
+| Ne sakņu, ne augļu dārzs, 
+| Ne Galaktika nemaz nevar iztikt
+| Bez šīs plebejiskās
+| Un pilnīgās formas. 
+
+| Es jūs pat palūgšu 
+| Ķirbjus neapcelt --- 
+| Viņi ir šādi, un viņi ir tādi. 
+
+| Kādā formā
+| Visas planētas velt, 
+| Tas dievam ienāca prātā, 
+| Kad viņš gāja ķirbi stādīt. 
+
+| Bet visvairāk
+| Un nopietnāk es jūs brīdinu, 
+| Lai jums nesanāk vāji
+| Un nesagribas pat kārties, --- 
+
+| Ar savām acīm es redzēju:
+| Kad slēdza tirgu
+| Un aizgāja pārdevēji, 
+| Ķirbji salīda kaktā
+| Un spēlēja kārtis. 
+
+| Ne uz naudu ---
+| Uz knipjiem un cilvēkiem. 
+
+
+## Stūrgalvība
+
+| Stūrgalvības arī ir visādas,
+| Dažu kārojas, 
+| No dažas jāmūk projām. 
+
+| Dažreiz skaties --- 
+| Nu, velnts ar ārā! --- 
+| Cilvēks tev acu priekšā
+| Stūrgalvīgi iet bojā. 
+
+| Tu ap viņu
+| Kā mazuli līkšņā, 
+| Sasauc apt to
+| Simt gudro, simt meļu, 
+
+| Bet viņš speras iekšā
+| Savējā slīkšņā. 
+
+| Un, godīgi sakot, 
+| Man ir aizdomas, 
+| Ka viņš zin tur ceļu. 
+
+| Lai katrs meklē pats
+| Savas dzērvenes, savus laurus. 
+| Nešpetnas maskas
+| Dažreiz nes skaistais. 
+
+| Pie Torņakalna stacijas
+| Sētā ir caurums, 
+| Ko katru mēnesi
+| Vienreiz aiztaisa. 
+
+| Šķiet, ko tad vairāk --- 
+| Sēta kā bilde, 
+| Bez viena cauruma, 
+| Ne sēta, bet konfekte!
+
+| Bet rīt būs caurums. 
+| Un, velna milti, 
+| Ja cits to neizplēsīs, 
+| Tad, teiksim, es konkrēti. 
+
+| Un nemaz nedibināšu 
+| Plēsēju sektu. 
+| Ja gribat, saskatiet caurumā šajā
+| Manas domstarpības
+| Ar arhitektiem, 
+| Manu "man patīk"
+| Un manu "man vajag". 
+
+| Šinī ziņā
+| Man visi nav mājās, 
+| Kaut kas palicis mantojumā
+| No mežoņiem --- 
+| Sētas caurumu
+| Es dievinu jau no bērna kājas, 
+| Sevišķi to, 
+| Kas ir starp paša negaršīgajām antonovkām
+| Un kaimiņu garšīgajiem mežeņiem. 
+
+
+## Brāļu kapos
+
+| Mana baltā un mierīgā māt, 
+| Es tev zilganu asteri atnesu. 
+| Ir pie Kalnciema lielceļa dārzs, 
+| Veca māmuļa tur man to iedeva --- 
+| Nāves salā jau asteres nav, 
+| Nekopj puķes Ložmetējkalns
+| Kopš tā laika... Bet to laiku zin
+| Tavā karogā sastindzis vējš. 
+| Bet pa lielceļiem gājēji iet
+| Un no rīta, kad pārgulēts šķūnītī, 
+| Maizi ņem, pienu ņem, puķes ņem --- 
+| Ņem tās ceļā sev līdzi līdz vītumam. 
+| Bet šī astere, ko nesu tev, 
+| Negribēja vai neprata līst, 
+| Negribēja vai neprata vīst --- 
+| Kur tad citur lai tos ziedus liek, 
+| Ja ne tiem, ja ne tev, ja ne šeit?
+| Mana baltā un mierīgā māt, 
+| Drīz jau leduspuķes vien ziedēs te, 
+| Es tās ņemšu un nesīšu tev
+| Arī tad, ja pa ceļam tās izkusīs. 
+
+
+## Rīti
+
+| Rīti. 
+| Melnai pusnaktij dzimušie bērni
+| Iet no loga pie loga, 
+| Un Rīgai logu ir daudz. 
+| Velti
+| Viņus māte no krēslainiem kaktiem, 
+| Klusu draudot un čukstot, 
+| Pie sevis atpakaļ sauc. 
+
+| Nevar. 
+| Pland pār pasauli liesmojošs "nevar"
+| Un pa cilvēku vēnām 
+| Ar jaunu spirgtumu tek. 
+| Pāri upēm ir pārmesti
+| Rudens appūsti tilti. 
+| Pārslas iznāk uz mākoņu malām
+| Un ir gatavas lēkt. 
+
+| Zeme, 
+| Katru rītu tu mums esi karte --- 
+| Rīts mūs paceļ tik augstu, 
+| Ka horizonts vairs nav taisns. 
+
+| Taisnīgs. 
+| Rīts kā bērns --- maziņš, izsalcis, taisnīgs, 
+| Kuram vēl nedzidrās acīs
+| Dzidruma atspīdums. 
+
+| Pusnakts, 
+| Tu mums uztici savējo bērnu. 
+| Malku un šauteni, 
+| Un izsmieklu nēsājis, es
+| Saprotu katru rītu, 
+| Cik maz ir būt vienkārši stipram --- 
+| Ar spēku var panest kalnu, 
+| Bet bērnu ir jāmāk nest. 
+
+
+## * * * 
+
+| Kas tikai debesīs skrejošie mākoņi
+| Nevar būt!
+| Viss kaut kas, 
+| Tikai ne atkārtojums. 
+
+| Debesīs pasakas skrēja
+| Pa vējam. 
+| Debesīs katrudien
+| To laimi, ko tikai Vecgada vakarā, 
+| Lēja. 
+
+| Bet, kas arī neskrietu --- 
+| Pūķis vai puķe ---, 
+| Viss smēja. 
+
+| Un Rodēna domātājs varēja staigāt, 
+| Cik grib, 
+| Viņš bija krokodils, 
+| Viņš bija pils, 
+| Jo ne Rodēns, 
+| Ne filozofs
+| Viņš vēl būt nevarēja. 
+
+| Vēl nebija sācies Hitlers, 
+| Vēl debesīs meitenes mātei
+| Nebija planduši vējā, 
+| Vēl debesis neredzošs skats
+| Nebija skatījies tajā, 
+| Kas gribēja dzīvot, 
+| Bet izdzīvot nevarēja. 
+
+| Vēl nebija maizei cenas
+| Un devalvācijas naudām. 
+| Vēl nebija ziemas, ne rudens, ne vasaras. 
+| Bija vien kūpoša zeme
+| Un trīsojošs cīruļu sudrabs debesīs. 
+| Sēja. 
+
+
+## * * * 
+
+| Es pat nezinu, kā visas puķes sauc
+| Šajā pļavā. 
+| Tas ir briesmīgi, 
+| Bet es nezinu. 
+
+| Elpoju smaržu, 
+| Plūcu --- 
+| Un nezinu. 
+
+| Un man to atļauj, 
+| Un visiem atļauj --- 
+| Nezināt. 
+
+| Ja tikai puķes vien... 
+| Koku, ielu un cilvēku likteņiem
+| Mēs bieži sakām: 
+| "Jā!"
+| Un: "Nē!"
+
+| Tāpēc, ka, redziet, mēs nedrīkstam sacīt:
+| "Nezinu."
+| Tāpēc, ka mēs esam tur, kur jālemj, 
+| Un tur nav --- 
+| "Nezinu".
+
+| Un dzīve katru brīdi
+| Mums priekšā noliek mapi
+| Ar bezgala tuhačevskiem. 
+
+
+## Dzērvju deja
+
+| To ļoti reti var redzēt, 
+| Jo dzērvju arvien kļūst mazāk. 
+| Man pietika ar vienu reizi, 
+| Un man vēl šodien ir skumji. 
+| Tie droši vien viņām bij prieki
+| Par dienu, kad satikušās, 
+| Un tāpēc tās dejoja purvā. 
+| Nu, mūsu valdoā --- purvā, 
+| Bet viņas --- pasaulē savā. 
+| Un dejoja tādu deju, 
+| Kur krustības, kāzas un bēres,
+| Un daudz kas man ienāca prātā --- 
+| Un ienāca viss vienā reizē --- 
+| Tik jocīgi reizē un dziļi. 
+| Un es līdz reibumam jutu, 
+| Ka man it nekas tāds nav bijis. 
+
+| Ne naktī skatoties zvaigznēs, 
+| Ne ejot uz pirmo deju, 
+| Ne aprokot pirmo draugu, 
+| Ne pirmoreiz jūtoties liekam. 
+
+
+## * * * 
+
+| Piedod, saimniec, 
+| Mēs lamājām tevi,
+| Ka maizei tik bieza garoza. 
+
+| Mēs neatnesām tev malku.
+| Jo spēlējām domino. 
+
+| Mēs neredzējām, 
+| Kā skrēji 
+| Apkopt kaimiņu bērnus.
+| Jo mēs bijām neprecējušies. 
+
+| Mēs nepieskatījām krāsni, 
+| Kamēr tu sēdēji kūtī
+| Un gaidīji brūnaļas teliņu.
+| Jo mēs bijām tikai talcinieki. 
+
+| Mēs pārlaidām mīklu pār abru
+| Un priecājāmies, 
+| Kāda tev seja būs, 
+| Kad tu atnāksi. 
+| Jo mēs bijām svešinieki. 
+
+| Par kūpošo maizes mīkstumu
+| Mēs nedomājām. 
+| Mēs ēdām
+| Tik sveši, 
+| It kā tu nelūgta būtu
+| Atnākusi pie mums. 
+
+| It kā viss, kas mums apkārt, --- 
+| Nelūgts. 
+| It kā pie mums --- 
+| Četriem jaunekļiem --- 
+| Nelūgta, nelūgta
+| Būtu atnākusi 
+| Šī zeme. 
+
+
+## * * * 
+
+| Vispirms
+| Ļauj sasildīties un tad dod ēst. 
+
+| Tu nemāki
+| Rakstīt uz papīra, 
+| Pat ja tu dvēselē nemāki
+| Lasīt un rakstīt ---
+| Vispirms ļauj sasildīties
+| Un tad --- dod ēst. 
+
+| Pēc tam
+| Var aprunāties par gaidāmo laiku, 
+| Un vēl pēc tam 
+| Var arī atminēties. 
+
+| Un nedrīkst 
+| Šo kārtību sajaukt --- 
+| Kas dodams vispirms
+| Un pēc tam. 
+
+| Reiz iedeva bisi
+| Eskimosiem, 
+| Un nopļāva briežus
+| Bises, no vienas, 
+| Un mēris, no otras puses. 
+
+| Un tikai tad sūtīja
+| Maisus ar turku pupām. 
+
+| Un eskimosi tās lādēja
+| Bisē. 
+
+
+## * * * 
+
+| Es tevi iemīlēju
+| Vasarā, redzēdams baltu. 
+
+| Es domāju --- 
+| Tā gan ir dūšā: 
+| Nenomest ziemas glābjošo
+| Balto spalvu
+| Un nekļūt rudai. 
+
+| Un zināt, 
+| Ka tagad vai katrā mājā
+| Pa bisei. 
+
+| Un turpat vai katrs no medniekiem
+| Šauj nevis tad, kad drīkst, 
+| Bet --- kad var. 
+
+| Es tev piegāju klāt, 
+| Baltais brīnum, 
+| Un redzēju, 
+| Ka bises tu esi saskaitījusi. 
+
+| Tu teici, 
+| Ka paliksi balta, --- 
+| Un dzīvosi
+| Mirkli. 
+| Bet --- ne pēc bisēm, 
+| Bet --- tā, kā tu gribi. 
+
+| Un es tevi iemīlēju vēl vairāk. 
+
+
+## * * * 
+
+| Izstāsti man savu pasauli, vecenīt!
+| Lai tirgus pastāv!
+
+| Es par tavām zālēm un sēklām brīnos. 
+| Vai tu patiešām zini, 
+| Kā visas tās sauc?
+| Vai tikai ej gar pļavmalu
+| Kā lēna pasaka --- 
+| Un pļava pati tev visu stāsta?
+
+| Ko tu dari, 
+| Kad kupenas gāžas no jumtiem?
+
+| Un, kad tu izej pa vārtiem, 
+| Uz kuru pusi tu skaties?
+
+| Visur jau kaut ko redz pirmo. 
+
+| Mašīnu jūklis. 
+| Reklāmas uguns. 
+| Taksometru pietura. 
+| Tas ar pelēko, tas ar zaļgano mēteli. 
+
+| Bet ko tu redzi?
+
+| Jā, ja tu gribi --- 
+| Es esmu piedzēries. 
+
+| No tām pļavām, kas tev uz galda, 
+| No tā sniega, ko ved no pilsētas ārā, 
+| No tiem nosmulētajiem autobusiem, 
+| Kuri nāk nepārtraukti, 
+| No tā visa, ko avīzēs raksta. 
+
+| No tām sēklām, kas tev uz galda, 
+| Un no tā, kas no viņām izaugs. 
+| Un no visa, 
+| No kā kaut kas izaugs. 
+
+| Vecenīt, 
+| Velti tu sēdi, 
+| Savā mētelī ierāvusies, 
+| It kā tas viss vairs uz tevi neattiecas. 
+
+| Es pats redzēju, 
+| Kā tu baroji
+| Tur to pelēko kaķi,
+| Kas pieder visiem. 
+
+
+## Naktsmājas
+
+| Mums ir šķūnis ar salmiem, 
+| Mēs guļam un rukšķam
+| Par to visu, 
+| Kas mūs iztrencis
+| Šajās oktobra lietavās sildīties. 
+
+| Izrādās --- 
+| Nav nemaz jābūt
+| Pārlieku tukšam, 
+| Lai pasauli celtu pie acīm
+| Un liktu sev pildīties. 
+
+| Izrādās, 
+| Ka daudz ķīmijas saradies
+| Mūsējās jūtās, 
+| Mūsējā skatīšanā un mūsu ēdienā. 
+
+| Lai dzīvo ķīmija!
+| Lai ķīmiķiem labi būtu!
+| Bet lai dzīvo ar mugursomu, 
+| Ar kilometriem
+| Un zemi saaudzināta svētdiena!
+
+| Gadsimtam ir metālbalss
+| Un dzelžaina roka, 
+| Pārāk daudz jēdzienu: pakļaut, pieveikt, piespiest --- 
+| Un pārāk maz --- saudzēt. 
+
+| Bet ne velti pats gadsimts
+| Kliedz pēc māla un koka
+| Un pēc vienas dzeltenas
+| Bērzu ataudzes.
+
+| Mēs paši --- daļa no laika
+| Un to sevī nesam, 
+| Bet, kādi mēs nebūtu melšas un melši, 
+| Pienāk reiz tādas naktsmājas, 
+| Kurās mēs domājam, 
+| Nevis --- kas kļuvuši esam, 
+| Bet --- no kā esam cēlušies. 
+
+
+## * * * 
+
+| Es redzēju nošaušanu. 
+| Sapnī. 
+| Un pamodies
+| Lēnām kā koks
+| Augu cauri šīm šausmām. 
+
+| Par kādiem tik vējiem, 
+| Zvaigznēm
+| Un mākoņiem
+| Es sev stāstīju augdams!
+
+| Stāstīju
+| Ar tādu spītību, 
+| Ar kādu bērni skaita līdz simtam
+| Migdami. 
+
+| Bet man vajadzēja to skaitīt
+| Mostoties. 
+
+| Bet tikai, uz darbu ejot, 
+| Vēss, pelēks vējš, 
+| Spuldžu zvaigznes
+| Un kvartālu dzirkstošie mākoņi
+| Man palīdzēja. 
+
+| Tas nebija sapnis
+| Kaut kur uz pasaules šonakt
+| Nošāva vienu --- 
+| Tik bezgala, bezgala līdzīgu man, 
+| Ka es dzirdēju. 
+
+
+## * * *
+
+| Kuru miljono reizi
+| Es tevī esmu iemīlējies, pasaule? 
+| Dumjā, 
+| Mīļā
+| Un nolādētā. 
+
+| Atgriežas saule. 
+| Un asni kausē
+| Ap sevi visspilgtāko sniegu. 
+
+| Bērnus ved ārā
+| Rādīt saulei. 
+
+| Purvos uz ciņiem 
+| Lien sildīties čūskas. 
+
+| Tanki izlien uz tankodromiem. 
+
+| Jo atgriežas saule. 
+
+| Un miljono reizi, pasaule, 
+| Tu esi mana mīlestība. 
+
+| Es atdodu sevi
+| Un ņemu tavu
+| Dzīvības lūdzošo apspīdēto
+| Draudīgumu. 
+
+
+## Monologs
+
+| Ne vien negribas --- man riebjas mirt
+| Tikpat stipri, 
+| Cik riebjas uz cilvēkiem tēmēt. 
+| No dzīves un dzīvības puses
+| Man ticēts
+| Un uzticēts ir līdz ārprātam --- 
+| Manas vēnas 
+| Saknes turpina zemē
+| Neiznīdējamas
+| Kā grāvmalas kārklam un vārpatai. 
+
+| Cērtiet.
+| Es esmu dadzis birztalām
+| Un sprādzīte meiteņu matos, 
+| Un, tulkojot latviski veco
+| _Ad astra per aspera,_
+| Manī ir sastrīdējies
+| Vīna un gāzēta ūdens patoss. 
+
+| Un es skaidri zinu, 
+| Kurš no tiem ne vien spundi, 
+| Bet visu mucu man saspēra. 
+| Saspēra tas, kas bij īsts, 
+| Ar dzīvām kājām mīdīts
+| Un ar dzīvām rokām brūvēts, 
+| Reibstošs pēc velna, 
+| Kā es to apreibdams atzinu. 
+
+| Galaktiku
+| Saturēt kopā
+| Nevar ne ar kādām skrūvēm, 
+| Tapēc to remontmehāniķi, 
+| Kas lien pie manis kā uts, 
+| Es iekaustīju un padzinu. 
+
+| Es esmu laimīgs kā ķērpis uz akmens, 
+| Kā vēsai zivij gar sāniem
+| Ūdeņi vēsi. 
+| Un, mani pie sirds
+| Vai uz šautenes grauda ņemot,
+| Mehāniķi, es mīlēju jūs, 
+| Modri esiet, 
+| Es zinu to praksi --- 
+| No sākuma iztaisīt kropli
+| Un pēc tam remontēt. 
+
+
+## * * * 
+
+| Pie dabas vajaga griezties
+| Jo laiks ļerkšķ par daudz par dzelžiem
+| Un mēs pārāk lielīgi augstu
+| Esam pār sevi cēlušies. 
+
+| Tik augstu, ka paši vairs nevaram
+| Saredzēt savas kājas, 
+| Tik tālu, ka, uz zemes esot, 
+| Mēs īsti vairs neesam mājās. 
+
+| Tik daudz, ka bail vienam no otra
+| Un visiem kopā --- no rītdienas, 
+| Un katra puķe, mums smaržojot, 
+| Ne tik daudz smaržo, cik brīdina. 
+
+| Un glābjošo muļķību, cik tik lien, 
+| Mēs sevī un citos uzejam
+| Un paši no savas bezbiogrāfijas
+| Šķīstāmies Brīvdabas muzejā. 
+
+| Bet stirnēns zin, ko tam saka zars, 
+| Kad simts soļu attālāk notrīc, 
+| Jo viņa sakars ar visu, kas dzīvs, 
+| Kā dzīvība vārīgs un noturīgs. 
+
+| Mēs ceram uz melu hipnozi. 
+| Mēs ceram uz sienu biezumu. 
+| Bet nav jau zu zemes akmeņu
+| Tik daudz, cik uz zemes ir briesmu. 
+
+
+## * * * 
+
+| Uz bīstama ceļa stājies, 
+| No bailīgas kraujas vēlies, 
+| Tu nedomā tik daudz par briesmām, 
+| Bet vairāk, ko vēlies --- vēlies. 
+
+| Ir cilvēkā viena groža, 
+| Par ko vajag stingri rūpēt, 
+| Ja palaid, tad katrā krūmā
+| Kāds šaušalīgs briesmonis tupēs. 
+
+| Un uz tavu vārgo miesu
+| Kā kaķis uz baldrijāņiem
+| Trīs nagus. Un locīsies sviedri
+| Kā auksti zalkši gar sāniem. 
+
+| Tev stomīsies kāja. Tu lūgsies, 
+| Lai dievs tevi drīzāk pieņem,
+| Bet jābūt no sava mērķa
+| Kā bērnam no mates ieņemtam. 
+
+| Neviens tik briesmīgi nekāro
+| Pēc tavas brīnišķās gaļas. 
+| Bailes pie cilvēka ciemojas, 
+| Kad cilvēkam pārāk daudz vaļas. 
+
+| Ja tu kaut ko gribi, tad droši, 
+| Lai ceļš tev taisns, lai slīps ir, 
+| Tu būsi uz lauvas jāšus
+| Un kobra tev būs par šlipsi. 
+
+
+## * * * 
+
+| Es nevaru apklusināt prātu
+| Un nevaru pievaldīt mēli, 
+| Kad laikmets ar virsskaņas ātrumu
+| Laiž savu biogrāfiju dēlī. 
+
+| Ir atkal uzraksti "mīnēts"
+| Un bumbas ar haizivs smeceri, 
+| Ir atkal pie svētās Inerces
+| Kāds aizdedzis lūgšanu sveci. 
+
+| Ir raķešu tik daudz sakrāts,
+| Ka četras Zemes var sagāzt, 
+| Un tāpēc, biedri, šai sakarā
+| Mums vajaga tālāk dragāt. 
+
+| Laiks grumbās ar zaldātu pieri, 
+| Par ģenerāļiem tos darot, 
+| Un tik daudz ir pļāpāts par mieru, 
+| Ka nupat jau sākt var karot. 
+
+| Būs slava un vīrišķība, 
+| Un visādas citādas lustes, 
+| Uz apgruzdējušām čībām
+| Kāds mazulis varbūt kkustēs. 
+
+| Viņš nomirs, jo liesmā rudā
+| Jauns sprādziens ar zemi to sakausēs. 
+| Un zemeslode kļūs gluda
+| Kā sklerotiķa pliks pakausis. 
+
+| Mēs izvēlamies, kā degt, kā dzist. 
+| Mēs pakaram sevi vai nepakaram. 
+| Es labāk būšu beigts utopists
+| Nekā dzīvs palicis slepkava.
+
+
+## Divas odas skorpionam
+
+### I 
+
+| No sirds novēlās akmens, 
+| No lūpām rūgts pieneņu piens --- 
+| Pie visa vainīgs ir skorpions. 
+| Un tāpēc --- lai dzīvo skorpions!
+
+| Kas par brīnišķu dzīvnieku!
+| Man šķita, ka skaists ir cilvēks, 
+| Bet, kad mūs radiācija saplosīs, 
+| Viņš paliks vienīgais Apollons. 
+
+| Kad mūs kā ūdens pilienu
+| Uz kara pirts ceriem iztvaicēs
+| Un kūpēsim savā nespēkā --- 
+| Viņš paliks vienīgais Herkuless. 
+
+| Un vispār --- viņš spriedīs par visu:
+| Cik atomu šķelt ir prātīgi, 
+| Jo cilvēcei vēl nav prātiņa. 
+| Jo viņš paliks vienīgais spriedējs. 
+
+| Jo, izrādās, viņam nekaitīgas
+| Simts mūsu nāves porciju. 
+| Var nebūt ne krievu, ne latviešu, 
+| Bet dzīvos skorpionu nācija. 
+
+| Es skatos uz viņa fotogrāfiju --- 
+| No sirds novēlies akmens:
+| Es domāju, zeme kļūs nedzīva,
+| Bet, redziet, mūs izglābs skorpions. 
+
+
+### II 
+
+| Es meklēju mirušu skorpionu. 
+| Varbūt man atļaus to preparēt. 
+| Man jāredz, ka viņa smadzenēs
+| Nav iebūvēts mūsu neprāts. 
+
+| Un viņa mazajā galviņā
+| Ar kādām ir iepūsta plēšām
+| Tā viņa drausmīgā intuīcija
+| Un ģēnija paredzēšana, 
+
+| Ka cilvēki nokāps no koka
+| Un iztēsīs laivu no baļķa, 
+| Un vēlāk sāks būvēt mājas
+| No ādām, no zemes, no kaļķa. 
+
+| No ķieģeļiem un no betona. 
+| Un tad būs laiva bez airiem, 
+| Un tad sāksies kari un kariņi. 
+| Un katrā no tiem šaus vairāk. 
+
+| Un tad pienāks lielā diena
+| Ar indīgu gāzu smaržām, 
+| Kad smadzeņu rievas komandēs
+| Ar dibena rievu seržants. 
+
+| Kā skorpionam tai galviņā
+| Var cilvēces vēsturi salikt?
+| Viņš salika. Un šausmās redzēja, 
+| Ka vajaga dzīvam palikt. 
+
+| Un tagad viņam pie durvīm, 
+| Pie pasaules vienīgām durvīm
+| Nav jāstāda bruņota sardze. 
+
+| Lai dzīvo tās mazās galviņas,
+| Kas tomēr tik daudz var paredzēt!
+
+
+## Mēmais muzikants
+
+| Mūsu dzīvē viens muzikants mīt, 
+| Kurš uz izšautas čaulītes spēlē. 
+| Viņš ir izgājis cauri 
+| Simt ugunīm
+| Un tai simtajā zaudējis mēli. 
+
+| Tur, kur kādreiz bij pulveris sauss, 
+| Indīgs dzīvei kā pulveris kodei, --- 
+| Tagad dziesma. 
+| Tā dūc mums pie auss, 
+| Un šai dziesmai ir skaņa kā lodei. 
+
+| Tad, kad uzvaru salūti dimd, 
+| Dziesma pazūd starp orķestra paliem, 
+| Bet, kad svinības paiet un rimst, 
+| Tukšās čaulītēs mūzika paliek. 
+
+| Lai ir kritušais mierīgs un zin, 
+| Ka jauns asins pār zemi nav izšļākts. 
+| Ka vel čaulītes galā nav svins, 
+| Ka vēl ir viņa čaulīte tukša. 
+
+| Tā pa zemi šis muzikants iet, 
+| Un lai katrs nams viņam ir atvērts; 
+| Tiklīdz viņš savu muti vērs ciet, 
+| Simti šaujamo savējās atvērs. 
+
+| Mīļie cilvēki, noticiet man, 
+| Asins kvēlē un uguņu kvēlē 
+| Tas nav vējš, kas aiz loga jums skan, --- 
+| Tas ir viņš, kas uz čaulītes spēlē. 
+
+
+## * * * 
+
+| Cūka apēda zīli, 
+| Un cilvēks apēda cūku. 
+| Bet ozols bij spītīgs, 
+| Viņš zināja --- 
+| Cūku ir daudz
+| Un neēdis cilvēks ir briesmīgs --- 
+| Viņš ne tikai cūkas ēd
+| Un ozolus cērt. 
+
+| Vēdera dēļ 
+| Viņš uz pasaules
+| Vispār visvairāk ir paveicis. 
+
+| Un ozols taisīja zīles
+| Cūkām, 
+| Cilvēkiem
+| Un klusēja par visu pārējo. 
+
+| Taču vienunakt, 
+| Kad noguris nolikos gulēt
+| Uz ozola sakņu virvēm, 
+| Es dzirdēju čukstu:
+
+| --- Tagad ej. 
+| Viņš ir aizmidzis. 
+| Bet nav ēdis. 
+
+| Esi uzmanīgs, dēls!
+
+| Tiklīdz tu nonāksi zemē, 
+| Apsedzies ar manu lapu 
+| Un stipri domā par debesīm. 
+
+| Ātri domā. 
+| Rudens naktis ir garas, 
+| Bet, kad viņš tur modīsies, 
+| Viņš pasauks cūku. 
+
+| Tev vajag briesmīgi steigties. --- 
+
+| Un blakus man nopakšķēja. 
+| Un tajā brīdī 
+| Nezin kāpēc 
+| Es sāku stipri domāt par debesīm. 
+
+
+## Nakts reiss
+
+| Viņš nedzird, 
+| Kā ap kravas kasti plīkšķ brezents
+| Un atbalsis pliķē gravas. 
+
+| Viņš ir ieķēries stūrē kā ērce
+| Un šoseja priekšā 
+| Kā dzejniekam lapa, 
+| Kā iemīlējušamies dzīve, 
+| Kā pūcei tīrums. 
+
+| Kā visiem nakstīgiem
+| Kaut kas ir priekšā:
+| Kam --- rinda, 
+| Kam --- skūpsti, 
+| Kam --- pele. 
+
+| Un sekunžu pāris līdz snaudam. 
+| Un tikpat tālu līdz nāvei. 
+
+| Šofera snauds. 
+| Un --- kaps. 
+| Dzejnieka snauds. 
+| Un --- kaps. 
+| Iemīlējušos snauds. 
+| Un --- kaps. 
+| Pūces snauds --- 
+| Kaps. 
+
+| Katastrofa. 
+| Dvēseles trulums
+| Sašķaidīts sapnis. 
+| Bads. 
+
+| Cik visiem naksnīgiem tas ir tuvu, 
+| Un cik dažādas asinis
+| Lāso no viņiem, 
+| Ja viņi --- nakts putni --- 
+| Aizmirst, ka viņi ir nakts putni!
+
+| Un dara, 
+| Ko visi pārējie dara pa nakti, ---
+| Aizmieg. 
+
+
+## * * * 
+
+| Es negribu 
+| Būt tēsts no bērza pagales. 
+
+| No dzīvas miesas
+| Dzīvs es esmu plēsts. 
+
+| Kā muca pārvelties pār tiltu
+| Negribu. 
+| Kā paša tukšums apdullina dzirdi, 
+| Nezinu. 
+| Ka dzīvot var ar aizslēģotu sirdi, 
+| Neticu. 
+
+| Kā uguns --- malku, 
+| Tā ēst maizi
+| Negribu. 
+
+| Jo tilts ir celts, 
+| Lai es, vairs nebūdams, 
+| Uz zemes būtu atstājis
+| Kaut vienu tiltu. 
+
+| Ir maize iesēta, 
+| Lai arī reiz aiz manis
+| Paliek lauks. 
+| Ar manu elpu
+| Plaukstošajās vārpās. 
+
+| Es dzīvoju
+| Ne mācīdams, bet --- 
+| Mācīdamies. 
+
+| No visām ābecēm, 
+| Kur ir kaut vienīgs burts. 
+
+| Es negribu 
+| Būt tēsts no bērza pagales, 
+| Jo --- ej nu zini, 
+| Ko tas tēsējs iztēš. 
+
+
+## * * * 
+
+| Zvans sev sita pie krūtīm, 
+| Ka ir redzējis dievu. 
+
+| Zvans bija saelpojies
+| Pārāk daudz Gaujas ievu. 
+| Elpot, tad dziļi elpot --- 
+| Tāda mums visiem paraša, 
+| Taču zilskābes inde
+| Ir katras ievas smaržā. 
+| Tāpēc no ievām sāp galva
+| Un knišļi no ievām mirst, 
+| Un tomēr no jauna un jauna
+| Mēs ievās ar seju nirstam. 
+| Un ceļas pierautās plaušas. 
+| Kā šļirces adata tieva
+| Dur zilskābe mūs caurcauri, 
+| Un tikai aiz indes nāk ieva. 
+| Cērt lūpu pomādei cauri
+| Ar saldumu salaulāts rūgtums, 
+| Es nezinu, kas būtu ieva, 
+| Ja tai šī rūgtuma trūktu. 
+
+| Es nezinu. 
+| Tikai tornī
+| Vēl ilgi, ilgi un grūti
+| Par to, ka redzējis dievu
+| Zvans sita un sita pie krūtīm. 
+
+
+## Čaks. I 
+
+| Nekāpiet virsū --- 
+| Tā sirds uz trotuāra ir Čaka. 
+
+| Uz visiem trotuāriem
+| No Ziepniekkalna līdz Sarkandaugavai
+| Un, kad apbūvēs Ķengaragu, 
+| Neslampājiet ---
+| Uz trotuāra būs sirds. 
+
+| Daudzi pa to jau ir slampājuši. 
+| Tie, kam vienalga, kur slampāt --- 
+| Pa grīdas tepiķi, 
+| Pa tribīnes pakāpieniem, 
+| Pa cilvēka jūtām
+| Un atvērtām brūcēm. 
+
+| Tagad tie puķītes laista
+| Un klusām slampā pie sevis. 
+
+| Tālāk par Čaku tie netiks, 
+| Un mazāk par Čaku tie atstās. 
+
+| Jo savu lielo un vārīgo sirdi
+| Uz pasaules trotuāriem
+| Visu
+| Ir atstājis dzejnieks, 
+| Kam piere kā planetārijs. 
+
+| Kad tu ar savējo ej
+| Un kad tavējā klusē,
+| Kad Rīga uz pusēm
+| Savu akmeņu smaidus un drūmumu dala, 
+| Tu apstājies pēkšņi
+| Pirmā puteņa švīkotā ielā:
+| --- Čaks. --- 
+
+| Virmo deklāmu raganisks ņirbums: 
+| --- Čaks. --- 
+
+| Verdošs asfalts kutina nāsi:
+| --- Čaks. ---
+
+| Meitene skatās uz tevi, 
+| Un acis tai mēmi kliedz, 
+| Ka beidzot tas esi tu:
+| --- Čaks. --- 
+
+| Tevī kāpj mīļums
+| Un plēš tevi puši 
+| Kā dzīvsudrabs termometru: 
+| --- Čaks. --- 
+
+| Un miglā asaro logs.
+| Un nav ko patiešām liegties, 
+| Ka mīlējis esi. 
+
+| Ne jau velti šai pilsētai
+| Trotuāri ir karsti, 
+| Uz katra no tiem --- 
+| Sirds. 
+
+
+## Čaks. II
+
+| Ko viņš gribēja ar to sacīt?
+
+| Viņš arī pateica. 
+| Viņš mira un neatstāja pēc sevis
+| Vēsā dvēseles betonā
+| Ar bezjūtu roku 
+| Iekaltus baušļus,
+| Viņš atstāja
+| Izbrīna pilnas acis,
+| Romantiķus
+| Un kaušļus,
+| Pats būdams reizēm tik trausls
+| Kā stikla mats, 
+| Pats sevī briezdams un šaubīdamies
+| Kā milzīga koka pumpurs. 
+
+| Bet, kad Vecpilsētā 
+| Ir čakisks vakars, 
+| Kuru ne izteikt var, 
+| Ne izdziedāt un ne izskūpstīt, 
+
+| Cilvēku domas
+| Kā vindas smeļ dzejas akā, 
+| Smeļ kādu gaišu un smeldzošu pasauli
+| Visu. 
+
+| Ar veciem gadiem
+| Tur samaisīts kopā 
+| Forštates fabrikas gaudiens
+| Un muskuļu trulā smeldze,
+| Un puisis kā nodzīts kumeļš, 
+| Un meitene --- orhideja, 
+| Un mēness tiem pāri --- 
+| Kristāla lustra, 
+| Un līdz pašam rītam
+| Tā mīlējis nav neviens karalis. 
+
+| Un plīstoša stikla šķindoņa...
+| Visādi gorodovoji
+| Joza pa dzejnieka dvēseles lecektīm, 
+| Paši ķerdami 
+| Savus murgus. 
+| Un plīsa lecekšu stikli
+| Kā ledus pār agrām peļķēm. 
+
+| Bet tajās lecektīs Čaks
+| Audzēja cilvēkiem
+| Retas puķes
+| Ar neatkārtojamu smaržu. 
+
+| Jūtiet, 
+| Cauri gadiem un kariem, un nāvēm
+| Šī smalkā un dīvainā smarža
+| Dzīvo. 
+
+| Ko viņš gribēja ar to sacīt?
+
+| Viņš gribēja sacīt, 
+| Ka vajag būt blēžiem, 
+| Vajag izlikties tā kā viņš, 
+| Ka esi nomiris. 
+
+| Bet --- palikt. 
+| Kā jasmīnu smaržai 
+| Iekļūt cilvēku dvēselē
+| Pa kādu spraugu
+| Un mūžīgi palikt. 
+
+
+## Talismans
+
+| Pie arheologiem es redzēju
+| Tavu brāli
+| Ar tādām pat acīm
+| Pa visu pieri, 
+| Ar tādu pat varavīkšņainu glazūru
+| Pa visu ģīmi. 
+
+| No tāda pat Ukrainas māla. 
+
+| Viņš sargāja zemi no krusām
+| Bērnus no čūskām, 
+| Sievas no neauglības
+| Un pilsētas vārtus no tatāriem. 
+
+| Es tevi nelūgšu
+| Ne par zemi, ne bērniem, ne sievu. 
+| Un, lai cik dīvaini neizklausītos, 
+| Arī par to, 
+| Lai tatāri nenāk. 
+
+| Ja gribi, tad sargā. 
+
+| Es tevi lūgšu --- 
+| Visās briesmās
+| Sargi mani no klaja lauka. 
+
+| Pie arheologiem es redzēju
+| Blakus ar tavu brāli
+| Mugurkaulus
+| Ar tatāru bultām tajos. 
+| Gadsimti glazūras maina, 
+| Bet likumi paliek. 
+
+| Mīļais, smaidīgais sargātāj, 
+| Dod pašā baigākā stundā
+| Vienu klinti, 
+| Vienu koku, 
+| Vai vienu stenderi, 
+| Kur atspiest muguru. 
+
+| Es esmu tipisks cilvēks --- 
+| Es esmu bezspēcīgs
+| Gan pret vēju, kas palīdz, 
+| Gan pret lodi, kas nobeidz
+| No mugurpuses. 
+
+# The End
+
+
+\( c \) 1968 Ojārs Vācietis; Ояр Вацетис; 沃齐的斯·奧雅
+

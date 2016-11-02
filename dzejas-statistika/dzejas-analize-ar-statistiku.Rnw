@@ -1,0 +1,1674 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[a4paper]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{wasysym}
+\usepackage{longtable}
+\usepackage{newtxtext}
+
+
+% \usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+% \usepackage{polyglossia}
+% \setmainlanguage{russian} 
+% \setotherlanguage{english}
+
+
+\bibliographystyle{alpha}
+
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1 uzdevums:}
+\noindent}
+{}
+
+
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage{url}
+\usepackage[unicode=true,pdfusetitle,
+bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+{hyperref}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand{\figurename}{Attēls}
+\renewcommand{\tablename}{Tabula}
+\renewcommand{\refname}{Atsauces}
+\setlength{\parindent}{0cm}
+
+
+\hypersetup{
+pdfstartview={XYZ null null 1}}
+\begin{document}
+<<setup22, include=FALSE, warning=FALSE, cache=FALSE>>=
+library(knitr)
+# set global chunk options
+opts_chunk$set(fig.path='figure/minimal-', fig.align='center', fig.show='hold')
+options(formatR.arrow=TRUE,width=90)
+@
+
+
+\title{Dzejas analīze ar statistiku}
+
+\author{}
+\date{}
+
+\maketitle
+
+\begin{abstract}
+Šajā dokumentā salīdzinātas O.Vācieša un Raiņa dzejoļu
+statistiskās īpašības, kuras viegli izmērīt ar datoru. 
+Analizēti divi dzejoļu krājumi --- O.Vācieša {\em Dzegužlaiks} 
+(ap 100 tūkstoši rakst\-zīmju) un 
+Raiņa {\em Tālas noskaņas zilā vakarā} (ap 60 tūkstoši rakst\-zīmju). 
+Turpmāk apzīmēsim tos attiecīgi ar {\em Dz-L} un {\em TNZV}. 
+
+Abos krājumos skaitīts burtu biežums, meklēti dzejoļi vai to fragmenti, 
+kuros ir bieži sastopams kāds burts/skaņa, salīdzināts vārdformu biežums 
+kā arī veikts salīdzinājums krāsas izsakošiem vārdiem - to relatīvajam 
+biežumam un morfolo\v{g}iskajām īpašībām. 
+\end{abstract}
+
+<<external-code, cache=FALSE, warning=FALSE, echo=FALSE, results='hide', message=FALSE>>=
+#setwd("C:/Users/kapsitis/workspace/ddgatve-problems/NMSData/data")
+require(plyr)
+require(ggplot2)
+require(grid)
+require(xtable)
+require(RColorBrewer)
+require(stringr)
+source("dzejas-analize-utilities.R")
+
+wordsDzL <- getTheWords("dzeguzlaiks.rmd")
+wordsTNZV <- getTheWords("tnzv.rmd")
+
+
+@
+
+
+\section{Ievads}
+
+% \Circle \RIGHTcircle \CIRCLE \LEFTcircle  - are symbols.
+
+Ludis Bērziņš grāmatā {\em Ievads latviešu tautas dzejā} \cite{LBerzins1940} aprakstījis  
+latviešu tautasdziesmu dzejas formas īpatnības un to stilistiku. 
+Izmantojot lielu tautasdziesmu korpusu, viņš no\-tei\-cis tur sastopamos 
+pantmērus, saskaitījis dažādu krāsu nosaukumus, 
+skaitļu vārdus utml., vienlaikus skaidrojot māk\-sli\-nie\-cis\-kos izteiksmes līdzekļus
+saistībā ar šiem vārdiem.
+
+Mums nav zināmas L.Bērziņa datu vākšanas procedūras, bet 
+1930-to gadu statistikas pētījumos parasti 
+skaitīja piemērus, velkot svītriņas vai izrakstot paraugu koordinātes uz papīra. 
+Bija pazīstami arī mehāniski risinājumi
+(sal. \cite{EdgeNotchedCards}): Kartotēkas kartītes salika
+precīzā kaudzītē un izdūra tām cauri metāla stienīti.
+Kartītes, kurām attiecīgajā pozīcijā izgriezts robiņš, izkrīt ārā.
+
+Agrāk pētniecība prasīja ievērojamu pacietību un darba ētiku, 
+savukārt datoru izplatība to padara pieejamu daudz plašākam ļaužu lokam.
+Var izmantot valodniekiem īpaši paredzētas informatīvas sistēmas, piemēram, 
+konkordances un datorizētus literatūras korpusus.  
+Vai arī universālus bezmaksas rīkus, piemēram, 
+R un RStudio. RStudio ir ērta vide, kurā \v{g}enerēt 
+statistiskus pārskatus programmēšanas valodā R.
+
+Dž.Ridbergs-Kokss \cite{RydbergCox2014} 
+uzskaita vairākas literatūras teorijas grāmatas, kurās izmanto statistikas metodes. 
+Interese par datoru izmantošanu literatūras pētniecībā bijusi jau 1987.\ gadā, kad 
+Dž.F.Barouzs nāca klajā ar Dž.Ostinas romānu matemātisku analīzi \cite{Burrows1987}. 
+Šajā grāmatā salīdzināta Dž.Ostinas varoņu lie\-to\-tā valoda - prievārdu, 
+saikļu, vietniekvārdu un artikulu lietošanas biežums, lai 
+pētītu romānu (piemēram {\em Northanger Abbey}) varoņu raksturu attīstību romāna gaitā.
+Ar valodas kvantitatīvo analīzi parasti nodarbojas universitātēs, tomēr
+daudzi jautājumi pieejami arī skolēniem.
+
+Šī raksta mērķis nav nodarboties ar mūsdienu datorlingvistiku, 
+kas ir strauji augoša un tehniski sarež\v{g}īta nozare, 
+ko Latvijā praktizē LU Matemātikas un 
+informātikas institūta Mākslīgā intelekta laboratorijā.
+Arī literatūras teorijā atsaucamies tikai uz vienkāršām lietām.
+Esam centušies apskatīt vienkāršas parādības
+dzejā: burtu un vārdformu biežumu, aliterāciju meklēšanu, skaitot 
+dzejoļu burtus, vienkāršas konkordances. 
+Ievaddatus šim rakstam sagatavoja datorprogramma; vienīgi 
+krāsu nosaukumu morfolo\v{g}iskā analīze prasīja roku darbu.
+
+O.Vācieša un Raiņa izvēle šim pētījumam bija sagadīšanās. 
+Neesam pamatojuši, kādēļ vajadzētu salīdzināt tieši 
+šos autorus vai dzejoļu krājumus.
+Raiņa svarīgākie darbi ir digitalizēti - sk. 
+\url{http://www.korpuss.lv/klasika/Senie/Rainis/rainissat.htm}. 
+Tādēļ eksperimenti ar Raini neprasa ievadīt datorā pētāmo tekstu. 
+Savukārt O.Vācieša dzejas statistiska analīze palīdz
+atrast dzejoļus, kuri ir formas ziņā neparasti, rada papildu 
+iemeslu tos lasīt, mācīties un mē\v{g}ināt saprast. 
+O.Vācieša dzejas krājums {\em Dz-L} no kopotu rakstu 2.sējuma
+ievadīts datoram viegli lasāmajā 
+{\em Markdown} \cite{Markdown} formātā. Pēc tam datorprogrammiņa
+(R scenārijs jeb skripts) nolasa abu krājumu tekstus, saskaita tur
+burtus, vārdformas vai ko citu -- un iegūtos rezultātus 
+apkopo tabulās vai attēlo diagrammās.
+
+\vspace{10px}
+{\bf Kādas lietas tika pētītas:}
+
+\begin{itemize}
+\item {\bf Burtu relatīvais biežums krājumos kopumā.} 
+Tas ļauj mums iegūt pirmo 
+priekšstatu par skaņu atšķirībām. Diemžēl, neesam atsevišķi 
+saskaitījuši līdzskani "dz" (to ieskaitām kā divus burtus - "d" un "z"). 
+Nešķirojam arī šauros un platos "e" un "ē", 
+kā arī īso vai garo patskani "o" vai divskani "uo". 
+\item {\bf Pēdējo burtu relatīvais biežums.} 
+Atsevišķi skaitām tos burtus, kas ir vārda vidū un burtus, kuri ir vārda pašās beigās. 
+Vārdu pēdējie burti mēdz norādīt uz lietvārdu, īpašības vārdu u.c.\ dzimti, skaitli un locījumu. 
+Arī atskaņu tipi atšķiras atkarībā no tā, vai dzejas rinda beidzas ar atvērtu vai slēgtu zilbi
+(t.i.\ beidzas ar patskani/divskani vai arī ar līdzskani). 
+\item {\bf Burtu relatīvais biežums atsevišķos dzejoļos.} 
+Burtam ``S'' izveidojām histogrammas, kas attēlo tā 
+koncentrācijas O.Vācieša un Raiņa dzejoļos. 
+Noskaidrojot dzejoļus ar neparasti augstu attiecīgās skaņas koncentrāciju, 
+varam meklēt iespējamās {\em aliterācijas} vai {\em asonanses}. 
+Vispusīga aliterāciju meklēšana prasītu dziļāku analīzi; jo līdzīgu skaņu 
+sablīvējums var neizpausties visa dzejoļa garumā.
+\item {\bf Garākie kopīgie fragmenti.}
+Šajā sadaļā algoritmiski meklējam garākās kopīgās vārdu virknītes 
+abu autoru darbos. Tas ir naivs mē\v{g}inājums atrast {\em reminiscences}. 
+\item {\bf Biežāk sastopamās vārdformas katram no autoriem.} 
+Viens dzejoļu krājums ir nepietiekams, lai saprastu 
+autora leksiku; bet rodas vismaz priekšstats par lietotajiem saikļiem, prievārdiem, vietniekvārdiem
+kā arīpopulārākajiem pārstāvjiem no citām vārdšķirām.
+\item {\bf Krāsu nosaukumi.}
+Katram no autoriem apkopoti krāsu nosaukumi kopā ar dzejas rindām, kurās tie parādās; 
+apkopota statistika par dažādu krāsu locījumu formām. 
+\end{itemize}
+
+\vspace{10px}
+{\bf Ko vajadzētu darīt savādāk:} 
+
+\begin{itemize}
+\item Skaitīt skaņas nevis burtus. Skaņas "dz" nesaskaitīšana 
+skaidrojama ar slinkumu, 
+savukārt šauros un platos "e", "ē" rakstībā neatšķir. To skaitīšanai 
+jālieto algoritms, kurš tos atšķir pēc kaut kādiem pozicionāliem likumiem (un 
+vajadzīgs arī dzīvs cilvēks, kurš tiktu galā ar sarež\v{g}ītākiem gadījumiem). 
+Tāpat arī - atsevišķi no patskaņiem būtu 
+jāskaita divskaņi, jo tie mēdz veidot paši savas asonanses.
+\item Skaitot vārdformas būtu interesanti ņemt vērā lokāmo vārdu morfolo\v{g}iju,
+piemēram, skaitot kopā viena vārda vairākus locījumus. 
+\item Aliterācijas un asonanses būtu jāmeklē nevis dzejoļu līmenī, bet aplūkojot dzejas 
+rindu grupas.
+\item Pagaidām nav priekšstata par to, cik "Dz-L" un "TNZV" ir tipiski O.Vācieša un 
+Raiņa dzejoļu krājumi. Lai secinājumi būtu par autoriem (nevis tikai konkrētajiem krājumiem)
+vajadzētu plašākus ievaddatus. Piemēram, aplūkot kādus krājumus, ko attiecīgie autori
+sarakstījuši vēlāk. 
+\end{itemize}
+
+
+\section{Burtu biežums}
+
+Katrā tekstā var saskaitīt, cik tajā ir dažāda veida burtu. 
+Lielos un mazos burtus skaitām kopā. 
+Ņemot vērā to, ka garākā tekstā visa veida burtu ir vairāk, mūs interesēs nevis burta
+{\em absolūtais biežums}, bet gan tā {\em relatīvais biežums} -- 
+t.i. cik reizes attiecīgais
+burts caurmērā parādās starp katriem 100 burtiem teksta. Absolūto biežumu izsaka 
+ar veselu skaitli (cik reizes burts parādās), savukārt relatīvo biežumu mēra procentos.
+
+Latviešu valodai (tāpat kā jebkurai citai) raksturīgi noteikti burtu relatīvie biežumi, kas 
+ir visai stabili, neatkarīgi no teksta temata un autora. 
+Teksta tematu un autora īpatnības parasti atklāj nevis burtu biežumi, bet gan 
+leksika -- t.i. vārdu un vārdu savienojumu biežumi. 
+Tomēr dzejā pat skaņu biežums mēdz 
+atšķirties no citiem valodas funkcionālajiem stiliem. 
+
+{\em Dz-L} satur izķēmotas citvalodu frāzes
+{\em ``nach Westen drang''}, {\em ``nach Süden drang''}, tādēļ 
+O.Vācieša dzejoļos ir pa pa vienam burtam ``ü'' un ``w''. Tos ignorējam. 
+Tāpat arī neskaitām tukšumus un pieturzīmes. Paturam tikai 33 latviešu alfabēta burtus.
+Pēc tam līdzīgi saskaitām burtus no {\em TNZV}. Tajā ir 
+teksta gabaliņš latīniski {\em ``Fiat justitia ruat mundus''}
+(atsauce uz pazīstamu izteicienu {\em ``Fiat justitia ruat caelum''} -- 
+``dariet taisnīgumu [kaut] sabrūk debesis''), 
+bet tas pierakstīts ar latviešu alfabēta burtiem. 
+Krājuma nodaļu nosaukumus, 
+dzejoļu virsrakstus, apakšvirsrakstus, veltījumus un epigrāfus burtu 
+skaitīšanā (un arī visur citur šajā rakstā) neņemam vērā.
+
+Burtus vārdu galotnēs ir pamats aplūkot atsevišķi no citiem burtiem, jo 
+to parādīšanās biežumu iespaido ne tikdaudz autora leksika, cik viņa dzejā izplatītākās
+gramatiskās formas. Tā kā mums nav programmatūras, kas ļautu 
+nodalīt vārdu galotnes, tad skaitīsim atsevišķi katra vārda pēdējo burtu. 
+Diemžēl, šādi nebūsim uzskaitījuši priekšpēdējos u.c.\ burtus, kas arī 
+varbūt ietilpst galotnēs, būsim arī nevajadzīgi pieskaitījuši pēdējos burtus 
+nelokāmajām vārdšķirām. Bet šādi vismaz var uzzināt pirmo tuvinājumu par dažiem 
+populāriem burtiem (teiksim, ``a'', ``i'' un ``s''): cik bieži tie ir vārda celmā 
+un cik bieži -- galotnē. 
+
+<<burtini, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4, fig.cap="Burtu  bie\u017Eums Dz-L (burti v\u0101rda beig\u0101s apz\u012Bm\u0113ti zili)", dev='CairoPDF'>>=
+ltrDzlLtr <- as.character(0)
+ltrDzlLast <- as.character(0)
+
+for (ww in wordsDzL) {
+  vv <- strsplit(ww,"")[[1]]
+  if (length(vv) > 1) {
+    ltrDzlLtr <- c(ltrDzlLtr,vv[1:(length(vv)-1)])
+    ltrDzlLast <- c(ltrDzlLast,rep("N",(length(vv)-1)))
+  }
+  ltrDzlLtr <- c(ltrDzlLtr,vv[length(vv)])
+  ltrDzlLast <- c(ltrDzlLast,"P")
+}
+
+ltrDzl <- data.frame(ltr=ltrDzlLtr, last=ltrDzlLast)
+ltrDzl <- ltrDzl[!(ltrDzl$ltr %in% c("0","'","ü","w")),]
+ltrDzl$ltr <- factor(ltrDzl$ltr)
+
+tempTable <- table(ltrDzl$ltr)
+tempFrame <- data.frame(keys = names(tempTable), vals = as.vector(tempTable))
+tempFrame <- tempFrame[ order(-tempFrame[,2]), ]
+
+LL <- sum(tempFrame$vals)
+
+ltrDzl$ltr <- factor(ltrDzl$ltr, levels = tempFrame$keys)
+tempFrame <- mutate(tempFrame, pperc = sprintf("%1.2f%%", 100*vals/LL))
+
+## table(ltrDzl$last[ltrDzl$ltr == 's'])
+
+theLabels <- toupper(tempFrame$keys)
+
+p <- ggplot() +
+  geom_bar(data=ltrDzl, aes(x = ltr, fill=last)) +
+     theme(text = element_text(size=10),
+        plot.title = element_text(size=12),
+        axis.ticks=element_blank(),
+        axis.title.x=element_blank(),
+        axis.title.y=element_text(angle=90, margin = margin(1,3,1,1)),
+        panel.background=element_blank(),
+        panel.grid.minor.y = element_line(colour = "black", linetype = "dotted", size=0.2),
+        panel.grid.major.y = element_line(colour = "black", linetype = "solid", size=0.2),
+        plot.background=element_blank(), 
+        plot.margin = unit(c(1.0,0.4,0,0.4), "cm")
+  ) +
+  geom_text(data=tempFrame, aes(x = keys, y=vals, label=pperc),
+            position=position_dodge(width=0.9),
+            color="#4B0082",
+            size=3, angle = 90, hjust = -0.3, fontface="bold") +
+  scale_x_discrete(labels=theLabels)
+
+gt <- ggplot_gtable(ggplot_build(p))
+gt$layout$clip[gt$layout$name == "panel"] <- "off"
+grid.draw(gt)
+
+@
+
+
+<<burtiniTNZV, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4, fig.cap="Burtu  bie\u017Eums TNZV", dev='CairoPDF'>>=
+
+ltrTNZVLtr <- as.character(0)
+ltrTNZVLast <- as.character(0)
+
+for (ww in wordsTNZV) {
+  vv <- strsplit(ww,"")[[1]]
+  if (length(vv) > 1) {
+    ltrTNZVLtr <- c(ltrTNZVLtr,vv[1:(length(vv)-1)])
+    ltrTNZVLast <- c(ltrTNZVLast,rep("N",(length(vv)-1)))
+  }
+  ltrTNZVLtr <- c(ltrTNZVLtr,vv[length(vv)])
+  ltrTNZVLast <- c(ltrTNZVLast,"P")
+}
+
+ltrTNZV <- data.frame(ltr=ltrTNZVLtr, last=ltrTNZVLast)
+ltrTNZV <- ltrTNZV[!(ltrTNZV$ltr %in% c("0","'","ü","w")),]
+ltrTNZV$ltr <- factor(ltrTNZV$ltr)
+
+tempTable <- table(ltrTNZV$ltr)
+tempFrame <- data.frame(keys = names(tempTable), vals = as.vector(tempTable))
+tempFrame <- tempFrame[ order(-tempFrame[,2]), ]
+
+LL <- sum(tempFrame$vals)
+
+
+ltrTNZV$ltr <- factor(ltrTNZV$ltr, levels = tempFrame$keys)
+tempFrame <- mutate(tempFrame, pperc = sprintf("%1.2f%%", 100*vals/LL))
+
+
+## table(ltrTNZV$last[ltrTNZV$ltr == 's'])
+
+theLabels <- toupper(tempFrame$keys)
+
+p <- ggplot() +
+  geom_bar(data=ltrTNZV, aes(x = ltr, fill=last)) +
+     theme(text = element_text(size=10),
+        plot.title = element_text(size=12),
+        axis.ticks=element_blank(),
+        axis.title.x=element_blank(),
+        axis.title.y=element_text(angle=90, margin = margin(1,3,1,1)),
+        panel.background=element_blank(),
+        panel.grid.minor.y = element_line(colour = "black", linetype = "dotted", size=0.2),
+        panel.grid.major.y = element_line(colour = "black", linetype = "solid", size=0.2),
+        plot.background=element_blank(),
+        plot.margin = unit(c(1.0,0.4,0,0.4), "cm")
+  ) +
+  geom_text(data=tempFrame, aes(x = keys, y=vals, label=pperc),
+            position=position_dodge(width=0.9),
+            color="#4B0082",
+            size=3, angle = 90, hjust = -0.3, fontface="bold") +
+
+  scale_x_discrete(labels=theLabels)
+
+gt <- ggplot_gtable(ggplot_build(p))
+gt$layout$clip[gt$layout$name == "panel"] <- "off"
+grid.draw(gt)
+
+@
+
+
+
+\vspace{5ex}
+{\bf Secinājumi:}
+\begin{itemize}
+\item O.Vācietim un Rainim atšķiras pat pirmais biežāk lietotais burts. 
+O.Vācietim visizplatītākais burts ir ``A'', 
+savukārt Rainim -- burts ``S''. Sk. Attēlus \ref{fig:burtini} un 
+\ref{fig:burtiniTNZV}. 
+Ņemot vērā analizēto teksta paraugu ievērojamo garumu (desmittūkstoši burtu), 
+ir pamats uzskatīt, ka šī atšķirība raksturo abu autoru dzeju kopumā. 
+Atšķirība ``S'' burta biežumos ir nepilni 2\% ({\em Dz-L} to ir 8.75\%, 
+bet {\em TNZV} to ir 10.71\%) var nešķist liela, bet tā nozīmē, ka 
+vidēji katrās 4 dzejas rindās no {\em TNZV} ir par vienu ``S'' burtu vairāk
+nekā līdzīga garuma 4 dzejas rindās no {\em Dz-L}.
+\item O.Vācieša dzejā sastopamo burtu biežums daudz precīzāk atspoguļo 
+burtu biežumu mūsdienu zinātniski tehniskajā literatūrā. 
+E.Riekstiņš un A.Andžāns \cite{Riekstins1984} 
+publiskoja šādu 
+Tabulu \ref{tab:letterfreq}, kas
+iegūta, analizējot ap 70000 rakstzīmju no zinātniskas literatūras latviski. 
+\begingroup \normalsize
+\begin{longtable}{|lr|lr|lr|lr|} \hline
+A & 11.1\% & K & 4.1\% & J & 2.1\% & Ļ & 0.2\% \\ \hline
+I & 9.3\%  & M & 4.1\% & Z & 2.0\% & F & 0.2\% \\ \hline
+S & 8.3\%  & O & 4.0\% & B & 1.6\% & Ž & 0.2\% \\ \hline
+T & 6.9\%  & P & 2.9\% & C & 1.4\% & Ķ & 0.1\% \\ \hline
+E & 6.4\%  & D & 2.7\% & G & 1.3\% & H & 0.1\% \\ \hline
+R & 5.7\%  & Ī & 2.3\% & Š & 1.1\% & Č & 0.02\% \\ \hline
+U & 5.0\%  & L & 2.3\% & Ģ & 0.4\% &  &   \\ \hline
+N & 4.9\%  & V & 2.2\% & Ū & 0.4\% &  &   \\ \hline
+Ā & 4.3\%  & Ē & 2.1\% & Ņ & 0.3\% &  &   \\ \hline
+\caption{Burtu biežumi zinātniski tehniskajā literatūrā (no \ref{tab:letterfreq})} 
+\label{tab:letterfreq}
+\end{longtable}
+\endgroup
+Grāmatā \ref{tab:letterfreq} burtu biežumi 
+iegūti, analizējot samērā īsu (un, iespējams, nereprezentatīvu) teksta gabalu. 
+Būtu jāsaskaita burtu biežumi kādā mūsdienu 
+latviešu tekstu korpusā un arī jānosaka tipiskas burtu biežumu 
+novirzes atkarībā no autora un žanra. Tikai tad varēsim 
+uzzināt, vai {\em TNZV} sastopamie burtu biežumi ir kaut kas
+neparasts.
+\item TNZV vispār neparādās burts ``H'', savukārt nedaudz garākajā 
+Dz-L burts ``H'' ietilpst veselas 35 reizes (vārdformas: ``Minhenes'', ``čehu'', 
+``Heil!'', ``hospitāļa'', ``himnu'', ``cehu'', ``Bēthovens'', 
+``haubices'', ``horizontiem'', ``saharīnu'', ``Donkihota'', 
+``cehos'', ''he'', ``haosus'', ``horizontiem'', ``arhitektiem'', 
+``horizonts'', ``Hitlers'', ``tuhačevskiem'', ``remontmehāniķi'', 
+``mehāniķi'', ``hipnozi'', ``haizivs'', ``Herkuless'', ``orhideja'', 
+``arheologiem''). Tas lieku reizi apliecina, ka O.Vācietis
+dzejā ienesis daudz jaunas ``nepoētiskas'' leksikas.
+\item Kā jau minējām, Raiņa TNZV ir paaugstināts burta ``S'' 
+īpatsvars (ne vien, salīdzinot ar O.Vācieša dzeju, 
+bet arī, ņemot vērā burta ``S'' izplatību latviešu valodas tekstos 
+kopumā). Tam iespējami divi izskaidrojumi: vai nu Rainis bieži lieto vārdus, kuru 
+celmā ir burts ``S'', vai arī viņam patīk gramatiskas formas, 
+kur lietvārdu, īpašības vārdu, vietniekvārdu galotnēs 
+parādās līdzskanis ``S''. Tādēļ saskaitījām atsevišķi 
+burtus ``S'' vārdu ``iekšienē'' un arī tos ``S'', kas ir
+vārdu pēdējie burti. 
+(Tie attēloti arī Attēlos \ref{fig:burtini} un 
+\ref{fig:burtiniTNZV} -- pēdējo burtu īpatsvars atbilst
+stabiņa augšējai, zili iekrāsotajai daļai.)
+Iegūtie rezultāti apkopoti Tabulā \ref{tab:sfreq}.
+\begingroup \normalsize
+\begin{longtable}{|l|l|l|} \hline
+{\bf Krājums} & {\bf ``S'' nav vārda beigās} & {\bf ``S'' ir vārda beigās}\\ \hline
+Dz-L & 2424 (43.9\%) & 3098 (56.1\%) \\ \hline
+TNZV & 1704 (44.7\%) & 2111 (55.3\%)\\ \hline
+\caption{Burta ``S'' biežums Dz-L un TNZV} 
+\label{tab:sfreq}
+\end{longtable}
+\endgroup
+Krājumā Dz-L ir pat nedaudz raksturīgāk lietot 
+``S'' vārda beigās nekā TNZV 
+(attiecīgi 56.1\% un 55.3\%). Varam secināt, ka vārdu morfolo\v{g}ija 
+``S'' biežuma atšķirību neizskaidro. Burta ``S'' paaugstināto biežumu 
+Raiņa dzejā pilnībā nosaka Raiņa leksika -- viņš vienkārši biežāk 
+raksta vārdus, kuru celmi satur ``S''. 
+\end{itemize}
+
+
+<<nevajag, warning=FALSE, results="asis", echo=FALSE>>=
+#fullTextTNZV <- paste(wordsTNZV, collapse=" ")
+#for (i in 1:(length(wordsDzL)-2)) {
+#  frag <- paste(c(wordsDzL[i], wordsDzL[i+1], wordsDzL[i+2]), collapse=" ")
+#  if  (length(grep(frag,fullTextTNZV)) > 0) {
+#    print(paste0("f = ",frag))
+#  }
+#}
+@
+
+
+\section{Vienādu skaņu sablīvējumi}
+
+Apzināti nesaucām tos par aliterācijām vai asonansēm, jo iespējami 
+gadījumi, kad vienādas skaņas kādā dzejas pantā sastopamas biežāk nekā 
+tekstā kopumā, bet tās nerada stila efektu. 
+Jau minējām, ka datorprogramma mērīja burtu (nevis skaņu) biežumu. Arī tas
+neļauj ar pārliecību kaut ko apgalvot par aliterācijām un asonansēm. 
+Šajā sadaļā apkopoti dzejoļu
+fragmenti, kuru 
+burtu biežumi ir neparasti -- neatkarīgi no mākslinieciskās izteiksmes līdzekļiem.
+
+Burtu ``S'' salīdzināšanai izvēlējāmies tādēļ, ka 
+{\em TNZV} šī burta 
+biežums ir lielāks -- sk. secinājumus 2.\ nodaļas beigās. 
+Skaņai ``S'' ir arī īpaša
+fiziolo\v{g}iska loma -- no visām izrunājamām skaņām 
+tai mēdz būt visaugstākā frekvence, tā ir vistuvākā ultraskaņai. 
+Skaņas ``S'' un ``Š'' (to palatalizēti varianti) 
+plaši sastopami arī mēles mež\v{g}os. 
+Pat nedaudz paaugstinātu ``S'' vai ``Š'' īpatsvaru var 
+sadzirdēt ar neapbruņotu ausi, par ko drīz pārliecināsimies. 
+Sal. \cite{YuenRenChao}. 
+
+
+
+\subsection{Fragmenti Dz-L dzejoļiem ar $\rho(S) \geq 12\%$}
+
+Turpmāk ar $\rho(\mbox{A}), \rho(\mbox{B}),\ldots$ apzīmēsim burta koncentrāciju 
+dzejolī, t.i. konkrētā burta ``A'', ``B'' u.c. skaita attiecību pret visiem 
+burtiem dotajā dzejolī. Koncentrācijas ir daļskaitļi starp 0 un 1. 
+{\em Dz-L} pavisam ir 92 dzejoļi vai 
+dzejoļu daļas ar atsevišķiem apakšvirsrakstiem. 
+Attēls \ref{fig:aliteracijas} ir histogramma, kas parāda, 
+``S'' koncentrāciju katrā no šiem 92 dzejoļiem. 
+
+Histogrammā redzams vientuļš kvadrātiņš kreisajā pusē --  
+viens dzejolis ar neparasti zemu ``S'' burtu koncentrāciju
+(``Ar labo roku\textbackslash{} Apņemt var sievu,\textbackslash{} 
+Ar labo roku\textbackslash{} Nolauzt var ievu...''), kuram 
+$\rho(\mbox{S}) = 2.36\%$. 
+Turpmāk pievērsīsimies dzejoļiem, kuros ``S'' burtu koncentrācija 
+ir liela -- stipri pārsniedz burta biežumu krājumā kopumā (šos 
+biežumus sk. \ref{fig:burtini}). Piemēram O.Vācieša krājumā 
+``S'' burta biežums ir vidēji $8.75\%$. Bet atsevišķos 
+dzejoļos vai dzejas pantos tas var būt $12\%$ vai vēl lielāks.
+Seko piemēri.
+
+<<aliteracijas, warning=FALSE, echo=FALSE, fig.width=6, fig.height=3.5, fig.cap="Burta S bie\u017Eumu histogramma (Dz-L)", dev='CairoPDF'>>=
+dzlList <- getTheList("dzeguzlaiks.rmd")
+tnzvList <- getTheList("tnzv.rmd")
+
+instances <- numeric(0)
+maxes <- numeric(0)
+mins <- numeric(0)
+for (nnum in names(dzlList)) {
+  lettercount <- sum(as.numeric(dzlList[[nnum]]))
+  scount <- dzlList[[nnum]][["s"]]
+  instances <- c(instances,scount/lettercount)
+  if (scount/lettercount >= 0.12) {
+    maxes <- c(maxes, nnum)
+  } else if (scount/lettercount < 0.05) {
+    mins <- c(mins, nnum)
+  }
+}
+
+hist(instances, main="", breaks=seq(0.00,0.20,by=0.005), xlab="")
+grid()
+@
+
+\vspace{2ex}
+{\footnotesize 
+Pie nātres skāries,\\
+Neraudi, ka skāries, ---\\ 
+Kas tevi dzina\\
+To ziedu plūkt!\\
+Reiz sāpes pāries,\\ 
+Visas sāpes pāries, \\
+Tik nevajaga\\ 
+Nevienam lūgt. ...\\
+(Dz-L, "Dziesma", $\rho(S) = 13.9\%$)
+}
+
+\vspace{2ex}
+{\footnotesize 
+Šajos ceriņos rīt ziedi būs --- \\
+Mēļas liesmas no tumšzaļas pekles. \\
+Un pa debesīm eņ\v{g}eļus --- mūs\\
+Un pa zemi mūs --- grēcīgos meklēs. ...\\
+(Dz-L, "* * *", $\rho(S) = 13.6\%$)
+}
+
+\vspace{2ex}
+{\footnotesize 
+...Gaujas balss ilgi meklēts un saukts,\\ 
+Baltu mākoņu kopenās jaukts, \\
+Ziedu sildīts un viesuļu nests, --- \\
+Ja tu būsi. Bet saredzu es --- \\
+Katrā solī, ko tālāk tu liec, \\
+Pelēks, silts, samīts zaķītis kliedz. \\
+Tā jau nav kāda varena balss ---\\ 
+Tā kliedz viss, \\
+Kur iet sals, \\
+Kur iet sals. \\
+(Dz-L, "* * *", $\rho(S) = 12.9\%$)
+}
+
+\vspace{2ex}
+{\footnotesize 
+Kad graudu samaļ miltos\\
+Un miltus mājās ved, \\
+Lai briedīgs zemes siltums\\
+Tev kaulos spēku met.\\
+(Dz-L, "Visvaldim Lāmam", $\rho(S) = 12.4\%$)
+}
+
+
+\subsection{Fragmenti TNZV dzejoļiem ar $\rho(S) \geq 15\%$}
+
+
+<<aliteracijasTNZV, warning=FALSE, echo=FALSE, fig.width=6, fig.height=3.5, fig.cap="Burta S bie\u017Eumu histogramma (TNZV)", dev='CairoPDF'>>=
+tnzvList <- getTheList("tnzv.rmd")
+
+instances <- numeric(0)
+maxes <- numeric(0)
+mins <- numeric(0)
+for (nnum in names(tnzvList)) {
+  lettercount <- sum(as.numeric(tnzvList[[nnum]]))
+  scount <- tnzvList[[nnum]][["s"]]
+  instances <- c(instances,scount/lettercount)
+  if (scount/lettercount >= 0.15) {
+    maxes <- c(maxes, nnum)
+  } else if (scount/lettercount < 0.05) {
+    mins <- c(mins, nnum)
+  }
+}
+
+hist(instances, main="", breaks=seq(0.00,0.20,by=0.005), xlab="")
+grid()
+@
+
+
+\vspace{2ex}
+{\footnotesize 
+Iet dienas tukšas, vilkdamās,\\
+Drīz austra, drīz dziesna tās krāso...\\
+Bez spēka tās, bez jēgas tās,\\
+Kā asins iz brūces tās lāso...\\
+(TNZV, "Mūsu dienas", $\rho(S)=16.5\%$)
+}
+
+
+\vspace{2ex}
+{\footnotesize 
+Man mīļāks godīgs pesimists,\\
+Kas dzīves tukšumu nes, zobus griezdams,\\
+Ne vieglis filistris, saukts optimists,\\
+Kurš šķiet, ka, dzīves nastas projām sviezdams,\\
+Viņš visus mezglus ir jau atšķetījis\\
+Tik gudris palikdams, cik agrāk bijis.\\
+(TNZV, "Pesimists", $\rho(S)=15.3\%$)
+}
+
+\vspace{2ex}
+{\footnotesize 
+Viss vīlis, viss kritis un zemē rakts,\\
+Apkārt tev noslēpums, šausmas un nakts ---\\
+Sakost tik zobus un dzīvi nest,\\
+Kamēr vēl krūtīs spēj dvašu dvest, ---\\
+Sakost tik zobus un ciest, un ciest,\\
+Lai arī pēdējā cerība dziest,\\
+Lai visi locekļi lūst un ļimst:\\
+Tumsas dziļumos gaisma dzimst!\\
+(TNZV, "Ziedu sapņi", $\rho(S)=15.1\%$)
+}
+
+
+\vspace{2ex}
+{\footnotesize 
+Uz debess dziļi gulies mākonis\\
+Un smagā tumsā sauli žņaugdams sedzis; \\
+Aiz segas uguns, kurš tik verdošs dedzis, \\
+Kā matu zelts līst šķiesnām iziris.
+(TNZV, "Bula laiks", $\rho(S)=15.0\%$)
+}
+
+
+
+\section{Vārdformu biežums}
+
+Katram rakstītājam ir viņa stilu raksturojošs relatīvais vārdu un vārdformu biežums. 
+Šo īpašību nereti izmanto, lai noskaidrotu, vai kādu tekstu ir rakstījis viens un tas pats cilvēks.
+Precīzākai diagnostikai ir jāizmanto nedaudz sarež\v{g}ītāki algoritmi - piemēram, 
+atsevišķo vārdu vietā jāaplūko $N$-vārdu virknītes jeb t.s. {\em $N$-grammas}. 
+Ir arī SVM ({\em Support Vector Machine}), Beijesa ({\em Bayes}) klasifikatori un citi paņēmieni, 
+lai ar datora palīdzību atrastu pla\v{g}iāta vai spoku-rakstniecības ({\em ghostwriting}) pazīmes.
+
+Protams, Rainim un O.Vācietim lietotie vārdi un to biežumi būtiski atšķiras. 
+Tabulā \ref{tab:vardformas} apkoposim 120 biežākās vārdformas no {\em Dz-L}, norādot
+katrai no tām ``biežuma rangu'', sastapto reižu skaitu (iekavās), kā arī promiles --- cik 
+reizes šī vārdkopa sastopama starp katriem 1000 vārdiem šajā tekstā. Blakus stabiņā 
+norādām arī šīs pašas vārdformas biežumu krājumā {\em TNZV} (arī norādot sastapto 
+reižu skaitu un promiles). Savukārt Tabulā  \ref{tab:vardformas2} apkopojam 
+120 biežākās vārdformas no {\em TNZV} -- un salīdzinām to biežumu ar {\em Dz-L}. 
+Protams, vārdu saraksti abās tabulās daļēji pārklājas.
+
+Lai būtu vieglāk noteikt vārdus, kas vairāk raksturīgi vienam vai otram dzejniekam, 
+ieviešam apzīmējumus: 
+\begin{enumerate}
+\item \Circle -- Raiņa darbā vārdformas relatīvais biežums ir vismaz divreiz lielāks;
+\item \RIGHTcircle -- Raiņa darbā relatīvais biežums lielāks nekā O.Vācietim, bet mazāk nekā divas reizes;
+\item \LEFTcircle -- O.Vācieša darbā biežums pārsniedz biežumu Raiņa darbā, bet mazāk nekā divas reizes;
+\item \CIRCLE -- O.Vācieša darbā biežums vismaz divreiz pārsniedz vārda biežumu 
+Raiņa darbā.
+\end{enumerate}
+
+
+<<vardformas, warning=FALSE, results="asis", echo=FALSE>>=
+wTable <- table(wordsDzL)
+keys <- names(wTable)
+vals <- as.numeric(wTable)
+
+compTable <- table(wordsTNZV)
+
+L1 <- length(wordsDzL)
+L2 <- length(wordsTNZV)
+
+circleFun <- function(a,b) {
+  iRange <- 1:length(a)
+  vv <- sapply(iRange, function(i) {
+    if (a[i] >= 2*b[i]) { 
+      return("\\Circle")
+    } else if (a[i] > b[i]) {
+      return("\\RIGHTcircle")
+    } else if (b[i] >= 2*a[i]) {
+      return("\\CIRCLE")
+    } else {
+      return("\\LEFTcircle")
+    }
+  })
+  return(vv)
+}
+
+df <- data.frame(kk = keys, vv = vals, stringsAsFactors=TRUE)
+dfs <- df[with(df, order(-vals,keys)), ]
+row.names(dfs) <- NULL
+topDfs <- dfs[1:120,]
+topDfs$newkeys <- getNiceName(topDfs$kk)
+topDfs <- mutate(topDfs, theProm = 1000*vv/L1)
+topDfs$compVV <- sapply(as.vector(topDfs$kk),function(x) { return(as.numeric(compTable[x])) })
+topDfs$compVV[is.na(topDfs$compVV)] <- 0
+topDfs <- mutate(topDfs, compProm = 1000*compVV/L2)
+topDfs$newkeys[77] <- "L\\={\\i}z"
+topDfs <- mutate(topDfs, circ = circleFun(compProm, theProm))
+
+anotherTable <- table(wordsTNZV)
+#anotherTable[[as.character(topDfs$keys[1])]]
+
+
+testMatrix <- matrix(
+  c(as.character(topDfs$newkeys[1:60]),
+    as.character(topDfs$circ[1:60]),
+    sprintf("%s (%1.2f)", topDfs$vv[1:60], topDfs$theProm[1:60]),
+    sprintf("%s (%1.2f)", topDfs$compVV[1:60], topDfs$compProm[1:60]),
+    as.character(61:120),
+    as.character(topDfs$newkeys[61:120]),
+    as.character(topDfs$circ[61:120]),
+    sprintf("%s (%1.2f)", topDfs$vv[61:120], topDfs$theProm[61:120]),
+    sprintf("%s (%1.2f)", topDfs$compVV[61:120], topDfs$compProm[61:120])), ncol = 9)
+
+
+xt <- xtable(testMatrix,
+             caption = getNiceName("Dz-L 120 bie\u017E\u0101k\u0101s v\u0101rdformas"),
+             label = "tab:vardformas",
+             align="rlcrr|rlcrr", escape=FALSE)
+names(xt) <- getNiceName(c("V\u0101rds","", "Dz-L \\textperthousand","TNZV \\textperthousand", "","V\u0101rds","", "Dz-L \\textperthousand","TNZV \\textperthousand"))
+xt <- capture.output(xt)
+xt_mod <- xt
+xt_mod <- unescapeLatex(xt_mod)
+xt_mod <- smallLatex(xt_mod, "small")
+cat(xt_mod, sep="\n")
+@
+
+
+
+<<vardformas2, warning=FALSE, results="asis", echo=FALSE>>=
+wTable <- table(wordsTNZV)
+keys <- names(wTable)
+vals <- as.numeric(wTable)
+
+compTable <- table(wordsDzL)
+
+L1 <- length(wordsTNZV)
+L2 <- length(wordsDzL)
+
+
+
+df <- data.frame(kk = keys, vv = vals, stringsAsFactors=TRUE)
+dfs <- df[with(df, order(-vals,keys)), ]
+row.names(dfs) <- NULL
+topDfs <- dfs[1:120,]
+topDfs$newkeys <- getNiceName(topDfs$kk)
+topDfs <- mutate(topDfs, theProm = 1000*vv/L1)
+topDfs$compVV <- sapply(as.vector(topDfs$kk),function(x) { return(as.numeric(compTable[x])) })
+topDfs$compVV[is.na(topDfs$compVV)] <- 0
+topDfs <- mutate(topDfs, compProm = 1000*compVV/L2)
+topDfs <- mutate(topDfs, circ = circleFun(theProm, compProm))
+
+testMatrix <- matrix(
+  c(as.character(topDfs$newkeys[1:60]),
+    as.character(topDfs$circ[1:60]),
+    sprintf("%s (%1.2f)", topDfs$vv[1:60], topDfs$theProm[1:60]),
+    sprintf("%s (%1.2f)", topDfs$compVV[1:60], topDfs$compProm[1:60]),
+    as.character(61:120),
+    as.character(topDfs$newkeys[61:120]),
+    as.character(topDfs$circ[61:120]),
+    sprintf("%s (%1.2f)", topDfs$vv[61:120], topDfs$theProm[61:120]),
+    sprintf("%s (%1.2f)", topDfs$compVV[61:120], topDfs$compProm[61:120])), ncol = 9)
+
+
+xt <- xtable(testMatrix,
+             caption = getNiceName("TNZV 120 bie\u017E\u0101k\u0101s v\u0101rdformas"),
+             label = "tab:vardformas2",
+             align="rlcrr|rlcrr", escape=FALSE)
+names(xt) <- getNiceName(c("V\u0101rds","", "TNZV \\textperthousand","Dz-L \\textperthousand", "","V\u0101rds","", "TNZV \\textperthousand","Dz-L \\textperthousand"))
+xt <- capture.output(xt)
+xt_mod <- xt
+xt_mod <- unescapeLatex(xt_mod)
+xt_mod <- smallLatex(xt_mod, "small")
+cat(xt_mod, sep="\n")
+@
+
+
+
+
+\vspace{5ex}
+{\bf Secinājumi:}
+\begin{itemize}
+\item Krājumā {\em Dz-L} ir 13216 vārdformas, starp tām 4869 ir unikālas (t.i.\ 
+4869 dažādi vārdi vai to locījumi). Krājumā {\em TNZV} ir 7422 vārdformas, 
+starp tām 3270 ir unikālas. No šejienes galīgi neizriet, ka vienam 
+autoram būtu bagātāka valoda nekā otram -- vienkārši garākā krājumā
+({\em Dz-L}) ir vairāk unikālu vārdu. Ja skaita unikālās vārdformas
+līdzīga garuma O.Vācieša un Raiņa dzejas tekstos (piemēram, ``nogriežot'' 
+{\em Dz-L} īsāku, lai tas būtu vienādā garumā ar {\em TNZV}), sanāk, 
+ka unikālo vārdformu skaits ir aptuveni vienāds: unikālo 
+vārdformu ir aptuveni 40\% no visām (citādi sakot, katra 
+vārdforma aptuveni 50,000 rakstzīmju 
+garā dzejas gabalā atkārtojas vidēji 2.5 reizes -- gan O.Vācietim, gan Rainim).
+\item Vārdu biežuma sadalījums {\em Dz-L} ir krietni nevienmērīgāks 
+nekā biežuma sadalījums {\em TNZV}: Ja skatāmies uz abiem vārdu sarakstiem 
+(Tabulas \ref{tab:vardformas} un \ref{tab:vardformas2}), tad ieraugām, ka 
+biežākie vārdi O.Vācieša dzejā tiek lietoti biežāk, bet retākie vārdi - retāk. 
+Teiksim, O.Vācieša vārds nr.1 (``un'') ir ar biežumu 
+47.22\textperthousand{}: vairāk nekā Raiņa vārds nr.1 ar biežumu 
+40.96\textperthousand{} (arī ``un''). 
+Līdzīgi O.Vācieša vārds nr.2 (``es'') ir ar biežumu 
+16.57\textperthousand{}: vairāk nekā Raiņa vārds nr.2 ar biežumu 
+10.51\textperthousand{} (``kā''). Šī tendence turpinās pirmajiem 52 
+vārdiem sarakstā. O.Vācieša vārds nr.52 (``tevi'') ir ar biežumu 2.04\textperthousand{}:
+joprojām nedaudz vairāk nekā Raiņa vārds nr.52 (``būs'') ar biežumu
+2.02\textperthousand{}. 
+Pēc tam tendence apvēršas otrādi -- un Raiņa vārds nr.53 
+ir biežāks nekā O.Vācieša vārds nr.53, utt.  
+\item {\em Dz-L} vārdformu sarakstā salīdzinoši augstās vietās parādās 
+netipiski vārdi (``atbalss'', ``trako'', ``Līz''), kas tur nonākuši 
+pateicoties bagātīgai atkārtošanai vienā dzejolī. 
+\item {\em Dz-L} satur daudz vairāk 1.\ personas vietniekvārdu formu
+(``es'', ``man'', ``mēs'', ``mums'') nekā {\em TNZV} -- atšķirība 
+relatīvajā biežumā (sk. promilles iekavās) ir vairākkārtīga.
+Šis ir gadījums, kad vajadzētu analizēt dziļāk: varbūt tā ir 
+O.Vācieša liriskā varoņa īpatnība -- runāt pirmajā personā.
+Tā būtu līdzība ar S.Jeseņinu - sal. ``Vēstule vectēvam'' -- 
+{\em ''Pokinul ja rodimoye žiliśće. 
+Golubczik! Deduszka! Ja vnov' k tebe piszu.''}.
+Varbūt proporciju iespaido tikai atsevišķi neparastā formā uzrakstīti 
+dzejoļi. Piemēram, ``Balsij bez pavadījuma'', kas ir visai garš un var 
+izmainīt līdz nepazīšanai statistiku par krājumu kopumā. 
+\item  {\em TNZV} krietni biežāk nekā {\em Dz-L} parādās 2.\ personas daudzskaitļa
+vietniekvārdi (``jūs'', ``jums''). 
+\item Raksturīgs to vārdu saraksts, kas visai izplatīti {\em TNZV}, 
+bet nav vai ļoti maz sastopami {\em Dz-L} (ietilpst tur 0 vai 1 reizi): 
+``nau'', ``iz'', ``ik'', ``dvēsle'',
+``plūst'', ``lēni'', ``aizvien'', ``domas'', ``dvēsele'', ``gala'', 
+``nedz'', ``sauli'', ``ļaudis'', ``mūžam'' ``prāts'', 
+``spīd'', ``tāles''. 
+Ja atmetam dažus vārdus vai gramatiskas konstrukcijas, 
+ko mūsdienās parasti izsaka citādi 
+(``nau'', ``iz'', ``ik''), tad paliek tieši tie vārdi, kuri apraksta cilvēka 
+gara gaismu, racionālu optimismu, apceri par galīgo un bezgalīgo.
+Tā varētu būt 1960-to gadu rakstītāju kopīga iezīme, PSRS 
+dzejas redaktoru gaume, O.Vācieša tālaika 
+ekspresionisms, ko varētu salīdzināt ar agrāku ekspresionistu, piemēram, 
+L.Paegles leksiku. 
+Bet tas var būt arī O.Vācieša ticības zudums
+modernisma un progresa ideālam, ``jaunajam laikam''.
+\end{itemize}
+
+
+\section{Līdzīgas vārdu virknītes}
+
+Dažreiz dzejas pētnieki aplūko {\em alūzijas} (norādes 
+uz ārējiem faktiem) vai {\em reminiscences} (tās uzskatām 
+par alūziju atsevišķu gadījumu -- tiešu atsauci vienā tekstā no kāda agrāk radīta teksta). 
+Naivs mē\v{g}inājums atrast reminiscences būtu -- meklēt divos 
+tekstos līdzīgas frāzes. Protams, tādā veidā nevar atrast lielāko daļu 
+to kopsakarību, kuras pamana vērīgs lasītājs -- toties var gūt 
+zināmu priekšstatu par dzejas valodu, ko Ruta Veidemane \cite{Veidemane1977}
+(un daudzi dzejas pētnieki pirms viņas) raksturojuši kā informatīvi ietilpīgu -- 
+ja birokrātiskās un zinātniski tehniskās publikācijās ir parasta lieta 
+sastapt līdzīgus garus formulējumus (ko neatkarīgi viens no otra radījuši 
+dažādi autori), tad dzejas tekstā katrs nākamais vārds ir lielā mērā negaidīts. 
+R.Veidemane to ilustrē ar nespēju atjaunot dzejas tekstu, ja visi 
+vārdi tajā aizstāti ar saīsinājumiem vai no tiem izdzēsti visi patskaņi. 
+Savukārt zinātniski tehniskās literatūras izteiksmes stils ir tik prognozējams, 
+ka var atjaunot bez zudumiem arī tekstu, no kura daļa informācijas ir 
+pieminētajos veidos ``saīsināta''.
+
+Nav pārsteidzoši, ka Raiņa un O.Vācieša darbos ({\em TNZV} un {\em Dz-L}) 
+ir tikai ļoti īsi kopīgi teksta fragmenti 
+(2--3 vārdu virknītes, kuras eksistē abu autoru dzejā). 3-vārdu virknītes
+ir tikai četras; tādēļ varam aplūkot tās visas Tabulā \ref{tab:fragmenttable}. 
+
+\begingroup \footnotesize
+\begin{longtable}{@{}l|l@{}} \hline
+\multicolumn{2}{l}{
+\vspace{5px}
+\mbox{}\hspace{2ex}(1) guļ mana dzimtene
+}\\ \hline
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}...Daudz simtu jūdžu tāļumā,\\
+\mbox{}\hspace{2ex}Aiz tīreļiem, purviem un siliem,\\
+\mbox{}\hspace{2ex}{\bf Guļ mana dzimtene} diendusā\\
+\mbox{}\hspace{2ex}Tā aizsegta debešiem ziliem,\\
+\mbox{}\hspace{2ex}Zil-saulainiem debešu palagiem\\
+\mbox{}\hspace{2ex}Pret dvesmām un strāvām, un negaisiem...\\
+\end{minipage} &
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}Te {\bf guļ mana dzimtene}.\\ 
+\mbox{}\hspace{2ex}Šeit dzīvoja mana māte\\
+\mbox{}\hspace{2ex}Tajā naktī,\\
+\mbox{}\hspace{2ex}Kad rados.\\
+\end{minipage}\\
+\hline
+\multicolumn{2}{l}{
+\vspace{5px}
+\mbox{}\hspace{2ex}(2) un kas tad bija}\\ \hline
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}{\bf Un kas tad bij} šis viņa tēvs? Kas māte?\\
+\mbox{}\hspace{2ex}Teic: gars un mūžība! --- Tie tikai vārdi:\\
+\mbox{}\hspace{2ex}Tēvs --- vecais pilsoniskais gadsimtens,\\
+\mbox{}\hspace{2ex}Un māte --- staltā Vaļība? --- par kuru\\
+\mbox{}\hspace{2ex}Viņš karstām jaunasinīm cīnījās.\\
+\end{minipage} &
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}Nu {\bf un kas tad būtu}?\\
+\mbox{}\hspace{2ex}Mēs te gaudojam kā divas vientuļas kuces,\\ 
+\mbox{}\hspace{2ex}Un es tomēr piederu pie vīriešu kārtas.\\ \\
+\mbox{}\hspace{2ex}Pie kā mēs palikām?\\
+\end{minipage}\\
+\hline
+\multicolumn{2}{l}{
+\vspace{5px}
+\mbox{}\hspace{2ex}(3) es sen jau}\\ \hline
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}Lai spļauj tev acīs, tu noslauki vien,\\
+\mbox{}\hspace{2ex}Jo pilsonim pretī sist nepiedien!\\ \\
+\mbox{}\hspace{2ex}--- {\bf Es sen jau} šo mācību dzirdēju,\\
+\mbox{}\hspace{2ex}To sauc par ``prātīgu rīcību''.\\
+\end{minipage} &
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}Bezspalvaini\\
+\mbox{}\hspace{2ex}Bezdvēseles\\
+\mbox{}\hspace{2ex}Zirgi\\
+\mbox{}\hspace{2ex}Dūc ap manu stalli,\\
+\mbox{}\hspace{2ex}Dūc to pašu, ko {\bf es sen jau} zinu:\\
+\mbox{}\hspace{2ex}``Var-r-ram, var-r-ram, var-r-ram...''\\
+\end{minipage}\\
+\hline
+\multicolumn{2}{l}{
+\vspace{5px}
+\mbox{}\hspace{2ex}(4) līdz sirmiem matiem}\\ \hline
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}Visa viņa dzīve\\
+\mbox{}\hspace{2ex}{\bf Līdz sirmiem matiem},\\
+\mbox{}\hspace{2ex}Pūlēs un sviedros,\\
+\mbox{}\hspace{2ex}Bijusi velta ---\\ \\
+\mbox{}\hspace{2ex}Nebija spējis\\
+\mbox{}\hspace{2ex}Sievai un bērniem\\
+\mbox{}\hspace{2ex}Sagādāt vairāk\\
+\mbox{}\hspace{2ex}Kā nabagu māju.\\
+\end{minipage} &
+\begin{minipage}{0.5\columnwidth}
+\vspace{5px}
+\mbox{}\hspace{2ex}Visu laiku viņš runā\\
+\mbox{}\hspace{2ex}Kā plate:\\
+\mbox{}\hspace{2ex}--- He, viņš skatās pa logu!\\
+\mbox{}\hspace{2ex}Visus kokus bez lapām\\
+\mbox{}\hspace{2ex}Noskatīsi. \\
+\mbox{}\hspace{2ex}Visas meitenes {\bf līdz sirmiem matiem}\\
+\mbox{}\hspace{2ex}Izskatīsi.\\
+\end{minipage}\\[40px]
+\caption{Sakrītošas vārdu virknītes} % needs to go inside longtable environment
+\label{tab:fragmenttable}
+\end{longtable}
+\endgroup
+
+\vspace{5ex}
+{\bf Secinājumi:}
+\begin{itemize} 
+\item Iespējami garas kopīgas teksta virknītes abu autoru krājumos sastāv
+no 3 vārdiem (ir ļoti daudz virknīšu no 2 vārdiem, bet nav virknīšu no 4 vārdiem). 
+\item Kopīgās virknītes parasti satur bieži izmantotus vārdus (``un kas tad''; arī 
+praktiski visas no 2 vārdiem sastāvošās kopīgās virknītes), tajās
+esošais teksts nav pietiekams, lai varētu saredzēt atsauci uz citu tekstu. 
+\item ``Guļ mana dzimtene'' ir vienīgais fragments, kas varētu būt 
+reminiscence -- t.i.\ Raiņa dzejoļa zinātājam, lasot O.Vācieša dzejoli
+({\em Nodedzinātā Rūjiena $>$ Piektais kapakmens}), ir iespēja
+to uztvert ``stereoskopiski''. Jau Raiņa dzejolī dzimtene 
+aprakstīta kā vienīga un sargājama ({\em pret dvesmām un vētrām 
+un negaisiem}) un arī kā attālināta vieta
+({\em Daudz simtu jūdžu tāļumā...}). O.Vācieša dzejolis pievieno 
+dzimtenes izjūtas noturību arī pēc dzimtās vietas fiziskas iznīcināšanas ({\em 
+Un, ja arī sabruks šis pusapdegušais mūrītis ... Te būs mana dzimtene. 
+Jauna mirušās vietā, bet --- dzimtene. Jo nevar izkustināt no vietas pirmo bļāvienu...}).
+\item Garāko kopīgo apakšvirkņu meklēšana parasti nav efektīva, 
+lai atklātu reminiscences -- t.i.\ mūsu primitīvā pieeja neder. 
+Cilvēki tekstu asociācijas uztver elastīgāk -- nav obligāti, lai 
+tiktu lietoti precīzi tie paši vārdi tajā pašā secībā. 
+No otras puses, reminiscenču (un arī plašā nozīmē -- mākslinieciskās izteiksmes 
+līdzekļu) datorizētai meklēšanai ir ievērojama praktiska nozīme, piemēram,
+lai atvieglotu filozofisko izmeklētāju darbu (sal. 
+G.Čestertons ({\em Gilbert Chesterton}) 
+{\em The Man Who Was Thursday $>$ The Tale of a Detective} 
+\cite{Chesterton1908}): ``{\em The ordinary detective goes to pot-houses 
+to arrest thieves; we go to artistic tea-parties to detect pessimists. 
+The ordinary detective discovers from a ledger or a diary that a crime 
+has been committed. We discover from a book of sonnets that a crime will 
+be committed. We have to trace the origin of those dreadful 
+thoughts that drive men on at last to intellectual fanaticism and intellectual crime.}
+\item Jau tagad ar teksta klasificēšanas algoritmiem iespējams atpazīt un bloķēt 
+{\em spamu} jeb {\em mēstules} -- nevēlamu korespondenci, kas piedāvā kaut ko nopirkt. 
+Ja mašīnmācīšanās ({\em machine learning}) 
+algoritmu apmācītu atpazīt jau zināmus reminiscenču piemērus, tad tas, iespējams, 
+spētu atrast tos arī līdz tam neanalizētos tekstos.
+Interneta forumos teksta klasifikāciju var izmantot, lai atpazītu un 
+moderētu komentārus, kas 
+ir pesimistiski, norāda uz rakstītāja
+pašdestruktīvām tieksmēm ({\em suicidal thoughts}) 
+vai līdzcilvēku vajāšanu Internetā ({\em cyberbullying}). 
+Vienkāršākos piemērus var izķert ar ``vārdnīcas analīzi'', atrodot 
+dažu raksturīgu vārdu paaugstinātu skaitu, bet 
+kvalificētam uzbrucējam šos ierobežojumus viegli apiet.
+\end{itemize}
+
+
+\section{Krāsu nosaukumi}
+
+Doma par krāsu nosaukumu analīzi aizgūta no L.Bērziņa kvantitatīvajiem 
+pētījumiem tautasdziesmu 
+poētikā \cite{LBerzins1940}. Viņš rakstīja arī par skaitļu vārdiem, deminutīviem, 
+ritma īpatnībām -- daudz ko tādu, kam šajā rakstā nepietika laika.
+
+Rainis dzejolī {\em Senatne} (luga {\em Pusideālists}, arī {\em TNZV}) raksta šādi - 
+{\em ``Dies saulīte atkal trīskrāsaina: Drīz zila, drīz zaļa, drīz sarkana.''}
+Mūsdienās šis 3 pamatkrāsu uzskaitījums šķiet pašsaprotams, bet Rainis 
+to rakstīja ilgi pirms RGB (red-green-blue) ekrāniem.
+Pirms krāsaino lampiņu, gaismas reklāmu un krāsainās televīzijas
+krāsu saskaitīšana (priekšstats par to, ka
+aplūkojot cieši tuvu novietotus vai pārmaiņus mirgojošus
+zilus, zaļus un sarkanus gaismas punktiņus, gaismas krāsa šķitīs balta) 
+nebija ikdienas parādība. Gleznotāji, jaucot krāsas, saskārās 
+ar krāsu atņemšanu (t.i.\ pievienojot jaunu pigmentu, krāsa kļūst tumšāka
+nevis gaišāka). Raiņa laikabiedri redzēja, ka, sajaucot zilo, zaļo un sarkano
+krāsu, var iegūt netīri brūnu. Bet dzejnieka intuīcija ļāva saskatīt 
+balto.
+
+Citā dzejolī no {\em TNZV} -- {\em ``Kur iespiesties nespēj sarkan-zeltainā, 
+karstā, septiņkrāsainā pasauls saule''} -- ir norāde uz saules spektra sadalīšanu 
+7 varavīksnes krāsās, kas labāk atbilst 
+populārzinātniskiem priekšstatiem 1903.\ gadā --  
+Ņūtona eksperimentam ar stikla prizmu. Spēja ieraudzīt varavīksnē 
+tieši 7 krāsas nav saistīta ar latviešu valodu, kurā nav atsevišķu 
+vārdu ``gaiši zilam'' un ''tumši zilam'' -- atšķirībā no angļu valodas, kur 
+ir ``blue'' un ``indigo''. Faktiski varavīksnē ir neierobežoti daudz 
+grūti nosaucamu krāsu (neskaitāmas toņu pārejas no sarkana uz oranžu utt.). 
+Varavīksnes septiņkrāsainība drīzāk 
+raksturo Īzaka Ņūtona priekšstatus par numerolo\v{g}iju nevis fizisku realitāti.
+
+Apkopojam tabuliņā kontekstus, kur minētas krāsas. Parasti krāsas apzīmē īpašības 
+vārdi, bet arī daži apstākļa vārdi ("{\bf balti} klāja"), 
+lietvārdi (``manu pilno {\bf zelta} matu''), 
+darbības vārdi (``desmitstaraina austriņa {\bf sārtojas}'') un darbības 
+vārdu divdabju formas (``uz ar sūnu {\bf apzaļojuša} akmens) norāda uz krāsu. 
+Aiz katras krāsu vārdformas
+norādām locījumu (F/M - sieviešu/vīriešu dzimte; I/D - nenoteiktā/noteiktā galotne; 
+S/P - vienskaitlis/daudzskaitlis; N, G, D, A, I, L, V - locījums). 
+Piemēram \texttt{FISN} apzīmē
+sieviešu dzimtes nenoteiktās galotnes vienskaitļa nominatīvu (``balta'', ``melna'' u.c.).
+Ja no krāsas nosaukuma darināts apstākļa vārds, lietvārds, darbības vārds vai divdabis, 
+rakstām aiz vārda attiecīgi \texttt{adv}, \texttt{noun}, \texttt{verb}, \texttt{part}. 
+
+
+No krāsām atvasinātus vārdus, kas attiecīgā dzejoļa kontekstā 
+neveido vizuālu tēlu
+(``zilskābe'', ``Sarkandaugava'') pārskatā neiekļaujam; 
+savukārt ``zilums'' (t.i.\ sasitums, kura zilā krāsa ir būtiska Dz-L dzejolī)
+tiek pieskaitīts. Dzejoļiem ar apļa kompozīciju nepieskaitām 
+divas reizes tos fragmentus ar krāsu nosaukumiem, 
+kuri pilnībā vai gandrīz pilnībā atkārtojās 
+({\em Ap manu bērnību apkārt ir apkritis pelēku lapu pelēks laprkitis} un 
+{\em Kad ap bērnību bija apkritis pelēku lapu pelēks lapkritis} -- dzejolis
+``Dzērves'' no Dz-L). 
+Ja krāsas nosaukums izmantots atkārtoti pastiprinājuma nozīmē, 
+to pieskaita kā vienu piemēru ({\em Drīz būs zili, zili ūdeņi, 
+drīz būs balti, balti pūpoli} -- te vienreiz pieskaitīts
+``zils'' un vienreiz ``balts''). Savukārt, ja piemērā tā pati 
+krāsa parādās divās dažādās lomās, to pieskaita divreiz 
+({\em Baltā māt, veļu māt, mazgā baltu paladziņu} un 
+{\em Pāri man ar visbaltāko baltumu debess jūra 
+savas bangotnes putotos mākoņus nes}). 
+
+
+Krāsas ņemtas no šāda saraksta - ``melns'', ``balts'', ``sarkans'', ``zaļš'', 
+``zils'', ``oranžs'' (arī ``ruds'', ``rūsgs'', ``rūsgans'', ``rūsas''), 
+``dzeltens'' (arī ``zelta'', ``zeltains'', ``bēšs'', ``krēmkrāsas''), 
+``violets'' (arī ``mēļš'', ``purpura'', ``lillā''), 
+``sārts'' (arī ``rozā''), ``brūns'', ``pelēks'' kā arī ``raibs''. 
+Kopā ar krāsu pamatnosaukumiem aplūkoti  
+arī atvasināti vārdi ("zaļgans" kopā ar "zaļš", 
+"sniegbalts" kopā ar "balts", "purpurkvēls" 
+kopā ar "violets"). Konteksts katrai no krāsām izraudzīts tā, 
+lai dzejas citāta garums nepārsniegtu 100 rakstzīmes -- 
+parasti ņemtas dažas blakus rindas, retāk pilns pants.
+
+\begingroup \footnotesize
+\begin{longtable}{lr|l}
+{\bf Krāsa} & & {\bf Konteksts}\\ \hline 
+melnā & \texttt{FDSN} & Bet {\bf melnā} čūska maļ jūrā miltus,\textbackslash{} Tos jāēd būs tiem, kam vara un viltus\\ 
+melns & \texttt{MISN} & Pār zemi pārlaidās pāri\textbackslash{} {\bf Melns} mākonis valguma\\
+melni & \texttt{MIPN} & Un gaisā celsies {\bf melni} putekļi\textbackslash{}No izžuvušā asins plūduma\\
+melnus & \texttt{MIPA} & Pa klajiem laukiem aukas kauc,\textbackslash{} Pie debesīm {\bf melnus} mākoņus jauc\\
+melnos & \texttt{MIPL} & Gan {\bf melnos} dumbros\textbackslash{} Jūs skriesat līst\textbackslash{} Pret jums tie balti,\textbackslash{} Jūs neatzīst\\
+melnais & \texttt{MDSN} & Sēd tā zelta krēslā,\textbackslash{} Acis drūmi kvēlo,\textbackslash Sēd un vērpj; tai {\bf melnais} suns pie kājām\\
+melnais & \texttt{MDSN} & {\bf Melnais} suns pa laikam\textbackslash{} Norūc, paceļ galvu,\textbackslash{} Tālu augšā juzdams asins smaku\\ 
+\hline
+balta & \texttt{FISN} & Un mīļā dzimtene guļ manā priekšā \textbackslash{} Kā plaši izplatīta {\bf balta} sega\\
+balta & \texttt{FISN} & Tur {\bf balta} laime man liekas, \textbackslash{} Tur tu, tur nogrimst dairs\\
+balta & \texttt{FISN} & Gars brīvus spārnus dzidrē cilā liegi;\textbackslash{} Tik {\bf balta} dvēsle mirdz kā kalnu sniegi\\
+baltā & \texttt{FISL} & Tā staro klusi un pastāvīgi\textbackslash{} {\bf Baltā} vienkrāsas gaismā\\
+baltas & \texttt{FIPN} & Lai {\bf baltas} viņām rokas\textbackslash{} Un tīnes no pilnības tūkst\\
+baltas & \texttt{FIPN} & Zaļoši tīrumi,\textbackslash{}Puķotas pļavas:\textbackslash{} Zib {\bf baltas} kājiņas,\textbackslash{} Sīk-žigli tekot\\
+baltās & \texttt{FDSG} & Zem {\bf baltās} segas svaigi kapi - - -\textbackslash{} No svaigiem kapiem svaigas asins kūp\\
+sniegabaltās & \texttt{FDSG} & Tad beigās izaugs pastars saules dzimums\textbackslash{} Uz skaidrās {\bf sniegabaltās} svētku zemes\\ 
+baltā & \texttt{MISL} & Rasas klātu zemes vaigu,\textbackslash{} {\bf Baltā} asru autā tītu\\
+balti & \texttt{MIPN} & Zib {\bf balti} zirnīši,\textbackslash{} Bērti pa plānu:\\
+balti & \texttt{MIPN} & Un {\bf balti} kauli\textbackslash{} Vēl laukus klās,\textbackslash{} Daudz asins plūdīs,\textbackslash{} Pirms vaidi stās\\
+balti & \texttt{MIPN} & Gan melnos dumbros\textbackslash{} Jūs skriesat līst\textbackslash{} Pret jums tie {\bf balti},\textbackslash{} Jūs neatzīst\\
+balti & \texttt{adv} & Visu nakti rasa rita,\textbackslash{} {\bf Balti} klāja zemes vaigu,\textbackslash{} Zaļā sagšā mēmi krita\\
+balti & \texttt{adv} & Drīz kaiva krīt, drīz {\bf balti} spīd,\textbackslash{} Kā dvēsele bez miera šaudās\\
+balti & \texttt{adv} & Debesīs putnu ceļš\textbackslash{} {\bf Balti} zib zvaigznēm\\
+\hline
+sarkana & \texttt{FISN} & Dies saulīte atkal trīskrāsaina:\textbackslash{} Drīz zila, drīz zaļa, drīz {\bf sarkana}\\
+sarkana & \texttt{FISN} & Aiz tālām zemēm šie pirkstiņi mīt,\textbackslash{} Bet {\bf sarkana} saule caur tālēm spīd\\
+sarkanas & \texttt{FIPN} & Div' {\bf sarkanas} saulītes aust šobrīd,\textbackslash{} Kad gaisma caur pirkstiem cauri spīd\\
+sarkan-zeltainā & \texttt{FDSN} & Kur iespiesties nespēj\textbackslash{} {\bf Sarkan-zeltainā}, karstā,\textbackslash{} Septiņkrāsainā pasauls saule\\
+sarkans & \texttt{MISN} & Un acu priekšā {\bf sarkans} izplešas\textbackslash{} Kā ziemeļblāzma - jaunais gadsimtenis\\
+sarkans & \texttt{MISN} & Arī viņam kauss\textbackslash{} Bij rokā - glums un {\bf sarkans} receklis, -\textbackslash{} Bet otrā rokā viņam bija vējš\\
+sarkani & \texttt{adv} & Tā tērpta {\bf sarkani} ar zelta audiem,\textbackslash{} Smags zīda mētels tai pār pleciem čaukst\\
+sarkanšvītras & \texttt{noun} & Ak, jāsteidz izteikt, --- gaust nau laiks, nau telpas,\textbackslash{} Drīz {\bf sarkanšvītras} pantos iegriežas\\
+\hline
+zaļa & \texttt{FISN} & Dies saulīte atkal trīskrāsaina:\textbackslash{} Drīz zila, drīz {\bf zaļa}, drīz sarkana\\
+zaļa & \texttt{FISN} & Atplešat tad logu slē\v{g}us:\textbackslash{} Visur apkārt skaidrā tālē\textbackslash{} Jauna, {\bf zaļa} gaisma bālē,\textbackslash{} Rīta rasa mirgo zālē\\
+zaļa & \texttt{FISN} & Pilī dzintarsienas,\textbackslash{} {\bf Zaļa} vara grīda,\textbackslash{} Gliemežgriesti, sijas tēraudzilas\\
+zaļai & \texttt{FISD} & Ka elpa aizrāvās no ļauniem tvaikiem\textbackslash{} Un {\bf zaļai} dzīvībai bij jānosmok\\
+zaļā & \texttt{FISL} & Visu nakti rasa rita,\textbackslash{} Balti klāja zemes vaigu,\textbackslash{} {\bf Zaļā} sagšā mēmi krita\\
+zaļā & \texttt{FDSN} & Pirms vēl sācās pavasara\textbackslash{} Saules siltā, {\bf zaļā} vara\\
+zaļ-zaļā & \texttt{FDSN} & Un galviņu lieca\textbackslash{} Pie zemes krūts\textbackslash{} {\bf Zaļ-zaļā} zāle\\
+zaļgans & \texttt{MISN} & Viz bāli {\bf zaļgans} zaigums debess tālē,\textbackslash{} No saules rieta zelta migla plūst\\
+zaļi & \texttt{MIPN} & Bet trūdiem cauri {\bf zaļi} asni dīgst,\textbackslash{} Un jauna pasaule virs vecās ceļas\\
+zaļi & \texttt{MIPN} & Daudz karstas sirdis\textbackslash{} Pukstēt rims,\textbackslash{} Daudz {\bf zaļi} stāvi\textbackslash{} Vēl lauzti ļims\\
+jaunzaļi & \texttt{MIPN} & Ilgi ilgotas veldzošas vēsmas,\textbackslash{} Lai {\bf jaunzaļi} asni dīgst\\
+zaļoši & \texttt{MIPN} & {\bf Zaļoši} tīrumi,\textbackslash{}Puķotas pļavas:\textbackslash{} Zib baltas kājiņas,\textbackslash{} Sīk-žigli tekot\\
+zaļais & \texttt{MDSN} & Man sirds ir pilna mīlas\textbackslash{} Kā maija {\bf zaļais} ārs,\textbackslash{} Kā smaršas puteklīšu\textbackslash{} Pilns ziedošs ābeļdārzs\\
+zaļi & \texttt{adv} & Ko jūs vēl skumstat,\textbackslash{} Jūs jaunās dvēsles,\textbackslash{} Tik {\bf zaļi} sārtas?\\
+zaļos & \texttt{verb} & No dusmas mostas viss pasauls ārs,\textbackslash{} Drīz {\bf zaļos} zeme viens vienīgs dārzs\\
+\hline 
+zila & \texttt{FISN} & Dies saulīte atkal trīskrāsaina:\textbackslash{} Drīz {\bf zila}, drīz zaļa, drīz sarkana\\
+zilu & \texttt{FISA} & Un mīļā dzimtene guļ manā priekšā\textbackslash{} Kā plaši izplatīta balta sega,\textbackslash{} Ar {\bf zilu} jūras lentu apšūta\\
+tēraudzilas & \texttt{FIPN} & Pilī dzintarsienas,\textbackslash{} Zaļa vara grīda,\textbackslash{} Gliemežgriesti, sijas {\bf tēraudzilas}\\
+zilganu & \texttt{FIPG} & Met {\bf zilganu} dzirksteļu mirgas\textbackslash{} Iz spēka pilnās sirds\\
+zilās & \texttt{FDPN} & Pret mīksto miesu šļākstot sper kā lode,\textbackslash{} Visapkārt sprakstot {\bf zilās} pupas plīst\\
+zils & \texttt{MISN} & Pus-pelēks un pus-tumši {\bf zils}\textbackslash{} Spīd ūdens pretī debess jumam\\
+zil-augstu & \texttt{MIPG} & {\bf Zil-augstu} kalnāju\textbackslash{} Sniegotā gultā\textbackslash{} Guldīju galvu,\textbackslash{} Lūkoju tālē\\
+ziliem & \texttt{MIPD} & Bez gala upe sniecas\textbackslash{} Uz {\bf ziliem} kalnājiem.\textbackslash{} Tur debess pret zemi liecas\textbackslash{} Aiz mūžu tālumiem\\
+ziliem & \texttt{MIPI} & Aiz tīreļiem, purviem un siliem,\textbackslash{} Guļ mana dzimtene diendusā\textbackslash{} Tā aizsegta debešiem {\bf ziliem}\\
+zil-saulainiem & \texttt{MIPI} & {\bf Zil-saulainiem} debešu palagiem\textbackslash{} Pret dvesmām un strāvām, un negaisiem\\
+zilos & \texttt{MIPL} & Cieti ieaudzis stāv viņš savā zemē,\textbackslash{} Lidot nejauzdams augstos, {\bf zilos} gaisos\\
+zili & \texttt{adv} & Tu, tāles plīvurs,\textbackslash{} {\bf Zili} blāvs,\textbackslash{} Jel paveries\textbackslash{} Šo brīd', šo brīd'\\
+\hline
+zeltītas & \texttt{FIPN} & Lūk, {\bf zeltītas} lapas\textbackslash{} Trīs kalna bērzu\textbackslash{} Galotņu zaros\\
+sarkan-zeltainā & \texttt{FDSN} & Kur iespiesties nespēj\textbackslash{} {\bf Sarkan-zeltainā}, karstā,\textbackslash{} Septiņkrāsainā pasauls saule\\
+zelta & \texttt{noun} & Sēd tā {\bf zelta} krēslā,\textbackslash{} Acis drūmi kvēlo,\textbackslash{} Sēd un vērpj; tai melnais suns pie kājām\\
+zelta & \texttt{noun} & Pāri upei mēness meta\textbackslash{} Tiltu {\bf zelta} stariem:\textbackslash{} Pārnākt sapņu gariem\textbackslash{} Miglai līdz iz tumšiem mežiem\\
+zelta & \texttt{noun} & Viz bāli zaļgans zaigums debess tālē,\textbackslash{} No saules rieta {\bf zelta} migla plūst\\
+zelta & \texttt{noun} & Manu pilno {\bf zelta} matu\textbackslash{} Un ziedošo vaigu tām trūkst\\
+zelta & \texttt{noun} & Tie vijas ap tevi un viļņo\textbackslash{} Kā kūpošs {\bf zelta} tvaiks\\
+zelta & \texttt{noun} & Tie klust un klīst, un saplok,\textbackslash{} Viss {\bf zelta} mirdzums tumst\\
+zelta & \texttt{noun} & Tā tērpta sarkani ar {\bf zelta} audiem,\textbackslash{} Smags zīda mētels tai pār pleciem čaukst\\
+zelta & \texttt{noun} & Bez žēluma, bez pagātnes, bez vainas\textbackslash{} Tu skati priekšā {\bf zelta} rīta ainas\\
+zelts & \texttt{noun} & Tev birzē ritēs rasas {\bf zelts},\textbackslash{} Man vecais slogs būs plecos velts\\
+zelts & \texttt{noun} & Aiz segas uguns, kurš tik verdošs dedzis,\textbackslash{} Kā matu {\bf zelts} līst šķiesnām iziris\\
+\hline
+purpurkvēls & \texttt{noun} & Ir lepni nesalauzts, ap viņa vājām\textbackslash{} Un kuslām miesām skrandains {\bf purpurkvēls}?\\
+\hline
+sārta & \texttt{FISN} & Tālos mežos saule slīka:\textbackslash{} Rasa klāja zemes vaigu,\textbackslash{} {\bf Sārta} blāzma vaigā tvīka\\
+sārta & \texttt{FISN} & Tīmekļa {\bf sārta}\textbackslash{} Ir mīlas dvēsele,\textbackslash{} Irst, tikko skārta\\
+sārtas & \texttt{FIPN} & Ko jūs vēl skumstat,\textbackslash{} Jūs jaunās dvēsles,\textbackslash{} Tik zaļi {\bf sārtas}?\\
+sārtos & \texttt{MIPL} & Viņš savu dvēseli jums pretim nesa\textbackslash{} Kā rīta sauli {\bf sārtos} mākoņos\\
+sārtos & \texttt{MIPL} & Bet savu dvēseli viņš tālāk nesa\textbackslash{} Kā rīta sauli {\bf sārtos} mākoņos\\
+sārtais & \texttt{MDSN} & Mans {\bf sārtais} ziediņš, mans vientulīts,\textbackslash{} Kas mīļā saulē plaucis\\
+sārtais & \texttt{MDSN} & Mans {\bf sārtais} ziediņš, starodams\textbackslash{} Tu saulīti sirdī man nesi\\
+sārtojas & \texttt{verb} & Jūs esat skaistās lauka lilijas. -\textbackslash{} Kā viņas zied un {\bf sārtojas}!\\
+sārtojas & \texttt{verb} & Tu izplēt viņus smiedamās:\textbackslash{} Desmitstaraina austriņa {\bf sārtojas}\\
+sārtojas & \texttt{verb} & Viss, ko tā teic, tiek tūdaļ izpildīts,\textbackslash{} Līdz zeme pārplūzdama {\bf sārtojas}\textbackslash{} Un asins atspīd debesīs kā blāzma.\\
+\hline
+pelēka & \texttt{FISN} & Tā patiesa dzīve bez apsega:\textbackslash{} {\bf Pelēka}, netīra, pūstoša\\
+pelēks & \texttt{MISN} & Sen saule aug, sen gaisi silst,\textbackslash{} Sen marta ledus {\bf pelēks} dilst\\
+pus-pelēks & \texttt{MISN} & {\bf Pus-pelēks} un pus-tumši zils\textbackslash{} Spīd ūdens pretī debess jumam\\
+pelēkzīda & \texttt{noun} & Vēsmas drēbe\textbackslash{} {\bf Pelēkzīda},\textbackslash{} Miglas šūta;\textbackslash{}\textbackslash{} Pērļu smaga\textbackslash{} Vīle velkas,\textbackslash{} Liecas rūta\\[10px]
+\caption{Krāsu nosaukumi {\em TNZV}} % needs to go inside longtable environment
+\label{tab:colortable}
+\end{longtable}
+\endgroup 
+
+Tā pati tabula krājumam Dz-L: 
+
+\begingroup \footnotesize
+\begin{longtable}{lr|l}
+{\bf Krāsa} & & {\bf Konteksts}\\ \hline 
+melnai & \texttt{FISD} & Rīti.\textbackslash{} {\bf Melnai} pusnaktij dzimušie bērni\textbackslash{} Iet no loga pie loga,\textbackslash{} Un Rīgai logu ir daudz\\
+melnu & \texttt{FISA} & Un kāpēc man visu\textbackslash{} Pa {\bf melnu} nakti,\textbackslash{} Pa šautriem sapņiem\textbackslash{} Vajag izdomāt, izdomāt, izdomāt\\
+melnā & \texttt{FDSN} & Un neatsedzas\textbackslash{} Ne trauks, no kā lej,\textbackslash{} Ne {\bf melnā} kapuce,\textbackslash{} Zem kuras slēpjas\textbackslash{} Tā draudīgā seja\\
+melno & \texttt{FDSA} & Kā sev no atmiņas un acīm izsviest\textbackslash{} To balto, sarmas mež\v{g}īņoto rītu\textbackslash{} Un {\bf melno} kara hospitāļa bedri\\
+melnās & \texttt{FDPN} & Jo bedrē bija sasviests juku jukām\textbackslash{} Gan asiņainas marles {\bf melnās} skrandas,\textbackslash{} Gan kaut kas sarkans, notraipīts ar brūnu\\
+melns & \texttt{MISN} & Tad dienu baržas ---\textbackslash{} Smagi krautās baržas ---\textbackslash{} {\bf Melns}, miris ūdens\textbackslash{} Var tālāk vest\\
+melnajiem & \texttt{MDPD} & Stiepjas vilcienu stigas\textbackslash{} Ar gulšņu {\bf melnajiem} taustiņiem,\textbackslash{} Stiepjas tālruņa vadu\textbackslash{} Tūkstoš vijoļu stīgas\\
+\hline
+balta & \texttt{FISN} & Tu teici,\textbackslash{} Ka paliksi {\bf balta}, ---\textbackslash{} Un dzīvosi\textbackslash{} Mirkli\\
+baltu & \texttt{FISA} & Vai tu atceries vēl, kalēj,\textbackslash{} Večuku ar {\bf baltu} bārdu\\
+baltu & \texttt{FISA} & Es tevi iemīlēju\textbackslash{} Vasarā, redzēdams {\bf baltu}\\
+baltā & \texttt{FDSN} & Stāmerienas muižas liesmās\textbackslash{} {\bf Baltā} bārda rūsga svila\textbackslash{} Vēl no Piektā gada dūmiem\textbackslash{} Gadu pamale ir zila\\
+baltā & \texttt{FDSN} & Un tāpēc nāvei --- nē! Un salam --- nē!\textbackslash{} Lai {\bf baltā} nāves dvaša kūp no mutes\\
+balto & \texttt{FDSA} & Bet bariņš zīlīšu jau metās bedrē\textbackslash{} Un sāka knābāt tieši {\bf balto} kāju\\
+balto & \texttt{FDSA} & Nenomest ziemas glābjošo\textbackslash{} {\bf Balto} spalvu\textbackslash{} Un nekļūt rudai\\
+baltā & \texttt{FDSV} & {\bf Baltā} māt, veļu māt,\textbackslash{} Mazgā baltu paladziņu\textbackslash{} Jau ganās mani zirgi\textbackslash{} Viņas saules pļaviņā\\
+baltā & \texttt{FDSV} & {\bf Baltā} māt, veļu māt,\textbackslash{} Ņem mani savā daļā,\textbackslash{} Tur jau īd manas govis\textbackslash{} Neganītas, neizslauktas\\
+baltā & \texttt{FDSV} & {\bf Baltā} māt, veļu māt,\textbackslash{} Aizver man acu vārtus,\textbackslash{} Kad atnācu, tad atvēru,\textbackslash{} Nu ir reize aizdarīt\\
+baltā & \texttt{FDSV} & Mana {\bf baltā} un mierīgā māt,\textbackslash{} Es tev zilganu asteri atnesu.\textbackslash{} Ir pie Kalnciema lielceļa dārzs\\
+baltā & \texttt{FDSV} & Mana {\bf baltā} un mierīgā māt,\textbackslash{} Drīz jau leduspuķes vien ziedēs te,\textbackslash{} Es tās ņemšu un nesīšu tev\\
+baltu & \texttt{MISA} & Baltā māt, veļu māt,\textbackslash{} Mazgā {\bf baltu} paladziņu\textbackslash{} Jau ganās mani zirgi\textbackslash{} Viņas saules pļaviņā\\
+balti & \texttt{MIPN} & Drīz būs zili, zili ūdeņi,\textbackslash{} Drīz būs {\bf balti}, {\bf balti} pūpoli,\textbackslash{} Drīz es beigšu sevi mierināt\\
+balti & \texttt{MIPN} & Rūciet, kamēr vēl nav zili ūdeņi,\textbackslash{} Rūciet, kamēr vēl nav {\bf balti} pūpoli\\
+baltu & \texttt{MIPG} & Gaujas balss ilgi meklēts un saukts,\textbackslash{} {\bf Baltu} mākoņu kupenās jaukts,\textbackslash{} Ziedu sildīts un viesuļu nests\\
+baltiem & \texttt{MIPD} & Ceļi kūp.\textbackslash{} Ar {\bf baltiem}, {\bf baltiem} dūmiem ceļi kūp.\textbackslash{} Uz galda ceļamaizes rieciens drūp\\
+balto & \texttt{MDSA} & Kā sev no atmiņas un acīm izsviest\textbackslash{} To {\bf balto}, sarmas mež\v{g}īņoto rītu\textbackslash{} Un melno kara hospitāļa bedri\\
+visbaltāko & \texttt{MDSA} & Pāri man\textbackslash{} Ar {\bf visbaltāko} baltumu\textbackslash{} Debess jūra\textbackslash{} Savas bangotnes putotos mākoņus nes\\
+baltais & \texttt{MDSV} & Es tev piegāju klāt,\textbackslash{} {\bf Baltais} brīnum,\textbackslash{} Un redzēju,\textbackslash{} Ka bises tu esi saskaitījusi\\
+baltie & \texttt{MDPN} & Tikai pēc tam lietus varēja līt vai nelīt ---\textbackslash{} Mani interesēja tikai zibeņu {\bf baltie} raksti\\
+baltie & \texttt{MDPN} & Pland matu {\bf baltie} lini,\textbackslash{} Iet meitene iekš mini\textbackslash{} Un modri skatās apkārt\\
+baltums & \texttt{noun} & Bet vectēvam pašam\textbackslash{} Gar deniņiem {\bf baltums}\textbackslash{} Un rokas uz spieķa\textbackslash{} Kā puķes pēc salnas\\
+baltumu & \texttt{noun} & Pāri man\textbackslash{} Ar visbaltāko {\bf baltumu}\textbackslash{} Debess jūra\textbackslash{} Savas bangotnes putotos mākoņus nes\\
+\hline
+sarkanai & \texttt{FISD} & Un nekas, ja jūs saskrambās zari,\textbackslash{} Nolīs pa {\bf sarkanai} lāsei...\textbackslash{} Toties jūs zināsit\\
+sarkanu & \texttt{FISA} & Ja manam vectēvam būtu pietrūcis\textbackslash{} Tavu\textbackslash{} Ar {\bf sarkanu} uguni degošu skalu\\
+sarkanām & \texttt{FIPD} & Kad uzspīdēs saule,\textbackslash{} Asaras nožūs\textbackslash{} No bērzu zeltaini smalkām\textbackslash{} Un apšu {\bf sarkanām} notīm\\
+sarkanām & \texttt{FIPD} & Pāri sirds malām kūsās ---\textbackslash{} Un uz tepiķa gulēs\textbackslash{} Runcis ar {\bf sarkanām} ūsām\\
+sarkans & \texttt{MISN} & Gan kaut kas {\bf sarkans}, notraipīts ar brūnu,\textbackslash{} Gan brūns ar sarkanu. Un viena kāja\\
+sarkanu & \texttt{MISA} & Gan kaut kas sarkans, notraipīts ar brūnu,\textbackslash{} Gan brūns ar {\bf sarkanu}. Un viena kāja\\
+sarkanie & \texttt{MDPN} & Kuras stacijām jāpieņem\textbackslash{} Straujie un {\bf sarkanie} asiņu vilcieni\\
+sarkani & \texttt{adv} & Liku tā kā pie nepazīstama suņa purna,\textbackslash{} Kā pie {\bf sarkani} sakurinātas plīts\\
+sarkstiet & \texttt{verb} & {\bf Sarkstiet},\textbackslash{} Lai zin, kādā krāsā\textbackslash{} Pēc tam\textbackslash{} Degt jūsu mājām\\
+\hline
+zaļas & \texttt{FISG} & Te beidzās viena no ieliņām,\textbackslash{} Un te es atradu šķiltavas\textbackslash{} No {\bf zaļas}  čaulītes\\
+tumšzaļas & \texttt{FISG} & Šajos ceriņos rīt ziedi būs ---\textbackslash{} Mēļas liesmas no {\bf tumšzaļas} pekles\\
+zaļas & \texttt{FIPN} & Paskaties palmā pār viņiem ---\textbackslash{} Palmas lapas kā {\bf zaļas} rokas ar izplestiem pirkstiem\\
+zaļās & \texttt{FIPL} & Un es šūpojos šinīs bizēs,\textbackslash{} Gan tumšās un {\bf zaļās}, gan ziedošās un sirmās\\
+zaļajā & \texttt{FDSL} & Pēc tam bija krusa.\textbackslash{} Tā krita patvertnes uzbēruma {\bf zaļajā} zālē,\textbackslash{} Ripoja lejup pa Doma zaļgano jumtu\\
+zaļgans & \texttt{MISN} & Un, ka vasarā birzī no četrām pusēm\textbackslash{} Mūs sargāja {\bf zaļgans} un caurspīdīgs aizkars,\textbackslash{} Atceries\\
+zaļi & \texttt{MIPN} & Un pirmā latviešu elektrība,\textbackslash{} Un {\bf zaļi} mati\textbackslash{} Uz kāpu skausta\\
+zaļgani & \texttt{MIPN} & Tad iešalcas meža skaņa,\textbackslash{} Pa gravām kāpelē\textbackslash{} {\bf Zaļgani} paegļu vīriņi\\
+zaļganais & \texttt{MDSN} & Baznīcu torņu {\bf zaļganais} pelējums\textbackslash{} Un jauno kvartālu\textbackslash{} Augšanas untums\\
+zaļgano & \texttt{MDSA} & Pēc tam bija krusa.\textbackslash{} Tā krita patvertnes uzbēruma {\bf zaļajā} zālē,\textbackslash{} Ripoja lejup pa Doma {\bf zaļgano} jumtu\\
+zaļgano & \texttt{MDSA} & Mašīnu jūklis.\textbackslash{} Reklāmas uguns.\textbackslash{} Taksometru pietura.\textbackslash{} Tas ar pelēko, tas ar {\bf zaļgano} mēteli\\
+apzaļojuša & \texttt{part} & Nenosēdēt\textbackslash{} Pat uz paša mīkstākā\textbackslash{} Ar sūnu {\bf apzaļojuša} akmens\\
+\hline
+zila & \texttt{FISN} & Stāmerienas muižas liesmās\textbackslash{} Baltā bārda rūsga svila,\textbackslash{} Vēl no Piektā gada dūmiem\textbackslash{} Gadu pamale ir {\bf zila}\\
+zila & \texttt{FISN} & Jo lāse ir viršu {\bf zila}.\textbackslash{} Aiz prieka par sauli\textbackslash{} Tos vēji ir sajaukuši\\
+zila & \texttt{FISN} & Kur tikko redzami pulsē\textbackslash{} {\bf Zila} bērnība tava,\textbackslash{} Sārta jaunība tava\textbackslash{} Un zils vakars tavs\\
+zila & \texttt{FISN} & Tikai āboli krīt\textbackslash{} Rudens rasainā zālē.\textbackslash{} Rasa {\bf zila} kā tāle,\textbackslash{} Kurp tu aizbrauksi rīt\\
+zilu & \texttt{FISA} & {\bf Zilu} velvi pār galvu es esmu saņēmis,\textbackslash{} Steigā dunošu zemi\textbackslash{} Tēvs un vectēvs zem kājām man nolicis\\
+zilganu & \texttt{FISA} & Mana baltā un mierīgā māt,\textbackslash{} Es tev {\bf zilganu} asteri atnesu.\textbackslash{} Ir pie Kalnciema lielceļa dārzs\\
+zilā & \texttt{FISL} & Kvēlos liesmā un plaiksnīsies sārts\textbackslash{} {\bf Zilā} debesu sejā mums pāri\\
+zilu & \texttt{FIPG} & Nakti, kurā it kā miljons mieru,\textbackslash{} Miljons {\bf zilu} zvaigžņu pārī spīd\\
+zilganu & \texttt{FIPG} & Es neprotot laist ziepju burbuļu krāsainās domas pie kafijas tases un {\bf zilganu} actiņu bezdibens tukšumā\\
+zilacaino & \texttt{FDSA} & Un skaisto, {\bf zilacaino} netikli rudzupuķi,\textbackslash{} Uz kuru rudeņos visas vārpas sāk skatīties,\textbackslash{} Atceries\\
+zilās & \texttt{FDPN} & Paegļu {\bf zilās},\textbackslash{} Apsūbējušās ogas,\textbackslash{} Kaut arī tās\textbackslash{} Ne reizi nav runājušās ar zemenēm\\
+zils & \texttt{MISN} & Krūtīs sāpēs kāds aromāts {\bf zils},\textbackslash{} Un viens atlidos, un otrs atbrauks\\
+zils & \texttt{MISN} & Kur tikko redzami pulsē\textbackslash{} Zila bērnība tava,\textbackslash{} Sārta jaunība tava\textbackslash{} Un {\bf zils} vakars tavs\\
+zili & \texttt{MIPN} & Drīz būs {\bf zili}, {\bf zili} ūdeņi,\textbackslash{} Drīz būs balti, balti pūpoli\textbackslash{} Drīz es beigšu sevi mierināt\\
+zili & \texttt{MIPN} & Rūciet, kamēr vēl nav {\bf zili} ūdeņi,\textbackslash{} Rūciet, kamēr vēl nav balti pūpoli\\
+zili & \texttt{MIPN} & Kas par miežiem!\textbackslash{} Mieži --- tie ir tur ---\textbackslash{} Aiz tiem zilgiem torņiem\textbackslash{} {\bf Zili} meži\\
+ziliem & \texttt{MIPD} & Aiz tiem {\bf ziliem} mežiem\textbackslash{} Tāli lauki,\textbackslash{} Tur, tur --- akotu pie akota\textbackslash{} Iļ\v{g}uciema alus mieži aug\\
+zilgiem & \texttt{MIPD} & Kas par miežiem!\textbackslash{} Mieži --- tie ir tur ---\textbackslash{} Aiz tiem {\bf zilgiem} torņiem\textbackslash{} Zili meži\\
+zilais & \texttt{MDSN} & Jauno dienu {\bf zilais} asmens nodila.\textbackslash{} Večuks tirgojās ar cirvja kātiem\\
+ziluma & \texttt{noun} & Krītiet, mani bērni,\textbackslash{} Es papūtīšu uz {\bf ziluma} ---\textbackslash{} Tā nav nemaz tik briesmīga krāsa\\
+\hline
+rūsga & \texttt{FISN} & Stāmerienas muižas liesmās\textbackslash{} Baltā bārda {\bf rūsga} svila,\textbackslash{} Vēl no Piektā gada dūmiem\textbackslash{} Gadu pamale ir zila\\
+rudai & \texttt{FISD} & Nenomest ziemas glābjošo\textbackslash{} Balto spalvu\textbackslash{} Un nekļūt {\bf rudai}\\
+rudā & \texttt{FDSN} & Viņš nomirs, jo liesmā {\bf rudā}\textbackslash{} Jauns sprādziens ar zemi to sakausēs\\
+\hline
+dzeltena & \texttt{FISN} & Vai tev ir viena {\bf dzeltena} lapu kaudze\textbackslash{} Priekš diviem blandoņām\\
+dzeltenas & \texttt{FISG} & Bet ne velti pats gadsimts\textbackslash{} Kliedz pēc māla un koka\textbackslash{} Un pēc vienas {\bf dzeltenas}\textbackslash{} Bērzu ataudzes\\
+dzeltenas & \texttt{FIPA} & Šķir vēsture vecas {\bf dzeltenas} lapas\textbackslash{} Un ierauga\textbackslash{} Kardinālu\\
+dzeltenīgs & \texttt{MISN} & Bet tagad līst lietus.\textbackslash{} Līst {\bf dzeltenīgs} lieplapu lietus.\textbackslash{} Par ko tu domā\textbackslash{} Šai pelēkā, pelēkā lietū\\
+dzeltenu & \texttt{MIPG} & {\bf Dzeltenu} kļavziedu pilni mati,\textbackslash{} Un bites pinas kā trakas,\textbackslash{} Un pirmie negaisi danco apkārt\textbackslash{} Kā līgavai\\
+zeltaini & \texttt{adv} & Kad uzspīdēs saule,\textbackslash{} Asaras nožūs\textbackslash{} No bērzu {\bf zeltaini} smalkām\textbackslash{} Un apšu sarkanām notīm\\
+\hline
+sārta & \texttt{FISN} & Kur tikko redzami pulsē\textbackslash{} Zila bērnība tava,\textbackslash{} {\bf Sārta} jaunība tava\textbackslash{} Un zils vakars tavs\\
+rozā & \texttt{FISN} & Tā nav nemaz tik briesmīga krāsa.\textbackslash{} Briesmīga ir tā {\bf rozā}\textbackslash{} Uz taukiem purniem\\
+\hline
+brūns & \texttt{MISN} & Gan kaut kas sarkans, notraipīts ar brūnu,\textbackslash{} Gan {\bf brūns} ar sarkanu. Un viena kāja\\
+brūnu & \texttt{MISA} & Tos ķeizarkroņus,\textbackslash{} Kurus es ostīju kādreiz\textbackslash{} Un nosmērēju sev degunu {\bf brūnu}\textbackslash{} Ar putekšņiem\\
+brūnu & \texttt{MISA} & Gan kaut kas sarkans, notraipīts ar {\bf brūnu},\textbackslash{} Gan brūns ar sarkanu. Un viena kāja\\
+brūnu & \texttt{MISA} & Mirguļo kupenas,\textbackslash{} Un upēs ir daudz ūdens.\textbackslash{} Lieli ku\v{g}i var peldēt\textbackslash{} Pa tādu dziļu un {\bf brūnu} ūdeni\\
+brūni & \texttt{adv} & Džimlairūdi, puto {\bf brūni}\textbackslash{} Sveša alus stops,\textbackslash{} Spārdās svešas zemes šķūnī\textbackslash{} Svešas zemes lops\\
+\hline
+pelēkas & \texttt{FIPN} & Es redzēju, kā krita dzērves,\textbackslash{} Kā sniga līdz pašam tālākam mežam\textbackslash{} {\bf Pelēkas} pārslas\\
+pelēku & \texttt{FIPG} & Ap manu bērnību apkārt ir apkritis\textbackslash{} {\bf Pelēku} lapu pelēks laprkitis\\
+pelēkās & \texttt{FDSG} & Atbalss, bet paskaties apkārt,\textbackslash{} Vai tu redzi {\bf pelēkās} ikdienas pīķus,\textbackslash{} Ikdienas rūpju trulos asmeņus\\
+pelēkās & \texttt{FDPN} & Pār visiem, kas krita,\textbackslash{} Dzērvju {\bf pelēkās} spalvas krita\\
+pelēks & \texttt{MISN} & Ap manu bērnību apkārt ir apkritis\textbackslash{} Pelēku lapu {\bf pelēks} laprkitis\\
+pelēks & \texttt{MISN} & Katrā solī, ko tālāk tu liec,\textbackslash{} {\bf Pelēks}, silts, samīts zaķītis kliedz.\textbackslash{} Tā jau nav kāda varena balss\\
+pelēks & \texttt{MISN} & Bet tikai, uz darbu ejot,\textbackslash{} Vēss, {\bf pelēks} vējš,\textbackslash{} Spuldžu zvaigznes\textbackslash{} Un kvartālu dzirkstošie mākoņi\textbackslash{} Man palīdzēja\\
+pelēkā & \texttt{MISL} & Ko tu domā šai {\bf pelēkā}, {\bf pelēkā} lietū,\textbackslash{} Mana dzimtā un bezgala tālā puse\\
+pelēkā & \texttt{MISL} & Manai dzimtajai pusei\textbackslash{} {\bf Pelēkā} lietū ir auksti\\
+pelēkā & \texttt{MISL} & Bet tagad līst lietus.\textbackslash{} Līst dzeltenīgs lieplapu lietus.\textbackslash{} Par ko tu domā\textbackslash{} Šai {\bf pelēkā}, {\bf pelēkā} lietū\\
+pelēki & \texttt{MIPN} & Pār krūmu, kurš mani slēpa,\textbackslash{} Krita {\bf pelēki} sniegi,\textbackslash{} Pār vāgūzi krita,\textbackslash{} Pār kaķa raibajiem sāniem\\
+pelēko & \texttt{MDSA} & Mašīnu jūklis.\textbackslash{} Reklāmas uguns.\textbackslash{} Taksometru pietura.\textbackslash{} Tas ar {\bf pelēko}, tas ar zaļgano mēteli\\
+pelēko & \texttt{MDSA} & Es pats redzēju,\textbackslash{} Kā tu baroji\textbackslash{} Tur to {\bf pelēko} kaķi,\textbackslash{} Kas pieder visiem\\
+\hline 
+raibā & \texttt{FISL} & Es ķeros koku zaros\textbackslash{} Un {\bf raibā} šlipsē karos,\textbackslash{} Un izveļos no gultas,\textbackslash{} Un tūlīt mostos ar\\
+raibajā & \texttt{FDSL} & Lai blakus karājošies\textbackslash{} Ar mīlīgu smaidu\textbackslash{} Neietriec dunci tā {\bf raibajā} mugurā\\
+raibajiem & \texttt{MDPD} & Pār vāgūzi krita,\textbackslash{} Pār kaķa {\bf raibajiem} sāniem,\textbackslash{} Pār visiem, kas krita\\[10px]
+\caption{Krāsu nosaukumi {\em Dz-L}} 
+\label{tab:colortable2}
+\end{longtable}
+\endgroup 
+
+
+
+
+
+
+
+
+\vspace{5ex}
+{\bf Secinājumi:}
+\begin{itemize}
+\item Melno krāsu Raiņa {\em TNZV} daudz biežāk lieto 
+vīriešu nekā sieviešu dzimtē 
+(6 pret 1), savukārt balto -- biežāk sieviešu dzimtē (8 pret 4). 
+Tas nozīmē, ka 
+šajā krājumā melnās un baltās krāsas simbolisms izpaužas citādi nekā 
+lugā {\em Zelta zirgs} ar Melno Māti un Balto Tēvu. 
+Ķīniešu valodā ietvertajam simbolismam tuvāks būtu {\em Zelta zirgs}, 
+jo tur baltums, gaisma parasti saistās ar vīriešu dzimti 
+({\em Tàiyáng} jeb ``Lielais {\em Yang}'' nozīmē ``Saule''; 
+savukārt {\em Tàiyīn} jeb ``Lielā Yin'' nozīmē ``Mēness'').
+Rainis šādu dzimtes/krāsu simbolismu konsekventi neievēro
+pat {\em Zelta zirgā}: Melnās Mātes
+pavadoņi ir melnie kraukļi,
+bet savdabīgs kraukļu pretstats ir Taurenīte-Dvēselīte.
+\item O.Vācieša dzejoļos ``melnais'' un ``baltais'' nav tik stipri 
+asociēti ar vienu dzimti. Toties apzīmējums ``pelēks'' daudz biežāk 
+saistās ar vīriešu nekā sieviešu dzimti (9 pret 4). 
+\item Raiņa dzejolī sastopama arhaiska forma -- instrumentāļa locījums: 
+{\em ``Tā aizsegta debešiem ziliem, zil-saulainiem debešu palagiem''}. 
+Mūsdienās biežāk raksta  
+prievārdu kopā ar akuzatīvu vai datīvu: ``aizsegt {\bf ar} kaut ko''.
+\item {\em TNZV} neizmanto īpašības vārdu ``dzeltens'', toties nereti veido 
+vārdkopas ar ``zelta'' (krāsas nevis materiāla nozīmē) -- {\em 
+``sēd tā zelta krēslā''}, 
+{\em ''tiltu zelta stariem''}.
+\item {\em Dz-L} atšķirībā no {\em TNZV} bieži atkārto krāsu vārdus
+pastiprinājuma nozīmē. (``Drīz būs zili, zili ūdeņi, drīz būs balti, balti pūpoli'', 
+``Ko tu domā šai pelēkā, pelēkā lietū,\ Mana dzimtā un bezgala tālā puse'', 
+``Pāri man ar visbaltāko baltumu'').
+Citādi latviešu valodā pastiprinājumu parasti neizsaka ar vārda atkārtošanu, 
+teiksim, Vecās Derības grāmatas nosaukumu, kas burtiski būtu ``Dziesmu Dziesma'', 
+parasti tulko ``Zālamana Augstā Dziesma''.
+\item Abi autori tikpat kā neizmanto salīdzināmās pakāpes (pārāko un vispārāko pakāpi) 
+krāsu adjektīviem. 
+Vienīgais izņēmums ir no {\em Dz-L}: ``Pāri man ar {\bf visbaltāko 
+baltumu} debess jūra 
+savas bangotnes putotos mākoņus nes''. Salīdzināmo pakāpju trūkums
+liecina par lo\v{g}isku valodas
+lietošanu, jo krāsa ir kvalitatīva nevis kvantitatīva pazīme: vai nu kaut kas
+ir sarkans vai nav. Salīdzināt vienas krāsas intensitātes ir jēga tikai retos
+gadījumos. 
+\item Kā redzams Attēlā \ref{fig:defIndef}, krāsu adjektīviem ar 
+noteikto galotni ir gluži cits krāsu sadalījums nekā adjektīviem 
+ar nenoteikto galotni. 
+Starp krāsu vārdiem ar noteikto galotni ir lielākas izredzes
+sastapt krāsas ``melns'' un ``balts'' (t.i.\ ``melnais'' un ``baltais''
+dažādos locījumos) -- attiecīgi 15.2\% un 34.8\%. 
+Starp vārdiem ar nenoteikto galotni (``melns'' un ``balts'' dažādos locījumos)
+veido attiecīgi 6.3\% un 16.2\% no visiem krāsu nosaukumiem. 
+(Melnie un baltie laukumiņi Attēlā \ref{fig:defIndef} izskatās gandrīz
+vienādi -- bet piemēru ar noteiktajām galotnēm ir krietni mazāk: 46 pret 111). 
+\item Kā redzams Attēlā \ref{fig:numberAdj}, krāsas adjektīvs ``zils'' 
+ir ar īpaši augstu īpatsvaru starp daudzskaitļa formām (t.i. ``zili'' vai ``zilas'' 
+dažādos locījumos).
+\item Kā redzams Attēlā \ref{fig:authorAdj}, O.Vācieša dzejas valodā 
+ir dažas krāsas, kuru Raiņa {\em TNZV} nav. Piemēram, ``rūsgs/ruds'' (diagrammā
+zīmēts oranžs), ``rozā'' (Rainim tikai ``sārts''), ``brūns'' un ``raibs''. 
+Toties Rainim ir ``purpurkvēls''. 
+\item Dažreiz atšķirīgi krāsu nosaukumi (vai norādes uz tiem) 
+lietoti tās pašas lietas vai parādības apzīmēšanai. 
+Ir aizdomas, ka ne katras divas krāsas varētu kombinēt vienā dzejas tēlā.
+\begin{itemize}
+\item 
+Piemēri no {\em TNZV}: 
+``Ko jūs vēl skumstat, Jūs jaunās dvēsles, Tik {\bf zaļi sārtas}?'', 
+``Kur iespiesties nespēj {\bf Sarkan-zeltainā}, karstā, Septiņkrāsainā pasauls saule'', 
+``{\bf Zil-saulainiem} debešu palagiem''. 
+\item
+Piemēri no {\em Dz-L}
+``{\bf Baltā} bārda {\bf rūsga} svila'', ``Gan kaut kas {\bf sarkans}, 
+notraipīts ar {\bf brūnu},\ Gan {\bf brūns} ar {\bf sarkanu}'', 
+``Ka rudeņos tev ir tāds milzums {\bf vara} un {\bf zelta} naudas''.
+\end{itemize}
+\end{itemize}
+
+
+
+
+<<authorAdj, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4, fig.cap="Kr\u0101su (ar\u012B neadjekt\u012Bvu) sadal\u012Bjums p\u0113c autora", dev='CairoPDF'>>=
+
+setwd("/Users/kapsitis/workspace/ddgatve-stat/dzejas-statistika/")
+
+colorStuff <- read.table("krasu-piemeri.csv", 
+                         header = TRUE, sep = ",", quote = "\"", 
+                         encoding="UTF-8")
+
+colorOrder <- c("black", "white","red",
+                    "green","blue","orange",
+                    "yellow", "purple", "pink",
+                    "brown","lightgray", "multicolored")
+
+colorNames <- c("melns","balts","sarkans",
+                "za\u013C\u0161", "zils","oran\u017Es",
+                "dzeltens", "violets", "s\u0101rts",
+                "br\u016Bns", "pel\u0113ks","raibs")
+colorFills <- colorOrder
+colorFills[12] <- "burlywood"
+colorFills[4] <- "darkgreen"
+colorStuff$Pamatkrasa <- 
+  factor(colorStuff$Pamatkrasa, 
+         levels = colorOrder)
+
+
+ggplot() + 
+  geom_bar(data=colorStuff, 
+           aes(x=1,
+#               y=(..count..)/sum(..count..),
+               fill = factor(Pamatkrasa),stat="bin"), colour="black", lwd=0.1) +
+  theme(
+    panel.background = element_blank(),
+    axis.title.x=element_blank(),
+    axis.text.x=element_blank(),
+    axis.ticks.x=element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line( size=.1, color="gray" ),
+    panel.grid.minor.y = element_line( size=.1, linetype="dotted", color="gray" ),
+    panel.border = element_rect(fill = NA, colour = "lightgray", size = .1)
+  ) +
+  facet_grid(facets= . ~ Krajums) + 
+  scale_y_continuous("Piem\u0113ru skaits") + 
+  scale_fill_manual(labels = colorNames, values=colorFills) 
+@
+
+
+
+
+<<defIndef, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4, fig.cap="Noteikt\u0101s un nenoteikt\u0101s galotnes kr\u0101su adjekt\u012Bviem (abi autori)", dev='CairoPDF'>>=
+
+setwd("/Users/kapsitis/workspace/ddgatve-stat/dzejas-statistika/")
+
+colorStuff <- read.table("krasu-piemeri.csv", 
+                         header = TRUE, sep = ",", quote = "\"", 
+                         encoding="UTF-8")
+
+
+colorAdjectives <- colorStuff[grepl("^[FM]", colorStuff$Locijums),]
+colorAdjectives <- mutate(colorAdjectives, Loc1=substr(Locijums,1,1))
+colorAdjectives <- mutate(colorAdjectives, Loc2=substr(Locijums,2,2))
+colorAdjectives <- mutate(colorAdjectives, Loc3=substr(Locijums,3,3))
+colorAdjectives <- mutate(colorAdjectives, Loc4=substr(Locijums,4,4))
+
+
+colorOrder <- c("black", "white","red",
+                    "green","blue","orange",
+                    "yellow", "pink",
+                    "brown","lightgray", "multicolored")
+
+colorNames <- c("melns","balts","sarkans",
+                "za\u013C\u0161", "zils","oran\u017Es",
+                "dzeltens","s\u0101rts",
+                "br\u016Bns", "pel\u0113ks","raibs")
+colorFills <- colorOrder
+colorFills[11] <- "burlywood"
+colorFills[4] <- "darkgreen"
+colorAdjectives$Pamatkrasa <- 
+  factor(colorAdjectives$Pamatkrasa, 
+         levels = colorOrder)
+
+defindef_names <- list(
+  'D'="Noteikt\u0101 galotne",
+  'I'="Nenoteikt\u0101 galotne"
+)
+
+defindef_labeler <- function(variable,value){
+  return(defindef_names[value])
+}
+
+
+ggplot() + 
+  geom_bar(data=colorAdjectives, 
+           aes(x=1,
+#               y=(..count..)/sum(..count..),
+               fill = factor(Pamatkrasa),stat="bin"), colour="black", lwd=0.1) +
+  theme(
+    panel.background = element_blank(),
+    axis.title.x=element_blank(),
+    axis.text.x=element_blank(),
+    axis.ticks.x=element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line( size=.1, color="gray" ),
+    panel.grid.minor.y = element_line( size=.1, linetype="dotted", color="gray" ),
+    panel.border = element_rect(fill = NA, colour = "lightgray", size = .1)
+  ) +
+  facet_grid(facets=. ~ Loc2, labeller=defindef_labeler) + 
+  scale_y_continuous("Piem\u0113ru skaits") + 
+  scale_fill_manual(labels = colorNames, values=colorFills) 
+
+@
+
+<<genderAdj, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4, fig.cap="Dzimte kr\u0101su adjekt\u012Bviem (abi autori)", dev='CairoPDF'>>=
+gender_names <- list(
+  'F'="Sievie\u0161u dzimte",
+  'M'="V\u012Brie\u0161u dzimte"
+)
+
+gender_labeler <- function(variable,value){
+  return(gender_names[value])
+}
+
+
+ggplot() + 
+  geom_bar(data=colorAdjectives, 
+           aes(x=1,
+#               y=(..count..)/sum(..count..),
+               fill = factor(Pamatkrasa),stat="bin"), colour="black", lwd=0.1) +
+  theme(
+    panel.background = element_blank(),
+    axis.title.x=element_blank(),
+    axis.text.x=element_blank(),
+    axis.ticks.x=element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line( size=.1, color="gray" ),
+    panel.grid.minor.y = element_line( size=.1, linetype="dotted", color="gray" ),
+    panel.border = element_rect(fill = NA, colour = "lightgray", size = .1)
+  ) +
+  facet_grid(facets=. ~ Loc1, labeller=gender_labeler) + 
+  scale_y_continuous("Piem\u0113ru skaits") + 
+  scale_fill_manual(labels = colorNames, values=colorFills) 
+@
+
+
+<<numberAdj, warning=FALSE, echo=FALSE, fig.width=6, fig.height=4, fig.cap="Skaitlis kr\u0101su adjekt\u012Bviem (abi autori)", dev='CairoPDF'>>=
+number_names <- list(
+  'S'="Vienskaitlis",
+  'P'="Daudzskaitlis"
+)
+
+number_labeler <- function(variable,value){
+  return(number_names[value])
+}
+
+
+
+ggplot() + 
+  geom_bar(data=colorAdjectives, 
+           aes(x=1,
+#               y=(..count..)/sum(..count..),
+               fill = factor(Pamatkrasa),stat="bin"), colour="black", lwd=0.1) +
+  theme(
+    panel.background = element_blank(),
+    axis.title.x=element_blank(),
+    axis.text.x=element_blank(),
+    axis.ticks.x=element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line( size=.1, color="gray" ),
+    panel.grid.minor.y = element_line( size=.1, linetype="dotted", color="gray" ),
+    panel.border = element_rect(fill = NA, colour = "lightgray", size = .1)
+  ) +
+  facet_grid(facets= . ~ Loc3, labeller=number_labeler) + 
+  scale_y_continuous("Piem\u0113ru skaits") + 
+  scale_fill_manual(labels = colorNames, values=colorFills) 
+@
+
+
+<<flexAdj, warning=FALSE, echo=FALSE, fig.width=6, fig.height=8, fig.cap="Loc\u012Bjums kr\u0101su adjekt\u012Bviem (abi autori)", dev='CairoPDF'>>=
+
+colorAdjectives$Loc4 <- 
+  factor(colorAdjectives$Loc4, 
+         levels = c("N","G","D","A","I","L","V"))
+
+
+ggplot() + 
+  geom_bar(data=colorAdjectives, 
+           aes(x=1,
+#               y=(..count..)/sum(..count..),
+               fill = factor(Pamatkrasa),stat="bin"), colour="black", lwd=0.1) +
+  theme(
+    panel.background = element_blank(),
+    axis.title.x=element_blank(),
+    axis.text.x=element_blank(),
+    axis.ticks.x=element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line( size=.1, color="gray" ),
+    panel.grid.minor.y = element_line( size=.1, linetype="dotted", color="gray" ),
+    panel.border = element_rect(fill = NA, colour = "lightgray", size = .1)
+  ) +
+  facet_grid(facets= . ~ Loc4) + 
+  scale_y_continuous("Piem\u0113ru skaits") + 
+  scale_fill_manual(labels = colorNames, values=colorFills) 
+@
+
+
+
+
+
+
+
+
+
+
+
+
+\begingroup\footnotesize
+\begin{thebibliography}{9}
+
+
+\bibitem{Burrows1987} J.F.Burrows. 
+{\em Computation into Criticism: A Study of Jane Austen's Novels.}
+Oxford University Press. 1987. 
+
+\bibitem{Chesterton1908} G.Chesterton. 
+{\em The Man Who Was Thursday.} 1908. 
+Lejuplādēts 2016-10-28 no \url{http://www.bartleby.com/158/4.html}. 
+
+\bibitem{EdgeNotchedCards} The Technium. {\em Edge-notched cards.}
+Lejuplādēts 2016-10-27 no \url{http://kk.org/thetechnium/one-dead-media/}.
+
+\bibitem{LBerzins1940} Ludis Bērziņš 
+{\em Ievads latviešu tautas dzejā: Metrika un stilistika, Volume 1}. 
+Latvijas Universitāte. 1940. 
+
+\bibitem{Markdown} Lasar Liepins. {\em Markdown: Syntax.} Lejuplādēts
+2016-10-27 no \url{http://markdown.de/}.
+
+\bibitem{Riekstins1984} E.Riekstiņš, A.Andžāns. 
+{\em Atrisini pats!} Zvaigzne 1984, 271 lpp.
+
+\bibitem{RydbergCox2014} Jeff Rydberg-Cox.  
+{\em Statistical Methods for Studying Literature using R.} 
+Lejuplādēts 2016-10-27 no \url{http://www.chlt.org/StatisticalMethods/}. 
+
+\bibitem{Veidemane1977} Ruta Veidemane. 
+{\em Izteikt neizsakāmo.} Liesma. 1977. 
+
+\bibitem{YuenRenChao} Yuen Ren Chao. {\em Lauvas ēdošais dzejnieks.}
+Lejuplādēts 2016-10-27 no \url{https://www.youtube.com/watch?v=9jtiw721RAg}. 
+
+\end{thebibliography}
+\endgroup
+
+
+
+
+\end{document}
