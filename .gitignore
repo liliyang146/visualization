@@ -13,7 +13,7 @@ project/target/*
 src/main/resources/classes
 src/main/resources/src
 /bin
-#/target
+/target
 reports/cache/*
 reports/.RData
 reports/.Rhistory

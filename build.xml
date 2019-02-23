@@ -1,0 +1,18 @@
+<project name="MyProject" default="dist" basedir=".">
+  <description>
+    simple example build file
+  </description>
+  <!-- set global properties for this build -->
+  <property name="target" location="target"/>
+  <property name="reports" location="jenkins-reports"/>
+
+  <target name="clean">
+    <delete dir="${target}"/>
+  </target>
+
+  <target name="copy">
+    <copy todir="${target}">
+      <fileset dir="${reports}" includes="**"/>
+    </copy>
+  </target>
+</project>
