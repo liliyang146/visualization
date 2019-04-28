@@ -54,6 +54,8 @@ zīmēm.)
 
 **Vienas vēlētāja balss izmaksas atkarībā no partijas**
 
+* [1 balss cena: Diagramma](declarations/barchart1.png)
+
 **Ieņēmumu un izdevumu salīdzinājums**
 
 
