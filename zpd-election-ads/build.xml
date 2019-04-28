@@ -11,6 +11,8 @@
     <copy file="index.html" tofile="${dist}/index.html"/>
     <copy file="money-vs-results.html" tofile="${dist}/money-vs-results.html"/>
     <copy file="pandoc.css" tofile="${dist}/pandoc.css"/>
+    <copy file="declaration-data.ods" tofile="${dist}/declaration-data.ods"/>
+    <copy file="declaration-data.csv" tofile="${dist}/declaration-data.csv"/>
 
     <zip destfile="${dist}/party-documents.zip"
       basedir="party-documents"
