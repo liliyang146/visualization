@@ -9,11 +9,12 @@
   <target name="dist">
     <mkdir dir="${dist}"/>
     <copy file="index.html" tofile="${dist}/index.html"/>
+    <copy file="money-vs-results.html" tofile="${dist}/money-vs-results.html"/>
+    <copy file="pandoc.css" tofile="${dist}/pandoc.css"/>
 
     <zip destfile="${dist}/party-documents.zip"
       basedir="party-documents"
       update="true"/>
-    <copy file="money-vs-results.html" tofile="${dist}/money-vs-results.html"/>
     <copy todir="${dist}/declarations" >
       <fileset dir="declarations" includes="**"/>
     </copy> 
