@@ -1,0 +1,17 @@
+<project name="MyProject" default="dist" basedir=".">
+  <description>Simple example build file.</description>
+  <property name="dist" location="../dist"/>
+
+  <target name="clean">
+    <delete dir="${dist}"/>
+  </target>
+
+  <target name="dist">
+    <mkdir dir="${dist}"/>
+    <copy file="index.html" tofile="${dist}/index.html"/>
+    <zip destfile="${dist}/party-documents.zip"
+      basedir="party-documents"
+      update="true"/>
+  </target>
+
+</project>

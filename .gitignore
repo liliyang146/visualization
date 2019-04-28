@@ -14,6 +14,7 @@ src/main/resources/classes
 src/main/resources/src
 /bin
 /target
+/dist
 reports/cache/*
 reports/.RData
 reports/.Rhistory
