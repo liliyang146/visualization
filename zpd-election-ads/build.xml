@@ -14,7 +14,7 @@
       basedir="party-documents"
       update="true"/>
     <copy file="money-vs-results.html" tofile="${dist}/money-vs-results.html"/>
-    <copy todir="${dest.dir}/declarations" >
+    <copy todir="${dist}/declarations" >
       <fileset dir="declarations" includes="**"/>
     </copy> 
 
