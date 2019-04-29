@@ -12,6 +12,7 @@
     <copy file="money-vs-results.html" tofile="${dist}/money-vs-results.html"/>
     <copy file="pandoc.css" tofile="${dist}/pandoc.css"/>
     <copy file="barcharts.R" tofile="${dist}/barcharts.R"/>
+    <copy file="correlations.R" tofile="${dist}/correlations.R"/>
     <copy file="declaration-data.ods" tofile="${dist}/declaration-data.ods"/>
     <copy file="declaration-data.csv" tofile="${dist}/declaration-data.csv"/>
 

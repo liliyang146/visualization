@@ -50,15 +50,33 @@ zīmēm.)
 
 ## Diagrammas
 
-Softs, ar kuru zīmētas diagrammas: [barcharts.R](barcharts.R)
+Softs, ar kuru zīmētas stabiņu diagrammas (valoda R): [barcharts.R](barcharts.R)
 
 **Vienas vēlētāja balss izmaksas atkarībā no partijas**
 
-![1 balss cena: Diagramma](declarations/barchart1.png)
+![Diagramma Nr.1: Vienas balss cena](declarations/barchart1.png)
 
 **Vienas deputāta vietas izmaksas atkarībā no partijas**
 
-![1 balss cena: Diagramma](declarations/barchart2.png)
+![Diagramma Nr.2: Vienas deputāta vietas cena](declarations/barchart2.png)
 
+## Secinājumi
+
+1. Visdārgāk pārliecināmais vēlētājs bija ZZS (EUR 12.92 par balsi), bet vislētāk pārliecināmais - 
+no KPV (EUR 1.10 par balsi). Cenu atšķirība ir $12.92/1.10=11.75$ jeb gandrīz
+$12$ reizes. Mums nav pamata uzskatīt, ka minēto partiju kampaņas būtu veidotas neprofesionāli. 
+Iespējams, atšķīrās vēstījuma saturs - ZZS vairāk saistījās ar esošo varu 
+("Saimnieki savā zemē", "Labo darbu čempioni"), kurpretī KPV vairāk akcentēja savu 
+ārpussistēmas politiķu, jaunpienācēju lomu.
+2. Visai lēti un efektīvi bija Alda Gobzema filmētie video (gandrīz nerediģēti 
+ieraksti - tiešsaistes tikšanās ar vēlētājiem Facebook), kuros viņš 
+brauc automašīnā un stāsta KPV programmas nostādnes. Piemēram, ko nozīmē 
+tēze "Valstij ir jāsāk ar sevi". Te konkurējošas partijas deputātu kandidāta
+Edmunda Jurēvica (Vienotība) ierakstīta parodija: 
+[Galdis Obzems beidzot pateica kā ir!](https://twitter.com/EdmundsJurevics/status/1032695865557827585). 
+3. **Ko gribētos pētīt tālāk?** Var salīdzināt ZZS un KPV iesniegtās deklarācijas, 
+saprast reklāmas izdevumu sadalījumu pa reklāmu veidiem. Ļoti iespējams, ka KPV (un 
+līdzīgi efektīvās partijas JKP) izdevumu struktūra parāda, kā mūsdienās 
+efektīvāk veidot vēlēšanu kampaņas.
 
 
