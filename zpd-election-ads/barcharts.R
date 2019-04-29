@@ -34,9 +34,9 @@ p<-ggplot(data=df, aes(x=reorder(ShortName, priceOfVote),
   theme_minimal() +
   theme(legend.position = "none",
         axis.text.x = element_text(face="plain", color="#0066CC", 
-                                   size=8),
+                                   size=7),
         axis.text.y = element_text(face="plain", color="#0066CC", 
-                                   size=8),
+                                   size=7),
         panel.grid.major.x = 
           element_line(size = 0.2, colour="black", linetype="dashed"), 
         panel.grid.major.y=

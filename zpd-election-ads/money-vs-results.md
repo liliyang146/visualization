@@ -73,10 +73,13 @@ ieraksti - tiešsaistes tikšanās ar vēlētājiem Facebook), kuros viņš
 brauc automašīnā un stāsta KPV programmas nostādnes. Piemēram, ko nozīmē 
 tēze "Valstij ir jāsāk ar sevi". Te konkurējošas partijas deputātu kandidāta
 Edmunda Jurēvica (Vienotība) ierakstīta parodija: 
-[Galdis Obzems beidzot pateica kā ir!](https://twitter.com/EdmundsJurevics/status/1032695865557827585). 
-3. **Ko gribētos pētīt tālāk?** Var salīdzināt ZZS un KPV iesniegtās deklarācijas, 
-saprast reklāmas izdevumu sadalījumu pa reklāmu veidiem. Ļoti iespējams, ka KPV (un 
-līdzīgi efektīvās partijas JKP) izdevumu struktūra parāda, kā mūsdienās 
-efektīvāk veidot vēlēšanu kampaņas.
+[Galdis Obzems beidzot pateica kā ir!](https://twitter.com/EdmundsJurevics/status/1032695865557827585).
+Alda Gobzema klipu oriģināli, diemžēl jau izdzēsti no YouTube. Sal. 
+[https://twitter.com/AldisGobzems/status/1046136651125313537](https://twitter.com/AldisGobzems/status/1046136651125313537), bet E.Jurēvica parodija diezgan pareizi attēlo šī veida reklāmas klipu 
+kompozīciju.
+3. **Ko gribētos pētīt tālāk?** Var salīdzināt ZZS, JV (dārgākās reklāmas kampaņas) 
+un KPV, JKP (lētākās reklāmas kampaņas) iesniegtās deklarācijas, 
+saprast reklāmas izdevumu sadalījumu pa reklāmu veidiem. Ļoti iespējams, ka KPV un JKP 
+izdevumu struktūra parāda, kā mūsdienās efektīvāk veidot vēlēšanu kampaņas.
 
 
