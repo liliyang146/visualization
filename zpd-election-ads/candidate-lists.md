@@ -58,7 +58,7 @@ izpētīt tikai 13.Saeimas vēlēšanu rezultātos, jo kandidātu secību nevara
 mainīt. Varam toties salīdzināt, kā tie paši kandidāti sacentās agrāko 
 Saeimu vēlēšanās. 
 
-![Attēls: Tipiska vizuālā reklāma - LRA spices kandidāti](candidates/lra-spice.jpng)
+![Attēls: Tipiska vizuālā reklāma - LRA spices kandidāti](candidates/lra-spice.jpg)
 
 ## Individuālo grozījumu pētīšanas gaita
 
