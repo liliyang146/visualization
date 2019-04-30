@@ -107,12 +107,22 @@ rezultāti par kandidātiem iecirkņos (244.00 MB)").
 
 ## Vēlēšanu zīmju ģeometrija
 
+Rīgas un Vidzemes vēlēšanu apgabalos sarakstos bija atļauti 
+attiecīgi 38 un 28 kandidāti. Tie tika izvietoti divās kolonnās
+(sk. pievienotos attēlus). 
+
 1. [LKS Rīgā 15+15](candidates/lks-riga.jpg)
 2. [A-PAR Rīgā 19+19](candidates/a-par-riga.jpg)
 3. [JV Rīgā 19+19](candidates/jv-riga.jpg)
 4. [A-PAR Vidzemē 14+14](candidates/a-par-vidzeme.jpg)
 5. [Vienotība Vidzemē 14+14](candidates/jv-vidzeme.jpg)
 
+Dažām partijām (LKS, LRA, Progresīvie un vēl mazākām partijām) 
+bija mazāk par maksimāli atļauto kandidātu skaitu. 
+Teiksim, LKS Rīgā izvirzīja nevis 38, bet tikai 30 kandidātus. 
+Arī šajā gadījumā tos dalīja divās vienāda augstuma kolonnās. 
+Mums, diemžēl, neizdevās uzzināt, kā dala kandidātus tajās 
+vēlēšanu zīmēs, kurās ir nepāru skaits kandidātu. 
 
 ## Diagramma: Punkti atkarībā no vietas sarakstā
 
