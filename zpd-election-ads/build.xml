@@ -24,6 +24,9 @@
     <copy todir="${dist}/declarations" >
       <fileset dir="declarations" includes="**"/>
     </copy> 
+    <copy todir="${dist}/candidates" >
+      <fileset dir="candidates" includes="**"/>
+    </copy> 
 
   </target>
 
