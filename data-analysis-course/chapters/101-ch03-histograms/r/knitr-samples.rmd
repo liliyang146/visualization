@@ -1,0 +1,48 @@
+---
+title: "aa.rmd"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+
++---------------+---------------+--------------------+
+| Latvia        |  Lithuania    | Estonia            |
++===============+===============+====================+
+| Rīga          | Vilnius       | Tallinn            |
++---------------+---------------+--------------------+
+
+
+
+
+* **Viens** - parasts teksts
+* **Divi** - _kursīva teksts_
+* **Trīs** - **trekns teksts**
+
+1. Pirmkārt
+1. Otrkārt
+1. Treškārt
+1. Ceturtkārt
+
+| Viens
+|   Divi
+|     Trīs (teksts ar atkāpēm, piem. dzeja)
+
+[Links uz Delfi.lv](http://www.delfi.lv)
+
+> "Tur burvīgā gaismā viss zaigo un laistās" (citāts)
+
+Matemātiska formula: 
+$x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+$\forall x \in X, \quad \exists y \leq \varepsilon$
+```{r results='hide', warning=FALSE, error=FALSE, message=FALSE}
+f <- function(x) { return(tan(x)) }
+x <- seq(-1,6,by=0.01)
+y <- f(x)
+plot(x, y, col="red", type="l")
+grid()
+```
+
+

@@ -1,0 +1,81 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[a4paper]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{wasysym}
+\usepackage{longtable}
+\usepackage{newtxtext}
+
+
+% \usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+% \usepackage{polyglossia}
+% \setmainlanguage{russian} 
+% \setotherlanguage{english}
+
+
+\bibliographystyle{alpha}
+
+
+\newenvironment{uzdevums}[1][\unskip]{%
+\vspace{3mm}
+\noindent
+\textbf{#1 uzdevums:}
+\noindent}
+{}
+
+
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage{url}
+\usepackage[unicode=true,pdfusetitle,
+bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+{hyperref}
+\renewcommand{\abstractname}{Anotācija}
+\renewcommand{\figurename}{Attēls}
+\renewcommand{\tablename}{Tabula}
+\renewcommand{\refname}{Atsauces}
+\setlength{\parindent}{0cm}
+
+
+\hypersetup{
+pdfstartview={XYZ null null 1}}
+\usepackage{Sweave}
+\begin{document}
+\input{dzejas-analize-ar-statistiku-concordance}
+\begin{Schunk}
+\begin{Sinput}
+> library(knitr)
+> # set global chunk options
+> opts_chunk$set(fig.path='figure/minimal-', fig.align='center', fig.show='hold')
+> options(formatR.arrow=TRUE,width=90)
+\end{Sinput}
+\end{Schunk}
+
+
+\title{Dzejas analīze ar statistiku}
+
+\author{}
+\date{}
+
+\maketitle
+
+\begin{abstract}
+Šajā dokumentā salīdzinātas O.Vācieša un Raiņa dzejoļu
+statistiskās īpašības, kuras viegli izmērīt ar datoru. 
+Analizēti divi dzejoļu krājumi --- O.Vācieša {\em Dzegužlaiks} 
+(ap 100 tūkstoši rakst\-zīmju) un 
+Raiņa {\em Tālas noskaņas zilā vakarā} (ap 60 tūkstoši rakst\-zīmju). 
+Turpmāk apzīmēsim tos attiecīgi ar {\em Dz-L} un {\em TNZV}. 
+
+Abos krājumos skaitīts burtu biežums, meklēti dzejoļi vai to fragmenti, 
+kuros ir bieži sastopams kāds burts/skaņa, salīdzināts vārdformu biežums 
+kā arī veikts salīdzinājums krāsas izsakošiem vārdiem - to relatīvajam 
+biežumam un morfolo\v{g}iskajām īpašībām. 
+\end{abstract}
+
