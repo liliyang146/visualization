@@ -1,6 +1,7 @@
 .cache
 sbt-launch.jar
 *.xls
+.Rhistory
 AMO39-2012/*.png
 AMO40-2013/*.png
 AMO40-2013-EN/*.png
@@ -17,7 +18,6 @@ src/main/resources/src
 /dist
 reports/cache/*
 reports/.RData
-reports/.Rhistory
 reports/*.aux
 reports/*.log
 reports/*.out
