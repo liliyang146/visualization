@@ -26,3 +26,4 @@ reports/*.Rout
 reports/figure/*.pdf
 /src/main/resources/math/sample-svg/nbproject/private/
 zpd-election-ads/.Rhistory
+.Rproj.user
