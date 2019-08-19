@@ -1,0 +1,1 @@
+pie(rep(1,24), col=rainbow(24))
