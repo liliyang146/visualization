@@ -1,14 +1,9 @@
 .cache
 sbt-launch.jar
-*.xls
 .Rhistory
 data-analysis-course/source-material
-AMO39-2012/*.png
-AMO40-2013/*.png
-AMO40-2013-EN/*.png
-AMO41-2014/*.png
-AMO42-2015/*.pdf
-SOL61-2011/*.png
+algorithms-course/compression-scala/project/target
+algorithms-course/compression-scala/target
 extra-lib/*.jar
 lib/*.jar
 project/target/*
